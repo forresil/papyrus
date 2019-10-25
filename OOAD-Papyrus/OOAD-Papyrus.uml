@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_oQo_4LVSEemLNufHMzH5Hw" name="OOAD-Papyrus">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_oW1ugLVSEemLNufHMzH5Hw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_a0yCQLVTEemJnYgZkDUqbQ" name="ANALYSE">
+    <packagedElement xmi:type="uml:Package" xmi:id="_d5z5gLVTEemJnYgZkDUqbQ" name="1) Systemidee und Zielsetzung">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_R2BsoLVVEemJnYgZkDUqbQ">
+        <body>Description &#xD;
+&#xD;
+Systemidee&#xD;
+	• Erläutert was mit dem zu entwickelnden System erreicht werden soll.&#xD;
+	• Wird kurz und knapp aber unbedingt schriftlich auf etwa einer halben Seite festgehalten. (5-20 Sätze)&#xD;
+&#xD;
+Zielsetzung&#xD;
+Bei der Zielformulierung werden Interessenkonflikte und Widersprüche deutlich!</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Component" xmi:id="_A4pTkLVXEemJnYgZkDUqbQ" name="Flitz-Auto">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_LIXP4LVXEemJnYgZkDUqbQ">
+          <body>Fritz-Auto 1.0 ist die Software, die Sie in allen wichtigen Anwendungsfällen einer Autovermietung unterstützt. &#xD;
+&#xD;
+Sie können:&#xD;
+	- Kfz reservieren (inkl. Ändern und stornieren)&#xD;
+	- Vermieten (inkl. Vertragserstellung und Rücknahmeprotokoll)&#xD;
+	- Die Vermietungen abrechnen (Einzel- Sammel- und Monatsrechnungen)&#xD;
+	&#xD;
+Selbstverständlich kann Flitz-Auto 1.0: &#xD;
+	- die zu vermietenden Kfz, die vorhandenen Mietstationen und die Kunden mit allen wichtigen Stammdaten (Anschriften, Bankverbindungen, etc.) verwalten. &#xD;
+	- Eine Datenübernahme aus dem alten System ist möglich.&#xD;
+&#xD;
+Weitere wichtige Eigenschaften von Flitz-Auto 1.0:&#xD;
+	- Mandantenfähigkeit&#xD;
+	- Agenturbetrieb&#xD;
+	- Teilnahme am Single-Sign-On, &#xD;
+	- Altdaten-Archivierung &#xD;
+	- Verschiedene Auswertungen&#xD;
+	- Berichte und Statistiken (nicht im Internet)&#xD;
+	- 24 x 7 Std. Betrieb&#xD;
+&#xD;
+Eine Bedienung über Funktionscode ist nicht mehr nötig und nicht mehr möglich.&#xD;
+&#xD;
+Flitz-Auto 1.0 ist einfach bedienbar und mit integrierter Hilfe ausgestattet.&#xD;
+Für alle Fälle kennt die Hilfefunktion jedoch die alten Funktionscodes und zeigt Ihnen dazu die neue Bedienung in Flitz-Auto 1.0.&#xD;
+&#xD;
+Flitz-Auto läuft im Netzwerk Ihres Unternehmens und bietet für Kunden und Agenturen auch einen Internetzugang. &#xD;
+&#xD;
+Systemvoraussetzungen sind Schnittstellen zum bestehenden Tarif- und Produktsystem TSC und zur Finanzbuchhaltung SAP-FI.&#xD;
+&#xD;
+Zusatzmodule zur Kfz-Überprüfung/-Disposition, zur Schadenbearbeitung und zum Beschwerde -Management sind ebenso wie Mehrwährungs- und Mehrsprachenfähigkeit für Flitz-Auto 2.0 in Planung.&#xD;
+</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="_tcJpMLVXEemJnYgZkDUqbQ" name="Systemidee"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_hp6HALVTEemJnYgZkDUqbQ" name="2) Stakeholder"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_jpdj8LVTEemJnYgZkDUqbQ" name="3) Interessen der Stakeholder"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_zRlvYLVTEemJnYgZkDUqbQ" name="4) Systemkontext und Akteure"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_4V5WwLVTEemJnYgZkDUqbQ" name="5) Geschäftsanwendungsfälle"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_60XkULVTEemJnYgZkDUqbQ" name="6) Essenz der Anwendungsfälle"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_9krIwLVTEemJnYgZkDUqbQ" name="7) Materialsammlung"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="__d57QLVTEemJnYgZkDUqbQ" name="8) Systemanwendungsfälle"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_CQD50LVUEemJnYgZkDUqbQ" name="9) Fachklassen"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ETWnQLVUEemJnYgZkDUqbQ" name="10) Fachliches Glossar"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_GXQ_wLVUEemJnYgZkDUqbQ" name="11) Anwendungsfallablauf"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_I6w3QLVUEemJnYgZkDUqbQ" name="12) Redundante Schritte"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_NgHRwLVUEemJnYgZkDUqbQ" name="13) Anforderungen und Regeln"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_PZHawLVUEemJnYgZkDUqbQ" name="14) Systemschnittstellen"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_RUosQLVUEemJnYgZkDUqbQ" name="15) Schnittstellen-Prototyping"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_cg2igLVTEemJnYgZkDUqbQ" name="DESIGN"/>
+</uml:Model>

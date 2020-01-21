@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_8hDpUMw_EeeHpO2oNe6ggw" name="GWTLecturer">
+  <packagedElement xmi:type="uml:Package" xmi:id="_HH-LYMxFEeeHpO2oNe6ggw" name="UseCaseDiagram">
+    <packagedElement xmi:type="uml:Association" xmi:id="_wUCdYMxAEeeHpO2oNe6ggw" memberEnd="_wUESkMxAEeeHpO2oNe6ggw _wUESkcxAEeeHpO2oNe6ggw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wUDrgMxAEeeHpO2oNe6ggw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wUDrgcxAEeeHpO2oNe6ggw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_wUESkMxAEeeHpO2oNe6ggw" name="order_meal" type="_d1DZkMxAEeeHpO2oNe6ggw" association="_wUCdYMxAEeeHpO2oNe6ggw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_wUESkcxAEeeHpO2oNe6ggw" name="customer" type="_B82joMxAEeeHpO2oNe6ggw" association="_wUCdYMxAEeeHpO2oNe6ggw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_w5vLcMxAEeeHpO2oNe6ggw" memberEnd="_w5xAoMxAEeeHpO2oNe6ggw _w5xnsMxAEeeHpO2oNe6ggw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_w5wZkMxAEeeHpO2oNe6ggw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_w5wZkcxAEeeHpO2oNe6ggw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_w5xAoMxAEeeHpO2oNe6ggw" name="login_account" type="_dd3ooMxAEeeHpO2oNe6ggw" association="_w5vLcMxAEeeHpO2oNe6ggw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_w5xnsMxAEeeHpO2oNe6ggw" name="customer" type="_B82joMxAEeeHpO2oNe6ggw" association="_w5vLcMxAEeeHpO2oNe6ggw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xaD00MxBEeeHpO2oNe6ggw" memberEnd="_xaEb4MxBEeeHpO2oNe6ggw _xaEb4cxBEeeHpO2oNe6ggw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xaD00cxBEeeHpO2oNe6ggw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xaD00sxBEeeHpO2oNe6ggw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_xaEb4MxBEeeHpO2oNe6ggw" name="customer" type="_B82joMxAEeeHpO2oNe6ggw" association="_xaD00MxBEeeHpO2oNe6ggw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_xaEb4cxBEeeHpO2oNe6ggw" name="make_payment" type="_r455YMxBEeeHpO2oNe6ggw" association="_xaD00MxBEeeHpO2oNe6ggw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_CK9REMxAEeeHpO2oNe6ggw" name="Manager">
+      <generalization xmi:type="uml:Generalization" xmi:id="_HC53cMxAEeeHpO2oNe6ggw" general="__0cFoMw_EeeHpO2oNe6ggw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_B82joMxAEeeHpO2oNe6ggw" name="Customer">
+      <generalization xmi:type="uml:Generalization" xmi:id="_JHvdAMxAEeeHpO2oNe6ggw" general="__0cFoMw_EeeHpO2oNe6ggw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="__0cFoMw_EeeHpO2oNe6ggw" name="User"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="__VKvsMw_EeeHpO2oNe6ggw" name="System">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_dd3ooMxAEeeHpO2oNe6ggw" name="Login_Account"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_d1DZkMxAEeeHpO2oNe6ggw" name="Order_Meal">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_ogfEsMxEEeeHpO2oNe6ggw">
+          <body>Use Case Name		&#xD;
+	Order Meal&#xD;
+Author	&#xD;
+	John Doe&#xD;
+Last Revision	&#xD;
+	1 May 2015&#xD;
+Actors 	&#xD;
+	Customer&#xD;
+Uses	&#xD;
+	Login Account&#xD;
+Extends 	&#xD;
+	Nil. &#xD;
+Pre-Conditions	&#xD;
+	Meal information is avalaible in the system.&#xD;
+Basics Course / Main Scenario	&#xD;
+	1. System prompts the customer to choose between a-la-carte meals and set meals. &#xD;
+	2. Customer indicates a-la-carte meal.&#xD;
+	3. System retrives the a-al-carte meals and displays them to the Customer. &#xD;
+	4. Customers selects a meal, indicates the quantity.&#xD;
+	5. Customer adds the meal to the cart. &#xD;
+	6.1 System checks if meal is avalaible. &#xD;
+	6.2 If avalaible, sytem updates the cart.&#xD;
+	7. Steps 1 till 4 are repeated until all meals are selected. &#xD;
+	8. Customer proceeds to checkout. &#xD;
+	9. System displays the cart overview on screen. &#xD;
+Other Scenarios&#xD;
+	2. Customer indicates set meal. &#xD;
+	3. System retrieves the set meals and displays them to the customer. &#xD;
+Post-conditions&#xD;
+	Order is composed and ready for payment.&#xD;
+Error-conditions	&#xD;
+	6.2 If meal is not avalaible, the customer is notified that the meal is not avalaible.</body>
+        </ownedComment>
+        <include xmi:type="uml:Include" xmi:id="_rYmeIMxAEeeHpO2oNe6ggw" addition="_dd3ooMxAEeeHpO2oNe6ggw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_ykjHcMxAEeeHpO2oNe6ggw" name="Make_Credit_Card_Payment">
+        <extend xmi:type="uml:Extend" xmi:id="_yoXbAMxBEeeHpO2oNe6ggw" extendedCase="_r455YMxBEeeHpO2oNe6ggw" extensionLocation="_yoYCEMxBEeeHpO2oNe6ggw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_12ag0MxAEeeHpO2oNe6ggw" name="Make_PayPal_Payment">
+        <extend xmi:type="uml:Extend" xmi:id="_3JW58MxBEeeHpO2oNe6ggw" extendedCase="_r455YMxBEeeHpO2oNe6ggw" extensionLocation="_3JW58cxBEeeHpO2oNe6ggw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_r455YMxBEeeHpO2oNe6ggw" name="Make_Payment">
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_yoYCEMxBEeeHpO2oNe6ggw" name="ExtensionPoint_MakeCredit_Card_Payment"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_3JW58cxBEeeHpO2oNe6ggw" name="ExtensionPoint_Make_PayPal_Payment"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

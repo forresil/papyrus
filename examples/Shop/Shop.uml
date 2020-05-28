@@ -3,36 +3,10 @@
   <packageImport xmi:type="uml:PackageImport" xmi:id="_hZJ3gIoMEemJa-PFuNcRVA">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_1rBOMIoMEemJa-PFuNcRVA" name="Customer"/>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_5G--wIoMEemJa-PFuNcRVA" name="Employee"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_FAUkQIoNEemJa-PFuNcRVA" name="Automat" visibility="public">
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_KvbcIIoNEemJa-PFuNcRVA" name="Produkt beziehen" classifierBehavior="_nghXAIoPEemsEs9fA8-qGA">
-      <ownedBehavior xmi:type="uml:Activity" xmi:id="_nghXAIoPEemsEs9fA8-qGA" name="ProduktBeziehenActivity" node="_uLA5EIoPEemsEs9fA8-qGA _yJ6-oIoPEemsEs9fA8-qGA _IoBjYIoQEemsEs9fA8-qGA _NBdo0IoQEemsEs9fA8-qGA _Qsl2wIoQEemsEs9fA8-qGA">
-        <edge xmi:type="uml:ControlFlow" xmi:id="_UDJi4IoQEemsEs9fA8-qGA" target="_yJ6-oIoPEemsEs9fA8-qGA" source="_uLA5EIoPEemsEs9fA8-qGA"/>
-        <edge xmi:type="uml:ControlFlow" xmi:id="_U4SbIIoQEemsEs9fA8-qGA" target="_IoBjYIoQEemsEs9fA8-qGA" source="_yJ6-oIoPEemsEs9fA8-qGA"/>
-        <edge xmi:type="uml:ControlFlow" xmi:id="_VpGNAIoQEemsEs9fA8-qGA" target="_NBdo0IoQEemsEs9fA8-qGA" source="_IoBjYIoQEemsEs9fA8-qGA"/>
-        <edge xmi:type="uml:ControlFlow" xmi:id="_Wc5BcIoQEemsEs9fA8-qGA" target="_Qsl2wIoQEemsEs9fA8-qGA" source="_NBdo0IoQEemsEs9fA8-qGA"/>
-        <node xmi:type="uml:InitialNode" xmi:id="_uLA5EIoPEemsEs9fA8-qGA" name="Idle" outgoing="_UDJi4IoQEemsEs9fA8-qGA"/>
-        <node xmi:type="uml:OpaqueAction" xmi:id="_yJ6-oIoPEemsEs9fA8-qGA" name="Get_DesiredProduct_Nr" incoming="_UDJi4IoQEemsEs9fA8-qGA" outgoing="_U4SbIIoQEemsEs9fA8-qGA"/>
-        <node xmi:type="uml:OpaqueAction" xmi:id="_IoBjYIoQEemsEs9fA8-qGA" name="Preis anzeigen" incoming="_U4SbIIoQEemsEs9fA8-qGA" outgoing="_VpGNAIoQEemsEs9fA8-qGA"/>
-        <node xmi:type="uml:OpaqueAction" xmi:id="_NBdo0IoQEemsEs9fA8-qGA" name="Get paid" incoming="_VpGNAIoQEemsEs9fA8-qGA" outgoing="_Wc5BcIoQEemsEs9fA8-qGA"/>
-        <node xmi:type="uml:OpaqueAction" xmi:id="_Qsl2wIoQEemsEs9fA8-qGA" name="Produkt abgeben" incoming="_Wc5BcIoQEemsEs9fA8-qGA"/>
-      </ownedBehavior>
-      <include xmi:type="uml:Include" xmi:id="_1r9-gIoOEemsEs9fA8-qGA" addition="_yExOUIoOEemsEs9fA8-qGA"/>
-      <include xmi:type="uml:Include" xmi:id="_9sBlUIoOEemsEs9fA8-qGA" addition="_6C14IIoOEemsEs9fA8-qGA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_MuoTwIoNEemJa-PFuNcRVA" name="Produkte nachfüllen"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_yExOUIoOEemsEs9fA8-qGA" name="Produkt abwerfen"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_6C14IIoOEemsEs9fA8-qGA" name="Bezahlen">
-      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_Kk8_kIoPEemsEs9fA8-qGA" name="ExtensionPoint1"/>
-      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_SqMoYIoPEemsEs9fA8-qGA" name="ExtensionPoint2"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_EXhM8IoPEemsEs9fA8-qGA" name="Barzahlung">
-      <extend xmi:type="uml:Extend" xmi:id="_Kk7xcIoPEemsEs9fA8-qGA" extendedCase="_6C14IIoOEemsEs9fA8-qGA" extensionLocation="_Kk8_kIoPEemsEs9fA8-qGA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_M2ztcIoPEemsEs9fA8-qGA" name="Kreditkartenzahlung">
-      <extend xmi:type="uml:Extend" xmi:id="_SqMBUIoPEemsEs9fA8-qGA" extendedCase="_6C14IIoOEemsEs9fA8-qGA" extensionLocation="_SqMoYIoPEemsEs9fA8-qGA"/>
-    </packagedElement>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_3J6ZYKDzEeqaJf3Ri0VZQw" annotatedElement="_M2ztcIoPEemsEs9fA8-qGA _EXhM8IoPEemsEs9fA8-qGA">
+      <body>&quot;Barzahlung&quot; und &quot;Kreditkartenzahlung&quot; erweitern &quot;Bezahlen&quot; sobald Zahlungsartauswahl bestimmt wird. </body>
+    </ownedComment>
     <packagedElement xmi:type="uml:Interaction" xmi:id="_D9TEMIoREemsEs9fA8-qGA" name="ProduktBeziehen-Communication">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_P-NRUIoREemsEs9fA8-qGA" name="" type="_1rBOMIoMEemJa-PFuNcRVA"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_p9MGYIoSEemsEs9fA8-qGA" name="" type="_enbvEIoSEemsEs9fA8-qGA"/>
@@ -70,19 +44,58 @@
       <ownedOperation xmi:type="uml:Operation" xmi:id="_hW3w0IoSEemsEs9fA8-qGA" name="GetCustomerSelection"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_lbp04IoSEemsEs9fA8-qGA" name="TransmitSelection"/>
     </packagedElement>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_VXwswIoNEemJa-PFuNcRVA" memberEnd="_VXx64YoNEemJa-PFuNcRVA _VXzJAIoNEemJa-PFuNcRVA">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VXxT0IoNEemJa-PFuNcRVA" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VXx64IoNEemJa-PFuNcRVA" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_VXx64YoNEemJa-PFuNcRVA" name="produkte nachfüllen" type="_MuoTwIoNEemJa-PFuNcRVA" association="_VXwswIoNEemJa-PFuNcRVA"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_VXzJAIoNEemJa-PFuNcRVA" name="employee" type="_5G--wIoMEemJa-PFuNcRVA" association="_VXwswIoNEemJa-PFuNcRVA"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_WhHhgIoNEemJa-PFuNcRVA" memberEnd="_WhIvoooNEemJa-PFuNcRVA _WhJWsIoNEemJa-PFuNcRVA">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WhIvoIoNEemJa-PFuNcRVA" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WhIvoYoNEemJa-PFuNcRVA" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_WhIvoooNEemJa-PFuNcRVA" name="produkt beziehen" type="_KvbcIIoNEemJa-PFuNcRVA" association="_WhHhgIoNEemJa-PFuNcRVA"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_WhJWsIoNEemJa-PFuNcRVA" name="customer" type="_1rBOMIoMEemJa-PFuNcRVA" association="_WhHhgIoNEemJa-PFuNcRVA"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_1rBOMIoMEemJa-PFuNcRVA" name="Customer"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_5G--wIoMEemJa-PFuNcRVA" name="Employee"/>
+    <packagedElement xmi:type="uml:Device" xmi:id="_aaaIAKDzEeqaJf3Ri0VZQw" name="Automat">
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_MuoTwIoNEemJa-PFuNcRVA" name="Produkte nachfüllen"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_M2ztcIoPEemsEs9fA8-qGA" name="Kreditkartenzahlung">
+        <extend xmi:type="uml:Extend" xmi:id="_SqMBUIoPEemsEs9fA8-qGA" extendedCase="_6C14IIoOEemsEs9fA8-qGA" extensionLocation="_SqMoYIoPEemsEs9fA8-qGA"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_6C14IIoOEemsEs9fA8-qGA" name="Bezahlen">
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_Kk8_kIoPEemsEs9fA8-qGA" name="ExtensionPoint1"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_SqMoYIoPEemsEs9fA8-qGA" name="ExtensionPoint2"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_z1eNIKDzEeqaJf3Ri0VZQw" name="Zahlungsartauswahl"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_EXhM8IoPEemsEs9fA8-qGA" name="Barzahlung">
+        <extend xmi:type="uml:Extend" xmi:id="_Kk7xcIoPEemsEs9fA8-qGA" extendedCase="_6C14IIoOEemsEs9fA8-qGA" extensionLocation="_Kk8_kIoPEemsEs9fA8-qGA"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_KvbcIIoNEemJa-PFuNcRVA" name="Produkt beziehen" classifierBehavior="_nghXAIoPEemsEs9fA8-qGA">
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_nghXAIoPEemsEs9fA8-qGA" name="ProduktBeziehenActivity" node="_uLA5EIoPEemsEs9fA8-qGA _yJ6-oIoPEemsEs9fA8-qGA _IoBjYIoQEemsEs9fA8-qGA _NBdo0IoQEemsEs9fA8-qGA _Qsl2wIoQEemsEs9fA8-qGA">
+          <edge xmi:type="uml:ControlFlow" xmi:id="_UDJi4IoQEemsEs9fA8-qGA" target="_yJ6-oIoPEemsEs9fA8-qGA" source="_uLA5EIoPEemsEs9fA8-qGA"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_U4SbIIoQEemsEs9fA8-qGA" target="_IoBjYIoQEemsEs9fA8-qGA" source="_yJ6-oIoPEemsEs9fA8-qGA"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_VpGNAIoQEemsEs9fA8-qGA" target="_NBdo0IoQEemsEs9fA8-qGA" source="_IoBjYIoQEemsEs9fA8-qGA"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_Wc5BcIoQEemsEs9fA8-qGA" target="_Qsl2wIoQEemsEs9fA8-qGA" source="_NBdo0IoQEemsEs9fA8-qGA"/>
+          <node xmi:type="uml:InitialNode" xmi:id="_uLA5EIoPEemsEs9fA8-qGA" name="Idle" outgoing="_UDJi4IoQEemsEs9fA8-qGA"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_yJ6-oIoPEemsEs9fA8-qGA" name="Get_DesiredProduct_Nr" incoming="_UDJi4IoQEemsEs9fA8-qGA" outgoing="_U4SbIIoQEemsEs9fA8-qGA"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_IoBjYIoQEemsEs9fA8-qGA" name="Preis anzeigen" incoming="_U4SbIIoQEemsEs9fA8-qGA" outgoing="_VpGNAIoQEemsEs9fA8-qGA"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_NBdo0IoQEemsEs9fA8-qGA" name="Get paid" incoming="_VpGNAIoQEemsEs9fA8-qGA" outgoing="_Wc5BcIoQEemsEs9fA8-qGA"/>
+          <node xmi:type="uml:OpaqueAction" xmi:id="_Qsl2wIoQEemsEs9fA8-qGA" name="Produkt abgeben" incoming="_Wc5BcIoQEemsEs9fA8-qGA"/>
+        </ownedBehavior>
+        <include xmi:type="uml:Include" xmi:id="_1r9-gIoOEemsEs9fA8-qGA" addition="_yExOUIoOEemsEs9fA8-qGA"/>
+        <include xmi:type="uml:Include" xmi:id="_9sBlUIoOEemsEs9fA8-qGA" addition="_6C14IIoOEemsEs9fA8-qGA"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_yExOUIoOEemsEs9fA8-qGA" name="Produkt abwerfen"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_VXwswIoNEemJa-PFuNcRVA" name="nachfüllt" memberEnd="_VXx64YoNEemJa-PFuNcRVA _VXzJAIoNEemJa-PFuNcRVA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VXxT0IoNEemJa-PFuNcRVA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VXx64IoNEemJa-PFuNcRVA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_VXx64YoNEemJa-PFuNcRVA" name="produkte nachfüllen" type="_MuoTwIoNEemJa-PFuNcRVA" association="_VXwswIoNEemJa-PFuNcRVA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_VXzJAIoNEemJa-PFuNcRVA" name="employee" type="_5G--wIoMEemJa-PFuNcRVA" association="_VXwswIoNEemJa-PFuNcRVA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_WhHhgIoNEemJa-PFuNcRVA" name="bezieht" memberEnd="_WhIvoooNEemJa-PFuNcRVA _WhJWsIoNEemJa-PFuNcRVA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WhIvoIoNEemJa-PFuNcRVA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WhIvoYoNEemJa-PFuNcRVA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_WhIvoooNEemJa-PFuNcRVA" name="produkt beziehen" type="_KvbcIIoNEemJa-PFuNcRVA" association="_WhHhgIoNEemJa-PFuNcRVA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_WhJWsIoNEemJa-PFuNcRVA" name="customer" type="_1rBOMIoMEemJa-PFuNcRVA" association="_WhHhgIoNEemJa-PFuNcRVA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_r_Gt0KDzEeqaJf3Ri0VZQw" name="entnimmt" memberEnd="_r_IjAKDzEeqaJf3Ri0VZQw _r_IjAaDzEeqaJf3Ri0VZQw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_r_H78KDzEeqaJf3Ri0VZQw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_r_H78aDzEeqaJf3Ri0VZQw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_r_IjAKDzEeqaJf3Ri0VZQw" name="produkt abwerfen" type="_yExOUIoOEemsEs9fA8-qGA" association="_r_Gt0KDzEeqaJf3Ri0VZQw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_r_IjAaDzEeqaJf3Ri0VZQw" name="customer" type="_1rBOMIoMEemJa-PFuNcRVA" association="_r_Gt0KDzEeqaJf3Ri0VZQw"/>
+    </packagedElement>
   </packagedElement>
 </uml:Model>

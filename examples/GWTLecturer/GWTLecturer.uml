@@ -29,9 +29,19 @@
       <generalization xmi:type="uml:Generalization" xmi:id="_JHvdAMxAEeeHpO2oNe6ggw" general="__0cFoMw_EeeHpO2oNe6ggw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Actor" xmi:id="__0cFoMw_EeeHpO2oNe6ggw" name="User"/>
-    <packagedElement xmi:type="uml:Package" xmi:id="__VKvsMw_EeeHpO2oNe6ggw" name="System">
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_dd3ooMxAEeeHpO2oNe6ggw" name="Login_Account"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_d1DZkMxAEeeHpO2oNe6ggw" name="Order_Meal">
+    <packagedElement xmi:type="uml:Device" xmi:id="_bzNM8KMiEeqDCo-0FV_dvA" name="System">
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_12ag0MxAEeeHpO2oNe6ggw" name="Make_PayPal_Payment">
+        <extend xmi:type="uml:Extend" xmi:id="_3JW58MxBEeeHpO2oNe6ggw" extendedCase="_r455YMxBEeeHpO2oNe6ggw" extensionLocation="_3JW58cxBEeeHpO2oNe6ggw"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_r455YMxBEeeHpO2oNe6ggw" name="Make_Payment">
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_yoYCEMxBEeeHpO2oNe6ggw" name="ExtensionPoint_MakeCredit_Card_Payment"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_3JW58cxBEeeHpO2oNe6ggw" name="ExtensionPoint_Make_PayPal_Payment"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_ykjHcMxAEeeHpO2oNe6ggw" name="Make_Credit_Card_Payment">
+        <extend xmi:type="uml:Extend" xmi:id="_yoXbAMxBEeeHpO2oNe6ggw" extendedCase="_r455YMxBEeeHpO2oNe6ggw" extensionLocation="_yoYCEMxBEeeHpO2oNe6ggw"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_dd3ooMxAEeeHpO2oNe6ggw" name="Login_Account"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_d1DZkMxAEeeHpO2oNe6ggw" name="Order_Meal">
         <ownedComment xmi:type="uml:Comment" xmi:id="_ogfEsMxEEeeHpO2oNe6ggw">
           <body>Use Case Name		&#xD;
 	Order Meal&#xD;
@@ -67,17 +77,7 @@ Error-conditions	&#xD;
 	6.2 If meal is not avalaible, the customer is notified that the meal is not avalaible.</body>
         </ownedComment>
         <include xmi:type="uml:Include" xmi:id="_rYmeIMxAEeeHpO2oNe6ggw" addition="_dd3ooMxAEeeHpO2oNe6ggw"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_ykjHcMxAEeeHpO2oNe6ggw" name="Make_Credit_Card_Payment">
-        <extend xmi:type="uml:Extend" xmi:id="_yoXbAMxBEeeHpO2oNe6ggw" extendedCase="_r455YMxBEeeHpO2oNe6ggw" extensionLocation="_yoYCEMxBEeeHpO2oNe6ggw"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_12ag0MxAEeeHpO2oNe6ggw" name="Make_PayPal_Payment">
-        <extend xmi:type="uml:Extend" xmi:id="_3JW58MxBEeeHpO2oNe6ggw" extendedCase="_r455YMxBEeeHpO2oNe6ggw" extensionLocation="_3JW58cxBEeeHpO2oNe6ggw"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_r455YMxBEeeHpO2oNe6ggw" name="Make_Payment">
-        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_yoYCEMxBEeeHpO2oNe6ggw" name="ExtensionPoint_MakeCredit_Card_Payment"/>
-        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_3JW58cxBEeeHpO2oNe6ggw" name="ExtensionPoint_Make_PayPal_Payment"/>
-      </packagedElement>
+      </ownedUseCase>
     </packagedElement>
   </packagedElement>
 </uml:Model>

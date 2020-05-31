@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OOAD="http:///schemas/OOAD/_7I6AMMq2EeeRtbvg7-W2Sw/3" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/OOAD/_7I6AMMq2EeeRtbvg7-W2Sw/3 OOAD.profile.uml#_7I6AMcq2EeeRtbvg7-W2Sw">
+  <uml:Model xmi:id="_gPL7cGFdEeeUUsKQ619tXA" name="OOAD">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_laH5cMyAEeeHpO2oNe6ggw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_VXKykGFpEeeUUsKQ619tXA" name="BusinessUseCases">
+      <packagedElement xmi:type="uml:Package" xmi:id="_VEcHsMlPEee8J5UOqm26zQ" name="Systemkontext">
+        <packagedElement xmi:type="uml:Package" xmi:id="_bGqI0MlPEee8J5UOqm26zQ" name="FritzAuto-Systemkontext">
+          <packagedElement xmi:type="uml:Package" xmi:id="_fvacoMlPEee8J5UOqm26zQ" name="Fritz-Auto">
+            <packagedElement xmi:type="uml:Package" xmi:id="_rb2xwGFpEeeUUsKQ619tXA" name="FritzAutoBusinessUseCases">
+              <packagedElement xmi:type="uml:Package" xmi:id="_RKDZQGFmEeeUUsKQ619tXA" name="Kfz Vermietung">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_7eF9oMlkEeehOdWRm2YhrQ">
+                  <body></body>
+                </ownedComment>
+                <packagedElement xmi:type="uml:Package" xmi:id="_TQY_oMndEee_vafBFN2CUw" name="Kfz_reservieren_konkretisierte_SystemUseCases">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_7FgBkMnfEee_vafBFN2CUw">
+                    <body>Konkretisierte Systemanwendungsfälle für den Essenziellen-Geschäftsanwendungsfall &quot;Kfz reservieren&quot;.&#xD;
+Sie alle implementieren eine &lt;&lt;trace>> Dependency!</body>
+                  </ownedComment>
+                  <packagedElement xmi:type="uml:UseCase" xmi:id="_LcqvMMneEee_vafBFN2CUw" name="Kfz reservieren (Kunde)"/>
+                  <packagedElement xmi:type="uml:UseCase" xmi:id="_NtfiUMneEee_vafBFN2CUw" name="Kfz reservieren (Callcenter)" classifierBehavior="_XXHhcMxvEeeHpO2oNe6ggw">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_Qgd_cMoOEeePA59SvrVV7g">
+                      <body>------------Beschreibung  Systemanwendungsfall----------------------------&#xD;
+Name						Kfz reservieren (Callcenter)&#xD;
+Art							Primärer Systemanwendungsfall&#xD;
+Kurzbeschreibung			Der Callcenter reserviert für einen Kunden für eine definierte Zeitraum ein Kfz.&#xD;
+Auslöser, ggf. Motivation	Der Anrufer möchte ein Kfz reservieren.&#xD;
+Ergebnis					Reservierungsbestätigung&#xD;
+Akteure 					Kunde (Anrufer), Callcenter-Agent&#xD;
+Eingehende Informationen	Kundennummer, Kundenname, Anrufer-Name,  Reservierungswunsch&#xD;
+Vorbedingungen				keine&#xD;
+Nachbedingungen				Für den Kunden wurde ein Kfz reserviert.&#xD;
+Ablauf	&#xD;
+	1. Kunde identifizieren&#xD;
+		Der Anrufer nennt seinen Namen, seine Kundennummer und (sofern der Anrufer-Name vom Kundenname abweicht), den Kundennamen. Anhand der Kundennummer, wird der Kunde gesucht, der gespeicherte Kundenname muss mit dem genannten Kundennamen übereinstimmen.&#xD;
+	2. Reservierungswunsch aufnehmen&#xD;
+		Der Anrufer gibt seinen Reservierungswunsch an, d.h. Kfz-Typ, Reservierungszeitraum, Abhol- und Rückgabeort und besondere Ausstattungsmerkmale.&#xD;
+	3. Reservierungsmöglichkeit prüfen&#xD;
+		Das System ermittelt, ob der gegebene Reservierungswunsch erfüllt werden kann.&#xD;
+	4. Kfz reservieren&#xD;
+		Für den Kunden wird wie gewünscht ein Kfz reserviert, er erhält zur Bestätigung eine Reservierungsnummer. Es wird kein konkretes Kfz reserviert, sondern nur mengenmässig ein Exemplar des gewünschten Kfz - Typs. &#xD;
+	5. Reservierung bestätigen&#xD;
+		Dem Anrufer wird die Reservierung mündlich bestätigt, ihm wird die Reservierungsnummer mitgeteilt. Auf Wunsch wird die Reservierung auch schriftlich, per Fax oder per E-Mail bestätigt. &#xD;
+&#xD;
+Ansprechpartner				Frau von Bismark, Frau Richter&#xD;
+Risiko						Noch nicht betrachtet […]&#xD;
+Verbindlichkeit, Priorität	Hohe Priorität, unverzichtbar&#xD;
+Aufwand						Noch nicht geschätzt […]&#xD;
+Stabilität					Instabil, Geschäftsregeln zu Reservierungswünschen und -möglichkeiten ändern gelegentlich.&#xD;
+Zeitpunkt, Dringlichkeit	Release 0.8&#xD;
+&#xD;
+Änderungen	&#xD;
+	Datum 			02.06.2017&#xD;
+	Mitarbeiter		SF&#xD;
+	Status			Entwurf&#xD;
+	Kommentar 	Erster Entwurf intern abgestimmt.</body>
+                    </ownedComment>
+                    <ownedBehavior xmi:type="uml:Activity" xmi:id="_XXHhcMxvEeeHpO2oNe6ggw" name="act_Kfz_reservieren_(Callcenter)" node="_c4dDEMxvEeeHpO2oNe6ggw _hQeMMMxvEeeHpO2oNe6ggw __yqjMMxvEeeHpO2oNe6ggw _CjoO8MxwEeeHpO2oNe6ggw _2pYbwMx1EeeHpO2oNe6ggw _5aFo0Mx1EeeHpO2oNe6ggw _XFAqgMx_EeeHpO2oNe6ggw _fRYPAMx_EeeHpO2oNe6ggw _kh1cAMx_EeeHpO2oNe6ggw _mcl4gMx_EeeHpO2oNe6ggw _p6sXEMx_EeeHpO2oNe6ggw _sDG1EMx_EeeHpO2oNe6ggw _u65hkMx_EeeHpO2oNe6ggw _zbcUkMx_EeeHpO2oNe6ggw _2LnWIMx_EeeHpO2oNe6ggw _6iiTEMx_EeeHpO2oNe6ggw _7dW8kMx_EeeHpO2oNe6ggw _83FIkMx_EeeHpO2oNe6ggw _UO-cEMyAEeeHpO2oNe6ggw _V_uoAMyAEeeHpO2oNe6ggw _YK-XkMyAEeeHpO2oNe6ggw _d1wwIMyAEeeHpO2oNe6ggw _gLc1IMyAEeeHpO2oNe6ggw _iAUsEMyAEeeHpO2oNe6ggw _lZ_9oMyAEeeHpO2oNe6ggw _oEgcEMyAEeeHpO2oNe6ggw _svBqcMyAEeeHpO2oNe6ggw _zlbhkMyAEeeHpO2oNe6ggw _3WcVEMyAEeeHpO2oNe6ggw _5tH4kMyAEeeHpO2oNe6ggw" group="_AYNloMyDEeeHpO2oNe6ggw">
+                      <ownedBehavior xmi:type="uml:Activity" xmi:id="_qEgNoMxvEeeHpO2oNe6ggw" name="act_Kunde_identifizieren" node="_TRDU4Mx4EeeHpO2oNe6ggw _WSS4UMx4EeeHpO2oNe6ggw _XsBrYMx4EeeHpO2oNe6ggw _ZbQNUMx4EeeHpO2oNe6ggw _Ut-JYMx5EeeHpO2oNe6ggw _bHhFYMx5EeeHpO2oNe6ggw _cfzG8Mx5EeeHpO2oNe6ggw _h_lJYMx5EeeHpO2oNe6ggw _DIGiEMx9EeeHpO2oNe6ggw _gPg9IMx9EeeHpO2oNe6ggw">
+                        <edge xmi:type="uml:ControlFlow" xmi:id="_ks1PQMx4EeeHpO2oNe6ggw" target="_XsBrYMx4EeeHpO2oNe6ggw" source="_WSS4UMx4EeeHpO2oNe6ggw"/>
+                        <edge xmi:type="uml:ControlFlow" xmi:id="_-KT5wMx5EeeHpO2oNe6ggw" target="_Ut-JYMx5EeeHpO2oNe6ggw" source="_TRDU4Mx4EeeHpO2oNe6ggw"/>
+                        <edge xmi:type="uml:ControlFlow" xmi:id="__cxAIMx5EeeHpO2oNe6ggw" name="[ok]" target="_bHhFYMx5EeeHpO2oNe6ggw" source="_XsBrYMx4EeeHpO2oNe6ggw"/>
+                        <edge xmi:type="uml:ControlFlow" xmi:id="_AZH6sMx6EeeHpO2oNe6ggw" target="_h_lJYMx5EeeHpO2oNe6ggw" source="_cfzG8Mx5EeeHpO2oNe6ggw"/>
+                        <edge xmi:type="uml:ControlFlow" xmi:id="_CnUQkMx6EeeHpO2oNe6ggw" name="[PIN nok]" target="_bHhFYMx5EeeHpO2oNe6ggw" source="_h_lJYMx5EeeHpO2oNe6ggw"/>
+                        <edge xmi:type="uml:ControlFlow" xmi:id="_D4dvYMx6EeeHpO2oNe6ggw" name="   [nok]" target="_Ut-JYMx5EeeHpO2oNe6ggw" source="_XsBrYMx4EeeHpO2oNe6ggw"/>
+                        <edge xmi:type="uml:ControlFlow" xmi:id="_Q0tjYMx6EeeHpO2oNe6ggw" name="[PIN ok]" target="_ZbQNUMx4EeeHpO2oNe6ggw" source="_h_lJYMx5EeeHpO2oNe6ggw"/>
+                        <edge xmi:type="uml:ControlFlow" xmi:id="_8sSnIMx6EeeHpO2oNe6ggw" target="_cfzG8Mx5EeeHpO2oNe6ggw" source="_bHhFYMx5EeeHpO2oNe6ggw"/>
+                        <edge xmi:type="uml:ControlFlow" xmi:id="_Sc-FMMx7EeeHpO2oNe6ggw" target="_WSS4UMx4EeeHpO2oNe6ggw" source="_Ut-JYMx5EeeHpO2oNe6ggw"/>
+                        <edge xmi:type="uml:ControlFlow" xmi:id="_H32OsMx9EeeHpO2oNe6ggw" name="[max. Login-Fehlversuche Kunde]" target="_DIGiEMx9EeeHpO2oNe6ggw" source="_h_lJYMx5EeeHpO2oNe6ggw"/>
+                        <edge xmi:type="uml:ControlFlow" xmi:id="_0mIQ8Mx9EeeHpO2oNe6ggw" target="_gPg9IMx9EeeHpO2oNe6ggw" source="_DIGiEMx9EeeHpO2oNe6ggw"/>
+                        <node xmi:type="uml:InitialNode" xmi:id="_TRDU4Mx4EeeHpO2oNe6ggw" name="Init" outgoing="_-KT5wMx5EeeHpO2oNe6ggw"/>
+                        <node xmi:type="uml:OpaqueAction" xmi:id="_WSS4UMx4EeeHpO2oNe6ggw" name="Kundennummer pruefen" incoming="_Sc-FMMx7EeeHpO2oNe6ggw" outgoing="_ks1PQMx4EeeHpO2oNe6ggw"/>
+                        <node xmi:type="uml:DecisionNode" xmi:id="_XsBrYMx4EeeHpO2oNe6ggw" name="Kundennummer OK?" incoming="_ks1PQMx4EeeHpO2oNe6ggw" outgoing="__cxAIMx5EeeHpO2oNe6ggw _D4dvYMx6EeeHpO2oNe6ggw"/>
+                        <node xmi:type="uml:ActivityFinalNode" xmi:id="_ZbQNUMx4EeeHpO2oNe6ggw" name="Kunde identifizert" incoming="_Q0tjYMx6EeeHpO2oNe6ggw"/>
+                        <node xmi:type="uml:MergeNode" xmi:id="_Ut-JYMx5EeeHpO2oNe6ggw" incoming="_-KT5wMx5EeeHpO2oNe6ggw _D4dvYMx6EeeHpO2oNe6ggw" outgoing="_Sc-FMMx7EeeHpO2oNe6ggw"/>
+                        <node xmi:type="uml:MergeNode" xmi:id="_bHhFYMx5EeeHpO2oNe6ggw" incoming="__cxAIMx5EeeHpO2oNe6ggw _CnUQkMx6EeeHpO2oNe6ggw" outgoing="_8sSnIMx6EeeHpO2oNe6ggw"/>
+                        <node xmi:type="uml:OpaqueAction" xmi:id="_cfzG8Mx5EeeHpO2oNe6ggw" name="PIN pruefen" incoming="_8sSnIMx6EeeHpO2oNe6ggw" outgoing="_AZH6sMx6EeeHpO2oNe6ggw"/>
+                        <node xmi:type="uml:DecisionNode" xmi:id="_h_lJYMx5EeeHpO2oNe6ggw" incoming="_AZH6sMx6EeeHpO2oNe6ggw" outgoing="_CnUQkMx6EeeHpO2oNe6ggw _Q0tjYMx6EeeHpO2oNe6ggw _H32OsMx9EeeHpO2oNe6ggw"/>
+                        <node xmi:type="uml:OpaqueAction" xmi:id="_DIGiEMx9EeeHpO2oNe6ggw" name="Kunde sperren" incoming="_H32OsMx9EeeHpO2oNe6ggw" outgoing="_0mIQ8Mx9EeeHpO2oNe6ggw"/>
+                        <node xmi:type="uml:SendSignalAction" xmi:id="_gPg9IMx9EeeHpO2oNe6ggw" name="SendAbbruch" incoming="_0mIQ8Mx9EeeHpO2oNe6ggw" signal="_mtXKUMx9EeeHpO2oNe6ggw">
+                          <target xmi:type="uml:InputPin" xmi:id="_o8tWwMx9EeeHpO2oNe6ggw" name="target">
+                            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+                            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_o8tWwcx9EeeHpO2oNe6ggw" value="1"/>
+                            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_o8tWwsx9EeeHpO2oNe6ggw" value="1"/>
+                          </target>
+                        </node>
+                      </ownedBehavior>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_Vk9jIMx2EeeHpO2oNe6ggw" target="_hQeMMMxvEeeHpO2oNe6ggw" source="_c4dDEMxvEeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_dK49QMx3EeeHpO2oNe6ggw" target="__yqjMMxvEeeHpO2oNe6ggw" source="_hQeMMMxvEeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_dptnQMx3EeeHpO2oNe6ggw" target="_CjoO8MxwEeeHpO2oNe6ggw" source="__yqjMMxvEeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_esIGgMx3EeeHpO2oNe6ggw" target="_2pYbwMx1EeeHpO2oNe6ggw" source="_CjoO8MxwEeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_mRcSEMx3EeeHpO2oNe6ggw" target="_5aFo0Mx1EeeHpO2oNe6ggw" source="_2pYbwMx1EeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_oDlZkMyBEeeHpO2oNe6ggw" target="_hQeMMMxvEeeHpO2oNe6ggw" source="_XFAqgMx_EeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_pI2_kMyBEeeHpO2oNe6ggw" target="_fRYPAMx_EeeHpO2oNe6ggw" source="_hQeMMMxvEeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_pxXKAMyBEeeHpO2oNe6ggw" target="_kh1cAMx_EeeHpO2oNe6ggw" source="_fRYPAMx_EeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_qqua8MyBEeeHpO2oNe6ggw" target="_mcl4gMx_EeeHpO2oNe6ggw" source="_kh1cAMx_EeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_rWO2EMyBEeeHpO2oNe6ggw" target="_p6sXEMx_EeeHpO2oNe6ggw" source="_mcl4gMx_EeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_sb0lIMyBEeeHpO2oNe6ggw" name="[kurzfristige Reservierung]" target="_sDG1EMx_EeeHpO2oNe6ggw" source="_p6sXEMx_EeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_0pdU8MyBEeeHpO2oNe6ggw" name="[ok]" target="_u65hkMx_EeeHpO2oNe6ggw" source="_p6sXEMx_EeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_25hTEMyBEeeHpO2oNe6ggw" target="_6iiTEMx_EeeHpO2oNe6ggw" source="_sDG1EMx_EeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_3cv78MyBEeeHpO2oNe6ggw" target="_V_uoAMyAEeeHpO2oNe6ggw" source="_6iiTEMx_EeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_351gkMyBEeeHpO2oNe6ggw" target="_svBqcMyAEeeHpO2oNe6ggw" source="_V_uoAMyAEeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_5Pu8gMyBEeeHpO2oNe6ggw" target="_7dW8kMx_EeeHpO2oNe6ggw" source="_zbcUkMx_EeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_-A_sEMyBEeeHpO2oNe6ggw" name="[kein Kfz verfuegbar]" target="_83FIkMx_EeeHpO2oNe6ggw" source="_7dW8kMx_EeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="__y4gcMyBEeeHpO2oNe6ggw" target="_zbcUkMx_EeeHpO2oNe6ggw" source="_u65hkMx_EeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_B34eEMyCEeeHpO2oNe6ggw" target="_2LnWIMx_EeeHpO2oNe6ggw" source="_u65hkMx_EeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_D4OlMMyCEeeHpO2oNe6ggw" target="_83FIkMx_EeeHpO2oNe6ggw" source="_2LnWIMx_EeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_EouOAMyCEeeHpO2oNe6ggw" target="_UO-cEMyAEeeHpO2oNe6ggw" source="_83FIkMx_EeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_FeRV8MyCEeeHpO2oNe6ggw" name="[ok]" target="_YK-XkMyAEeeHpO2oNe6ggw" source="_UO-cEMyAEeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_GL1mkMyCEeeHpO2oNe6ggw" target="_gLc1IMyAEeeHpO2oNe6ggw" source="_YK-XkMyAEeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_IoTpAMyCEeeHpO2oNe6ggw" name="[Kfz verfuegbar]" target="_d1wwIMyAEeeHpO2oNe6ggw" source="_7dW8kMx_EeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_K_m3kMyCEeeHpO2oNe6ggw" name="[ok]" target="_d1wwIMyAEeeHpO2oNe6ggw" source="_gLc1IMyAEeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_L8uAEMyCEeeHpO2oNe6ggw" target="_iAUsEMyAEeeHpO2oNe6ggw" source="_d1wwIMyAEeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_MliTkMyCEeeHpO2oNe6ggw" target="_oEgcEMyAEeeHpO2oNe6ggw" source="_iAUsEMyAEeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_PR9dkMyCEeeHpO2oNe6ggw" name="Kfz-Typ reserviert" interrupts="_AYNloMyDEeeHpO2oNe6ggw" target="_3WcVEMyAEeeHpO2oNe6ggw" source="_oEgcEMyAEeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_Vx9m4MyCEeeHpO2oNe6ggw" name="Abbruch" interrupts="_AYNloMyDEeeHpO2oNe6ggw" target="_5tH4kMyAEeeHpO2oNe6ggw" source="_lZ_9oMyAEeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_W2kegMyCEeeHpO2oNe6ggw" name="Kfz reserviert" interrupts="_AYNloMyDEeeHpO2oNe6ggw" target="_zlbhkMyAEeeHpO2oNe6ggw" source="_svBqcMyAEeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_aS1xEMyCEeeHpO2oNe6ggw" name="[kein Kfz verfuegbar]" target="_kh1cAMx_EeeHpO2oNe6ggw" source="_6iiTEMx_EeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_eQstwMyCEeeHpO2oNe6ggw" name="[keine Alternative]" target="_kh1cAMx_EeeHpO2oNe6ggw" source="_UO-cEMyAEeeHpO2oNe6ggw"/>
+                      <edge xmi:type="uml:ControlFlow" xmi:id="_gpQgkMyCEeeHpO2oNe6ggw" name="[neue Reservierungswunsch aufnehmen]" target="_kh1cAMx_EeeHpO2oNe6ggw" source="_gLc1IMyAEeeHpO2oNe6ggw"/>
+                      <group xmi:type="uml:InterruptibleActivityRegion" xmi:id="_AYNloMyDEeeHpO2oNe6ggw" name="InterruptibleActivityRegion1" interruptingEdge="_PR9dkMyCEeeHpO2oNe6ggw _Vx9m4MyCEeeHpO2oNe6ggw _W2kegMyCEeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:InitialNode" xmi:id="_c4dDEMxvEeeHpO2oNe6ggw" name="Kfz reservieren (Callcenter)" outgoing="_Vk9jIMx2EeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:CallBehaviorAction" xmi:id="_hQeMMMxvEeeHpO2oNe6ggw" name="Kunde_identifizieren" incoming="_Vk9jIMx2EeeHpO2oNe6ggw _oDlZkMyBEeeHpO2oNe6ggw" outgoing="_dK49QMx3EeeHpO2oNe6ggw _pI2_kMyBEeeHpO2oNe6ggw" behavior="_qEgNoMxvEeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:OpaqueAction" xmi:id="__yqjMMxvEeeHpO2oNe6ggw" name="Reservierungsmöglichkeiten prüfen" incoming="_dK49QMx3EeeHpO2oNe6ggw" outgoing="_dptnQMx3EeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:OpaqueAction" xmi:id="_CjoO8MxwEeeHpO2oNe6ggw" name="Kfz reservieren" incoming="_dptnQMx3EeeHpO2oNe6ggw" outgoing="_esIGgMx3EeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:OpaqueAction" xmi:id="_2pYbwMx1EeeHpO2oNe6ggw" name="Reservierung bestaetigen" incoming="_esIGgMx3EeeHpO2oNe6ggw" outgoing="_mRcSEMx3EeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:ActivityFinalNode" xmi:id="_5aFo0Mx1EeeHpO2oNe6ggw" name="Kfz reserviert" incoming="_mRcSEMx3EeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:InitialNode" xmi:id="_XFAqgMx_EeeHpO2oNe6ggw" name="Kfz reservieren (Callcenter)" outgoing="_oDlZkMyBEeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:DecisionNode" xmi:id="_fRYPAMx_EeeHpO2oNe6ggw" name="DecisionNode1" incoming="_pI2_kMyBEeeHpO2oNe6ggw" outgoing="_pxXKAMyBEeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:MergeNode" xmi:id="_kh1cAMx_EeeHpO2oNe6ggw" name="MergeNode1" incoming="_pxXKAMyBEeeHpO2oNe6ggw _aS1xEMyCEeeHpO2oNe6ggw _eQstwMyCEeeHpO2oNe6ggw _gpQgkMyCEeeHpO2oNe6ggw" outgoing="_qqua8MyBEeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:OpaqueAction" xmi:id="_mcl4gMx_EeeHpO2oNe6ggw" name="Reservierungs-wunsch aufnehmen" incoming="_qqua8MyBEeeHpO2oNe6ggw" outgoing="_rWO2EMyBEeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:DecisionNode" xmi:id="_p6sXEMx_EeeHpO2oNe6ggw" name="Res-Typ?" incoming="_rWO2EMyBEeeHpO2oNe6ggw" outgoing="_sb0lIMyBEeeHpO2oNe6ggw _0pdU8MyBEeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:OpaqueAction" xmi:id="_sDG1EMx_EeeHpO2oNe6ggw" name="Reservierungsmöglichkeit pruefen" incoming="_sb0lIMyBEeeHpO2oNe6ggw" outgoing="_25hTEMyBEeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:ForkNode" xmi:id="_u65hkMx_EeeHpO2oNe6ggw" name="ForkNode1" incoming="_0pdU8MyBEeeHpO2oNe6ggw" outgoing="__y4gcMyBEeeHpO2oNe6ggw _B34eEMyCEeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:OpaqueAction" xmi:id="_zbcUkMx_EeeHpO2oNe6ggw" name="Kfz-Typ Verfügbarkeit pruefen" incoming="__y4gcMyBEeeHpO2oNe6ggw" outgoing="_5Pu8gMyBEeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:OpaqueAction" xmi:id="_2LnWIMx_EeeHpO2oNe6ggw" name="Alternative Kfz-Typ Verfuegbarkeit pruefen" incoming="_B34eEMyCEeeHpO2oNe6ggw" outgoing="_D4OlMMyCEeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:DecisionNode" xmi:id="_6iiTEMx_EeeHpO2oNe6ggw" name="DecisionNode3" incoming="_25hTEMyBEeeHpO2oNe6ggw" outgoing="_3cv78MyBEeeHpO2oNe6ggw _aS1xEMyCEeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:DecisionNode" xmi:id="_7dW8kMx_EeeHpO2oNe6ggw" name="Verfuegbarkeit?" incoming="_5Pu8gMyBEeeHpO2oNe6ggw" outgoing="_-A_sEMyBEeeHpO2oNe6ggw _IoTpAMyCEeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:JoinNode" xmi:id="_83FIkMx_EeeHpO2oNe6ggw" name="JoinNode1" incoming="_-A_sEMyBEeeHpO2oNe6ggw _D4OlMMyCEeeHpO2oNe6ggw" outgoing="_EouOAMyCEeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:DecisionNode" xmi:id="_UO-cEMyAEeeHpO2oNe6ggw" name="Alternative?" incoming="_EouOAMyCEeeHpO2oNe6ggw" outgoing="_FeRV8MyCEeeHpO2oNe6ggw _eQstwMyCEeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:OpaqueAction" xmi:id="_V_uoAMyAEeeHpO2oNe6ggw" name="Kfz reservieren" incoming="_3cv78MyBEeeHpO2oNe6ggw" outgoing="_351gkMyBEeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:OpaqueAction" xmi:id="_YK-XkMyAEeeHpO2oNe6ggw" name="Alternativen Kfz-Typ auswaehlen" incoming="_FeRV8MyCEeeHpO2oNe6ggw" outgoing="_GL1mkMyCEeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:MergeNode" xmi:id="_d1wwIMyAEeeHpO2oNe6ggw" name="MergeNode2" incoming="_IoTpAMyCEeeHpO2oNe6ggw _K_m3kMyCEeeHpO2oNe6ggw" outgoing="_L8uAEMyCEeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:DecisionNode" xmi:id="_gLc1IMyAEeeHpO2oNe6ggw" name="Res.Wunsch?" incoming="_GL1mkMyCEeeHpO2oNe6ggw" outgoing="_K_m3kMyCEeeHpO2oNe6ggw _gpQgkMyCEeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:OpaqueAction" xmi:id="_iAUsEMyAEeeHpO2oNe6ggw" name="Kfz Typ reservieren" incoming="_L8uAEMyCEeeHpO2oNe6ggw" outgoing="_MliTkMyCEeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:AcceptEventAction" xmi:id="_lZ_9oMyAEeeHpO2oNe6ggw" name="Abbruch" outgoing="_Vx9m4MyCEeeHpO2oNe6ggw">
+                        <handler xmi:type="uml:ExceptionHandler" xmi:id="_RLkDgMyCEeeHpO2oNe6ggw"/>
+                        <handler xmi:type="uml:ExceptionHandler" xmi:id="_R-vz8MyCEeeHpO2oNe6ggw"/>
+                        <handler xmi:type="uml:ExceptionHandler" xmi:id="_S16sgMyCEeeHpO2oNe6ggw"/>
+                      </node>
+                      <node xmi:type="uml:OpaqueAction" xmi:id="_oEgcEMyAEeeHpO2oNe6ggw" name="Kfz-Typ Reservierung bestaetigen" incoming="_MliTkMyCEeeHpO2oNe6ggw" outgoing="_PR9dkMyCEeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:OpaqueAction" xmi:id="_svBqcMyAEeeHpO2oNe6ggw" name="Kfz-Reservierung bestatetigen" incoming="_351gkMyBEeeHpO2oNe6ggw" outgoing="_W2kegMyCEeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:ActivityFinalNode" xmi:id="_zlbhkMyAEeeHpO2oNe6ggw" name="Kfz reserviert" incoming="_W2kegMyCEeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:ActivityFinalNode" xmi:id="_3WcVEMyAEeeHpO2oNe6ggw" name="Kfz-Typ reserviert" incoming="_PR9dkMyCEeeHpO2oNe6ggw"/>
+                      <node xmi:type="uml:ActivityFinalNode" xmi:id="_5tH4kMyAEeeHpO2oNe6ggw" name="Kein Kfz reserviert" incoming="_Vx9m4MyCEeeHpO2oNe6ggw"/>
+                    </ownedBehavior>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:UseCase" xmi:id="_Q9IuIMneEee_vafBFN2CUw" name="Kfz reservieren (station)"/>
+                  <packagedElement xmi:type="uml:UseCase" xmi:id="_ShkVUMneEee_vafBFN2CUw" name="Kfz reservieren (Agentur)"/>
+                  <packagedElement xmi:type="uml:Dependency" xmi:id="_zz6DQMnfEee_vafBFN2CUw" client="_ShkVUMneEee_vafBFN2CUw" supplier="_k-f0IGFmEeeUUsKQ619tXA"/>
+                  <packagedElement xmi:type="uml:Dependency" xmi:id="_1kJR0MnfEee_vafBFN2CUw" client="_NtfiUMneEee_vafBFN2CUw" supplier="_k-f0IGFmEeeUUsKQ619tXA"/>
+                  <packagedElement xmi:type="uml:Dependency" xmi:id="_2aGpcMnfEee_vafBFN2CUw" client="_LcqvMMneEee_vafBFN2CUw" supplier="_k-f0IGFmEeeUUsKQ619tXA"/>
+                  <packagedElement xmi:type="uml:Dependency" xmi:id="_5D1EwMnfEee_vafBFN2CUw" client="_Q9IuIMneEee_vafBFN2CUw" supplier="_k-f0IGFmEeeUUsKQ619tXA"/>
+                  <packagedElement xmi:type="uml:Signal" xmi:id="_mtXKUMx9EeeHpO2oNe6ggw" name="Abbruch"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:UseCase" xmi:id="_k-f0IGFmEeeUUsKQ619tXA" name="Kfz reservieren">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_-_PwMMlkEeehOdWRm2YhrQ">
+                    <body>---------------------Geschäftsanwendungsfall---------------------------------------------------&#xD;
+Name						Kfz reservieren&#xD;
+Art							Geschäftsanwendungsfall&#xD;
+Kurzbeschreibung			Ein Kunde reserviert ein Kfz bei Flitz-Auto.&#xD;
+Auslöser, ggf. Motivation	Ein Kunde wendet sich an Flitz-Auto, um ein Kfz zu reservieren.&#xD;
+Ergebnis					Für den Kunden wurde ein Auto reserviert.&#xD;
+Akteure 					Kunde&#xD;
+---------------------------Essenz-----------------------------------------------------------------&#xD;
+Eingehende Informationen	- Kundennummer und weitere Kundendaten&#xD;
+							- Reservierungswunsch&#xD;
+Vorbedingungen			Keine&#xD;
+Nachbedingungen			Für den Kunden wurde ein Kfz reserviert&#xD;
+Essenzielle Schritte			- Kunde identifizieren&#xD;
+							- Reservierungswunsch aufnehmen&#xD;
+							- Reservierungsmöglichkeit prüfen&#xD;
+							- Kfz reservieren&#xD;
+							- Reservierung bestätigen</body>
+                  </ownedComment>
+                </packagedElement>
+                <packagedElement xmi:type="uml:UseCase" xmi:id="_mt6jUGFmEeeUUsKQ619tXA" name="Kfz Reservierung stornieren"/>
+                <packagedElement xmi:type="uml:UseCase" xmi:id="_olVX8GFmEeeUUsKQ619tXA" name="Kfz Reservierung ändern"/>
+                <packagedElement xmi:type="uml:UseCase" xmi:id="_qp_XUGFmEeeUUsKQ619tXA" name="Preisauskunft für Kfz Vermietung erteilen"/>
+                <packagedElement xmi:type="uml:UseCase" xmi:id="_vdosgGFmEeeUUsKQ619tXA" name="Kfz vermieten"/>
+                <packagedElement xmi:type="uml:Association" xmi:id="_aAjGQMlYEee8J5UOqm26zQ" memberEnd="_aAmwoMlYEee8J5UOqm26zQ _aAnXsMlYEee8J5UOqm26zQ">
+                  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_aAligMlYEee8J5UOqm26zQ" source="org.eclipse.papyrus">
+                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_aAmJkMlYEee8J5UOqm26zQ" key="nature" value="UML_Nature"/>
+                  </eAnnotations>
+                  <ownedEnd xmi:type="uml:Property" xmi:id="_aAmwoMlYEee8J5UOqm26zQ" name="kfz reservieren" type="_k-f0IGFmEeeUUsKQ619tXA" association="_aAjGQMlYEee8J5UOqm26zQ"/>
+                  <ownedEnd xmi:type="uml:Property" xmi:id="_aAnXsMlYEee8J5UOqm26zQ" name="kunde" type="_NL4akMlQEee8J5UOqm26zQ" association="_aAjGQMlYEee8J5UOqm26zQ"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_eTMnMMlYEee8J5UOqm26zQ" memberEnd="_eTN1UclYEee8J5UOqm26zQ _eTOcYMlYEee8J5UOqm26zQ">
+                  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eTNOQMlYEee8J5UOqm26zQ" source="org.eclipse.papyrus">
+                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eTN1UMlYEee8J5UOqm26zQ" key="nature" value="UML_Nature"/>
+                  </eAnnotations>
+                  <ownedEnd xmi:type="uml:Property" xmi:id="_eTN1UclYEee8J5UOqm26zQ" name="callcenter-mitarbeiter" type="_Y8m2oMlQEee8J5UOqm26zQ" association="_eTMnMMlYEee8J5UOqm26zQ"/>
+                  <ownedEnd xmi:type="uml:Property" xmi:id="_eTOcYMlYEee8J5UOqm26zQ" name="kfz reservieren" type="_k-f0IGFmEeeUUsKQ619tXA" association="_eTMnMMlYEee8J5UOqm26zQ">
+                    <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gD_2cMlYEee8J5UOqm26zQ"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gEIZUMlYEee8J5UOqm26zQ" value="1"/>
+                  </ownedEnd>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_nK7c4MlYEee8J5UOqm26zQ" memberEnd="_nK8rAclYEee8J5UOqm26zQ _nK8rAslYEee8J5UOqm26zQ">
+                  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nK8D8MlYEee8J5UOqm26zQ" source="org.eclipse.papyrus">
+                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nK8rAMlYEee8J5UOqm26zQ" key="nature" value="UML_Nature"/>
+                  </eAnnotations>
+                  <ownedEnd xmi:type="uml:Property" xmi:id="_nK8rAclYEee8J5UOqm26zQ" name="kfz vermieten" type="_vdosgGFmEeeUUsKQ619tXA" association="_nK7c4MlYEee8J5UOqm26zQ"/>
+                  <ownedEnd xmi:type="uml:Property" xmi:id="_nK8rAslYEee8J5UOqm26zQ" name="kunde" type="_NL4akMlQEee8J5UOqm26zQ" association="_nK7c4MlYEee8J5UOqm26zQ"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_oT-voMlYEee8J5UOqm26zQ" memberEnd="_oT_9wMlYEee8J5UOqm26zQ _oUIgoMlYEee8J5UOqm26zQ">
+                  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oT_WsMlYEee8J5UOqm26zQ" source="org.eclipse.papyrus">
+                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oT_WsclYEee8J5UOqm26zQ" key="nature" value="UML_Nature"/>
+                  </eAnnotations>
+                  <ownedEnd xmi:type="uml:Property" xmi:id="_oT_9wMlYEee8J5UOqm26zQ" name="niederlassungsmitarbeiter" type="_W-XoUMlQEee8J5UOqm26zQ" association="_oT-voMlYEee8J5UOqm26zQ"/>
+                  <ownedEnd xmi:type="uml:Property" xmi:id="_oUIgoMlYEee8J5UOqm26zQ" name="kfz vermieten" type="_vdosgGFmEeeUUsKQ619tXA" association="_oT-voMlYEee8J5UOqm26zQ"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_yZYSUMlYEee8J5UOqm26zQ" memberEnd="_yZaukslYEee8J5UOqm26zQ _yZbVoMlYEee8J5UOqm26zQ">
+                  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yZaukMlYEee8J5UOqm26zQ" source="org.eclipse.papyrus">
+                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yZaukclYEee8J5UOqm26zQ" key="nature" value="UML_Nature"/>
+                  </eAnnotations>
+                  <ownedEnd xmi:type="uml:Property" xmi:id="_yZaukslYEee8J5UOqm26zQ" name="kfz reservierung stornieren" type="_mt6jUGFmEeeUUsKQ619tXA" association="_yZYSUMlYEee8J5UOqm26zQ"/>
+                  <ownedEnd xmi:type="uml:Property" xmi:id="_yZbVoMlYEee8J5UOqm26zQ" name="callcenter-mitarbeiter" type="_Y8m2oMlQEee8J5UOqm26zQ" association="_yZYSUMlYEee8J5UOqm26zQ"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_2lUuUMlYEee8J5UOqm26zQ" memberEnd="_2lV8cclYEee8J5UOqm26zQ _2lWjgMlYEee8J5UOqm26zQ">
+                  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2lVVYMlYEee8J5UOqm26zQ" source="org.eclipse.papyrus">
+                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2lV8cMlYEee8J5UOqm26zQ" key="nature" value="UML_Nature"/>
+                  </eAnnotations>
+                  <ownedEnd xmi:type="uml:Property" xmi:id="_2lV8cclYEee8J5UOqm26zQ" name="callcenter-mitarbeiter" type="_Y8m2oMlQEee8J5UOqm26zQ" association="_2lUuUMlYEee8J5UOqm26zQ"/>
+                  <ownedEnd xmi:type="uml:Property" xmi:id="_2lWjgMlYEee8J5UOqm26zQ" name="kfz reservierung ändern" type="_olVX8GFmEeeUUsKQ619tXA" association="_2lUuUMlYEee8J5UOqm26zQ"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="__J9B0MlYEee8J5UOqm26zQ" memberEnd="__J-P8slYEee8J5UOqm26zQ __J-3AMlYEee8J5UOqm26zQ">
+                  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__J-P8MlYEee8J5UOqm26zQ" source="org.eclipse.papyrus">
+                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__J-P8clYEee8J5UOqm26zQ" key="nature" value="UML_Nature"/>
+                  </eAnnotations>
+                  <ownedEnd xmi:type="uml:Property" xmi:id="__J-P8slYEee8J5UOqm26zQ" name="preisauskunft für kfz vermietung erteilen" type="_qp_XUGFmEeeUUsKQ619tXA" association="__J9B0MlYEee8J5UOqm26zQ"/>
+                  <ownedEnd xmi:type="uml:Property" xmi:id="__J-3AMlYEee8J5UOqm26zQ" name="kunde" type="_NL4akMlQEee8J5UOqm26zQ" association="__J9B0MlYEee8J5UOqm26zQ"/>
+                </packagedElement>
+                <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_D_TVQMlbEee8J5UOqm26zQ">
+                  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_D_XmsMlbEee8J5UOqm26zQ" source="PapyrusVersion">
+                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D_XmsclbEee8J5UOqm26zQ" key="Version" value="0.0.2"/>
+                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D_XmsslbEee8J5UOqm26zQ" key="Comment" value=""/>
+                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D_Xms8lbEee8J5UOqm26zQ" key="Copyright" value=""/>
+                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D_XmtMlbEee8J5UOqm26zQ" key="Date" value=""/>
+                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D_XmtclbEee8J5UOqm26zQ" key="Author" value=""/>
+                  </eAnnotations>
+                  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_D_VKcMlbEee8J5UOqm26zQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <references xmi:type="ecore:EPackage" href="OOAD.profile.uml#_7I6AMcq2EeeRtbvg7-W2Sw"/>
+                  </eAnnotations>
+                  <appliedProfile xmi:type="uml:Profile" href="OOAD.profile.uml#_qI3EYGFfEeeUUsKQ619tXA"/>
+                </profileApplication>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_IXu9IGFoEeeUUsKQ619tXA" name="Kfz Verkauf">
+                <packagedElement xmi:type="uml:UseCase" xmi:id="_JUzpYGFoEeeUUsKQ619tXA" name="Kfz probefahren"/>
+                <packagedElement xmi:type="uml:UseCase" xmi:id="_Kxfp0GFoEeeUUsKQ619tXA" name="Verkaufsangebot erstellen"/>
+                <packagedElement xmi:type="uml:UseCase" xmi:id="_NjDygGFoEeeUUsKQ619tXA" name="Kfz verkaufen"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_GJYrsGFnEeeUUsKQ619tXA" name="Marketing">
+                <packagedElement xmi:type="uml:UseCase" xmi:id="_HSoywGFnEeeUUsKQ619tXA" name="Anzeigen schalten"/>
+                <packagedElement xmi:type="uml:UseCase" xmi:id="_Jf_bIGFnEeeUUsKQ619tXA" name="Info-Material erstellen"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_92ImoGFnEeeUUsKQ619tXA" name="Tarifierung">
+                <packagedElement xmi:type="uml:UseCase" xmi:id="__mABwGFnEeeUUsKQ619tXA" name="Tarif einrichten"/>
+                <packagedElement xmi:type="uml:UseCase" xmi:id="_CHGskGFoEeeUUsKQ619tXA" name="Tarif ändern"/>
+                <packagedElement xmi:type="uml:UseCase" xmi:id="_DerjgGFoEeeUUsKQ619tXA" name="Tarif schliessen"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_SNKKIGFoEeeUUsKQ619tXA" name="Fuhrpark-Management">
+                <packagedElement xmi:type="uml:UseCase" xmi:id="_T5md0GFoEeeUUsKQ619tXA" name="Kfz reparieren"/>
+                <packagedElement xmi:type="uml:UseCase" xmi:id="_VG9BwGFoEeeUUsKQ619tXA" name="Kfz Überführen"/>
+                <packagedElement xmi:type="uml:UseCase" xmi:id="_X7p-AGFoEeeUUsKQ619tXA" name="Schaden regulieren"/>
+                <packagedElement xmi:type="uml:UseCase" xmi:id="_asef0GFoEeeUUsKQ619tXA" name="Kfz instandhalten"/>
+                <packagedElement xmi:type="uml:UseCase" xmi:id="_gBTPcGFoEeeUUsKQ619tXA" name="Kfz entsorgen"/>
+                <packagedElement xmi:type="uml:UseCase" xmi:id="_hW038GFoEeeUUsKQ619tXA" name="Kfz beschaffen"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_6jLdkGFmEeeUUsKQ619tXA" name="Kundenverwaltung">
+                <packagedElement xmi:type="uml:UseCase" xmi:id="_8lG5EGFmEeeUUsKQ619tXA" name="Neuen Kunden registrieren"/>
+                <packagedElement xmi:type="uml:UseCase" xmi:id="_81VtcGFmEeeUUsKQ619tXA" name="Resgistrierte Kundendaten löschen"/>
+                <packagedElement xmi:type="uml:UseCase" xmi:id="_9FbX4GFmEeeUUsKQ619tXA" name="Registrierte Kundendaten ändern"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_tPgyoGFnEeeUUsKQ619tXA" name="Rechnungswesen">
+                <packagedElement xmi:type="uml:UseCase" xmi:id="_vSvOoGFnEeeUUsKQ619tXA" name="Zahlungseingänge buchen"/>
+                <packagedElement xmi:type="uml:UseCase" xmi:id="_x5z-kGFnEeeUUsKQ619tXA" name="Rechnungsreklamationen bearbeiten"/>
+                <packagedElement xmi:type="uml:UseCase" xmi:id="_0-PY4GFnEeeUUsKQ619tXA" name="Rechnungen bezahlen"/>
+                <packagedElement xmi:type="uml:UseCase" xmi:id="_2hLyUGFnEeeUUsKQ619tXA" name="Bussgeld-Bescheid bearbeiten"/>
+                <packagedElement xmi:type="uml:UseCase" xmi:id="_7n4mYGFnEeeUUsKQ619tXA" name="Vermietungen abrechnen"/>
+                <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_47tvMMleEee8J5UOqm26zQ">
+                  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_47vkYMleEee8J5UOqm26zQ" source="PapyrusVersion">
+                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_47vkYcleEee8J5UOqm26zQ" key="Version" value="0.0.3"/>
+                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_47vkYsleEee8J5UOqm26zQ" key="Comment" value=""/>
+                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_47vkY8leEee8J5UOqm26zQ" key="Copyright" value=""/>
+                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_47vkZMleEee8J5UOqm26zQ" key="Date" value=""/>
+                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_47vkZcleEee8J5UOqm26zQ" key="Author" value=""/>
+                  </eAnnotations>
+                  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_47u9UMleEee8J5UOqm26zQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <references xmi:type="ecore:EPackage" href="OOAD.profile.uml#_7I6AMcq2EeeRtbvg7-W2Sw"/>
+                  </eAnnotations>
+                  <appliedProfile xmi:type="uml:Profile" href="OOAD.profile.uml#_qI3EYGFfEeeUUsKQ619tXA"/>
+                </profileApplication>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Actor" xmi:id="_dsTf8MlQEee8J5UOqm26zQ" name="Tarif- und Produktsystem"/>
+            <packagedElement xmi:type="uml:Usage" xmi:id="_p2iywMlREee8J5UOqm26zQ" name="Preis" client="_dsTf8MlQEee8J5UOqm26zQ" supplier="_rb2xwGFpEeeUUsKQ619tXA"/>
+            <packagedElement xmi:type="uml:Actor" xmi:id="_aaP5UMlQEee8J5UOqm26zQ" name="Finanzbuchhaltung"/>
+            <packagedElement xmi:type="uml:Usage" xmi:id="_Ut92gMlREee8J5UOqm26zQ" name="Rechnung" client="_aaP5UMlQEee8J5UOqm26zQ" supplier="_rb2xwGFpEeeUUsKQ619tXA"/>
+            <packagedElement xmi:type="uml:Actor" xmi:id="_Y8m2oMlQEee8J5UOqm26zQ" name="Callcenter-Mitarbeiter"/>
+            <packagedElement xmi:type="uml:Usage" xmi:id="_W6VAYMlREee8J5UOqm26zQ" name="Übergabeprotokoll" client="_Y8m2oMlQEee8J5UOqm26zQ" supplier="_rb2xwGFpEeeUUsKQ619tXA"/>
+            <packagedElement xmi:type="uml:Actor" xmi:id="_W-XoUMlQEee8J5UOqm26zQ" name="Niederlassungsmitarbeiter"/>
+            <packagedElement xmi:type="uml:Usage" xmi:id="_ik_3wMlREee8J5UOqm26zQ" client="_W-XoUMlQEee8J5UOqm26zQ" supplier="_rb2xwGFpEeeUUsKQ619tXA"/>
+            <packagedElement xmi:type="uml:Actor" xmi:id="_UfoVAMlQEee8J5UOqm26zQ" name="Kundenbetreuung"/>
+            <packagedElement xmi:type="uml:Usage" xmi:id="_jbmvoMlREee8J5UOqm26zQ" client="_UfoVAMlQEee8J5UOqm26zQ" supplier="_rb2xwGFpEeeUUsKQ619tXA"/>
+            <packagedElement xmi:type="uml:Actor" xmi:id="_SXKzsMlQEee8J5UOqm26zQ" name="Kfz Service"/>
+            <packagedElement xmi:type="uml:Usage" xmi:id="_kCtL4MlREee8J5UOqm26zQ" client="_SXKzsMlQEee8J5UOqm26zQ" supplier="_rb2xwGFpEeeUUsKQ619tXA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Actor" xmi:id="_NL4akMlQEee8J5UOqm26zQ" name="Kunde"/>
+          <packagedElement xmi:type="uml:Dependency" xmi:id="_G-wUgMlREee8J5UOqm26zQ" name="Bestätigung, Rechnung" client="_NL4akMlQEee8J5UOqm26zQ" supplier="_rb2xwGFpEeeUUsKQ619tXA"/>
+          <packagedElement xmi:type="uml:Actor" xmi:id="_O47LMMlQEee8J5UOqm26zQ" name="Fahrer"/>
+          <packagedElement xmi:type="uml:Dependency" xmi:id="_OAdcsMlREee8J5UOqm26zQ" client="_O47LMMlQEee8J5UOqm26zQ" supplier="_rb2xwGFpEeeUUsKQ619tXA"/>
+          <packagedElement xmi:type="uml:Actor" xmi:id="_QCD9gMlQEee8J5UOqm26zQ" name="Interessent"/>
+          <packagedElement xmi:type="uml:Dependency" xmi:id="_n-OmQMlREee8J5UOqm26zQ" client="_QCD9gMlQEee8J5UOqm26zQ" supplier="_fvacoMlPEee8J5UOqm26zQ"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_TMWuMMofEee6qooNXuGplg" name="Fachklassenmodell">
+        <packagedElement xmi:type="uml:Class" xmi:id="_k3QCoMofEee6qooNXuGplg" name="Mieter"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_tsC5EMofEee6qooNXuGplg" name="Reservierung"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_vOs-oMofEee6qooNXuGplg" name="Kfz-Typ"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_wZTwkMofEee6qooNXuGplg" name="Kundenmitarbeiter"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_yHyroMofEee6qooNXuGplg" name="Vermietung"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_z3S6YMofEee6qooNXuGplg" name="Kfz"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_02K9cMofEee6qooNXuGplg" name="Ruecknahme-Protokoll"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_jngckMogEee6qooNXuGplg" memberEnd="_jngck8ogEee6qooNXuGplg _jngclMogEee6qooNXuGplg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jngckcogEee6qooNXuGplg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jngcksogEee6qooNXuGplg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_jngck8ogEee6qooNXuGplg" name="kfz-typ" type="_vOs-oMofEee6qooNXuGplg" association="_jngckMogEee6qooNXuGplg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n1RdgMogEee6qooNXuGplg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n1ancMogEee6qooNXuGplg" value="1"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_jngclMogEee6qooNXuGplg" name="reservierung" type="_tsC5EMofEee6qooNXuGplg" association="_jngckMogEee6qooNXuGplg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pJQN4MogEee6qooNXuGplg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pJZ-4MogEee6qooNXuGplg" value="*"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_4tILcMogEee6qooNXuGplg" memberEnd="_4tILc8ogEee6qooNXuGplg _4tILdMogEee6qooNXuGplg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4tILccogEee6qooNXuGplg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4tILcsogEee6qooNXuGplg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_4tILc8ogEee6qooNXuGplg" name="kfz" type="_z3S6YMofEee6qooNXuGplg" association="_4tILcMogEee6qooNXuGplg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6_U3kMogEee6qooNXuGplg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6_eokMogEee6qooNXuGplg" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_4tILdMogEee6qooNXuGplg" name="kfz-typ" type="_vOs-oMofEee6qooNXuGplg" association="_4tILcMogEee6qooNXuGplg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="__xeX8MogEee6qooNXuGplg" memberEnd="__xeX88ogEee6qooNXuGplg __xeX9MogEee6qooNXuGplg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__xeX8cogEee6qooNXuGplg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__xeX8sogEee6qooNXuGplg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="__xeX88ogEee6qooNXuGplg" name="vermietung" type="_yHyroMofEee6qooNXuGplg" association="__xeX8MogEee6qooNXuGplg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Bhe9AMohEee6qooNXuGplg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BhouAMohEee6qooNXuGplg" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="__xeX9MogEee6qooNXuGplg" name="kfz" type="_z3S6YMofEee6qooNXuGplg" association="__xeX8MogEee6qooNXuGplg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_JVZlQMohEee6qooNXuGplg" memberEnd="_JVZlQ8ohEee6qooNXuGplg _JVZlRMohEee6qooNXuGplg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JVZlQcohEee6qooNXuGplg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JVZlQsohEee6qooNXuGplg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_JVZlQ8ohEee6qooNXuGplg" name="reservierung" type="_tsC5EMofEee6qooNXuGplg" association="_JVZlQMohEee6qooNXuGplg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KVB2QMohEee6qooNXuGplg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KVB2QcohEee6qooNXuGplg" value="1"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_JVZlRMohEee6qooNXuGplg" name="vermietung" type="_yHyroMofEee6qooNXuGplg" association="_JVZlQMohEee6qooNXuGplg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LKLVkMohEee6qooNXuGplg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LKUfgMohEee6qooNXuGplg" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_Nqv04MohEee6qooNXuGplg" name="veranlasst>" memberEnd="_Nqv048ohEee6qooNXuGplg _Nqv05MohEee6qooNXuGplg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Nqv04cohEee6qooNXuGplg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Nqv04sohEee6qooNXuGplg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Nqv048ohEee6qooNXuGplg" name="reservierung" type="_tsC5EMofEee6qooNXuGplg" association="_Nqv04MohEee6qooNXuGplg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SWt0wMohEee6qooNXuGplg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SW3lwMohEee6qooNXuGplg" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Nqv05MohEee6qooNXuGplg" name="mieter" type="_k3QCoMofEee6qooNXuGplg" association="_Nqv04MohEee6qooNXuGplg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_Z1FDwMohEee6qooNXuGplg" memberEnd="_Z1FDw8ohEee6qooNXuGplg _Z1FDxMohEee6qooNXuGplg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Z1FDwcohEee6qooNXuGplg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Z1FDwsohEee6qooNXuGplg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Z1FDw8ohEee6qooNXuGplg" name="vermietung" type="_yHyroMofEee6qooNXuGplg" association="_Z1FDwMohEee6qooNXuGplg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_o7ZioMohEee6qooNXuGplg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_o7sdkMohEee6qooNXuGplg" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Z1FDxMohEee6qooNXuGplg" name="kundenmitarbeiter" type="_wZTwkMofEee6qooNXuGplg" association="_Z1FDwMohEee6qooNXuGplg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kmR8gMohEee6qooNXuGplg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kmk3cMohEee6qooNXuGplg" value="*"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_q28pUMohEee6qooNXuGplg" memberEnd="_q28pU8ohEee6qooNXuGplg _q28pVMohEee6qooNXuGplg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q28pUcohEee6qooNXuGplg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_q28pUsohEee6qooNXuGplg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_q28pU8ohEee6qooNXuGplg" name="kundenmitarbeiter" type="_wZTwkMofEee6qooNXuGplg" association="_q28pUMohEee6qooNXuGplg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t0DToMohEee6qooNXuGplg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t0NEoMohEee6qooNXuGplg" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_q28pVMohEee6qooNXuGplg" name="mieter" type="_k3QCoMofEee6qooNXuGplg" association="_q28pUMohEee6qooNXuGplg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_2dDJwMohEee6qooNXuGplg" name="erhaelt>" memberEnd="_2dM6wsohEee6qooNXuGplg _2dM6w8ohEee6qooNXuGplg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2dM6wMohEee6qooNXuGplg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2dM6wcohEee6qooNXuGplg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_2dM6wsohEee6qooNXuGplg" name="vermietung" type="_yHyroMofEee6qooNXuGplg" association="_2dDJwMohEee6qooNXuGplg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-KeIcMohEee6qooNXuGplg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-MtkIMohEee6qooNXuGplg" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_2dM6w8ohEee6qooNXuGplg" name="mieter" type="_k3QCoMofEee6qooNXuGplg" association="_2dDJwMohEee6qooNXuGplg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_QgbMEMoiEee6qooNXuGplg" memberEnd="_QgbME8oiEee6qooNXuGplg _QgbMFMoiEee6qooNXuGplg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QgbMEcoiEee6qooNXuGplg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QgbMEsoiEee6qooNXuGplg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_QgbME8oiEee6qooNXuGplg" name="ruecknahme-protokoll" type="_02K9cMofEee6qooNXuGplg" association="_QgbMEMoiEee6qooNXuGplg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SW9P4MoiEee6qooNXuGplg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SXHA4MoiEee6qooNXuGplg" value="1"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_QgbMFMoiEee6qooNXuGplg" name="vermietung" type="_yHyroMofEee6qooNXuGplg" association="_QgbMEMoiEee6qooNXuGplg"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_YIg6oMopEeewRKrzj76PGg" name="ConfigValues">
+        <packagedElement xmi:type="uml:Class" xmi:id="_pfkbIMorEeewRKrzj76PGg" name="ConfigValues">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_MTNwEMq3EeeRtbvg7-W2Sw" annotatedElement="_pfkbIMorEeewRKrzj76PGg">
+            <body>ConfigValues Class&#xD;
+Ist hier nur als Hilfsmittel ausgeführt. &#xD;
+Die Instance Specification &quot;Konfigurationswerte&quot; greift auf die hier&#xD;
+enthaltenen Attribute und benutzt sie um Ihre Werte zu initialisieren. </body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_It99IMq2EeeRtbvg7-W2Sw" name="MinStornoFrist" type="_O8zd8Mq2EeeRtbvg7-W2Sw">
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_T0xScMq2EeeRtbvg7-W2Sw" value="12"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_LeSvsMq2EeeRtbvg7-W2Sw" name="MaxLoginVersuche">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_Wb_zYMq2EeeRtbvg7-W2Sw" value="5"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_M4RaYMq2EeeRtbvg7-W2Sw" name="MinFahrerAlter">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_YzhrcMq2EeeRtbvg7-W2Sw" value="21"/>
+          </ownedAttribute>
+          <nestedClassifier xmi:type="uml:DataType" xmi:id="_O8zd8Mq2EeeRtbvg7-W2Sw" name="Hours"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_akD08Mq2EeeRtbvg7-W2Sw" name="Konfigurationswerte">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_cKhKgMq4EeeRtbvg7-W2Sw" annotatedElement="_akD08Mq2EeeRtbvg7-W2Sw">
+            <body>Instance Specification Konfigurationswerte&#xD;
+Listet die Standardwerte, geschäftliche Konstanten und selten aendernde &#xD;
+Aufzählungsmengen, welche als globale Konstanten beim Start konfiguriert &#xD;
+werden.</body>
+          </ownedComment>
+          <slot xmi:type="uml:Slot" xmi:id="_hIzUUMq2EeeRtbvg7-W2Sw" definingFeature="_It99IMq2EeeRtbvg7-W2Sw">
+            <value xmi:type="uml:LiteralInteger" xmi:id="_n1l8cMq2EeeRtbvg7-W2Sw" value="12"/>
+          </slot>
+          <slot xmi:type="uml:Slot" xmi:id="_o8vxwMq2EeeRtbvg7-W2Sw" definingFeature="_LeSvsMq2EeeRtbvg7-W2Sw">
+            <value xmi:type="uml:LiteralInteger" xmi:id="_rT3aIMq2EeeRtbvg7-W2Sw" value="5"/>
+          </slot>
+          <slot xmi:type="uml:Slot" xmi:id="_r-4GAMq2EeeRtbvg7-W2Sw" definingFeature="_M4RaYMq2EeeRtbvg7-W2Sw">
+            <value xmi:type="uml:LiteralInteger" xmi:id="_ufoLgMq2EeeRtbvg7-W2Sw" value="21"/>
+          </slot>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_wBVToGFfEeeUUsKQ619tXA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wBV6sGFfEeeUUsKQ619tXA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="OOAD.profile.uml#_7I6AMcq2EeeRtbvg7-W2Sw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="OOAD.profile.uml#_qI3EYGFfEeeUUsKQ619tXA"/>
+    </profileApplication>
+  </uml:Model>
+  <OOAD:kernprozess xmi:id="_12DnIGFmEeeUUsKQ619tXA" base_Package="_RKDZQGFmEeeUUsKQ619tXA"/>
+  <OOAD:kernprozess xmi:id="_qzmw4GFnEeeUUsKQ619tXA" base_Package="_GJYrsGFnEeeUUsKQ619tXA"/>
+  <OOAD:kernprozess xmi:id="_QtkmsGFoEeeUUsKQ619tXA" base_Package="_IXu9IGFoEeeUUsKQ619tXA"/>
+  <OOAD:business xmi:id="_M5jTcMlbEee8J5UOqm26zQ" base_UseCase="_vdosgGFmEeeUUsKQ619tXA"/>
+  <OOAD:business xmi:id="_OinjAMlbEee8J5UOqm26zQ" base_UseCase="_k-f0IGFmEeeUUsKQ619tXA"/>
+  <OOAD:system xmi:id="_0CXaoMleEee8J5UOqm26zQ" base_Package="_rb2xwGFpEeeUUsKQ619tXA"/>
+  <OOAD:configvalue xmi:id="_7JDKMMq2EeeRtbvg7-W2Sw" base_InstanceSpecification="_akD08Mq2EeeRtbvg7-W2Sw"/>
+</xmi:XMI>

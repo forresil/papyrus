@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:PortsAndFlows="http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
+  <uml:Model xmi:id="_UFixwKfEEeqOlYPOd4BQPg" name="TurnIndicationJP">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_UMLlQKfEEeqOlYPOd4BQPg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_UMfuUKfEEeqOlYPOd4BQPg">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_uKZawKfEEeqOlYPOd4BQPg" name="requirements">
+      <packagedElement xmi:type="uml:Class" xmi:id="_jsYHQKfFEeqOlYPOd4BQPg" name="REQ-000 Turn Indication Function">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_pQfQEKfFEeqOlYPOd4BQPg" name="REQ-01.0 Sructural Requirements">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_F4Q-QKfFEeqOlYPOd4BQPg" name="REQ-001 two front Indication lights"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_zOmCgKfGEeqOlYPOd4BQPg" name="REQ-020 Behavioural Requirements"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_7ExUkKfGEeqOlYPOd4BQPg" name="Non-functional Requirements"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_CMcagKfKEeqOlYPOd4BQPg" name="context">
+      <packagedElement xmi:type="uml:Class" xmi:id="_VlvxgKfKEeqOlYPOd4BQPg" name="Battery">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_YDywMKfpEeqOlYPOd4BQPg" name="BatVol2" type="_7BCNoKfSEeqOlYPOd4BQPg" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_YpYhoKfKEeqOlYPOd4BQPg" name="IgnitionSwitch"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bn3E8KfKEeqOlYPOd4BQPg" name="Dashboard">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ePEa86fOEeqOlYPOd4BQPg" name="L" type="_fzlegKfKEeqOlYPOd4BQPg" aggregation="composite" association="_ePEa8KfOEeqOlYPOd4BQPg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_e20Xc6fOEeqOlYPOd4BQPg" name="R" type="_fzlegKfKEeqOlYPOd4BQPg" aggregation="composite" association="_e20XcKfOEeqOlYPOd4BQPg"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="__P3ZAKfnEeqOlYPOd4BQPg" name="LeftLEDCmd" type="_15RUgKfQEeqOlYPOd4BQPg" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_F9BNgKfoEeqOlYPOd4BQPg" name="RightLEDCmd" type="_15RUgKfQEeqOlYPOd4BQPg" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_dIYcgKfKEeqOlYPOd4BQPg" name="TurnindicationLights"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fzlegKfKEeqOlYPOd4BQPg" name="TurnIndicationLED"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_iahEgKfKEeqOlYPOd4BQPg" name="EmergencySwitch"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_kpUeYKfKEeqOlYPOd4BQPg" name="TurnIndicationLight"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mlmk4KfKEeqOlYPOd4BQPg" name="Context">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_UgLbIqfLEeqOlYPOd4BQPg" name="tiCtrl" type="_0bWzwKfKEeqOlYPOd4BQPg" aggregation="shared" association="_UgFUgKfLEeqOlYPOd4BQPg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_XHro46fLEeqOlYPOd4BQPg" name="bat" type="_VlvxgKfKEeqOlYPOd4BQPg" aggregation="shared" association="_XHro4KfLEeqOlYPOd4BQPg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_cH_Zs6fOEeqOlYPOd4BQPg" name="dashboard" type="_bn3E8KfKEeqOlYPOd4BQPg" aggregation="shared" association="_cH_ZsKfOEeqOlYPOd4BQPg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cH_ZtKfOEeqOlYPOd4BQPg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cH_ZtafOEeqOlYPOd4BQPg" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UgFUgKfLEeqOlYPOd4BQPg" memberEnd="_UgLbIqfLEeqOlYPOd4BQPg _UgRhwqfLEeqOlYPOd4BQPg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UgLbIKfLEeqOlYPOd4BQPg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UgLbIafLEeqOlYPOd4BQPg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_UgRhwqfLEeqOlYPOd4BQPg" name="context" type="_mlmk4KfKEeqOlYPOd4BQPg" association="_UgFUgKfLEeqOlYPOd4BQPg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_XHro4KfLEeqOlYPOd4BQPg" memberEnd="_XHro46fLEeqOlYPOd4BQPg _XHro5qfLEeqOlYPOd4BQPg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XHro4afLEeqOlYPOd4BQPg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XHro4qfLEeqOlYPOd4BQPg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_XHro5qfLEeqOlYPOd4BQPg" name="context" type="_mlmk4KfKEeqOlYPOd4BQPg" association="_XHro4KfLEeqOlYPOd4BQPg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_cH_ZsKfOEeqOlYPOd4BQPg" memberEnd="_cH_Zs6fOEeqOlYPOd4BQPg _cH_ZtqfOEeqOlYPOd4BQPg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cH_ZsafOEeqOlYPOd4BQPg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cH_ZsqfOEeqOlYPOd4BQPg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_cH_ZtqfOEeqOlYPOd4BQPg" name="context" type="_mlmk4KfKEeqOlYPOd4BQPg" association="_cH_ZsKfOEeqOlYPOd4BQPg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ePEa8KfOEeqOlYPOd4BQPg" visibility="private" memberEnd="_ePEa86fOEeqOlYPOd4BQPg _ePEa9qfOEeqOlYPOd4BQPg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ePEa8afOEeqOlYPOd4BQPg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ePEa8qfOEeqOlYPOd4BQPg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ePEa9qfOEeqOlYPOd4BQPg" name="dashboard" type="_bn3E8KfKEeqOlYPOd4BQPg" association="_ePEa8KfOEeqOlYPOd4BQPg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_e20XcKfOEeqOlYPOd4BQPg" memberEnd="_e20Xc6fOEeqOlYPOd4BQPg _e26eEqfOEeqOlYPOd4BQPg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_e20XcafOEeqOlYPOd4BQPg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_e20XcqfOEeqOlYPOd4BQPg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_e26eEqfOEeqOlYPOd4BQPg" name="dashboard" type="_mlmk4KfKEeqOlYPOd4BQPg" association="_e20XcKfOEeqOlYPOd4BQPg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_r8mBQKfWEeqOlYPOd4BQPg" name="ItemFlow14" informationSource="_YDywMKfpEeqOlYPOd4BQPg" informationTarget="_6ad64KfoEeqOlYPOd4BQPg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ETHzIKfKEeqOlYPOd4BQPg" name="turnindicationsystem">
+      <packagedElement xmi:type="uml:Package" xmi:id="_xhcAUKfKEeqOlYPOd4BQPg" name="internalinterfaces">
+        <packagedElement xmi:type="uml:Signal" xmi:id="_cZreQKfcEeqOlYPOd4BQPg" name="CANSignal"/>
+        <packagedElement xmi:type="uml:SignalEvent" xmi:id="_glc7IKfcEeqOlYPOd4BQPg" name="CANMsgReceived"/>
+        <packagedElement xmi:type="uml:TimeEvent" xmi:id="_mbQ38KfcEeqOlYPOd4BQPg" name="OnDurationElapsed"/>
+        <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_q-3mAKfcEeqOlYPOd4BQPg" name="PowerSwitchOn">
+          <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_7fgNIKfkEeqOlYPOd4BQPg">
+            <language>C</language>
+            <body>switchIn == true</body>
+          </changeExpression>
+        </packagedElement>
+        <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_tAMkkKfcEeqOlYPOd4BQPg" name="PowerSwitchOff"/>
+        <packagedElement xmi:type="uml:Signal" xmi:id="_xKO8EKfcEeqOlYPOd4BQPg" name="StatusChange"/>
+        <packagedElement xmi:type="uml:SignalEvent" xmi:id="_z3X3wKfcEeqOlYPOd4BQPg" name="StatusChangeEvent"/>
+        <packagedElement xmi:type="uml:TimeEvent" xmi:id="_3aQvsKfcEeqOlYPOd4BQPg" name="After640ms"/>
+        <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_8xAx8KfcEeqOlYPOd4BQPg" name="WhenVoltageOutOfRange"/>
+        <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_ACd7oKfdEeqOlYPOd4BQPg" name="WhenVoltageInRange"/>
+        <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_DToxcKfdEeqOlYPOd4BQPg" name="FlashingOnCmd"/>
+        <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_F7hZsKfdEeqOlYPOd4BQPg" name="FlashingOffCmd"/>
+        <packagedElement xmi:type="uml:TimeEvent" xmi:id="_IwwhcKfdEeqOlYPOd4BQPg" name="After1980ms"/>
+        <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_Ls9M0KfdEeqOlYPOd4BQPg" name="leverToNeutralEvent"/>
+        <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_SdQb8KfdEeqOlYPOd4BQPg" name="IgnOffEvent"/>
+        <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_WtrIQKfdEeqOlYPOd4BQPg" name="toLEvent"/>
+        <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_YZkpYKfdEeqOlYPOd4BQPg" name="toREvent"/>
+        <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_bMVE4KfdEeqOlYPOd4BQPg" name="EmerOnEvent"/>
+        <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_dfNtgKfdEeqOlYPOd4BQPg" name="EmerOffEvent"/>
+        <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_ghzUwKfdEeqOlYPOd4BQPg" name="voltageOk">
+          <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_tisYMKfdEeqOlYPOd4BQPg">
+            <language>C</language>
+            <body>10 &lt;= BatVolIN &amp;&amp; BatVolIN &lt;= 15</body>
+          </changeExpression>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_0bWzwKfKEeqOlYPOd4BQPg" name="TurnIndicationController">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_oe34AKfoEeqOlYPOd4BQPg" name="LeverPosition" type="_zBXTQKfQEeqOlYPOd4BQPg" aggregation="composite" isConjugated="true"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_6ad64KfoEeqOlYPOd4BQPg" name="BatteryVoltageInterface" type="_7BCNoKfSEeqOlYPOd4BQPg" aggregation="composite">
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_BE2IMKfpEeqOlYPOd4BQPg"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Bm7KQKfYEeqOlYPOd4BQPg" name="DoorController"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_DaahIKfYEeqOlYPOd4BQPg" name="FrontController"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_GO6CAKfYEeqOlYPOd4BQPg" name="RearController"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_J8a1kKfYEeqOlYPOd4BQPg" name="software"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_QZjREKfYEeqOlYPOd4BQPg" name="PowerSource">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_viEUUKfwEeqRA_iktO83RA" name="currentOut" type="_NPjMgKfTEeqOlYPOd4BQPg" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_yVxyEKfwEeqRA_iktO83RA" name="switchIn" aggregation="composite">
+          <type xmi:type="uml:DataType" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Boolean"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_0i4i0KfwEeqRA_iktO83RA" name="BatVolIN" type="_7BCNoKfSEeqOlYPOd4BQPg" aggregation="composite" isConjugated="true"/>
+        <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_YDAmsKfhEeqOlYPOd4BQPg" name="PowerSourceCtrl">
+          <region xmi:type="uml:Region" xmi:id="_d28UMKfhEeqOlYPOd4BQPg" name="Region1">
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_jcrNoKfhEeqOlYPOd4BQPg" name="Initial1"/>
+            <subvertex xmi:type="uml:State" xmi:id="_mfjIwKfhEeqOlYPOd4BQPg" name="BATTERY_VOLTAGE_NOT_OK"/>
+            <subvertex xmi:type="uml:State" xmi:id="_mqzWgKfhEeqOlYPOd4BQPg" name="BATTERY_VOLTAGE_OK">
+              <doActivity xmi:type="uml:StateMachine" xmi:id="_8zfr8KfhEeqOlYPOd4BQPg" name="OnOffControl">
+                <region xmi:type="uml:Region" xmi:id="_By9PkKfiEeqOlYPOd4BQPg" name="Region1">
+                  <subvertex xmi:type="uml:Pseudostate" xmi:id="_C9o6AKfiEeqOlYPOd4BQPg" name="Initial1"/>
+                  <subvertex xmi:type="uml:Pseudostate" xmi:id="_ENZRsKfiEeqOlYPOd4BQPg" name="EvalSwitch" kind="choice"/>
+                  <subvertex xmi:type="uml:State" xmi:id="_GjJBEKfiEeqOlYPOd4BQPg" name="LAMP_CURRENT_OFF"/>
+                  <subvertex xmi:type="uml:State" xmi:id="_IVUwYKfiEeqOlYPOd4BQPg" name="LAMP_CURRENT_ON">
+                    <doActivity xmi:type="uml:StateMachine" xmi:id="_O_JkEKfiEeqOlYPOd4BQPg" name="VOLTAGE_IN_RANGE">
+                      <region xmi:type="uml:Region" xmi:id="_ZtrjUKfiEeqOlYPOd4BQPg" name="Region1">
+                        <transition xmi:type="uml:Transition" xmi:id="_lH7ZEKfiEeqOlYPOd4BQPg" name="Initial" source="_dTRJ8KfiEeqOlYPOd4BQPg" target="_fRKaAKfiEeqOlYPOd4BQPg"/>
+                        <transition xmi:type="uml:Transition" xmi:id="_r1_zkKfiEeqOlYPOd4BQPg" name="switchIsOff" source="_fRKaAKfiEeqOlYPOd4BQPg" target="_d8dQ4KfiEeqOlYPOd4BQPg"/>
+                        <transition xmi:type="uml:Transition" xmi:id="_sWVggKfiEeqOlYPOd4BQPg" name="switchIsOn" source="_fRKaAKfiEeqOlYPOd4BQPg" target="_nKHTQKfiEeqOlYPOd4BQPg"/>
+                        <transition xmi:type="uml:Transition" xmi:id="_vYb_kKfiEeqOlYPOd4BQPg" name="switchOnTrans" guard="_VEITYKfkEeqOlYPOd4BQPg" source="_d8dQ4KfiEeqOlYPOd4BQPg" target="_nKHTQKfiEeqOlYPOd4BQPg">
+                          <ownedRule xmi:type="uml:Constraint" xmi:id="_VEITYKfkEeqOlYPOd4BQPg" name="switchIsOn">
+                            <specification xmi:type="uml:OpaqueExpression" xmi:id="_c4UBYKfkEeqOlYPOd4BQPg">
+                              <language>C</language>
+                              <body>switchIn == true</body>
+                            </specification>
+                          </ownedRule>
+                          <trigger xmi:type="uml:Trigger" xmi:id="_0vHecKfkEeqOlYPOd4BQPg" name="switchInTrue" event="_q-3mAKfcEeqOlYPOd4BQPg"/>
+                        </transition>
+                        <transition xmi:type="uml:Transition" xmi:id="_v1crsKfiEeqOlYPOd4BQPg" name="switchOffTrans" guard="_pfbS4KfkEeqOlYPOd4BQPg" source="_nKHTQKfiEeqOlYPOd4BQPg" target="_d8dQ4KfiEeqOlYPOd4BQPg">
+                          <ownedRule xmi:type="uml:Constraint" xmi:id="_pfbS4KfkEeqOlYPOd4BQPg" name="switchIsOff">
+                            <specification xmi:type="uml:OpaqueExpression" xmi:id="_sfIlQKfkEeqOlYPOd4BQPg">
+                              <language>C</language>
+                              <body>! switchIn == false</body>
+                            </specification>
+                          </ownedRule>
+                        </transition>
+                        <subvertex xmi:type="uml:Pseudostate" xmi:id="_dTRJ8KfiEeqOlYPOd4BQPg" name="Initial1"/>
+                        <subvertex xmi:type="uml:State" xmi:id="_d8dQ4KfiEeqOlYPOd4BQPg" name="LAMP_CURRENT_OFF">
+                          <entry xmi:type="uml:OpaqueBehavior" xmi:id="_mAG24KflEeqOlYPOd4BQPg" name="currentOut=0;">
+                            <language>C</language>
+                            <body>currentOut = 0;</body>
+                          </entry>
+                        </subvertex>
+                        <subvertex xmi:type="uml:Pseudostate" xmi:id="_fRKaAKfiEeqOlYPOd4BQPg" name="EvalSwitch" kind="choice"/>
+                        <subvertex xmi:type="uml:State" xmi:id="_nKHTQKfiEeqOlYPOd4BQPg" name="LAMP_CURRENT_ON">
+                          <entry xmi:type="uml:OpaqueBehavior" xmi:id="_qsj-8KflEeqOlYPOd4BQPg" name="currentOut=2;">
+                            <language>C</language>
+                            <body>currentOut = 2;</body>
+                          </entry>
+                        </subvertex>
+                      </region>
+                    </doActivity>
+                  </subvertex>
+                </region>
+              </doActivity>
+            </subvertex>
+          </region>
+        </ownedBehavior>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_7IrfAKfYEeqOlYPOd4BQPg" name="PinProgramBlock"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="__ewHYKfYEeqOlYPOd4BQPg" name="PowerSourceAlternative"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Foa0UKfZEeqOlYPOd4BQPg" name="PowerSource2" classifierBehavior="_mW6DwKfZEeqOlYPOd4BQPg" isActive="true">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_Sr8dkKfwEeqRA_iktO83RA" name="switchIn" aggregation="composite">
+          <type xmi:type="uml:DataType" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Boolean"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_dbX0sKfwEeqRA_iktO83RA" name="LampCurrent" type="_NPjMgKfTEeqOlYPOd4BQPg" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_khMA0KfwEeqRA_iktO83RA" name="BatteryVoltage" aggregation="composite">
+          <type xmi:type="uml:DataType" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Boolean"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_mW6DwKfZEeqOlYPOd4BQPg" name="PowerSurceSM">
+          <region xmi:type="uml:Region" xmi:id="_65A14KfZEeqOlYPOd4BQPg" name="Region1">
+            <transition xmi:type="uml:Transition" xmi:id="_YmWogKfaEeqOlYPOd4BQPg" name="initial" source="_BHGv0KfaEeqOlYPOd4BQPg" target="_WukAcKfaEeqOlYPOd4BQPg"/>
+            <transition xmi:type="uml:Transition" xmi:id="_Z6X1IKfaEeqOlYPOd4BQPg" name="backInRange" guard="_hYvOsKfbEeqOlYPOd4BQPg" source="_I7Sd0KfaEeqOlYPOd4BQPg" target="_QGxNEKfaEeqOlYPOd4BQPg">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_hYvOsKfbEeqOlYPOd4BQPg" name="InRange">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_hYvOsafbEeqOlYPOd4BQPg">
+                  <language>C</language>
+                  <body>10 &lt;= BatVolIN &amp;&amp; BatVol &lt;= 15</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_AY1s4KfgEeqOlYPOd4BQPg" name="voltageOk" event="_ghzUwKfdEeqOlYPOd4BQPg"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_a422oKfaEeqOlYPOd4BQPg" name="InRange" source="_WukAcKfaEeqOlYPOd4BQPg" target="_QGxNEKfaEeqOlYPOd4BQPg"/>
+            <transition xmi:type="uml:Transition" xmi:id="_btagEKfaEeqOlYPOd4BQPg" name="outOfRange" source="_WukAcKfaEeqOlYPOd4BQPg" target="_I7Sd0KfaEeqOlYPOd4BQPg"/>
+            <transition xmi:type="uml:Transition" xmi:id="_cSC3IKfaEeqOlYPOd4BQPg" name="nowOutOfRange" guard="_7aUWsKfaEeqOlYPOd4BQPg" source="_QGxNEKfaEeqOlYPOd4BQPg" target="_I7Sd0KfaEeqOlYPOd4BQPg">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_7aUWsKfaEeqOlYPOd4BQPg" name="outOfRange">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_MnhCgKfbEeqOlYPOd4BQPg">
+                  <language>C</language>
+                  <body>BatVoltIN &lt; 10 || 15 &lt; BatVolIN</body>
+                </specification>
+              </ownedRule>
+            </transition>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_BHGv0KfaEeqOlYPOd4BQPg" name="Initial1"/>
+            <subvertex xmi:type="uml:State" xmi:id="_I7Sd0KfaEeqOlYPOd4BQPg" name="VOLTAGE_OUT_OF_RANGE">
+              <entry xmi:type="uml:OpaqueBehavior" xmi:id="_VZ3PoKfgEeqOlYPOd4BQPg" name="setCurrentOutToZero">
+                <language>C</language>
+                <body>currentOut = 0;</body>
+              </entry>
+            </subvertex>
+            <subvertex xmi:type="uml:State" xmi:id="_QGxNEKfaEeqOlYPOd4BQPg" name="VOLTAGE_IN_RANGE"/>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_WukAcKfaEeqOlYPOd4BQPg" name="IsVoltageOk" kind="choice"/>
+          </region>
+        </ownedBehavior>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_IE6CsKfKEeqOlYPOd4BQPg" name="physicalunits">
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_UxnzoKfPEeqOlYPOd4BQPg" name="V">
+        <classifier xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit"/>
+        <slot xmi:type="uml:Slot" xmi:id="_Ux0A4KfPEeqOlYPOd4BQPg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.definitionURI"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_Ux0A4afPEeqOlYPOd4BQPg" name="definitionURI"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_Ux0A4qfPEeqOlYPOd4BQPg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.description"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_Ux0A46fPEeqOlYPOd4BQPg" name="description"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_Ux0A5KfPEeqOlYPOd4BQPg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.quantityKind"/>
+          <value xmi:type="uml:InstanceValue" xmi:id="_Ux0A5afPEeqOlYPOd4BQPg" name="quantityKind">
+            <type xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind"/>
+          </value>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_Ux0A5qfPEeqOlYPOd4BQPg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.symbol"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_Ux0A56fPEeqOlYPOd4BQPg" name="symbol"/>
+        </slot>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_WeXCQKfPEeqOlYPOd4BQPg" name="mA">
+        <classifier xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit"/>
+        <slot xmi:type="uml:Slot" xmi:id="_WedI4KfPEeqOlYPOd4BQPg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.definitionURI"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_WedI4afPEeqOlYPOd4BQPg" name="definitionURI"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_WedI4qfPEeqOlYPOd4BQPg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.description"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_WedI46fPEeqOlYPOd4BQPg" name="description"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_WedI5KfPEeqOlYPOd4BQPg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.quantityKind"/>
+          <value xmi:type="uml:InstanceValue" xmi:id="_WedI5afPEeqOlYPOd4BQPg" name="quantityKind">
+            <type xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind"/>
+          </value>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_WedI5qfPEeqOlYPOd4BQPg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.symbol"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_WedI56fPEeqOlYPOd4BQPg" name="symbol"/>
+        </slot>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_X2f54KfPEeqOlYPOd4BQPg" name="ms">
+        <classifier xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit"/>
+        <slot xmi:type="uml:Slot" xmi:id="_X2f54afPEeqOlYPOd4BQPg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.definitionURI"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_X2f54qfPEeqOlYPOd4BQPg" name="definitionURI"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_X2f546fPEeqOlYPOd4BQPg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.description"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_X2f55KfPEeqOlYPOd4BQPg" name="description"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_X2f55afPEeqOlYPOd4BQPg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.quantityKind"/>
+          <value xmi:type="uml:InstanceValue" xmi:id="_X2f55qfPEeqOlYPOd4BQPg" name="quantityKind">
+            <type xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind"/>
+          </value>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_X2f556fPEeqOlYPOd4BQPg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.symbol"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_X2f56KfPEeqOlYPOd4BQPg" name="symbol"/>
+        </slot>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_ySWtoKfPEeqOlYPOd4BQPg" name="Time">
+        <classifier xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind"/>
+        <slot xmi:type="uml:Slot" xmi:id="_ySc0QKfPEeqOlYPOd4BQPg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.definitionURI"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_ySc0QafPEeqOlYPOd4BQPg" name="definitionURI"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_ySc0QqfPEeqOlYPOd4BQPg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.description"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_ySc0Q6fPEeqOlYPOd4BQPg" name="description"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_ySc0RKfPEeqOlYPOd4BQPg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.symbol"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_ySc0RafPEeqOlYPOd4BQPg" name="symbol"/>
+        </slot>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_ru9SEKfPEeqOlYPOd4BQPg" name="Voltage">
+        <classifier xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind"/>
+        <slot xmi:type="uml:Slot" xmi:id="_ru9SEafPEeqOlYPOd4BQPg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.definitionURI"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_rvDYsKfPEeqOlYPOd4BQPg" name="definitionURI"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_rvDYsafPEeqOlYPOd4BQPg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.description"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_rvDYsqfPEeqOlYPOd4BQPg" name="description"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_rvDYs6fPEeqOlYPOd4BQPg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.symbol"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_rvDYtKfPEeqOlYPOd4BQPg" name="symbol" value="V"/>
+        </slot>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_wO0voKfPEeqOlYPOd4BQPg" name="ElectricalCurrent">
+        <classifier xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind"/>
+        <slot xmi:type="uml:Slot" xmi:id="_wO62QKfPEeqOlYPOd4BQPg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.definitionURI"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_wO62QafPEeqOlYPOd4BQPg" name="definitionURI"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_wO62QqfPEeqOlYPOd4BQPg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.description"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_wO62Q6fPEeqOlYPOd4BQPg" name="description"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_wO62RKfPEeqOlYPOd4BQPg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.symbol"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_wO62RafPEeqOlYPOd4BQPg" name="symbol" value="I"/>
+        </slot>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_L2znAKfKEeqOlYPOd4BQPg" name="projecttypes">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_zBXTQKfQEeqOlYPOd4BQPg" name="LeverPosition">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_bEbjkKfREeqOlYPOd4BQPg" name="NEUTRAL">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_bEbjkafREeqOlYPOd4BQPg"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_dh0MAKfREeqOlYPOd4BQPg" name="LEFT">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_dh0MAafREeqOlYPOd4BQPg" value="1"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_fW3pIKfREeqOlYPOd4BQPg" name="RIGHT">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_fW3pIafREeqOlYPOd4BQPg" value="2"/>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_15RUgKfQEeqOlYPOd4BQPg" name="FlashCmd">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_COZeIKfREeqOlYPOd4BQPg" name="OFF">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_COZeIafREeqOlYPOd4BQPg"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_EUUo0KfREeqOlYPOd4BQPg" name="ON">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_EUUo0afREeqOlYPOd4BQPg" value="1"/>
+        </ownedLiteral>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_7BCNoKfSEeqOlYPOd4BQPg" name="BatteryVoltage">
+        <generalization xmi:type="uml:Generalization" xmi:id="_bEo3kKfUEeqOlYPOd4BQPg">
+          <general xmi:type="uml:DataType" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Integer"/>
+        </generalization>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_I7q8gKfTEeqOlYPOd4BQPg" name="OnDuration">
+        <generalization xmi:type="uml:Generalization" xmi:id="_b21JgKfUEeqOlYPOd4BQPg">
+          <general xmi:type="uml:DataType" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Integer"/>
+        </generalization>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_NPjMgKfTEeqOlYPOd4BQPg" name="LampCurrent">
+        <generalization xmi:type="uml:Generalization" xmi:id="_crlAMKfUEeqOlYPOd4BQPg">
+          <general xmi:type="uml:DataType" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Integer"/>
+        </generalization>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_OUejUKfKEeqOlYPOd4BQPg" name="systeminterfaces"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UIO5YKfEEeqOlYPOd4BQPg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UITK0KfEEeqOlYPOd4BQPg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UMDpcKfEEeqOlYPOd4BQPg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UMDpcafEEeqOlYPOd4BQPg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UMGswKfEEeqOlYPOd4BQPg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UMHT0KfEEeqOlYPOd4BQPg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UMHT0afEEeqOlYPOd4BQPg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UMHT0qfEEeqOlYPOd4BQPg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UMH64KfEEeqOlYPOd4BQPg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UMH64afEEeqOlYPOd4BQPg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UMIh8KfEEeqOlYPOd4BQPg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UMIh8afEEeqOlYPOd4BQPg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UMIh8qfEEeqOlYPOd4BQPg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UMIh86fEEeqOlYPOd4BQPg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UMJJAKfEEeqOlYPOd4BQPg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UMJJAafEEeqOlYPOd4BQPg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UMJwEKfEEeqOlYPOd4BQPg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UMJwEafEEeqOlYPOd4BQPg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UMKXIKfEEeqOlYPOd4BQPg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UMKXIafEEeqOlYPOd4BQPg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <Requirements:Requirement xmi:id="_F4g14KfFEeqOlYPOd4BQPg" base_NamedElement="_F4Q-QKfFEeqOlYPOd4BQPg" id="REQ-001" text="The turn Indication funtion controls 2 indication lights in the front." base_Class="_F4Q-QKfFEeqOlYPOd4BQPg"/>
+  <Requirements:Requirement xmi:id="_jsfcAKfFEeqOlYPOd4BQPg" base_NamedElement="_jsYHQKfFEeqOlYPOd4BQPg" id="REQ-000" text="Anforderungen" base_Class="_jsYHQKfFEeqOlYPOd4BQPg"/>
+  <Requirements:Requirement xmi:id="_pQlWsKfFEeqOlYPOd4BQPg" base_NamedElement="_pQfQEKfFEeqOlYPOd4BQPg" id="REQ-010" text="Betrachtungsraum für strukturale Anforderungen" base_Class="_pQfQEKfFEeqOlYPOd4BQPg"/>
+  <Requirements:Requirement xmi:id="_zOswMKfGEeqOlYPOd4BQPg" base_NamedElement="_zOmCgKfGEeqOlYPOd4BQPg" id="REQ-020 " text="Betrachtungsraum für Verhaltensanforderungen" base_Class="_zOmCgKfGEeqOlYPOd4BQPg"/>
+  <Requirements:Requirement xmi:id="_7E3bMKfGEeqOlYPOd4BQPg" base_NamedElement="_7ExUkKfGEeqOlYPOd4BQPg" id="REQ-030" text="Betrachtungsraum für nicht funktionale Anforderungen" base_Class="_7ExUkKfGEeqOlYPOd4BQPg"/>
+  <Blocks:Block xmi:id="_Vl14IKfKEeqOlYPOd4BQPg" base_Class="_VlvxgKfKEeqOlYPOd4BQPg"/>
+  <Blocks:Block xmi:id="_YpeoQKfKEeqOlYPOd4BQPg" base_Class="_YpYhoKfKEeqOlYPOd4BQPg"/>
+  <Blocks:Block xmi:id="_bn9LkKfKEeqOlYPOd4BQPg" base_Class="_bn3E8KfKEeqOlYPOd4BQPg"/>
+  <Blocks:Block xmi:id="_dIejIKfKEeqOlYPOd4BQPg" base_Class="_dIYcgKfKEeqOlYPOd4BQPg"/>
+  <Blocks:Block xmi:id="_fzrlIKfKEeqOlYPOd4BQPg" base_Class="_fzlegKfKEeqOlYPOd4BQPg"/>
+  <Blocks:Block xmi:id="_ianLIKfKEeqOlYPOd4BQPg" base_Class="_iahEgKfKEeqOlYPOd4BQPg"/>
+  <Blocks:Block xmi:id="_kpalAKfKEeqOlYPOd4BQPg" base_Class="_kpUeYKfKEeqOlYPOd4BQPg"/>
+  <Blocks:Block xmi:id="_mlsrgKfKEeqOlYPOd4BQPg" base_Class="_mlmk4KfKEeqOlYPOd4BQPg"/>
+  <Blocks:Block xmi:id="_0bc6YKfKEeqOlYPOd4BQPg" base_Class="_0bWzwKfKEeqOlYPOd4BQPg"/>
+  <Blocks:ValueType xmi:id="_7BIUQKfSEeqOlYPOd4BQPg" base_DataType="_7BCNoKfSEeqOlYPOd4BQPg" quantityKind="_ru9SEKfPEeqOlYPOd4BQPg" unit="_UxnzoKfPEeqOlYPOd4BQPg"/>
+  <Blocks:ValueType xmi:id="_I7xDIKfTEeqOlYPOd4BQPg" base_DataType="_I7q8gKfTEeqOlYPOd4BQPg" quantityKind="_ySWtoKfPEeqOlYPOd4BQPg" unit="_X2f54KfPEeqOlYPOd4BQPg"/>
+  <Blocks:ValueType xmi:id="_NPpTIKfTEeqOlYPOd4BQPg" base_DataType="_NPjMgKfTEeqOlYPOd4BQPg" quantityKind="_wO0voKfPEeqOlYPOd4BQPg" unit="_WeXCQKfPEeqOlYPOd4BQPg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_r8yOgKfWEeqOlYPOd4BQPg" base_InformationFlow="_r8mBQKfWEeqOlYPOd4BQPg"/>
+  <Blocks:Block xmi:id="_BnBQ4KfYEeqOlYPOd4BQPg" base_Class="_Bm7KQKfYEeqOlYPOd4BQPg"/>
+  <Blocks:Block xmi:id="_DagnwKfYEeqOlYPOd4BQPg" base_Class="_DaahIKfYEeqOlYPOd4BQPg"/>
+  <Blocks:Block xmi:id="_GO6CAafYEeqOlYPOd4BQPg" base_Class="_GO6CAKfYEeqOlYPOd4BQPg"/>
+  <Blocks:Block xmi:id="_QZpXsKfYEeqOlYPOd4BQPg" base_Class="_QZjREKfYEeqOlYPOd4BQPg"/>
+  <Blocks:Block xmi:id="_7IxloKfYEeqOlYPOd4BQPg" base_Class="_7IrfAKfYEeqOlYPOd4BQPg"/>
+  <Blocks:Block xmi:id="__e2OAKfYEeqOlYPOd4BQPg" base_Class="__ewHYKfYEeqOlYPOd4BQPg"/>
+  <Blocks:Block xmi:id="_Fog68KfZEeqOlYPOd4BQPg" base_Class="_Foa0UKfZEeqOlYPOd4BQPg"/>
+  <PortsAndFlows:ProxyPort xmi:id="__QK7AKfnEeqOlYPOd4BQPg" base_Port="__P3ZAKfnEeqOlYPOd4BQPg"/>
+  <PortsAndFlows:ProxyPort xmi:id="_F9UIcKfoEeqOlYPOd4BQPg" base_Port="_F9BNgKfoEeqOlYPOd4BQPg"/>
+  <PortsAndFlows:ProxyPort xmi:id="_oe9-oKfoEeqOlYPOd4BQPg" base_Port="_oe34AKfoEeqOlYPOd4BQPg"/>
+  <PortsAndFlows:ProxyPort xmi:id="_6akBgKfoEeqOlYPOd4BQPg" base_Port="_6ad64KfoEeqOlYPOd4BQPg"/>
+  <PortsAndFlows:FullPort xmi:id="_YELKsKfpEeqOlYPOd4BQPg" base_Port="_YDywMKfpEeqOlYPOd4BQPg"/>
+  <PortsAndFlows:FullPort xmi:id="_SsU4EKfwEeqRA_iktO83RA" base_Port="_Sr8dkKfwEeqRA_iktO83RA"/>
+  <PortsAndFlows:FullPort xmi:id="_dbeiYKfwEeqRA_iktO83RA" base_Port="_dbX0sKfwEeqRA_iktO83RA"/>
+  <PortsAndFlows:FullPort xmi:id="_khSHcKfwEeqRA_iktO83RA" base_Port="_khMA0KfwEeqRA_iktO83RA"/>
+  <PortsAndFlows:FullPort xmi:id="_viJz4KfwEeqRA_iktO83RA" base_Port="_viEUUKfwEeqRA_iktO83RA"/>
+  <PortsAndFlows:FullPort xmi:id="_yV3RoKfwEeqRA_iktO83RA" base_Port="_yVxyEKfwEeqRA_iktO83RA"/>
+  <PortsAndFlows:FullPort xmi:id="_0i9bUKfwEeqRA_iktO83RA" base_Port="_0i4i0KfwEeqRA_iktO83RA"/>
+</xmi:XMI>

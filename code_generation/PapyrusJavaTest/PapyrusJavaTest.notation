@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:texteditormodel="http://www.eclipse.org/Papyrus/TextEditor/0.10.0/texteditormodel" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <notation:Diagram xmi:id="_UhpC0KqAEeqi_8RUyIFHAA" type="PapyrusUMLClassDiagram" name="PapyrusJavaTestClassDiagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_YqRsIKqAEeqi_8RUyIFHAA" type="Package_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_YqThUKqAEeqi_8RUyIFHAA" type="Package_NameLabel"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_YqThUaqAEeqi_8RUyIFHAA" type="Package_PackagedElementCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_ZbCasKqAEeqi_8RUyIFHAA" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_ZbCasqqAEeqi_8RUyIFHAA" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_ZbCas6qAEeqi_8RUyIFHAA" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ZbDBwKqAEeqi_8RUyIFHAA" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_ZbDBwaqAEeqi_8RUyIFHAA" type="Class_AttributeCompartment_CN">
+            <children xmi:type="notation:Shape" xmi:id="_K9hZgKqGEeqi_8RUyIFHAA" type="Property_ClassAttributeLabel">
+              <element xmi:type="uml:Property" href="PapyrusJavaTest.uml#_xvJz8KqCEeqi_8RUyIFHAA"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_K9hZgaqGEeqi_8RUyIFHAA"/>
+            </children>
+            <styles xmi:type="notation:TitleStyle" xmi:id="_ZbDBwqqAEeqi_8RUyIFHAA"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_ZbDBw6qAEeqi_8RUyIFHAA"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_ZbDBxKqAEeqi_8RUyIFHAA"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZbDBxaqAEeqi_8RUyIFHAA"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_ZbDBxqqAEeqi_8RUyIFHAA" type="Class_OperationCompartment_CN">
+            <children xmi:type="notation:Shape" xmi:id="_y-1IkKqBEeqi_8RUyIFHAA" type="Operation_ClassOperationLabel">
+              <element xmi:type="uml:Operation" href="PapyrusJavaTest.uml#_y-mfEKqBEeqi_8RUyIFHAA"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_y-1IkaqBEeqi_8RUyIFHAA"/>
+            </children>
+            <styles xmi:type="notation:TitleStyle" xmi:id="_ZbDBx6qAEeqi_8RUyIFHAA"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_ZbDByKqAEeqi_8RUyIFHAA"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_ZbDByaqAEeqi_8RUyIFHAA"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZbDByqqAEeqi_8RUyIFHAA"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_ZbDBy6qAEeqi_8RUyIFHAA" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_ZbDBzKqAEeqi_8RUyIFHAA"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_ZbDBzaqAEeqi_8RUyIFHAA"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_ZbDBzqqAEeqi_8RUyIFHAA"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZbDBz6qAEeqi_8RUyIFHAA"/>
+          </children>
+          <element xmi:type="uml:Class" href="PapyrusJavaTest.uml#_Za87IKqAEeqi_8RUyIFHAA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZbCasaqAEeqi_8RUyIFHAA" x="43" y="20"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_SV7uUKqCEeqi_8RUyIFHAA" type="Class_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_SV7uUqqCEeqi_8RUyIFHAA" type="Class_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_SV7uU6qCEeqi_8RUyIFHAA" type="Class_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_SV7uVKqCEeqi_8RUyIFHAA" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_SV7uVaqCEeqi_8RUyIFHAA" type="Class_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_SV7uVqqCEeqi_8RUyIFHAA"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_SV7uV6qCEeqi_8RUyIFHAA"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_SV7uWKqCEeqi_8RUyIFHAA"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SV7uWaqCEeqi_8RUyIFHAA"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_SV8VYKqCEeqi_8RUyIFHAA" type="Class_OperationCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_SV8VYaqCEeqi_8RUyIFHAA"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_SV8VYqqCEeqi_8RUyIFHAA"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_SV8VY6qCEeqi_8RUyIFHAA"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SV8VZKqCEeqi_8RUyIFHAA"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_SV8VZaqCEeqi_8RUyIFHAA" type="Class_NestedClassifierCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_SV8VZqqCEeqi_8RUyIFHAA"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_SV8VZ6qCEeqi_8RUyIFHAA"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_SV8VaKqCEeqi_8RUyIFHAA"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SV8VaaqCEeqi_8RUyIFHAA"/>
+          </children>
+          <element xmi:type="uml:Class" href="PapyrusJavaTest.uml#_SV1AoKqCEeqi_8RUyIFHAA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SV7uUaqCEeqi_8RUyIFHAA" x="353" y="27"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_ozbPEqqCEeqi_8RUyIFHAA" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_ozbPE6qCEeqi_8RUyIFHAA"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_ozbPFaqCEeqi_8RUyIFHAA" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Class" href="PapyrusJavaTest.uml#_SV1AoKqCEeqi_8RUyIFHAA"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ozbPFKqCEeqi_8RUyIFHAA" x="717" y="50"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_M1IwgKqIEeqi_8RUyIFHAA" type="Comment_Shape_CN">
+          <children xmi:type="notation:DecorationNode" xmi:id="_M1JXkKqIEeqi_8RUyIFHAA" type="Comment_BodyLabel_CN"/>
+          <element xmi:type="uml:Comment" href="PapyrusJavaTest.uml#_MxPvAKqIEeqi_8RUyIFHAA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_M1IwgaqIEeqi_8RUyIFHAA" x="291" y="151" width="272" height="48"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_6TlO8KqJEeqi_8RUyIFHAA" type="Comment_Shape">
+          <children xmi:type="notation:DecorationNode" xmi:id="_6TlO8qqJEeqi_8RUyIFHAA" type="Comment_BodyLabel"/>
+          <element xmi:type="uml:Comment" href="PapyrusJavaTest.uml#_6L1oMKqJEeqi_8RUyIFHAA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6TlO8aqJEeqi_8RUyIFHAA" x="15" y="151" width="229" height="89"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_YqThUqqAEeqi_8RUyIFHAA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YqThU6qAEeqi_8RUyIFHAA"/>
+      </children>
+      <element xmi:type="uml:Package" href="PapyrusJavaTest.uml#_YqK-cKqAEeqi_8RUyIFHAA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YqRsIaqAEeqi_8RUyIFHAA" x="381" y="17" width="585" height="323"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_09YtsKqGEeqi_8RUyIFHAA" type="Comment_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_09ZUwKqGEeqi_8RUyIFHAA" type="Comment_BodyLabel"/>
+      <element xmi:type="uml:Comment" href="PapyrusJavaTest.uml#_09W4gKqGEeqi_8RUyIFHAA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_09YtsaqGEeqi_8RUyIFHAA" x="12" y="142" width="331" height="127"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_DzKZsKqIEeqi_8RUyIFHAA" type="Model_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_DzLAwKqIEeqi_8RUyIFHAA" type="Model_NameLabel"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_DzLAwaqIEeqi_8RUyIFHAA" type="Model_PackagedElementCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_DzLAwqqIEeqi_8RUyIFHAA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DzLAw6qIEeqi_8RUyIFHAA"/>
+      </children>
+      <element xmi:type="uml:Model" href="PapyrusJavaTest.uml#_MjoqcKqAEeqi_8RUyIFHAA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DzKZsaqIEeqi_8RUyIFHAA" x="36" y="18"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_Dza4Y6qIEeqi_8RUyIFHAA" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_Dza4ZKqIEeqi_8RUyIFHAA"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_DzbfcKqIEeqi_8RUyIFHAA" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Model" href="PapyrusJavaTest.uml#_MjoqcKqAEeqi_8RUyIFHAA"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Dza4ZaqIEeqi_8RUyIFHAA" x="200"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_UhpC0aqAEeqi_8RUyIFHAA" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_UhpC0qqAEeqi_8RUyIFHAA"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_UhpC06qAEeqi_8RUyIFHAA" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
+      <owner xmi:type="uml:Model" href="PapyrusJavaTest.uml#_MjoqcKqAEeqi_8RUyIFHAA"/>
+    </styles>
+    <element xmi:type="uml:Model" href="PapyrusJavaTest.uml#_MjoqcKqAEeqi_8RUyIFHAA"/>
+    <edges xmi:type="notation:Connector" xmi:id="_ozbPFqqCEeqi_8RUyIFHAA" type="StereotypeCommentLink" source="_SV7uUKqCEeqi_8RUyIFHAA" target="_ozbPEqqCEeqi_8RUyIFHAA">
+      <styles xmi:type="notation:FontStyle" xmi:id="_ozbPF6qCEeqi_8RUyIFHAA"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_ozb2IqqCEeqi_8RUyIFHAA" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="PapyrusJavaTest.uml#_SV1AoKqCEeqi_8RUyIFHAA"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ozbPGKqCEeqi_8RUyIFHAA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ozb2IKqCEeqi_8RUyIFHAA"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ozb2IaqCEeqi_8RUyIFHAA"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_xvWBMKqCEeqi_8RUyIFHAA" type="Association_Edge" source="_ZbCasKqAEeqi_8RUyIFHAA" target="_SV7uUKqCEeqi_8RUyIFHAA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_xvWoQKqCEeqi_8RUyIFHAA" type="Association_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_E9SOAKqJEeqi_8RUyIFHAA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_xvWoQaqCEeqi_8RUyIFHAA" x="1" y="-18"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_xvWoQqqCEeqi_8RUyIFHAA" type="Association_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_FEwvAKqJEeqi_8RUyIFHAA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_xvWoQ6qCEeqi_8RUyIFHAA" x="-1" y="19"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_xvWoRKqCEeqi_8RUyIFHAA" type="Association_TargetRoleLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_FMH7QKqJEeqi_8RUyIFHAA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_xvWoRaqCEeqi_8RUyIFHAA" x="29" y="-17"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_xvWoRqqCEeqi_8RUyIFHAA" type="Association_SourceRoleLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_FTd5YKqJEeqi_8RUyIFHAA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_xvWoR6qCEeqi_8RUyIFHAA" x="-30" y="18"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_xvWoSKqCEeqi_8RUyIFHAA" type="Association_SourceMultiplicityLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_Fa7zUKqJEeqi_8RUyIFHAA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_xvWoSaqCEeqi_8RUyIFHAA" x="28" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_xvWoSqqCEeqi_8RUyIFHAA" type="Association_TargetMultiplicityLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_FiQjUKqJEeqi_8RUyIFHAA" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_xvWoS6qCEeqi_8RUyIFHAA" x="-28" y="-19"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_xvWBMaqCEeqi_8RUyIFHAA"/>
+      <element xmi:type="uml:Association" href="PapyrusJavaTest.uml#_xvE7cKqCEeqi_8RUyIFHAA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_xvWBMqqCEeqi_8RUyIFHAA" points="[733, 151, -643984, -643984]$[968, 135, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xwIEUKqCEeqi_8RUyIFHAA" id="(1.0,0.3106796116504854)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xwIEUaqCEeqi_8RUyIFHAA" id="(0.0,0.2692307692307692)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_DzbfcaqIEeqi_8RUyIFHAA" type="StereotypeCommentLink" source="_DzKZsKqIEeqi_8RUyIFHAA" target="_Dza4Y6qIEeqi_8RUyIFHAA">
+      <styles xmi:type="notation:FontStyle" xmi:id="_DzbfcqqIEeqi_8RUyIFHAA"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_DzbfdqqIEeqi_8RUyIFHAA" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Model" href="PapyrusJavaTest.uml#_MjoqcKqAEeqi_8RUyIFHAA"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Dzbfc6qIEeqi_8RUyIFHAA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DzbfdKqIEeqi_8RUyIFHAA"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DzbfdaqIEeqi_8RUyIFHAA"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_KJN80KqIEeqi_8RUyIFHAA" type="Comment_AnnotatedElementEdge" source="_09YtsKqGEeqi_8RUyIFHAA" target="_DzKZsKqIEeqi_8RUyIFHAA">
+      <styles xmi:type="notation:FontStyle" xmi:id="_KJN80aqIEeqi_8RUyIFHAA"/>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KJN80qqIEeqi_8RUyIFHAA" points="[348, 140, -643984, -643984]$[368, 215, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KQ4EAKqIEeqi_8RUyIFHAA" id="(0.31722054380664655,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_KQ4EAaqIEeqi_8RUyIFHAA" id="(0.405,1.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_B8L0gKqJEeqi_8RUyIFHAA" type="Comment_AnnotatedElementEdge" source="_M1IwgKqIEeqi_8RUyIFHAA" target="_SV7uUKqCEeqi_8RUyIFHAA">
+      <styles xmi:type="notation:FontStyle" xmi:id="_B8L0gaqJEeqi_8RUyIFHAA"/>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_B8L0gqqJEeqi_8RUyIFHAA" points="[996, 236, -643984, -643984]$[1005, 199, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_CK7bIKqJEeqi_8RUyIFHAA" id="(0.41544117647058826,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_CK7bIaqJEeqi_8RUyIFHAA" id="(0.52,1.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_arua8KqKEeqi_8RUyIFHAA" type="Comment_AnnotatedElementEdge" source="_6TlO8KqJEeqi_8RUyIFHAA" target="_ZbCasKqAEeqi_8RUyIFHAA">
+      <styles xmi:type="notation:FontStyle" xmi:id="_arua8aqKEeqi_8RUyIFHAA"/>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_arua8qqKEeqi_8RUyIFHAA" points="[492, 224, -643984, -643984]$[491, 168, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bBf2oKqKEeqi_8RUyIFHAA" id="(0.4069264069264069,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_bBf2oaqKEeqi_8RUyIFHAA" id="(0.42948717948717946,1.0)"/>
+    </edges>
+  </notation:Diagram>
+  <texteditormodel:TextEditorModel xmi:id="__SCp0KqFEeqi_8RUyIFHAA" type="CDTEditorInPapyrus" name="CDT PapyrusJavaTest" generatorID="Standard C++">
+    <editedObject xmi:type="uml:Class" href="PapyrusJavaTest.uml#_Za87IKqAEeqi_8RUyIFHAA"/>
+  </texteditormodel:TextEditorModel>
+</xmi:XMI>

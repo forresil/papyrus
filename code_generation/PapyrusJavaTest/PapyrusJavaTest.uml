@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:Codegen="http://www.eclipse.org/papyrus/Codegen/1" xmlns:PapyrusJava="http://www.eclipse.org/papyrus/PapyrusJava/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_MjoqcKqAEeqi_8RUyIFHAA" name="PapyrusJavaTest">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_09W4gKqGEeqi_8RUyIFHAA" annotatedElement="_MjoqcKqAEeqi_8RUyIFHAA">
+      <body>PREPARE MODEL TO GENERATE JAVA-CODE&#xD;
+-----------------------------------------------------------&#xD;
+1) Apply &quot;Papyrus Code Generation Profile&quot; to the model. &#xD;
+1.1 Import &quot;GeneratorHint&quot; Stereotype &#xD;
+1.1.1 Set &quot;GeneratorID&quot; to &quot;Standard Java&quot;&#xD;
+1.2 Import &quot;Project&quot; Stereotype&#xD;
+1.2.1 Set &quot;ProjectName&quot; to your name of choice&#xD;
+1.2.2 Set &quot;sourceFolder&quot; to &quot;src-gen&quot;&#xD;
+1.2.3 Set &quot;generationMode&quot; to Batch or Incremental.&#xD;
+.&#xD;
+2) Apply &quot;Papyrus Java Profile&quot; to the model. </body>
+    </ownedComment>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_Mm9EMKqAEeqi_8RUyIFHAA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_YqK-cKqAEeqi_8RUyIFHAA" name="JavaTest">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_MxPvAKqIEeqi_8RUyIFHAA" annotatedElement="_SV1AoKqCEeqi_8RUyIFHAA">
+        <body>IMPORT &quot;java.lang.String&quot;&#xD;
+--------------------------------&#xD;
+1) Apply &quot;External&quot; Stereotype from &quot;JavaProfile&quot; &#xD;
+1.1 Set &quot;name&quot; attribute to &quot;java.lang.String&quot;</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_6L1oMKqJEeqi_8RUyIFHAA" annotatedElement="_Za87IKqAEeqi_8RUyIFHAA">
+        <body>CREATE MAIN( ) Method&#xD;
+------------------------------------------&#xD;
+1) Add an operation &quot;main&quot; &#xD;
+2) Make the opertaion &quot;static&quot;&#xD;
+3) Add &quot;in&quot; parameter &quot;args&quot; with &quot;1..*&quot; multiplicity and &quot;String&quot; type.&#xD;
+</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Za87IKqAEeqi_8RUyIFHAA" name="PapyrusJavaTest">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_zPA4oKqMEeqi_8RUyIFHAA">
+          <body>Class Owned comment&#xD;
+</body>
+        </ownedComment>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_xvJz8KqCEeqi_8RUyIFHAA" name="msg" type="_SV1AoKqCEeqi_8RUyIFHAA" association="_xvE7cKqCEeqi_8RUyIFHAA">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_eP0h4KqMEeqi_8RUyIFHAA" annotatedElement="_xvJz8KqCEeqi_8RUyIFHAA">
+            <body>Message to be displayed to the user</body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LgSFIKqCEeqi_8RUyIFHAA" name="print HelloWorld to the console" specification="_y-mfEKqBEeqi_8RUyIFHAA">
+          <ownedComment xmi:type="uml:Comment" xmi:id="__01mIKqLEeqi_8RUyIFHAA" annotatedElement="_LgSFIKqCEeqi_8RUyIFHAA">
+            <body>Say hello to the world</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_H0wDAKqMEeqi_8RUyIFHAA">
+            <body>Say World to the Hello</body>
+          </ownedComment>
+          <language>JAVA</language>
+          <body>//Display &quot;Hello&quot; in the console&#xD;
+System.out.println(&quot;Hello&quot;);</body>
+        </ownedBehavior>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_y-mfEKqBEeqi_8RUyIFHAA" name="main" isStatic="true" method="_LgSFIKqCEeqi_8RUyIFHAA">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_flJykKqLEeqi_8RUyIFHAA" annotatedElement="_y-mfEKqBEeqi_8RUyIFHAA">
+            <body>main method applied comment.&#xD;
+</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_iIG3gKqLEeqi_8RUyIFHAA">
+            <body>main method owned comment.&#xD;
+</body>
+          </ownedComment>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_Cr-E8KqEEeqi_8RUyIFHAA" name="args" type="_SV1AoKqCEeqi_8RUyIFHAA">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cNJZIKqEEeqi_8RUyIFHAA" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_SV1AoKqCEeqi_8RUyIFHAA" name="String"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xvE7cKqCEeqi_8RUyIFHAA" memberEnd="_xvJz8KqCEeqi_8RUyIFHAA _xvLCEaqCEeqi_8RUyIFHAA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xvH-wKqCEeqi_8RUyIFHAA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xvIl0KqCEeqi_8RUyIFHAA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_xvLCEaqCEeqi_8RUyIFHAA" type="_Za87IKqAEeqi_8RUyIFHAA" association="_xvE7cKqCEeqi_8RUyIFHAA"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Tmz80KqBEeqi_8RUyIFHAA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Tm0j4KqBEeqi_8RUyIFHAA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/Codegen/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Codegen_PROFILES/Codegen.profile.uml#_fPDsIBa-EearhdjjJ6cVzQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_i_m2UKqCEeqi_8RUyIFHAA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_i_ndYKqCEeqi_8RUyIFHAA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/PapyrusJava/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+    </profileApplication>
+  </uml:Model>
+  <Codegen:GeneratorHint xmi:id="_Xl2lQKqBEeqi_8RUyIFHAA" base_Element="_MjoqcKqAEeqi_8RUyIFHAA" generatorID="Standard Java">
+    <language xmi:type="Codegen:Language" href="pathmap://Codegen_PROFILES/languages.uml#_2Zt6YCjREeayco6FJ_OtTQ"/>
+  </Codegen:GeneratorHint>
+  <Codegen:Project xmi:id="_XmjI0KqBEeqi_8RUyIFHAA" base_Model="_MjoqcKqAEeqi_8RUyIFHAA" projectName="PapyrusJavaTest.codegen" sourceFolder="src-gen"/>
+  <PapyrusJava:External xmi:id="_ozC0kKqCEeqi_8RUyIFHAA" name="java.lang.String" base_Classifier="_SV1AoKqCEeqi_8RUyIFHAA"/>
+</xmi:XMI>

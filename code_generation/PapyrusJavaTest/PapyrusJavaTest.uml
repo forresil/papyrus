@@ -12,7 +12,9 @@
 1.2.2 Set &quot;sourceFolder&quot; to &quot;src-gen&quot;&#xD;
 1.2.3 Set &quot;generationMode&quot; to Batch or Incremental.&#xD;
 .&#xD;
-2) Apply &quot;Papyrus Java Profile&quot; to the model. </body>
+2) Apply &quot;Papyrus Java Profile&quot; to the model. &#xD;
+.&#xD;
+3) Import registered Package &quot;Java Library&quot;</body>
     </ownedComment>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_Mm9EMKqAEeqi_8RUyIFHAA">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -68,12 +70,12 @@ System.out.println(&quot;Hello&quot;);</body>
         </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_SV1AoKqCEeqi_8RUyIFHAA" name="String"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_xvE7cKqCEeqi_8RUyIFHAA" memberEnd="_xvJz8KqCEeqi_8RUyIFHAA _xvLCEaqCEeqi_8RUyIFHAA">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xvH-wKqCEeqi_8RUyIFHAA" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xvIl0KqCEeqi_8RUyIFHAA" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_xvLCEaqCEeqi_8RUyIFHAA" type="_Za87IKqAEeqi_8RUyIFHAA" association="_xvE7cKqCEeqi_8RUyIFHAA"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_xvE7cKqCEeqi_8RUyIFHAA" memberEnd="_xvJz8KqCEeqi_8RUyIFHAA _xvLCEaqCEeqi_8RUyIFHAA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xvH-wKqCEeqi_8RUyIFHAA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xvIl0KqCEeqi_8RUyIFHAA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_xvLCEaqCEeqi_8RUyIFHAA" type="_Za87IKqAEeqi_8RUyIFHAA" association="_xvE7cKqCEeqi_8RUyIFHAA"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Tmz80KqBEeqi_8RUyIFHAA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Tm0j4KqBEeqi_8RUyIFHAA" source="http://www.eclipse.org/uml2/2.0.0/UML">

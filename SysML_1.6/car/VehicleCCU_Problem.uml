@@ -170,12 +170,78 @@ Pierce, C.R.. A Practical Guide to Systems Modeling with Papyrus and SysML (S.53
               <ownedAttribute xmi:type="uml:Property" xmi:id="_EvGrAJCqEeujko2XfXvkzQ" name="Status" visibility="public"/>
             </packagedElement>
           </packagedElement>
-          <packagedElement xmi:type="uml:Package" xmi:id="_py7qYJCnEeujko2XfXvkzQ" name="2 Logical Subsystems"/>
+          <packagedElement xmi:type="uml:Package" xmi:id="_py7qYJCnEeujko2XfXvkzQ" name="2 Logical Subsystems">
+            <packagedElement xmi:type="uml:Class" xmi:id="_A9K4MJCvEeujko2XfXvkzQ" name="Heating System">
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_o8TDsJCvEeujko2XfXvkzQ" name="Energy" type="_yzEjQJCpEeujko2XfXvkzQ" aggregation="composite"/>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_qbtLgJCwEeujko2XfXvkzQ" name="Hot Air" type="_9nBDcJCoEeujko2XfXvkzQ" aggregation="composite"/>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_jdu3UJCxEeujko2XfXvkzQ" name="I/O" type="_1dpTIJCpEeujko2XfXvkzQ" aggregation="composite"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_KeWTgJCvEeujko2XfXvkzQ" name="Control System">
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_0esv4JCvEeujko2XfXvkzQ" name="Energy" type="_yzEjQJCpEeujko2XfXvkzQ" aggregation="composite"/>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_bVlEcJCxEeujko2XfXvkzQ" name="I/O Heater" type="_1dpTIJCpEeujko2XfXvkzQ" aggregation="composite"/>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_pBokwJCxEeujko2XfXvkzQ" name="I/O Cooler" type="_1dpTIJCpEeujko2XfXvkzQ" aggregation="composite"/>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_vGkisJCxEeujko2XfXvkzQ" name="I/O UI" type="_1dpTIJCpEeujko2XfXvkzQ" aggregation="composite"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_RvdwsJCvEeujko2XfXvkzQ" name="Cooling System">
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_5nlVQJCvEeujko2XfXvkzQ" name="Energy" type="_yzEjQJCpEeujko2XfXvkzQ" aggregation="composite"/>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_vEacAJCwEeujko2XfXvkzQ" name="Cold Air" type="_9nBDcJCoEeujko2XfXvkzQ" aggregation="composite"/>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_2FakIJCxEeujko2XfXvkzQ" name="I/O" type="_1dpTIJCpEeujko2XfXvkzQ" aggregation="composite"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_WgsEAJCvEeujko2XfXvkzQ" name="UI System">
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_8xBycJCvEeujko2XfXvkzQ" name="Energy" type="_yzEjQJCpEeujko2XfXvkzQ" aggregation="composite"/>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_H4VBkJCxEeujko2XfXvkzQ" name="I/O" type="_1dpTIJCpEeujko2XfXvkzQ" aggregation="composite"/>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_481dMJCxEeujko2XfXvkzQ" name="I/O" type="_1dpTIJCpEeujko2XfXvkzQ" aggregation="composite"/>
+            </packagedElement>
+          </packagedElement>
           <packagedElement xmi:type="uml:Class" xmi:id="_OsimgJCUEeujko2XfXvkzQ" name="Climate Control Unit">
             <generalization xmi:type="uml:Generalization" xmi:id="_LozAUJCiEeujko2XfXvkzQ" general="_6gXfwJChEeujko2XfXvkzQ"/>
             <ownedAttribute xmi:type="uml:Port" xmi:id="_kS2wMJCrEeujko2XfXvkzQ" name="Air" type="_9nBDcJCoEeujko2XfXvkzQ" aggregation="composite"/>
             <ownedAttribute xmi:type="uml:Port" xmi:id="_s7xGwJCrEeujko2XfXvkzQ" name="Energy" type="_iNW6wJCUEeujko2XfXvkzQ" aggregation="composite"/>
             <ownedAttribute xmi:type="uml:Port" xmi:id="_v8FdIJCrEeujko2XfXvkzQ" name="I/O" type="_1dpTIJCpEeujko2XfXvkzQ" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_0i-BUJCuEeujko2XfXvkzQ" name="Heating System" type="_A9K4MJCvEeujko2XfXvkzQ" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_HeLuIJCvEeujko2XfXvkzQ" name="Control System" type="_KeWTgJCvEeujko2XfXvkzQ" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_PzYegJCvEeujko2XfXvkzQ" name="Cooling System" type="_RvdwsJCvEeujko2XfXvkzQ" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Ui3scJCvEeujko2XfXvkzQ" name="UI System" type="_WgsEAJCvEeujko2XfXvkzQ" aggregation="composite"/>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_NoT4oJCwEeujko2XfXvkzQ" name="Connector9">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_Noqd8JCwEeujko2XfXvkzQ" role="_s7xGwJCrEeujko2XfXvkzQ"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_Noqd8ZCwEeujko2XfXvkzQ" partWithPort="_0i-BUJCuEeujko2XfXvkzQ" role="_o8TDsJCvEeujko2XfXvkzQ"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_PF87UJCwEeujko2XfXvkzQ" name="Connector10">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_PF-JcJCwEeujko2XfXvkzQ" role="_s7xGwJCrEeujko2XfXvkzQ"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_PF-JcZCwEeujko2XfXvkzQ" partWithPort="_PzYegJCvEeujko2XfXvkzQ" role="_5nlVQJCvEeujko2XfXvkzQ"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_Rh_f8JCwEeujko2XfXvkzQ" name="Connector11">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_RiAuEJCwEeujko2XfXvkzQ" role="_s7xGwJCrEeujko2XfXvkzQ"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_RiAuEZCwEeujko2XfXvkzQ" partWithPort="_HeLuIJCvEeujko2XfXvkzQ" role="_0esv4JCvEeujko2XfXvkzQ"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_SVxGQJCwEeujko2XfXvkzQ" name="Connector12">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_SVyUYJCwEeujko2XfXvkzQ" role="_s7xGwJCrEeujko2XfXvkzQ"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_SVyUYZCwEeujko2XfXvkzQ" partWithPort="_Ui3scJCvEeujko2XfXvkzQ" role="_8xBycJCvEeujko2XfXvkzQ"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_2jkVMJCwEeujko2XfXvkzQ" name="Connector13">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_2jnYgJCwEeujko2XfXvkzQ" partWithPort="_0i-BUJCuEeujko2XfXvkzQ" role="_qbtLgJCwEeujko2XfXvkzQ"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_2jnYgZCwEeujko2XfXvkzQ" role="_kS2wMJCrEeujko2XfXvkzQ"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_57QpwJCwEeujko2XfXvkzQ" name="Connector14">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_57R34JCwEeujko2XfXvkzQ" partWithPort="_PzYegJCvEeujko2XfXvkzQ" role="_vEacAJCwEeujko2XfXvkzQ"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_57R34ZCwEeujko2XfXvkzQ" role="_kS2wMJCrEeujko2XfXvkzQ"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_OrD5oJCxEeujko2XfXvkzQ" name="Connector15">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_OrFu0JCxEeujko2XfXvkzQ" partWithPort="_Ui3scJCvEeujko2XfXvkzQ" role="_H4VBkJCxEeujko2XfXvkzQ"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_OrFu0ZCxEeujko2XfXvkzQ" role="_v8FdIJCrEeujko2XfXvkzQ"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_nP6IcJCxEeujko2XfXvkzQ" name="Connector16">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_nP7WkJCxEeujko2XfXvkzQ" partWithPort="_HeLuIJCvEeujko2XfXvkzQ" role="_bVlEcJCxEeujko2XfXvkzQ"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_nP7WkZCxEeujko2XfXvkzQ" partWithPort="_0i-BUJCuEeujko2XfXvkzQ" role="_jdu3UJCxEeujko2XfXvkzQ"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_8lBr4JCxEeujko2XfXvkzQ" name="Connector17">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_8lC6AJCxEeujko2XfXvkzQ" partWithPort="_PzYegJCvEeujko2XfXvkzQ" role="_2FakIJCxEeujko2XfXvkzQ"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_8lDhEJCxEeujko2XfXvkzQ" partWithPort="_HeLuIJCvEeujko2XfXvkzQ" role="_pBokwJCxEeujko2XfXvkzQ"/>
+            </ownedConnector>
+            <ownedConnector xmi:type="uml:Connector" xmi:id="_9FiX8JCxEeujko2XfXvkzQ" name="Connector18">
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_9FjmEJCxEeujko2XfXvkzQ" partWithPort="_Ui3scJCvEeujko2XfXvkzQ" role="_481dMJCxEeujko2XfXvkzQ"/>
+              <end xmi:type="uml:ConnectorEnd" xmi:id="_9FjmEZCxEeujko2XfXvkzQ" partWithPort="_HeLuIJCvEeujko2XfXvkzQ" role="_vGkisJCxEeujko2XfXvkzQ"/>
+            </ownedConnector>
           </packagedElement>
         </packagedElement>
       </packagedElement>
@@ -270,4 +336,34 @@ Pierce, C.R.. A Practical Guide to Systems Modeling with Papyrus and SysML (S.53
   <PortsAndFlows:ProxyPort xmi:id="_kTELkJCrEeujko2XfXvkzQ" base_Port="_kS2wMJCrEeujko2XfXvkzQ"/>
   <PortsAndFlows:ProxyPort xmi:id="_s70KEJCrEeujko2XfXvkzQ" base_Port="_s7xGwJCrEeujko2XfXvkzQ"/>
   <PortsAndFlows:ProxyPort xmi:id="_v8IgcJCrEeujko2XfXvkzQ" base_Port="_v8FdIJCrEeujko2XfXvkzQ"/>
+  <Blocks:Block xmi:id="_A9OikJCvEeujko2XfXvkzQ" base_Class="_A9K4MJCvEeujko2XfXvkzQ"/>
+  <Blocks:Block xmi:id="_KeZW0JCvEeujko2XfXvkzQ" base_Class="_KeWTgJCvEeujko2XfXvkzQ"/>
+  <Blocks:Block xmi:id="_Rvg0AJCvEeujko2XfXvkzQ" base_Class="_RvdwsJCvEeujko2XfXvkzQ"/>
+  <Blocks:Block xmi:id="_WgugQJCvEeujko2XfXvkzQ" base_Class="_WgsEAJCvEeujko2XfXvkzQ"/>
+  <PortsAndFlows:ProxyPort xmi:id="_o8WHAJCvEeujko2XfXvkzQ" base_Port="_o8TDsJCvEeujko2XfXvkzQ"/>
+  <PortsAndFlows:ProxyPort xmi:id="_0evzMJCvEeujko2XfXvkzQ" base_Port="_0esv4JCvEeujko2XfXvkzQ"/>
+  <PortsAndFlows:ProxyPort xmi:id="_5noYkJCvEeujko2XfXvkzQ" base_Port="_5nlVQJCvEeujko2XfXvkzQ"/>
+  <PortsAndFlows:ProxyPort xmi:id="_8xEOsJCvEeujko2XfXvkzQ" base_Port="_8xBycJCvEeujko2XfXvkzQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="_No9_8JCwEeujko2XfXvkzQ" base_Element="_Noqd8ZCwEeujko2XfXvkzQ" propertyPath="_0i-BUJCuEeujko2XfXvkzQ" base_ConnectorEnd="_Noqd8ZCwEeujko2XfXvkzQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="_PF-JcpCwEeujko2XfXvkzQ" base_Element="_PF-JcZCwEeujko2XfXvkzQ" propertyPath="_PzYegJCvEeujko2XfXvkzQ" base_ConnectorEnd="_PF-JcZCwEeujko2XfXvkzQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="_RiAuEpCwEeujko2XfXvkzQ" base_Element="_RiAuEZCwEeujko2XfXvkzQ" propertyPath="_HeLuIJCvEeujko2XfXvkzQ" base_ConnectorEnd="_RiAuEZCwEeujko2XfXvkzQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="_SVyUYpCwEeujko2XfXvkzQ" base_Element="_SVyUYZCwEeujko2XfXvkzQ" propertyPath="_Ui3scJCvEeujko2XfXvkzQ" base_ConnectorEnd="_SVyUYZCwEeujko2XfXvkzQ"/>
+  <PortsAndFlows:ProxyPort xmi:id="_qbwO0JCwEeujko2XfXvkzQ" base_Port="_qbtLgJCwEeujko2XfXvkzQ"/>
+  <PortsAndFlows:ProxyPort xmi:id="_vEdfUJCwEeujko2XfXvkzQ" base_Port="_vEacAJCwEeujko2XfXvkzQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="_2jnYgpCwEeujko2XfXvkzQ" base_Element="_2jnYgJCwEeujko2XfXvkzQ" propertyPath="_0i-BUJCuEeujko2XfXvkzQ" base_ConnectorEnd="_2jnYgJCwEeujko2XfXvkzQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="_57Se8JCwEeujko2XfXvkzQ" base_Element="_57R34JCwEeujko2XfXvkzQ" propertyPath="_PzYegJCvEeujko2XfXvkzQ" base_ConnectorEnd="_57R34JCwEeujko2XfXvkzQ"/>
+  <PortsAndFlows:ProxyPort xmi:id="_H4Yr8JCxEeujko2XfXvkzQ" base_Port="_H4VBkJCxEeujko2XfXvkzQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="_OrFu0pCxEeujko2XfXvkzQ" base_Element="_OrFu0JCxEeujko2XfXvkzQ" propertyPath="_Ui3scJCvEeujko2XfXvkzQ" base_ConnectorEnd="_OrFu0JCxEeujko2XfXvkzQ"/>
+  <PortsAndFlows:ProxyPort xmi:id="_bVou0JCxEeujko2XfXvkzQ" base_Port="_bVlEcJCxEeujko2XfXvkzQ"/>
+  <PortsAndFlows:ProxyPort xmi:id="_jdxTkJCxEeujko2XfXvkzQ" base_Port="_jdu3UJCxEeujko2XfXvkzQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="_nP79oJCxEeujko2XfXvkzQ" base_Element="_nP7WkJCxEeujko2XfXvkzQ" propertyPath="_HeLuIJCvEeujko2XfXvkzQ" base_ConnectorEnd="_nP7WkJCxEeujko2XfXvkzQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="_nP8ksJCxEeujko2XfXvkzQ" base_Element="_nP7WkZCxEeujko2XfXvkzQ" propertyPath="_0i-BUJCuEeujko2XfXvkzQ" base_ConnectorEnd="_nP7WkZCxEeujko2XfXvkzQ"/>
+  <PortsAndFlows:ProxyPort xmi:id="_pBroEJCxEeujko2XfXvkzQ" base_Port="_pBokwJCxEeujko2XfXvkzQ"/>
+  <PortsAndFlows:ProxyPort xmi:id="_vGnmAJCxEeujko2XfXvkzQ" base_Port="_vGkisJCxEeujko2XfXvkzQ"/>
+  <PortsAndFlows:ProxyPort xmi:id="_2FdncJCxEeujko2XfXvkzQ" base_Port="_2FakIJCxEeujko2XfXvkzQ"/>
+  <PortsAndFlows:ProxyPort xmi:id="_4835cJCxEeujko2XfXvkzQ" base_Port="_481dMJCxEeujko2XfXvkzQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="_8lDhEZCxEeujko2XfXvkzQ" base_Element="_8lC6AJCxEeujko2XfXvkzQ" propertyPath="_PzYegJCvEeujko2XfXvkzQ" base_ConnectorEnd="_8lC6AJCxEeujko2XfXvkzQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="_8lEIIJCxEeujko2XfXvkzQ" base_Element="_8lDhEJCxEeujko2XfXvkzQ" propertyPath="_HeLuIJCvEeujko2XfXvkzQ" base_ConnectorEnd="_8lDhEJCxEeujko2XfXvkzQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="_9FkNIJCxEeujko2XfXvkzQ" base_Element="_9FjmEJCxEeujko2XfXvkzQ" propertyPath="_Ui3scJCvEeujko2XfXvkzQ" base_ConnectorEnd="_9FjmEJCxEeujko2XfXvkzQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="_9Fk0MJCxEeujko2XfXvkzQ" base_Element="_9FjmEZCxEeujko2XfXvkzQ" propertyPath="_HeLuIJCvEeujko2XfXvkzQ" base_ConnectorEnd="_9FjmEZCxEeujko2XfXvkzQ"/>
 </xmi:XMI>

@@ -27,12 +27,19 @@ They are three kind of patterns:
 
 ## 2. Structural Patterns
 ### 2.1 Adapter Pattern
+![Factory Pattern](./resources/diagrams/AdapterPattern.PNG)
 ### 2.2 Bridge Pattern
+![Factory Pattern](./resources/diagrams/BridgePattern.PNG)
 ### 2.3 Filter Pattern
+![Factory Pattern](./resources/diagrams/FilterPattern.PNG)
 ### 2.4 Composite Pattern
+![Factory Pattern](./resources/diagrams/CompositePattern.PNG)
 ### 2.5 Decorator Pattern
+![Factory Pattern](./resources/diagrams/DecoratorPattern.PNG)
 ### 2.6 Facade Pattern
+![Factory Pattern](./resources/diagrams/FacadePattern.PNG)
 ### 2.7 Proxy Pattern
+![Factory Pattern](./resources/diagrams/ProxyPattern.PNG)
 
 ## 3. Behavioral Patterns
 ### 3.1 Chain of Responsability Pattern

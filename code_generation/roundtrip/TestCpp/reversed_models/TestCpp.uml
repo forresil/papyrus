@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:C_Cpp="http://www.eclipse.org/papyrus/C_Cpp/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_DqSUAJKVEemfPLF7kMvrzA" name="TestCpp">
+    <packagedElement xmi:type="uml:Package" xmi:id="_DrzW8JKVEemfPLF7kMvrzA" name="src">
+      <packagedElement xmi:type="uml:Class" xmi:id="_Dr0lEJKVEemfPLF7kMvrzA" name="Test">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Dr1zMJKVEemfPLF7kMvrzA" name="number" visibility="private" aggregation="composite" association="_D0HlcJKVEemfPLF7kMvrzA">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_D2tmcJKVEemfPLF7kMvrzA" name="Test" specification="_D0KBsJKVEemfPLF7kMvrzA" isReentrant="false">
+          <language>C++</language>
+          <body></body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_D3ELwJKVEemfPLF7kMvrzA" name="getNumber" specification="_D2vboJKVEemfPLF7kMvrzA" isReentrant="false">
+          <language>C++</language>
+          <body>		return number;
+</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_D3N8wJKVEemfPLF7kMvrzA" name="setNumber" specification="_D3ELwZKVEemfPLF7kMvrzA" isReentrant="false">
+          <language>C++</language>
+          <body>		this->number = number;
+</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_EBiWYJKVEemfPLF7kMvrzA" name="add" specification="_D3Oj0JKVEemfPLF7kMvrzA" isReentrant="false">
+          <language>C/C++</language>
+          <body>	return a+b;</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_EBi9cJKVEemfPLF7kMvrzA" name="run" specification="_D3g3sZKVEemfPLF7kMvrzA" isReentrant="false">
+          <language>C/C++</language>
+          <body>	std::cout &lt;&lt; number &lt;&lt; std::endl;</body>
+        </ownedBehavior>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_D0KBsJKVEemfPLF7kMvrzA" name="Test" visibility="public" method="_D2tmcJKVEemfPLF7kMvrzA"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_D2vboJKVEemfPLF7kMvrzA" name="getNumber" visibility="public" method="_D3ELwJKVEemfPLF7kMvrzA">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_D3DksJKVEemfPLF7kMvrzA" name="ret" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_D3ELwZKVEemfPLF7kMvrzA" name="setNumber" visibility="public" method="_D3N8wJKVEemfPLF7kMvrzA">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_D3NVsJKVEemfPLF7kMvrzA" name="number">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_D3Oj0JKVEemfPLF7kMvrzA" name="add" visibility="public" method="_EBiWYJKVEemfPLF7kMvrzA">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_D3UqcJKVEemfPLF7kMvrzA" name="ret" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_D3WfoJKVEemfPLF7kMvrzA" name="a">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_D3cmQJKVEemfPLF7kMvrzA" name="b">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_D3g3sZKVEemfPLF7kMvrzA" name="run" visibility="public" method="_EBi9cJKVEemfPLF7kMvrzA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_D0HlcJKVEemfPLF7kMvrzA" name="A_number_test" memberEnd="_Dr1zMJKVEemfPLF7kMvrzA _D0IzkJKVEemfPLF7kMvrzA">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_D0IzkJKVEemfPLF7kMvrzA" name="test" type="_Dr0lEJKVEemfPLF7kMvrzA" association="_D0HlcJKVEemfPLF7kMvrzA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D0IzkZKVEemfPLF7kMvrzA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D0JaoJKVEemfPLF7kMvrzA" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DrLr4JKVEemfPLF7kMvrzA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DrOIIJKVEemfPLF7kMvrzA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/C_Cpp/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PapyrusC_Cpp_PROFILES/C_Cpp.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DrnwwJKVEemfPLF7kMvrzA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DroX0JKVEemfPLF7kMvrzA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <standard:Create xmi:id="_D2aEcJKVEemfPLF7kMvrzA" base_BehavioralFeature="_D0KBsJKVEemfPLF7kMvrzA"/>
+  <C_Cpp:ConstInit xmi:id="_D2sYUJKVEemfPLF7kMvrzA" initialisation="number(0)" base_operation="_D0KBsJKVEemfPLF7kMvrzA"/>
+  <C_Cpp:Const xmi:id="_D3CWkJKVEemfPLF7kMvrzA" base_operation="_D2vboJKVEemfPLF7kMvrzA"/>
+  <C_Cpp:Const xmi:id="_D3axEJKVEemfPLF7kMvrzA" base_parameter="_D3WfoJKVEemfPLF7kMvrzA"/>
+  <C_Cpp:Const xmi:id="_D3g3sJKVEemfPLF7kMvrzA" base_parameter="_D3cmQJKVEemfPLF7kMvrzA"/>
+  <C_Cpp:Include xmi:id="_D3vhMJKVEemfPLF7kMvrzA" header="#include &quot;iostream&quot;" base_class="_Dr0lEJKVEemfPLF7kMvrzA" base_Classifier="_Dr0lEJKVEemfPLF7kMvrzA"/>
+</xmi:XMI>

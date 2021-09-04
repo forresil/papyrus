@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:texteditormodel="http://www.eclipse.org/Papyrus/TextEditor/0.10.0/texteditormodel" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <notation:Diagram xmi:id="_ktlXEJHrEem4GY0EQDGh8g" type="PapyrusUMLClassDiagram" name="Classes" measurementUnit="Pixel">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lmvMoZHrEem4GY0EQDGh8g" source="PapyrusCSSForceValue">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lmvMopHrEem4GY0EQDGh8g" key="canonical" value="true"/>
+    </eAnnotations>
+    <children xmi:type="notation:Shape" xmi:id="_lmxo4JHrEem4GY0EQDGh8g" type="Package_Shape">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lqENcJHrEem4GY0EQDGh8g" source="PapyrusCSSForceValue">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lqENcZHrEem4GY0EQDGh8g" key="mutable" value="true"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oflCAJHrEem4GY0EQDGh8g" key="canonical" value="true"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_lmxo4pHrEem4GY0EQDGh8g" type="Package_NameLabel"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_lmxo45HrEem4GY0EQDGh8g" type="Package_PackagedElementCompartment">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_og_XQJHrEem4GY0EQDGh8g" source="PapyrusCSSForceValue">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_og_XQZHrEem4GY0EQDGh8g" key="mutable" value="true"/>
+        </eAnnotations>
+        <children xmi:type="notation:Shape" xmi:id="_ofmQIJHrEem4GY0EQDGh8g" type="DataType_Shape_CN">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_og_XQpHrEem4GY0EQDGh8g" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_og_XQ5HrEem4GY0EQDGh8g" key="mutable" value="true"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rJnmYZHrEem4GY0EQDGh8g" key="canonical" value="true"/>
+          </eAnnotations>
+          <children xmi:type="notation:DecorationNode" xmi:id="_ofm3MJHrEem4GY0EQDGh8g" type="DataType_NameLabel_CN"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_ofm3MZHrEem4GY0EQDGh8g" type="DataType_FloatingNameLabel_CN">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ofm3MpHrEem4GY0EQDGh8g" y="15"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_ofm3M5HrEem4GY0EQDGh8g" type="DataType_AttributeCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_ofm3NJHrEem4GY0EQDGh8g"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_ofm3NZHrEem4GY0EQDGh8g"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_ofm3NpHrEem4GY0EQDGh8g"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ofm3N5HrEem4GY0EQDGh8g"/>
+          </children>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_ofm3OJHrEem4GY0EQDGh8g" type="DataType_OperationCompartment_CN">
+            <styles xmi:type="notation:TitleStyle" xmi:id="_ofm3OZHrEem4GY0EQDGh8g"/>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_ofm3OpHrEem4GY0EQDGh8g"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_ofm3O5HrEem4GY0EQDGh8g"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ofm3PJHrEem4GY0EQDGh8g"/>
+          </children>
+          <styles xmi:type="notation:CanonicalStyle" xmi:id="_rJnmYJHrEem4GY0EQDGh8g"/>
+          <element xmi:type="uml:DataType" href="CppTestReversePapyrus.uml#__Nc9kZHqEem4GY0EQDGh8g"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ofmQIZHrEem4GY0EQDGh8g" x="34" y="16"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_ogJCu5HrEem4GY0EQDGh8g" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_ogJCvJHrEem4GY0EQDGh8g"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_ogJpwJHrEem4GY0EQDGh8g" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:DataType" href="CppTestReversePapyrus.uml#__Nc9kZHqEem4GY0EQDGh8g"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ogJCvZHrEem4GY0EQDGh8g" x="295" y="26"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_lmxo5JHrEem4GY0EQDGh8g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lmxo5ZHrEem4GY0EQDGh8g"/>
+      </children>
+      <styles xmi:type="notation:CanonicalStyle" xmi:id="_ofka8JHrEem4GY0EQDGh8g"/>
+      <element xmi:type="uml:Package" href="CppTestReversePapyrus.uml#__NbvcJHqEem4GY0EQDGh8g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lmxo4ZHrEem4GY0EQDGh8g" x="220" y="120"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_lmyP8JHrEem4GY0EQDGh8g" type="Class_Shape">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lqENcpHrEem4GY0EQDGh8g" source="PapyrusCSSForceValue">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lqENc5HrEem4GY0EQDGh8g" key="mutable" value="true"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nUo44JHrEem4GY0EQDGh8g" key="canonical" value="true"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_lmyP8pHrEem4GY0EQDGh8g" type="Class_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_lmyP85HrEem4GY0EQDGh8g" type="Class_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_lmyP9JHrEem4GY0EQDGh8g" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_lmyP9ZHrEem4GY0EQDGh8g" type="Class_AttributeCompartment">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nWR3oJHrEem4GY0EQDGh8g" source="PapyrusCSSForceValue">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nWR3oZHrEem4GY0EQDGh8g" key="mutable" value="true"/>
+        </eAnnotations>
+        <children xmi:type="notation:Shape" xmi:id="_nUr8MJHrEem4GY0EQDGh8g" type="Property_ClassAttributeLabel"/>
+        <children xmi:type="notation:Shape" xmi:id="_nUrVIJHrEem4GY0EQDGh8g" type="Property_ClassAttributeLabel">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nWR3opHrEem4GY0EQDGh8g" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nWR3o5HrEem4GY0EQDGh8g" key="mutable" value="true"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="CppTestReversePapyrus.uml#__NYsIZHqEem4GY0EQDGh8g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_nUrVIZHrEem4GY0EQDGh8g"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_lmyP9pHrEem4GY0EQDGh8g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_lmyP95HrEem4GY0EQDGh8g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_lmyP-JHrEem4GY0EQDGh8g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lmyP-ZHrEem4GY0EQDGh8g"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_lmyP-pHrEem4GY0EQDGh8g" type="Class_OperationCompartment">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nWWJEJHrEem4GY0EQDGh8g" source="PapyrusCSSForceValue">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nWWJEZHrEem4GY0EQDGh8g" key="mutable" value="true"/>
+        </eAnnotations>
+        <children xmi:type="notation:Shape" xmi:id="_nUyp4JHrEem4GY0EQDGh8g" type="Operation_ClassOperationLabel">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nWWJEpHrEem4GY0EQDGh8g" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nWWJE5HrEem4GY0EQDGh8g" key="mutable" value="true"/>
+          </eAnnotations>
+          <element xmi:type="uml:Operation" href="CppTestReversePapyrus.uml#__NPiMJHqEem4GY0EQDGh8g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_nUyp4ZHrEem4GY0EQDGh8g"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_nUyp4pHrEem4GY0EQDGh8g" type="Operation_ClassOperationLabel">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nWWJFJHrEem4GY0EQDGh8g" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nWWJFZHrEem4GY0EQDGh8g" key="mutable" value="true"/>
+          </eAnnotations>
+          <element xmi:type="uml:Operation" href="CppTestReversePapyrus.uml#__NR-cZHqEem4GY0EQDGh8g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_nUyp45HrEem4GY0EQDGh8g"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_nUyp5JHrEem4GY0EQDGh8g" type="Operation_ClassOperationLabel">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nWWJFpHrEem4GY0EQDGh8g" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nWWJF5HrEem4GY0EQDGh8g" key="mutable" value="true"/>
+          </eAnnotations>
+          <element xmi:type="uml:Operation" href="CppTestReversePapyrus.uml#__NVBwZHqEem4GY0EQDGh8g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_nUyp5ZHrEem4GY0EQDGh8g"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_lmyP-5HrEem4GY0EQDGh8g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_lmyP_JHrEem4GY0EQDGh8g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_lmyP_ZHrEem4GY0EQDGh8g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lmyP_pHrEem4GY0EQDGh8g"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_lmyP_5HrEem4GY0EQDGh8g" type="Class_NestedClassifierCompartment">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nWeE4JHrEem4GY0EQDGh8g" source="PapyrusCSSForceValue">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nWer8JHrEem4GY0EQDGh8g" key="mutable" value="true"/>
+        </eAnnotations>
+        <children xmi:type="notation:Shape" xmi:id="_nU7MwJHrEem4GY0EQDGh8g" type="Class_ClassNestedClassifierLabel">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nWer8ZHrEem4GY0EQDGh8g" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nWer8pHrEem4GY0EQDGh8g" key="mutable" value="true"/>
+          </eAnnotations>
+          <element xmi:type="uml:OpaqueBehavior" href="CppTestReversePapyrus.uml#__TFEcZHqEem4GY0EQDGh8g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_nU7MwZHrEem4GY0EQDGh8g"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_nU7MwpHrEem4GY0EQDGh8g" type="Class_ClassNestedClassifierLabel">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nWer85HrEem4GY0EQDGh8g" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nWer9JHrEem4GY0EQDGh8g" key="mutable" value="true"/>
+          </eAnnotations>
+          <element xmi:type="uml:OpaqueBehavior" href="CppTestReversePapyrus.uml#__TFrgJHqEem4GY0EQDGh8g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_nU7Mw5HrEem4GY0EQDGh8g"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_nU7MxJHrEem4GY0EQDGh8g" type="Class_ClassNestedClassifierLabel">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nWer9ZHrEem4GY0EQDGh8g" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nWer9pHrEem4GY0EQDGh8g" key="mutable" value="true"/>
+          </eAnnotations>
+          <element xmi:type="uml:OpaqueBehavior" href="CppTestReversePapyrus.uml#__TFrgZHqEem4GY0EQDGh8g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_nU7MxZHrEem4GY0EQDGh8g"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_lmyQAJHrEem4GY0EQDGh8g"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_lmyQAZHrEem4GY0EQDGh8g"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_lmyQApHrEem4GY0EQDGh8g"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lmyQA5HrEem4GY0EQDGh8g"/>
+      </children>
+      <styles xmi:type="notation:CanonicalStyle" xmi:id="_nUoR0JHrEem4GY0EQDGh8g"/>
+      <element xmi:type="uml:Class" href="CppTestReversePapyrus.uml#__HF24pHqEem4GY0EQDGh8g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lmyP8ZHrEem4GY0EQDGh8g" x="660" y="100"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_lnFK55HrEem4GY0EQDGh8g" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_lnFK6JHrEem4GY0EQDGh8g"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_lnFx8JHrEem4GY0EQDGh8g" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Package" href="CppTestReversePapyrus.uml#__NbvcJHqEem4GY0EQDGh8g"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lnFK6ZHrEem4GY0EQDGh8g" x="843" y="289"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_lnPi9ZHrEem4GY0EQDGh8g" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_lnPi9pHrEem4GY0EQDGh8g"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_lnPi-JHrEem4GY0EQDGh8g" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="CppTestReversePapyrus.uml#__HF24pHqEem4GY0EQDGh8g"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lnPi95HrEem4GY0EQDGh8g" x="843" y="289"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_ktlXEZHrEem4GY0EQDGh8g" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_ktlXEpHrEem4GY0EQDGh8g"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_ktlXE5HrEem4GY0EQDGh8g" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
+      <owner xmi:type="uml:Model" href="CppTestReversePapyrus.uml#__HFP0JHqEem4GY0EQDGh8g"/>
+    </styles>
+    <styles xmi:type="notation:CanonicalStyle" xmi:id="_lmvMoJHrEem4GY0EQDGh8g"/>
+    <element xmi:type="uml:Model" href="CppTestReversePapyrus.uml#__HFP0JHqEem4GY0EQDGh8g"/>
+    <edges xmi:type="notation:Connector" xmi:id="_lnFx8ZHrEem4GY0EQDGh8g" type="StereotypeCommentLink" source="_lmxo4JHrEem4GY0EQDGh8g" target="_lnFK55HrEem4GY0EQDGh8g">
+      <styles xmi:type="notation:FontStyle" xmi:id="_lnFx8pHrEem4GY0EQDGh8g"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_lnFx9pHrEem4GY0EQDGh8g" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Package" href="CppTestReversePapyrus.uml#__NbvcJHqEem4GY0EQDGh8g"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lnFx85HrEem4GY0EQDGh8g" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lnFx9JHrEem4GY0EQDGh8g"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lnFx9ZHrEem4GY0EQDGh8g"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_lnPi-ZHrEem4GY0EQDGh8g" type="StereotypeCommentLink" source="_lmyP8JHrEem4GY0EQDGh8g" target="_lnPi9ZHrEem4GY0EQDGh8g">
+      <styles xmi:type="notation:FontStyle" xmi:id="_lnPi-pHrEem4GY0EQDGh8g"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_lnQKApHrEem4GY0EQDGh8g" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="CppTestReversePapyrus.uml#__HF24pHqEem4GY0EQDGh8g"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lnPi-5HrEem4GY0EQDGh8g" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lnQKAJHrEem4GY0EQDGh8g"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lnQKAZHrEem4GY0EQDGh8g"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_ogJpwZHrEem4GY0EQDGh8g" type="StereotypeCommentLink" source="_ofmQIJHrEem4GY0EQDGh8g" target="_ogJCu5HrEem4GY0EQDGh8g">
+      <styles xmi:type="notation:FontStyle" xmi:id="_ogJpwpHrEem4GY0EQDGh8g"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_ogJpxpHrEem4GY0EQDGh8g" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:DataType" href="CppTestReversePapyrus.uml#__Nc9kZHqEem4GY0EQDGh8g"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ogJpw5HrEem4GY0EQDGh8g" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ogJpxJHrEem4GY0EQDGh8g"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ogJpxZHrEem4GY0EQDGh8g"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_rKnr8JHrEem4GY0EQDGh8g" type="Association_Edge" source="_lmyP8JHrEem4GY0EQDGh8g" target="_ofmQIJHrEem4GY0EQDGh8g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rP50kJHrEem4GY0EQDGh8g" source="PapyrusCSSForceValue">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rP50kZHrEem4GY0EQDGh8g" key="mutable" value="true"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_rKnr85HrEem4GY0EQDGh8g" type="Association_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_tJsAsJHrEem4GY0EQDGh8g" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_rKnr9JHrEem4GY0EQDGh8g" y="-19"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_rKoTAJHrEem4GY0EQDGh8g" type="Association_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_tJ6qMJHrEem4GY0EQDGh8g" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_rKoTAZHrEem4GY0EQDGh8g" x="-1" y="18"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_rKoTApHrEem4GY0EQDGh8g" type="Association_TargetRoleLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_tKNlIJHrEem4GY0EQDGh8g" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_rKoTA5HrEem4GY0EQDGh8g" x="32" y="-19"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_rKoTBJHrEem4GY0EQDGh8g" type="Association_SourceRoleLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_tKeq4JHrEem4GY0EQDGh8g" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_rKoTBZHrEem4GY0EQDGh8g" x="-32" y="18"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_rKoTBpHrEem4GY0EQDGh8g" type="Association_SourceMultiplicityLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_tKvJkJHrEem4GY0EQDGh8g" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_rKoTB5HrEem4GY0EQDGh8g" x="31" y="18"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_rKoTCJHrEem4GY0EQDGh8g" type="Association_TargetMultiplicityLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_tK9MAJHrEem4GY0EQDGh8g" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_rKoTCZHrEem4GY0EQDGh8g" x="-32" y="-19"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_rKnr8ZHrEem4GY0EQDGh8g"/>
+      <element xmi:type="uml:Association" href="CppTestReversePapyrus.uml#__NeLsZHqEem4GY0EQDGh8g"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rKnr8pHrEem4GY0EQDGh8g" points="[560, 140, -643984, -643984]$[260, 180, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rKo6EJHrEem4GY0EQDGh8g" id="(0.0,0.3902439024390244)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rKo6EZHrEem4GY0EQDGh8g" id="(1.0,0.4)"/>
+    </edges>
+  </notation:Diagram>
+  <texteditormodel:TextEditorModel xmi:id="_hmWD4JHsEem4GY0EQDGh8g" type="CDTEditorInPapyrus" name="CDT Test" generatorID="Standard C++">
+    <editedObject xmi:type="uml:Class" href="CppTestReversePapyrus.uml#__HF24pHqEem4GY0EQDGh8g"/>
+    <selectedObject xmi:type="uml:Class" href="CppTestReversePapyrus.uml#__HF24pHqEem4GY0EQDGh8g"/>
+  </texteditormodel:TextEditorModel>
+</xmi:XMI>

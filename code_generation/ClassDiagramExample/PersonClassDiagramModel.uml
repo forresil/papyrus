@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:Codegen="http://www.eclipse.org/papyrus/Codegen/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_SB3o0EUcEee6Z9HCb0fqcA" name="PersonCalssDiagramRootElement">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uF8FoDxlEeqKJ9SnTnAhuw">
+      <body>This project can generate JAVA code!&#xD;
+-> Right click on the &quot;Project&quot; Folder and select Designer > Generate code</body>
+    </ownedComment>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_kIP7MEUjEee6Z9HCb0fqcA">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_ATiPwEUlEee6Z9HCb0fqcA">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_wDGn0EUcEee6Z9HCb0fqcA" name="Data" URI="">
+      <packagedElement xmi:type="uml:Class" xmi:id="_1cThIEUcEee6Z9HCb0fqcA" name="Person">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_6D5XUEUcEee6Z9HCb0fqcA" name="name" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_6-fXUEUcEee6Z9HCb0fqcA" name="age" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_7fS-UEUcEee6Z9HCb0fqcA" name="gender" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_8MnXUEUcEee6Z9HCb0fqcA" name="hobbies" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M9iW0EUdEee6Z9HCb0fqcA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M9ukEEUdEee6Z9HCb0fqcA" value="*"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_1jiVEDxkEeqKJ9SnTnAhuw" name="printInfo" specification="_ue5NoEUdEee6Z9HCb0fqcA">
+          <language>JAVA</language>
+          <body>return &quot;print Info&quot;;</body>
+        </ownedBehavior>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_ue5NoEUdEee6Z9HCb0fqcA" name="printInfo" method="_1jiVEDxkEeqKJ9SnTnAhuw">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_yMlnYEUdEee6Z9HCb0fqcA" name="viewerInfo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_1sPlIEUdEee6Z9HCb0fqcA" name="info" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_zScmwEUeEee6Z9HCb0fqcA" name="Person"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_PKAfUEUmEee6Z9HCb0fqcA" name="Person">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_Yq4YoEUmEee6Z9HCb0fqcA" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_VyYhgEUmEee6Z9HCb0fqcA" name="age">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_bzWlcEUmEee6Z9HCb0fqcA" name="gender">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_CPkBIEUxEee6Z9HCb0fqcA" name="Product"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LKU8sEUxEee6Z9HCb0fqcA" name="Firma">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_NCyTIkUxEee6Z9HCb0fqcA" name="person" visibility="private" type="_1cThIEUcEee6Z9HCb0fqcA" aggregation="shared" association="_NCoiIEUxEee6Z9HCb0fqcA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vXOzwEUxEee6Z9HCb0fqcA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vX1QsEUxEee6Z9HCb0fqcA" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_gQEx8UUyEee6Z9HCb0fqcA" name="product" visibility="private" type="_CPkBIEUxEee6Z9HCb0fqcA" aggregation="composite" association="_gQDj0EUyEee6Z9HCb0fqcA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jjEMsEUyEee6Z9HCb0fqcA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jjlxIEUyEee6Z9HCb0fqcA" value="*"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_UroCAEYcEeeAccxbD1bf9A" name="Customer">
+        <generalization xmi:type="uml:Generalization" xmi:id="_YkfxAEYcEeeAccxbD1bf9A" general="_1cThIEUcEee6Z9HCb0fqcA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Z2PswEYcEeeAccxbD1bf9A" name="number" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_E42-oEUxEee6Z9HCb0fqcA" name="order" memberEnd="_E5AIkkUxEee6Z9HCb0fqcA _E5AIk0UxEee6Z9HCb0fqcA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_E5AIkEUxEee6Z9HCb0fqcA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_E5AIkUUxEee6Z9HCb0fqcA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_E5AIk0UxEee6Z9HCb0fqcA" name="person" type="_1cThIEUcEee6Z9HCb0fqcA" association="_E42-oEUxEee6Z9HCb0fqcA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_E5AIkkUxEee6Z9HCb0fqcA" name="product" type="_CPkBIEUxEee6Z9HCb0fqcA" association="_E42-oEUxEee6Z9HCb0fqcA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_If4IoEUxEee6Z9HCb0fqcA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IgLqoEUxEee6Z9HCb0fqcA" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NCoiIEUxEee6Z9HCb0fqcA" name="has" memberEnd="_NCyTIkUxEee6Z9HCb0fqcA _NCyTI0UxEee6Z9HCb0fqcA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NCyTIEUxEee6Z9HCb0fqcA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NCyTIUUxEee6Z9HCb0fqcA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_NCyTI0UxEee6Z9HCb0fqcA" name="firma" type="_LKU8sEUxEee6Z9HCb0fqcA" association="_NCoiIEUxEee6Z9HCb0fqcA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_gQDj0EUyEee6Z9HCb0fqcA" memberEnd="_gQEx8UUyEee6Z9HCb0fqcA _gQEx8kUyEee6Z9HCb0fqcA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gQEK4EUyEee6Z9HCb0fqcA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gQEx8EUyEee6Z9HCb0fqcA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_gQEx8kUyEee6Z9HCb0fqcA" name="firma" type="_LKU8sEUxEee6Z9HCb0fqcA" association="_gQDj0EUyEee6Z9HCb0fqcA"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_SUSOgEUcEee6Z9HCb0fqcA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SUTcoEUcEee6Z9HCb0fqcA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/PapyrusJava/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_B6b8IEUlEee6Z9HCb0fqcA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_B6b8IUUlEee6Z9HCb0fqcA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_S-4OMDxkEeqKJ9SnTnAhuw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_S-8foDxkEeqKJ9SnTnAhuw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/Codegen/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Codegen_PROFILES/Codegen.profile.uml#_fPDsIBa-EearhdjjJ6cVzQ"/>
+    </profileApplication>
+  </uml:Model>
+  <standard:Create xmi:id="_FSD_QEUlEee6Z9HCb0fqcA" base_BehavioralFeature="_zScmwEUeEee6Z9HCb0fqcA"/>
+  <standard:Create xmi:id="_fFg5wEUmEee6Z9HCb0fqcA" base_BehavioralFeature="_PKAfUEUmEee6Z9HCb0fqcA"/>
+  <Codegen:Project xmi:id="_V-XeIDxkEeqKJ9SnTnAhuw" base_Model="_SB3o0EUcEee6Z9HCb0fqcA"/>
+</xmi:XMI>

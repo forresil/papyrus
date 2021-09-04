@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:C_Cpp="http://www.eclipse.org/papyrus/C_Cpp/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_VD3RIJKkEem1M6xf1J04XQ" name="TestOrigin">
+    <packagedElement xmi:type="uml:Package" xmi:id="_VHOuMJKkEem1M6xf1J04XQ" name="src">
+      <packagedElement xmi:type="uml:Class" xmi:id="_VHRKcJKkEem1M6xf1J04XQ" name="Test">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_VcRxIJKkEem1M6xf1J04XQ" name="id" visibility="private" aggregation="composite" association="_VcWCkJKkEem1M6xf1J04XQ">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_VcX3wZKkEem1M6xf1J04XQ" name="name" visibility="private" type="_Vbo38JKkEem1M6xf1J04XQ" aggregation="composite" association="_VcZF4JKkEem1M6xf1J04XQ"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Va-JkJKkEem1M6xf1J04XQ" name="getId" specification="_VajS0ZKkEem1M6xf1J04XQ" isReentrant="false">
+          <language>C++</language>
+          <body>
+		return id;&#xD;
+</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_VbLk8ZKkEem1M6xf1J04XQ" name="setId" specification="_VbAl0JKkEem1M6xf1J04XQ" isReentrant="false">
+          <language>C++</language>
+          <body>
+		this->id = id;&#xD;
+</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Vb1sQZKkEem1M6xf1J04XQ" name="getName" specification="_VbMzEJKkEem1M6xf1J04XQ" isReentrant="false">
+          <language>C++</language>
+          <body>
+		return name;&#xD;
+</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_VcJ1UJKkEem1M6xf1J04XQ" name="setName" specification="_Vb1sQpKkEem1M6xf1J04XQ" isReentrant="false">
+          <language>C++</language>
+          <body>
+		this->name = name;&#xD;
+</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_VcRKEJKkEem1M6xf1J04XQ" name="run" specification="_VcKcYJKkEem1M6xf1J04XQ" isReentrant="false">
+          <language>C++</language>
+          <body>
+		std::cout &lt;&lt; &quot;Test running...&quot; &lt;&lt; std::endl;&#xD;
+</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_VlFH0JKkEem1M6xf1J04XQ" name="Test" specification="_VT5RMJKkEem1M6xf1J04XQ" isReentrant="false">
+          <language>C/C++</language>
+          <body>
+	run();&#xD;
+	std::cout &lt;&lt; &quot;Constructor called...&quot; &lt;&lt; std::endl;&#xD;</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_VlFu4JKkEem1M6xf1J04XQ" name="~Test" specification="_VaEKoJKkEem1M6xf1J04XQ" isReentrant="false">
+          <language>C/C++</language>
+          <body></body>
+        </ownedBehavior>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_VT5RMJKkEem1M6xf1J04XQ" name="Test" visibility="public" method="_VlFH0JKkEem1M6xf1J04XQ"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_VaEKoJKkEem1M6xf1J04XQ" name="~Test" visibility="public" method="_VlFu4JKkEem1M6xf1J04XQ"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_VajS0ZKkEem1M6xf1J04XQ" name="getId" visibility="public" method="_Va-JkJKkEem1M6xf1J04XQ">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_Va200JKkEem1M6xf1J04XQ" name="ret" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_VbAl0JKkEem1M6xf1J04XQ" name="setId" visibility="public" method="_VbLk8ZKkEem1M6xf1J04XQ">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_VbLk8JKkEem1M6xf1J04XQ" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_VbMzEJKkEem1M6xf1J04XQ" name="getName" visibility="public" method="_Vb1sQZKkEem1M6xf1J04XQ">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_VbtJYZKkEem1M6xf1J04XQ" name="ret" type="_Vbo38JKkEem1M6xf1J04XQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_Vb1sQpKkEem1M6xf1J04XQ" name="setName" visibility="public" method="_VcJ1UJKkEem1M6xf1J04XQ">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_VcCgkZKkEem1M6xf1J04XQ" name="name" type="_Vb-2MJKkEem1M6xf1J04XQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_VcKcYJKkEem1M6xf1J04XQ" name="run" visibility="public" isStatic="true" method="_VcRKEJKkEem1M6xf1J04XQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_VcWCkJKkEem1M6xf1J04XQ" name="A_id_test" memberEnd="_VcRxIJKkEem1M6xf1J04XQ _VcWpoJKkEem1M6xf1J04XQ">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_VcWpoJKkEem1M6xf1J04XQ" name="test" type="_VHRKcJKkEem1M6xf1J04XQ" association="_VcWCkJKkEem1M6xf1J04XQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VcXQsJKkEem1M6xf1J04XQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VcX3wJKkEem1M6xf1J04XQ" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_VcZF4JKkEem1M6xf1J04XQ" name="A_name_test" memberEnd="_VcX3wZKkEem1M6xf1J04XQ _VcZs8JKkEem1M6xf1J04XQ">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_VcZs8JKkEem1M6xf1J04XQ" name="test" type="_VHRKcJKkEem1M6xf1J04XQ" association="_VcZF4JKkEem1M6xf1J04XQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VcZs8ZKkEem1M6xf1J04XQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VcZs8pKkEem1M6xf1J04XQ" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_VbkmgJKkEem1M6xf1J04XQ" name="external">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Vbo38JKkEem1M6xf1J04XQ" name="std::string"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_Vb-2MJKkEem1M6xf1J04XQ" name="std :: string"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_VGXLgJKkEem1M6xf1J04XQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VGbc8JKkEem1M6xf1J04XQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/C_Cpp/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PapyrusC_Cpp_PROFILES/C_Cpp.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_VG5XAJKkEem1M6xf1J04XQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VG5XAZKkEem1M6xf1J04XQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <standard:Create xmi:id="_VaDjkJKkEem1M6xf1J04XQ" base_BehavioralFeature="_VT5RMJKkEem1M6xf1J04XQ"/>
+  <C_Cpp:Virtual xmi:id="_VaXsoJKkEem1M6xf1J04XQ" base_operation="_VaEKoJKkEem1M6xf1J04XQ"/>
+  <standard:Destroy xmi:id="_VajS0JKkEem1M6xf1J04XQ" base_BehavioralFeature="_VaEKoJKkEem1M6xf1J04XQ"/>
+  <C_Cpp:Const xmi:id="_VazKcJKkEem1M6xf1J04XQ" base_operation="_VajS0ZKkEem1M6xf1J04XQ"/>
+  <C_Cpp:Const xmi:id="_VbV9AJKkEem1M6xf1J04XQ" base_operation="_VbMzEJKkEem1M6xf1J04XQ"/>
+  <C_Cpp:NoCodeGen xmi:id="_VboQ4JKkEem1M6xf1J04XQ" base_element="_VbkmgJKkEem1M6xf1J04XQ"/>
+  <C_Cpp:External xmi:id="_VbtJYJKkEem1M6xf1J04XQ" base_Classifier="_Vbo38JKkEem1M6xf1J04XQ"/>
+  <C_Cpp:Ref xmi:id="_Vbxa0JKkEem1M6xf1J04XQ" base_parameter="_VbtJYZKkEem1M6xf1J04XQ"/>
+  <C_Cpp:Const xmi:id="_Vb1sQJKkEem1M6xf1J04XQ" base_parameter="_VbtJYZKkEem1M6xf1J04XQ"/>
+  <C_Cpp:External xmi:id="_VcCgkJKkEem1M6xf1J04XQ" base_Classifier="_Vb-2MJKkEem1M6xf1J04XQ"/>
+  <C_Cpp:Const xmi:id="_VcGK8JKkEem1M6xf1J04XQ" base_parameter="_VcCgkZKkEem1M6xf1J04XQ"/>
+  <C_Cpp:Ref xmi:id="_VcJOQJKkEem1M6xf1J04XQ" base_parameter="_VcCgkZKkEem1M6xf1J04XQ"/>
+  <C_Cpp:Include xmi:id="_VchBsJKkEem1M6xf1J04XQ" header="#include &quot;iostream&quot;" base_class="_VHRKcJKkEem1M6xf1J04XQ" base_Classifier="_VHRKcJKkEem1M6xf1J04XQ"/>
+  <C_Cpp:ConstInit xmi:id="_VlD5sJKkEem1M6xf1J04XQ" initialisation="id(12), name(&quot;Default&quot;)" base_operation="_VT5RMJKkEem1M6xf1J04XQ"/>
+</xmi:XMI>

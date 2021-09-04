@@ -1,0 +1,13 @@
+PAPYRUS_EDITOR.color.gradient=RGB {255, 255, 255};RGB {255, 255, 255};0;0
+PAPYRUS_EDITOR.font=1|Segoe UI|9.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Segoe UI;
+PAPYRUS_EDITOR.routing.style=1
+PAPYRUS_EDITOR.rulergrid.gridspacing=0.5
+PAPYRUS_EDITOR.rulergrid.rulerunit=1
+PAPYRUS_EDITOR.rulergrid.snaptogrid=false
+PAPYRUS_EDITOR.rulergrid.viewrulers=true
+eclipse.preferences.version=1
+print.page.height=11.692913385826772
+print.page.size=A4
+print.page.width=8.267716535433072
+print.useInches=false
+print.useMillim=true

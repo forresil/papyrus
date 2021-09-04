@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_-MVQsHdyEeuvicKB3UW70w" name="UML-Collaborations">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_-Q9SAHdyEeuvicKB3UW70w">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_EajegHgYEeutJIRIEmqQ7A" name="SatReceiver">
+      <packagedElement xmi:type="uml:Class" xmi:id="_7xSRsHgOEeutJIRIEmqQ7A" name="Kabelempfangsanlage">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_VvvXwHgPEeutJIRIEmqQ7A" name="fernsehgerät" type="_O3DosHgPEeutJIRIEmqQ7A" aggregation="composite" association="_Vvs7gHgPEeutJIRIEmqQ7A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Vvv-0HgPEeutJIRIEmqQ7A"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Vvv-0XgPEeutJIRIEmqQ7A" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_WCZOAXgPEeutJIRIEmqQ7A" name="kabelanschluss" type="_PHwXIHgPEeutJIRIEmqQ7A" aggregation="composite" association="_WCX_4HgPEeutJIRIEmqQ7A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WCZ1EHgPEeutJIRIEmqQ7A"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WCZ1EXgPEeutJIRIEmqQ7A" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_7tP0UHgQEeutJIRIEmqQ7A" type="_O3DosHgPEeutJIRIEmqQ7A"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_-tzbQHgQEeutJIRIEmqQ7A" type="_PHwXIHgPEeutJIRIEmqQ7A"/>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_AL-CYHgREeutJIRIEmqQ7A" name="Antennenkabel">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_AL_QgHgREeutJIRIEmqQ7A" partWithPort="_7tP0UHgQEeutJIRIEmqQ7A" role="_G7KBwHgSEeutJIRIEmqQ7A"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_AL_QgXgREeutJIRIEmqQ7A" partWithPort="_-tzbQHgQEeutJIRIEmqQ7A" role="_NzgZoHgSEeutJIRIEmqQ7A"/>
+        </ownedConnector>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_O3DosHgPEeutJIRIEmqQ7A" name="Fernsehgerät">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_uSKvQHgQEeutJIRIEmqQ7A" name="kabelanschluss" type="_PHwXIHgPEeutJIRIEmqQ7A" aggregation="shared" association="_uSJhIHgQEeutJIRIEmqQ7A"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_G7KBwHgSEeutJIRIEmqQ7A" name="KabelPort" type="_PHwXIHgPEeutJIRIEmqQ7A" aggregation="composite" isConjugated="true"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_PHwXIHgPEeutJIRIEmqQ7A" name="Kabelanschluss">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_NzgZoHgSEeutJIRIEmqQ7A" name="Satausgang" type="_PHwXIHgPEeutJIRIEmqQ7A" aggregation="composite"/>
+        <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_o7J8YHgSEeutJIRIEmqQ7A" client="_PHwXIHgPEeutJIRIEmqQ7A" supplier="_Wd6lAHgSEeutJIRIEmqQ7A" contract="_Wd6lAHgSEeutJIRIEmqQ7A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_Wd6lAHgSEeutJIRIEmqQ7A" name="Fernsehsignal"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_IVQg4HgVEeutJIRIEmqQ7A" name="SatReceiver">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_QYeJYHgVEeutJIRIEmqQ7A" name="kabelanschluss" type="_PHwXIHgPEeutJIRIEmqQ7A" aggregation="shared" association="_QYcUMHgVEeutJIRIEmqQ7A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QYewcHgVEeutJIRIEmqQ7A" value="2"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QYewcXgVEeutJIRIEmqQ7A" value="2"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_yAV34HgVEeutJIRIEmqQ7A" name="P1" type="_PHwXIHgPEeutJIRIEmqQ7A" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_2Sr20HgVEeutJIRIEmqQ7A" name="P2" type="_PHwXIHgPEeutJIRIEmqQ7A" aggregation="composite" isConjugated="true"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Jkde8HgVEeutJIRIEmqQ7A" name="SatAntenne">
+        <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_bTE1wHgVEeutJIRIEmqQ7A" client="_Jkde8HgVEeutJIRIEmqQ7A" supplier="_Wd6lAHgSEeutJIRIEmqQ7A" contract="_Wd6lAHgSEeutJIRIEmqQ7A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_1cx_AHgUEeutJIRIEmqQ7A" name="SatEmpfangsanlage">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_5tmT8HgUEeutJIRIEmqQ7A" type="_O3DosHgPEeutJIRIEmqQ7A"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_vqs2MHgVEeutJIRIEmqQ7A" name="satReceiver" type="_IVQg4HgVEeutJIRIEmqQ7A"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_wi3NQHgVEeutJIRIEmqQ7A" name="satAntenne" type="_Jkde8HgVEeutJIRIEmqQ7A"/>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_H_t5QHgWEeutJIRIEmqQ7A" name="Antennenkabel">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_H_vucHgWEeutJIRIEmqQ7A" partWithPort="_vqs2MHgVEeutJIRIEmqQ7A" role="_yAV34HgVEeutJIRIEmqQ7A"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_H_vucXgWEeutJIRIEmqQ7A" partWithPort="_5tmT8HgUEeutJIRIEmqQ7A" role="_G7KBwHgSEeutJIRIEmqQ7A"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_QEQVcHgsEeugrvHubVHW0g" name="Satkabel" type="_-HhFEHgVEeutJIRIEmqQ7A">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_QESxsHgsEeugrvHubVHW0g" role="_wi3NQHgVEeutJIRIEmqQ7A"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_QESxsXgsEeugrvHubVHW0g" partWithPort="_vqs2MHgVEeutJIRIEmqQ7A" role="_2Sr20HgVEeutJIRIEmqQ7A"/>
+        </ownedConnector>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Vvs7gHgPEeutJIRIEmqQ7A" memberEnd="_VvvXwHgPEeutJIRIEmqQ7A _Vvv-0ngPEeutJIRIEmqQ7A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VvuwsHgPEeutJIRIEmqQ7A" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VvuwsXgPEeutJIRIEmqQ7A" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Vvv-0ngPEeutJIRIEmqQ7A" name="kabelempfangsanlage" type="_7xSRsHgOEeutJIRIEmqQ7A" association="_Vvs7gHgPEeutJIRIEmqQ7A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_WCX_4HgPEeutJIRIEmqQ7A" memberEnd="_WCZOAXgPEeutJIRIEmqQ7A _WCZ1EngPEeutJIRIEmqQ7A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WCYm8HgPEeutJIRIEmqQ7A" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WCZOAHgPEeutJIRIEmqQ7A" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_WCZ1EngPEeutJIRIEmqQ7A" name="kabelempfangsanlage" type="_7xSRsHgOEeutJIRIEmqQ7A" association="_WCX_4HgPEeutJIRIEmqQ7A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_uSJhIHgQEeutJIRIEmqQ7A" memberEnd="_uSKvQHgQEeutJIRIEmqQ7A _uSKvQ3gQEeutJIRIEmqQ7A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uSKIMHgQEeutJIRIEmqQ7A" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uSKIMXgQEeutJIRIEmqQ7A" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_uSKvQ3gQEeutJIRIEmqQ7A" name="fernsehgerät" type="_O3DosHgPEeutJIRIEmqQ7A" association="_uSJhIHgQEeutJIRIEmqQ7A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_jpbkEHgSEeutJIRIEmqQ7A" client="_O3DosHgPEeutJIRIEmqQ7A" supplier="_Wd6lAHgSEeutJIRIEmqQ7A"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_QYcUMHgVEeutJIRIEmqQ7A" memberEnd="_QYeJYHgVEeutJIRIEmqQ7A _QYewcngVEeutJIRIEmqQ7A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QYdiUHgVEeutJIRIEmqQ7A" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QYdiUXgVEeutJIRIEmqQ7A" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_QYewcngVEeutJIRIEmqQ7A" name="satreceiver" type="_IVQg4HgVEeutJIRIEmqQ7A" association="_QYcUMHgVEeutJIRIEmqQ7A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_-HhFEHgVEeutJIRIEmqQ7A" memberEnd="_-Hi6QngVEeutJIRIEmqQ7A _-HkIYHgVEeutJIRIEmqQ7A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-Hi6QHgVEeutJIRIEmqQ7A" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-Hi6QXgVEeutJIRIEmqQ7A" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_-Hi6QngVEeutJIRIEmqQ7A" name="satantenne" type="_Jkde8HgVEeutJIRIEmqQ7A" association="_-HhFEHgVEeutJIRIEmqQ7A"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_-HkIYHgVEeutJIRIEmqQ7A" name="kabelanschluss" type="_PHwXIHgPEeutJIRIEmqQ7A" association="_-HhFEHgVEeutJIRIEmqQ7A"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_50wIAHgYEeutJIRIEmqQ7A" name="Fussballspiel">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_FSySkHgOEeutJIRIEmqQ7A" annotatedElement="_wqRy8HgMEeutJIRIEmqQ7A _zl8S0HgMEeutJIRIEmqQ7A">
+        <body>Parts are represented as &quot;Properties&quot;in Papyrus&#xD;
+</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_OfkLMHgOEeutJIRIEmqQ7A" annotatedElement="_zl8S0HgMEeutJIRIEmqQ7A">
+        <body>This &quot;Part&quot; is shared&#xD;
+</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_UkKx8HgOEeutJIRIEmqQ7A" annotatedElement="_wqRy8HgMEeutJIRIEmqQ7A">
+        <body>T his &quot;Part&quot; is added by composition.</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_fo8G8HgOEeutJIRIEmqQ7A" annotatedElement="_dGnmEHgMEeutJIRIEmqQ7A">
+        <body>Class internal structure</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Class" xmi:id="_dGnmEHgMEeutJIRIEmqQ7A" name="Fussballspiel">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_wqRy8HgMEeutJIRIEmqQ7A" name="fussballspieler" type="_Xw1n4HeCEeulfOhB9j64TQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ykRacHgMEeutJIRIEmqQ7A" value="22"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ykbLcHgMEeutJIRIEmqQ7A" value="22"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_zl8S0HgMEeutJIRIEmqQ7A" name="fussball" type="_rUtQIHeCEeulfOhB9j64TQ" aggregation="shared"/>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_9aTv4HgMEeutJIRIEmqQ7A" name="Spielgaeret" type="_a_mZwHgNEeutJIRIEmqQ7A">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_9aU-AHgMEeutJIRIEmqQ7A" role="_wqRy8HgMEeutJIRIEmqQ7A"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_9aVlEHgMEeutJIRIEmqQ7A" role="_zl8S0HgMEeutJIRIEmqQ7A"/>
+        </ownedConnector>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Xw1n4HeCEeulfOhB9j64TQ" name="Mensch">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_E57awHgbEeutJIRIEmqQ7A" name="ball" type="_rUtQIHeCEeulfOhB9j64TQ" association="_E54-gHgbEeutJIRIEmqQ7A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_E58B0HgbEeutJIRIEmqQ7A"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_E58o4HgbEeutJIRIEmqQ7A" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_rUtQIHeCEeulfOhB9j64TQ" name="Ball"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_pYdp0HgaEeutJIRIEmqQ7A" name="Ballspiel">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_t0nFAngaEeutJIRIEmqQ7A" name="mensch" type="_Xw1n4HeCEeulfOhB9j64TQ" aggregation="shared" association="_t0l24HgaEeutJIRIEmqQ7A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t0nsEHgaEeutJIRIEmqQ7A"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t0nsEXgaEeutJIRIEmqQ7A" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_7TZlYngaEeutJIRIEmqQ7A" name="ball" type="_rUtQIHeCEeulfOhB9j64TQ" aggregation="shared" association="_7TYXQHgaEeutJIRIEmqQ7A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7TaMcHgaEeutJIRIEmqQ7A"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7TazgHgaEeutJIRIEmqQ7A" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_t0l24HgaEeutJIRIEmqQ7A" memberEnd="_t0nFAngaEeutJIRIEmqQ7A _t0oTIHgaEeutJIRIEmqQ7A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t0nFAHgaEeutJIRIEmqQ7A" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_t0nFAXgaEeutJIRIEmqQ7A" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_t0oTIHgaEeutJIRIEmqQ7A" name="ballspiel" type="_pYdp0HgaEeutJIRIEmqQ7A" association="_t0l24HgaEeutJIRIEmqQ7A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_7TYXQHgaEeutJIRIEmqQ7A" memberEnd="_7TZlYngaEeutJIRIEmqQ7A _7TazgXgaEeutJIRIEmqQ7A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7TZlYHgaEeutJIRIEmqQ7A" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7TZlYXgaEeutJIRIEmqQ7A" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_7TazgXgaEeutJIRIEmqQ7A" name="ballspiel" type="_pYdp0HgaEeutJIRIEmqQ7A" association="_7TYXQHgaEeutJIRIEmqQ7A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_E54-gHgbEeutJIRIEmqQ7A" memberEnd="_E57awHgbEeutJIRIEmqQ7A _E58o4XgbEeutJIRIEmqQ7A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_E56zsHgbEeutJIRIEmqQ7A" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_E56zsXgbEeutJIRIEmqQ7A" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_E58o4XgbEeutJIRIEmqQ7A" name="mensch" type="_Xw1n4HeCEeulfOhB9j64TQ" association="_E54-gHgbEeutJIRIEmqQ7A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_YSBZMHgNEeutJIRIEmqQ7A" memberEnd="_YSCnUngNEeutJIRIEmqQ7A _YSD1cHgNEeutJIRIEmqQ7A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YSCnUHgNEeutJIRIEmqQ7A" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YSCnUXgNEeutJIRIEmqQ7A" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_YSCnUngNEeutJIRIEmqQ7A" name="fussball" type="_rUtQIHeCEeulfOhB9j64TQ" association="_YSBZMHgNEeutJIRIEmqQ7A"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_YSD1cHgNEeutJIRIEmqQ7A" name="fussballspiel" type="_dGnmEHgMEeutJIRIEmqQ7A" association="_YSBZMHgNEeutJIRIEmqQ7A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_a_mZwHgNEeutJIRIEmqQ7A" memberEnd="_a_nn4ngNEeutJIRIEmqQ7A _a_oO8HgNEeutJIRIEmqQ7A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_a_nn4HgNEeutJIRIEmqQ7A" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_a_nn4XgNEeutJIRIEmqQ7A" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_a_nn4ngNEeutJIRIEmqQ7A" name="mensch" type="_Xw1n4HeCEeulfOhB9j64TQ" association="_a_mZwHgNEeutJIRIEmqQ7A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mUl8EHgNEeutJIRIEmqQ7A"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mU1MoHgNEeutJIRIEmqQ7A" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_a_oO8HgNEeutJIRIEmqQ7A" name="fussball" type="_rUtQIHeCEeulfOhB9j64TQ" association="_a_mZwHgNEeutJIRIEmqQ7A"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Ia1Y4HgfEeutJIRIEmqQ7A" name="ShipGame">
+      <packagedElement xmi:type="uml:Class" xmi:id="_Wye9QHgGEeutJIRIEmqQ7A" name="Ship">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_c4dAgHgHEeutJIRIEmqQ7A" name="mXPos" visibility="public"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ePym4HgHEeutJIRIEmqQ7A" name="mYPos" visibility="public"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_fMmNYHgHEeutJIRIEmqQ7A" name="mName"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_hMPmYHgGEeutJIRIEmqQ7A" name="Ship">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_m2Vl8HgHEeutJIRIEmqQ7A" name="xPos">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_oSZUQHgHEeutJIRIEmqQ7A" name="yPos">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_pylUoHgHEeutJIRIEmqQ7A" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+        <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_Y_86YHgGEeutJIRIEmqQ7A" name="STATUS">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_cFkAcHgGEeutJIRIEmqQ7A" name="OK"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_c9z3EHgGEeutJIRIEmqQ7A" name="SUNKEN"/>
+        </nestedClassifier>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_9mI1UHggEeutJIRIEmqQ7A" name="Verkauf">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_a7YGcHggEeutJIRIEmqQ7A" annotatedElement="_8KgvoHeCEeulfOhB9j64TQ _lBHLIHeCEeulfOhB9j64TQ">
+        <body>Grosshandelverkauf</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_ducrAHggEeutJIRIEmqQ7A" annotatedElement="_8KgvoHeCEeulfOhB9j64TQ _lBHLIHeCEeulfOhB9j64TQ">
+        <body>Properties</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="__xVPoHgiEeutJIRIEmqQ7A" annotatedElement="_Wn_7EHeDEeulfOhB9j64TQ">
+        <body>Here the collaboration Verkauf is used in this use case where a Fussballstadion sells some tickets to fussball fans</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_0kP2sHgjEeutJIRIEmqQ7A" annotatedElement="_AxRU0HeCEeulfOhB9j64TQ">
+        <body>A Collaboration is used to represent Patterns in  UML</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_9fnPMHgjEeutJIRIEmqQ7A" annotatedElement="_RactkHeCEeulfOhB9j64TQ">
+        <body>Collaboration Use shows how to apply a Collaboration (Pattern) to a special use case</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Class" xmi:id="_WLrAoHghEeutJIRIEmqQ7A" name="Interessent">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_mDEXIHghEeutJIRIEmqQ7A" name="geldbetrag" type="_iw8fEHghEeutJIRIEmqQ7A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_W_FakHghEeutJIRIEmqQ7A" name="Anbieter">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_o8JdEHghEeutJIRIEmqQ7A" name="angebot" type="_juwLIHghEeutJIRIEmqQ7A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ZL20IHghEeutJIRIEmqQ7A" name="Fussballfan">
+        <generalization xmi:type="uml:Generalization" xmi:id="_c0qG0HghEeutJIRIEmqQ7A" general="_WLrAoHghEeutJIRIEmqQ7A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_aF1JEHghEeutJIRIEmqQ7A" name="Fussballstadion">
+        <generalization xmi:type="uml:Generalization" xmi:id="_cT-boHghEeutJIRIEmqQ7A" general="_W_FakHghEeutJIRIEmqQ7A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_iw8fEHghEeutJIRIEmqQ7A" name="EUR"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_juwLIHghEeutJIRIEmqQ7A" name="Ware"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_A2TJEHgiEeutJIRIEmqQ7A" memberEnd="_A2UXMngiEeutJIRIEmqQ7A _A2WMYHgiEeutJIRIEmqQ7A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A2UXMHgiEeutJIRIEmqQ7A" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A2UXMXgiEeutJIRIEmqQ7A" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_A2UXMngiEeutJIRIEmqQ7A" name="anbieter" type="_W_FakHghEeutJIRIEmqQ7A" association="_A2TJEHgiEeutJIRIEmqQ7A"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_A2WMYHgiEeutJIRIEmqQ7A" name="interessent" type="_WLrAoHghEeutJIRIEmqQ7A" association="_A2TJEHgiEeutJIRIEmqQ7A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Collaboration" xmi:id="_AxRU0HeCEeulfOhB9j64TQ" name="Verkauf" collaborationRole="_lBHLIHeCEeulfOhB9j64TQ _8KgvoHeCEeulfOhB9j64TQ">
+        <collaborationUse xmi:type="uml:CollaborationUse" xmi:id="_FltUMHeCEeulfOhB9j64TQ" name="CollaborationUse1" type="_RactkHeCEeulfOhB9j64TQ"/>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_QmkkIHeDEeulfOhB9j64TQ" name="Transaktion" type="_A2TJEHgiEeutJIRIEmqQ7A">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_QmkkIXeDEeulfOhB9j64TQ" role="_8KgvoHeCEeulfOhB9j64TQ"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_QmkkIneDEeulfOhB9j64TQ" role="_lBHLIHeCEeulfOhB9j64TQ"/>
+        </ownedConnector>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Collaboration" xmi:id="_RactkHeCEeulfOhB9j64TQ" name="Fussballkartenverkauf">
+        <collaborationUse xmi:type="uml:CollaborationUse" xmi:id="_Wn_7EHeDEeulfOhB9j64TQ" name="Einzelverkauf" type="_AxRU0HeCEeulfOhB9j64TQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_lBHLIHeCEeulfOhB9j64TQ" name="Kaeufer" type="_ZL20IHghEeutJIRIEmqQ7A">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nri7YHgiEeutJIRIEmqQ7A"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nrpCAHgiEeutJIRIEmqQ7A" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_8KgvoHeCEeulfOhB9j64TQ" name="Verkaeufer" type="_aF1JEHghEeutJIRIEmqQ7A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_avJWoHeDEeulfOhB9j64TQ" client="_lBHLIHeCEeulfOhB9j64TQ" supplier="_Wn_7EHeDEeulfOhB9j64TQ"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_bKSagHeDEeulfOhB9j64TQ" client="_8KgvoHeCEeulfOhB9j64TQ" supplier="_Wn_7EHeDEeulfOhB9j64TQ"/>
+      <packagedElement xmi:type="uml:Collaboration" xmi:id="_KDAsEHgpEeugrvHubVHW0g" name="Kartenverkauf">
+        <collaborationUse xmi:type="uml:CollaborationUse" xmi:id="_QIljMHgpEeugrvHubVHW0g" name="Grosshandelverkauf" type="_AxRU0HeCEeulfOhB9j64TQ">
+          <roleBinding xmi:type="uml:Dependency" xmi:id="_v6fOkHgpEeugrvHubVHW0g" client="_QIljMHgpEeugrvHubVHW0g" supplier="_ZlMAgHgpEeugrvHubVHW0g"/>
+        </collaborationUse>
+        <collaborationUse xmi:type="uml:CollaborationUse" xmi:id="_WwGCsHgpEeugrvHubVHW0g" name="Einzelverkauf" type="_AxRU0HeCEeulfOhB9j64TQ">
+          <roleBinding xmi:type="uml:Dependency" xmi:id="_wt9S4HgpEeugrvHubVHW0g" client="_WwGCsHgpEeugrvHubVHW0g" supplier="_ZlMAgHgpEeugrvHubVHW0g"/>
+        </collaborationUse>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ZlMAgHgpEeugrvHubVHW0g" name="fussballstadion" type="_aF1JEHghEeutJIRIEmqQ7A"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_cKi5MHgpEeugrvHubVHW0g" name="fussballfan" type="_ZL20IHghEeutJIRIEmqQ7A"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_qM1IMHgpEeugrvHubVHW0g" name="kartenhersteller" type="_lgi_QHgpEeugrvHubVHW0g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_lgi_QHgpEeugrvHubVHW0g" name="Kartenhersteller">
+        <generalization xmi:type="uml:Generalization" xmi:id="_nmTx4HgpEeugrvHubVHW0g" general="_W_FakHghEeutJIRIEmqQ7A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_tZQn8HgpEeugrvHubVHW0g" client="_cKi5MHgpEeugrvHubVHW0g" supplier="_WwGCsHgpEeugrvHubVHW0g"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_up2GEHgpEeugrvHubVHW0g" client="_qM1IMHgpEeugrvHubVHW0g" supplier="_QIljMHgpEeugrvHubVHW0g"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_yOmUIHgGEeutJIRIEmqQ7A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yOzvgHgGEeutJIRIEmqQ7A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <standard:Create xmi:id="_Y6QsoHgHEeutJIRIEmqQ7A" base_BehavioralFeature="_hMPmYHgGEeutJIRIEmqQ7A"/>
+</xmi:XMI>

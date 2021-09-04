@@ -15,10 +15,15 @@ They are three kind of patterns:
 ## 1. Creational Patterns
 
 ### 1.1 Factory Pattern
+![Factory Pattern](./resources/diagrams/FactoryPattern.PNG)
 ### 1.2 Abstract Factory Pattern
+![Factory Pattern](./resources/diagrams/AbstractFactoryPattern.PNG)
 ### 1.3 Singleton Pattern
+![Factory Pattern](./resources/diagrams/SingletonPattern.PNG)
 ### 1.4 Builder Pattern
+![Factory Pattern](./resources/diagrams/BuilderPattern.PNG)
 ### 1.5 Prototype Pattern
+
 
 ## 2. Structural Patterns
 ### 2.1 Adapter Pattern

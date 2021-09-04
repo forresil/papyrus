@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:PapyrusJava="http://www.eclipse.org/papyrus/PapyrusJava/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_QSCrsPbREeu2LaOmzBKukg" name="DesignPatterns">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_QTVFIPbREeu2LaOmzBKukg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_1-8l0PblEeu2LaOmzBKukg">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://Codegen_PROFILES/Codegen.profile.uml#_fPDsIBa-EearhdjjJ6cVzQ"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_2ihM8PblEeu2LaOmzBKukg">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_2_WS4PblEeu2LaOmzBKukg">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_5psnAPbqEeu2LaOmzBKukg" name="CreationalPatterns">
+      <packagedElement xmi:type="uml:Package" xmi:id="_tbBawPbWEeu2LaOmzBKukg" name="FactoryPattern">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_649oQPgjEeu2LaOmzBKukg">
+          <body>Factory pattern is a creational pattern as this pattern provides better ways to create an object.&#xD;
+&#xD;
+In Factory pattern, we create object without exposing the creation logic to the client.</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_x2xNUPbWEeu2LaOmzBKukg" name="Shape">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_-w5IIPbbEeu2LaOmzBKukg" name="draw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_zBukkPbWEeu2LaOmzBKukg" name="Circle">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_9pJPMPbWEeu2LaOmzBKukg" client="_zBukkPbWEeu2LaOmzBKukg" supplier="_x2xNUPbWEeu2LaOmzBKukg" contract="_x2xNUPbWEeu2LaOmzBKukg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_jkZsMPbcEeu2LaOmzBKukg" name="draw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_1hdWYPbWEeu2LaOmzBKukg" name="Rectangle">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_-xae0PbWEeu2LaOmzBKukg" client="_1hdWYPbWEeu2LaOmzBKukg" supplier="_x2xNUPbWEeu2LaOmzBKukg" contract="_x2xNUPbWEeu2LaOmzBKukg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_jAVV0PbcEeu2LaOmzBKukg" name="draw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_4fxhoPbWEeu2LaOmzBKukg" name="Square">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="__n4z0PbWEeu2LaOmzBKukg" client="_4fxhoPbWEeu2LaOmzBKukg" supplier="_x2xNUPbWEeu2LaOmzBKukg" contract="_x2xNUPbWEeu2LaOmzBKukg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_jS998PbcEeu2LaOmzBKukg" name="draw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Cij1MPbXEeu2LaOmzBKukg" name="ShapeFactory">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_bvygYPbcEeu2LaOmzBKukg" name="getShape" specification="_GoZCIPbXEeu2LaOmzBKukg">
+            <language>JAVA</language>
+            <body> //use getShape method to get object of type shape &#xD;
+   public Shape getShape(String shapeType){&#xD;
+      if(shapeType == null){&#xD;
+         return null;&#xD;
+      }    &#xD;
+      if(shapeType.equalsIgnoreCase(&quot;CIRCLE&quot;)){&#xD;
+         return new Circle();&#xD;
+      } else if(shapeType.equalsIgnoreCase(&quot;RECTANGLE&quot;)){&#xD;
+         return new Rectangle();&#xD;
+      } else if(shapeType.equalsIgnoreCase(&quot;SQUARE&quot;)){&#xD;
+         return new Square();&#xD;
+      }&#xD;
+      return null;&#xD;
+   }</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_GoZCIPbXEeu2LaOmzBKukg" name="getShape" concurrency="concurrent" method="_bvygYPbcEeu2LaOmzBKukg">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_W-nCoPbXEeu2LaOmzBKukg" type="_x2xNUPbWEeu2LaOmzBKukg" direction="return"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_ud0ukA1eEeyIHMV6DuGURg" name="shapeType" type="_yKbYwPhNEeu2LaOmzBKukg"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Mblv0PbXEeu2LaOmzBKukg" name="Main" visibility="public">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MXxNgPbcEeu2LaOmzBKukg" name="main" specification="_DISmMPbcEeu2LaOmzBKukg">
+            <language>JAVA</language>
+            <body>ShapeFactory shapeFactory = new ShapeFactory();&#xD;
+      //get an object of Circle and call its draw method.&#xD;
+      Shape shape1 = shapeFactory.getShape(&quot;CIRCLE&quot;);&#xD;
+      //call draw method of Circle&#xD;
+      shape1.draw();&#xD;
+      //get an object of Rectangle and call its draw method.&#xD;
+      Shape shape2 = shapeFactory.getShape(&quot;RECTANGLE&quot;);&#xD;
+      //call draw method of Rectangle&#xD;
+      shape2.draw();&#xD;
+      //get an object of Square and call its draw method.&#xD;
+      Shape shape3 = shapeFactory.getShape(&quot;SQUARE&quot;);&#xD;
+      //call draw method of circle&#xD;
+      shape3.draw();&#xD;
+   }</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_DISmMPbcEeu2LaOmzBKukg" name="main" concurrency="concurrent" method="_MXxNgPbcEeu2LaOmzBKukg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_kpYeoPbZEeu2LaOmzBKukg" client="_Cij1MPbXEeu2LaOmzBKukg" supplier="_x2xNUPbWEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_nCqqMPbZEeu2LaOmzBKukg" client="_Mblv0PbXEeu2LaOmzBKukg" supplier="_x2xNUPbWEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_Ej7RsPgkEeu2LaOmzBKukg" client="_Mblv0PbXEeu2LaOmzBKukg" supplier="_Cij1MPbXEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_7p1ZoPglEeu2LaOmzBKukg" client="_Cij1MPbXEeu2LaOmzBKukg" supplier="_1hdWYPbWEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_8vKqAPglEeu2LaOmzBKukg" client="_Cij1MPbXEeu2LaOmzBKukg" supplier="_4fxhoPbWEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_9qj7QPglEeu2LaOmzBKukg" client="_Cij1MPbXEeu2LaOmzBKukg" supplier="_zBukkPbWEeu2LaOmzBKukg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_-mYr0PbcEeu2LaOmzBKukg" name="AbstractFactoryPattern">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_614s0PgoEeu2LaOmzBKukg">
+          <body>Abstract Factory pattern is another creational pattern.&#xD;
+Abstract Factory patterns, also called as Factory of factories, have a factory which creates other factories.&#xD;
+When using Abstract Factory pattern, we first use super factory to create factory, then use the created factory to create objects.&#xD;
+Here it is usefull to isolate MyApplication from the concrete implementations of Printer and Shape by using only an abstract class.</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_bBVCcPbdEeu2LaOmzBKukg" name="Shape">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_lqcWMPbdEeu2LaOmzBKukg" name="draw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_e7i1QPbdEeu2LaOmzBKukg" name="Rectangle">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_jq78kPbdEeu2LaOmzBKukg" client="_e7i1QPbdEeu2LaOmzBKukg" supplier="_bBVCcPbdEeu2LaOmzBKukg" contract="_bBVCcPbdEeu2LaOmzBKukg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_mfSTgPbdEeu2LaOmzBKukg" name="draw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_gh9ZcPbdEeu2LaOmzBKukg" name="Square">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_kPpzMPbdEeu2LaOmzBKukg" client="_gh9ZcPbdEeu2LaOmzBKukg" supplier="_bBVCcPbdEeu2LaOmzBKukg" contract="_bBVCcPbdEeu2LaOmzBKukg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_mumh4PbdEeu2LaOmzBKukg" name="draw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_iDCKoPbdEeu2LaOmzBKukg" name="Circle">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_ktLcsPbdEeu2LaOmzBKukg" client="_iDCKoPbdEeu2LaOmzBKukg" supplier="_bBVCcPbdEeu2LaOmzBKukg" contract="_bBVCcPbdEeu2LaOmzBKukg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_m9i80PbdEeu2LaOmzBKukg" name="draw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_o9FLoPbdEeu2LaOmzBKukg" name="Printer">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_z0y8EPbdEeu2LaOmzBKukg" name="print"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_rjM5UPbdEeu2LaOmzBKukg" name="PaperPrinter">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_w6cDwPbdEeu2LaOmzBKukg" client="_rjM5UPbdEeu2LaOmzBKukg" supplier="_o9FLoPbdEeu2LaOmzBKukg" contract="_o9FLoPbdEeu2LaOmzBKukg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_0pOCoPbdEeu2LaOmzBKukg" name="print"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_suUooPbdEeu2LaOmzBKukg" name="WebPrinter">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_xfU5gPbdEeu2LaOmzBKukg" client="_suUooPbdEeu2LaOmzBKukg" supplier="_o9FLoPbdEeu2LaOmzBKukg" contract="_o9FLoPbdEeu2LaOmzBKukg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_01gLIPbdEeu2LaOmzBKukg" name="print"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_uY_asPbdEeu2LaOmzBKukg" name="ScreenPrinter">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_yqDnQPbdEeu2LaOmzBKukg" client="_uY_asPbdEeu2LaOmzBKukg" supplier="_o9FLoPbdEeu2LaOmzBKukg" contract="_o9FLoPbdEeu2LaOmzBKukg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_1CF1oPbdEeu2LaOmzBKukg" name="print"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3YwLAPbdEeu2LaOmzBKukg" name="AbstractFactory" isAbstract="true">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_0GRIQPgqEeu2LaOmzBKukg" name="getShape" isAbstract="true">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_0GRIQfgqEeu2LaOmzBKukg" type="_x2xNUPbWEeu2LaOmzBKukg" direction="return"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_0GRIQvgqEeu2LaOmzBKukg" type="__NfnwPbfEeu2LaOmzBKukg"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_0GjcIPgqEeu2LaOmzBKukg" name="getPrinter" isAbstract="true">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_0GjcIfgqEeu2LaOmzBKukg" type="_o9FLoPbdEeu2LaOmzBKukg" direction="return"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_0GjcIvgqEeu2LaOmzBKukg" name="printerType" type="_ksqNYPbfEeu2LaOmzBKukg"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Ie8P4PbeEeu2LaOmzBKukg" name="ShapeFactory">
+          <generalization xmi:type="uml:Generalization" xmi:id="_MEQwwPbeEeu2LaOmzBKukg" general="_3YwLAPbdEeu2LaOmzBKukg"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_lYOb8PgpEeu2LaOmzBKukg" name="getShape" specification="_RN4V8PbeEeu2LaOmzBKukg">
+            <language>JAVA</language>
+            <body> if(shapeType == null){&#xD;
+         return null;&#xD;
+      }    &#xD;
+      if(shapeType.equalsIgnoreCase(&quot;CIRCLE&quot;)){&#xD;
+         return new Circle();&#xD;
+      } else if(shapeType.equalsIgnoreCase(&quot;RECTANGLE&quot;)){&#xD;
+         return new Rectangle();&#xD;
+      } else if(shapeType.equalsIgnoreCase(&quot;SQUARE&quot;)){&#xD;
+         return new Square();&#xD;
+      }&#xD;
+      return null;</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6NA5gPgpEeu2LaOmzBKukg" name="getPrinter" specification="_RN15sPbeEeu2LaOmzBKukg">
+            <language>JAVA</language>
+            <body>return null;</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_RN15sPbeEeu2LaOmzBKukg" name="getPrinter" method="_6NA5gPgpEeu2LaOmzBKukg">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_RN15sfbeEeu2LaOmzBKukg" type="_o9FLoPbdEeu2LaOmzBKukg" direction="return"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_zhVioPbfEeu2LaOmzBKukg" name="printerType" type="_ksqNYPbfEeu2LaOmzBKukg"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_RN4V8PbeEeu2LaOmzBKukg" name="getShape" method="_lYOb8PgpEeu2LaOmzBKukg">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_RN4V8fbeEeu2LaOmzBKukg" type="_x2xNUPbWEeu2LaOmzBKukg" direction="return"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_LikuEPbgEeu2LaOmzBKukg" type="__NfnwPbfEeu2LaOmzBKukg"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_M0Cn4PbeEeu2LaOmzBKukg" name="PrintFactory">
+          <generalization xmi:type="uml:Generalization" xmi:id="_Ob5WgPbeEeu2LaOmzBKukg" general="_3YwLAPbdEeu2LaOmzBKukg"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Rt5w8PgqEeu2LaOmzBKukg" name="getPrinter" specification="_2vp4wPbfEeu2LaOmzBKukg">
+            <language>JAVA</language>
+            <body>if(type == null){&#xD;
+      return null;&#xD;
+    }    &#xD;
+  if(type.equalsIgnoreCase(&quot;paper&quot;)){&#xD;
+      return new PaperPrinter();&#xD;
+  } else if(type.equalsIgnoreCase(&quot;web&quot;)){&#xD;
+      return new WebPrinter();&#xD;
+  } else if(type.equalsIgnoreCase(&quot;Screen&quot;)){&#xD;
+      return new ScreenPrinter();&#xD;
+  }&#xD;
+  return null;</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Yqr84PgqEeu2LaOmzBKukg" name="getShape" specification="_NFCmYPbgEeu2LaOmzBKukg">
+            <language>JAVA</language>
+            <body>return null;</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_2vp4wPbfEeu2LaOmzBKukg" name="getPrinter" method="_Rt5w8PgqEeu2LaOmzBKukg">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_2vp4wfbfEeu2LaOmzBKukg" type="_o9FLoPbdEeu2LaOmzBKukg" direction="return"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_2vp4wvbfEeu2LaOmzBKukg" name="printerType" type="_ksqNYPbfEeu2LaOmzBKukg"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_NFCmYPbgEeu2LaOmzBKukg" name="getShape" method="_Yqr84PgqEeu2LaOmzBKukg">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_NFCmYfbgEeu2LaOmzBKukg" type="_x2xNUPbWEeu2LaOmzBKukg" direction="return"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_NFCmYvbgEeu2LaOmzBKukg" type="__NfnwPbfEeu2LaOmzBKukg"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_XZm4YPbeEeu2LaOmzBKukg" client="_Ie8P4PbeEeu2LaOmzBKukg" supplier="_o9FLoPbdEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_YNt14PbeEeu2LaOmzBKukg" client="_Ie8P4PbeEeu2LaOmzBKukg" supplier="_bBVCcPbdEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_Y68IQPbeEeu2LaOmzBKukg" client="_M0Cn4PbeEeu2LaOmzBKukg" supplier="_o9FLoPbdEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_ZuS30PbeEeu2LaOmzBKukg" client="_M0Cn4PbeEeu2LaOmzBKukg" supplier="_bBVCcPbdEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_iH3x4PbeEeu2LaOmzBKukg" name="FactoryProducer">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_nkjUIPgqEeu2LaOmzBKukg" name="getFactory" specification="_l_Od8PbeEeu2LaOmzBKukg">
+            <language>JAVA</language>
+            <body> if(choice.equalsIgnoreCase(&quot;SHAPE&quot;)){&#xD;
+         return new ShapeFactory();&#xD;
+      } else if(choice.equalsIgnoreCase(&quot;Printer&quot;)){&#xD;
+         return new PrinterFactory();&#xD;
+      }&#xD;
+      return null;</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_l_Od8PbeEeu2LaOmzBKukg" name="getFactory" method="_nkjUIPgqEeu2LaOmzBKukg">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_o3IfMPbeEeu2LaOmzBKukg" type="_3YwLAPbdEeu2LaOmzBKukg" direction="return"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_ehKUcPbfEeu2LaOmzBKukg" name="factoryType" type="_Qq8LgPbfEeu2LaOmzBKukg"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_ksTdgPbeEeu2LaOmzBKukg" client="_-mYr0PbcEeu2LaOmzBKukg _nkjUIPgqEeu2LaOmzBKukg" supplier="_3YwLAPbdEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_txaA0PbeEeu2LaOmzBKukg" name="Main">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_MUyvgvgwEeu2LaOmzBKukg" name="myapplication" type="_ZTUi0PgtEeu2LaOmzBKukg" association="_MUhpwPgwEeu2LaOmzBKukg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MUz9oPgwEeu2LaOmzBKukg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MUz9ofgwEeu2LaOmzBKukg" value="1"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HOmEAPgrEeu2LaOmzBKukg" name="main" specification="_ui5vMPbeEeu2LaOmzBKukg">
+            <language>JAVA</language>
+            <body>// Create MyApplication&#xD;
+myApplication = new MyApplication()&#xD;
+&#xD;
+//get shape factory&#xD;
+AbstractFactory shapeFactory = FactoryProducer.getFactory(&quot;SHAPE&quot;);&#xD;
+//get printer factory&#xD;
+AbstractFactory printerFactory = FactoryProducer.getFactory(&quot;printer&quot;);&#xD;
+&#xD;
+// pass the factories to myApp&#xD;
+myApplication.setShapeFactory(shapeFactory);&#xD;
+myApplication.setPrinterFactory(printerfFactory);&#xD;
+</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_ui5vMPbeEeu2LaOmzBKukg" name="main" method="_HOmEAPgrEeu2LaOmzBKukg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_5vbSAPbeEeu2LaOmzBKukg" client="_txaA0PbeEeu2LaOmzBKukg" supplier="_iH3x4PbeEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_Qq8LgPbfEeu2LaOmzBKukg" name="FactoryType">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_VicF8PbfEeu2LaOmzBKukg" name="PRINTER"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_WkL20PbfEeu2LaOmzBKukg" name="SHAPE"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_ksqNYPbfEeu2LaOmzBKukg" name="PrinterType">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_np4McPbfEeu2LaOmzBKukg" name="PAPER"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_p9l7gPbfEeu2LaOmzBKukg" name="WEB"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_qlC9EPbfEeu2LaOmzBKukg" name="SCREEN"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="__NfnwPbfEeu2LaOmzBKukg" name="ShapeType">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_BfzBkPbgEeu2LaOmzBKukg" name="SQUARE"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_C_PbEPbgEeu2LaOmzBKukg" name="RECTANGLE"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_EL-7APbgEeu2LaOmzBKukg" name="CIRCLE"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_73JFEPbhEeu2LaOmzBKukg" client="_Ie8P4PbeEeu2LaOmzBKukg" supplier="_e7i1QPbdEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_8tF1oPbhEeu2LaOmzBKukg" client="_Ie8P4PbeEeu2LaOmzBKukg" supplier="_gh9ZcPbdEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_-Z7x8PbhEeu2LaOmzBKukg" client="_Ie8P4PbeEeu2LaOmzBKukg" supplier="_iDCKoPbdEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_V1Z94PbiEeu2LaOmzBKukg" client="_M0Cn4PbeEeu2LaOmzBKukg" supplier="_uY_asPbdEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_WvTaUPbiEeu2LaOmzBKukg" client="_M0Cn4PbeEeu2LaOmzBKukg" supplier="_rjM5UPbdEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_Xmm1wPbiEeu2LaOmzBKukg" client="_M0Cn4PbeEeu2LaOmzBKukg" supplier="_suUooPbdEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_OnPcIPbkEeu2LaOmzBKukg" client="_-mYr0PbcEeu2LaOmzBKukg" supplier="_Qq8LgPbfEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_R6LzkPbkEeu2LaOmzBKukg" client="_3YwLAPbdEeu2LaOmzBKukg" supplier="_ksqNYPbfEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_UBdpIPbkEeu2LaOmzBKukg" client="_3YwLAPbdEeu2LaOmzBKukg" supplier="__NfnwPbfEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_VVCw4PbkEeu2LaOmzBKukg" client="_M0Cn4PbeEeu2LaOmzBKukg" supplier="_ksqNYPbfEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_WZfQcPbkEeu2LaOmzBKukg" client="_M0Cn4PbeEeu2LaOmzBKukg" supplier="__NfnwPbfEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_XsGH0PbkEeu2LaOmzBKukg" client="_Ie8P4PbeEeu2LaOmzBKukg" supplier="_ksqNYPbfEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_YijOsPbkEeu2LaOmzBKukg" client="_Ie8P4PbeEeu2LaOmzBKukg" supplier="__NfnwPbfEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_BfUXkPgsEeu2LaOmzBKukg" client="_iH3x4PbeEeu2LaOmzBKukg" supplier="_M0Cn4PbeEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_Cl2h0PgsEeu2LaOmzBKukg" client="_iH3x4PbeEeu2LaOmzBKukg" supplier="_Ie8P4PbeEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_e4LvAPgsEeu2LaOmzBKukg" client="_3YwLAPbdEeu2LaOmzBKukg" supplier="_bBVCcPbdEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_gEr-YPgsEeu2LaOmzBKukg" client="_3YwLAPbdEeu2LaOmzBKukg" supplier="_o9FLoPbdEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_3JZQIPgsEeu2LaOmzBKukg" client="_txaA0PbeEeu2LaOmzBKukg" supplier="_3YwLAPbdEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_7YYZEPgsEeu2LaOmzBKukg" client="_txaA0PbeEeu2LaOmzBKukg" supplier="_bBVCcPbdEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_8YRv0PgsEeu2LaOmzBKukg" client="_txaA0PbeEeu2LaOmzBKukg" supplier="_o9FLoPbdEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZTUi0PgtEeu2LaOmzBKukg" name="MyApplication">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ODjCQPguEeu2LaOmzBKukg" name="myPrinterFactory" type="_3YwLAPbdEeu2LaOmzBKukg" association="_ODhNEPguEeu2LaOmzBKukg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ODjpUPguEeu2LaOmzBKukg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ODjpUfguEeu2LaOmzBKukg" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TPvaUfguEeu2LaOmzBKukg" name="myShapeFactory" type="_3YwLAPbdEeu2LaOmzBKukg" association="_TPeUkPguEeu2LaOmzBKukg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TPwBYPguEeu2LaOmzBKukg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TPwocPguEeu2LaOmzBKukg" value="1"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_1i79wPguEeu2LaOmzBKukg" name="doSomethingWithShapesAndPrinters" specification="_nWe7kPgtEeu2LaOmzBKukg">
+            <language>JAVA</language>
+            <body>     //use the shape factory&#xD;
+     &#xD;
+      Shape shape1 = myShapeFactory.getShape(&quot;CIRCLE&quot;);&#xD;
+      shape1.draw();&#xD;
+      Shape shape2 = myShapeFactory.getShape(&quot;RECTANGLE&quot;);&#xD;
+      shape2.draw();   &#xD;
+      Shape shape3 = myShapeFactory.getShape(&quot;SQUARE&quot;);&#xD;
+      shape3.draw();&#xD;
+&#xD;
+      //use printer factory&#xD;
+&#xD;
+    Printer printer1 = myPrinterFactory.getPrinter(&quot;Paper&quot;);&#xD;
+    printer1.print();&#xD;
+    Printer printer2 = myPrinterFactory.getPrinter(&quot;Web&quot;);&#xD;
+    printer2.print();&#xD;
+    Printer printer3 = myPrinterFactory.getPrinter(&quot;Screen&quot;);&#xD;
+    printer3.print();</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_ax1vQPgtEeu2LaOmzBKukg" name="setShapeFactory">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_iy6pwPgtEeu2LaOmzBKukg" name="abstractFactory" type="_3YwLAPbdEeu2LaOmzBKukg"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_y-ZvAPgvEeu2LaOmzBKukg" name="setPrinterFactory">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_y-ZvAfgvEeu2LaOmzBKukg" name="abstractFactory" type="_3YwLAPbdEeu2LaOmzBKukg"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_nWe7kPgtEeu2LaOmzBKukg" name="doSomethingWithShapesAndPrinters" method="_1i79wPguEeu2LaOmzBKukg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_7l8egPgtEeu2LaOmzBKukg" client="_ZTUi0PgtEeu2LaOmzBKukg" supplier="_o9FLoPbdEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_86LtkPgtEeu2LaOmzBKukg" client="_ZTUi0PgtEeu2LaOmzBKukg" supplier="_bBVCcPbdEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_ODhNEPguEeu2LaOmzBKukg" name="printerFactory" memberEnd="_ODjCQPguEeu2LaOmzBKukg _ODjpUvguEeu2LaOmzBKukg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ODibMPguEeu2LaOmzBKukg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ODibMfguEeu2LaOmzBKukg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_ODjpUvguEeu2LaOmzBKukg" name="myapplication" type="_ZTUi0PgtEeu2LaOmzBKukg" association="_ODhNEPguEeu2LaOmzBKukg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_TPeUkPguEeu2LaOmzBKukg" name="shapeFactory" memberEnd="_TPvaUfguEeu2LaOmzBKukg _TPwocfguEeu2LaOmzBKukg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TPfisPguEeu2LaOmzBKukg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TPvaUPguEeu2LaOmzBKukg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_TPwocfguEeu2LaOmzBKukg" name="myapplication" type="_ZTUi0PgtEeu2LaOmzBKukg" association="_TPeUkPguEeu2LaOmzBKukg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_MUhpwPgwEeu2LaOmzBKukg" memberEnd="_MUyvgvgwEeu2LaOmzBKukg _MUz9ovgwEeu2LaOmzBKukg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MUyvgPgwEeu2LaOmzBKukg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MUyvgfgwEeu2LaOmzBKukg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_MUz9ovgwEeu2LaOmzBKukg" name="main" type="_txaA0PbeEeu2LaOmzBKukg" association="_MUhpwPgwEeu2LaOmzBKukg"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_ikMdUPblEeu2LaOmzBKukg" name="SingletonPattern">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_PKXP8PbnEeu2LaOmzBKukg">
+          <body>Singleton pattern is a creational pattern.&#xD;
+This pattern involves only a single class which is responsible to creates its own object.&#xD;
+The class ensures that only single object get created.&#xD;
+This class provides a way to access its only object.&#xD;
+For example, when design a user interface, we may only have one main application windows. &#xD;
+We can use the Singleton Pattern to ensure that there is only one instance of the MainApplicationWindow object.</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Class" xmi:id="_qLY4MPblEeu2LaOmzBKukg" name="MainWindow">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_NxuegPbmEeu2LaOmzBKukg" name="instance" visibility="private" isStatic="true" type="_qLY4MPblEeu2LaOmzBKukg">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_tNlocPbmEeu2LaOmzBKukg">
+              <language>JAVA</language>
+              <body>new MainWindow();</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_th6vIPblEeu2LaOmzBKukg" name="MainWindow" visibility="private"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_IlecEPbmEeu2LaOmzBKukg" name="getInstance" isStatic="true">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_M6i-4PbmEeu2LaOmzBKukg" type="_qLY4MPblEeu2LaOmzBKukg" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_rI_I4PblEeu2LaOmzBKukg" name="Main">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-Ede8PbmEeu2LaOmzBKukg" name="main" specification="_W9zMgPbmEeu2LaOmzBKukg">
+            <language>JAVA</language>
+            <body>//Get the only object available&#xD;
+      MainWindow object = MainWindow.getInstance();&#xD;
+&#xD;
+      //show the message&#xD;
+      object.showMessage();</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_W9zMgPbmEeu2LaOmzBKukg" name="main" isStatic="true" method="_-Ede8PbmEeu2LaOmzBKukg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_xK6ZoPbmEeu2LaOmzBKukg" client="_rI_I4PblEeu2LaOmzBKukg" supplier="_qLY4MPblEeu2LaOmzBKukg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_co7G0PbnEeu2LaOmzBKukg" name="BuilderPattern">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_Ser1gPbpEeu2LaOmzBKukg">
+          <body>Builder pattern is used to create a complex object using simple objects. It creates the bigger object step by step from small and simple object.&#xD;
+&#xD;
+Builder pattern is another creational pattern.&#xD;
+&#xD;
+For example, when creating a window as our application's main window, we need to create a menu, a toolbar and then add the menu and toolbar.&#xD;
+&#xD;
+For each window we are going to create, we need to create an empty window, create a menu, create a toolbar, install the menu and toolbar to the window.&#xD;
+&#xD;
+We can use the builder pattern to hide the implementation of how to create a window.</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Class" xmi:id="_jbowwPbnEeu2LaOmzBKukg" name="Menu"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_jlLHQPbnEeu2LaOmzBKukg" name="Toolbar"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_jubJ4PbnEeu2LaOmzBKukg" name="MainWindow">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ccO5MvboEeu2LaOmzBKukg" name="menu" type="_jbowwPbnEeu2LaOmzBKukg" association="_ccNEAPboEeu2LaOmzBKukg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ccUYwPboEeu2LaOmzBKukg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ccXcEPboEeu2LaOmzBKukg" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_dHp0wPboEeu2LaOmzBKukg" name="toolbar" type="_jlLHQPbnEeu2LaOmzBKukg" association="_dHn_kPboEeu2LaOmzBKukg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dHqb0PboEeu2LaOmzBKukg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dHrC4PboEeu2LaOmzBKukg" value="1"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_frrQsPboEeu2LaOmzBKukg" name="getMenu"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_g9mLkPboEeu2LaOmzBKukg" name="setMenu"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_ho5yYPboEeu2LaOmzBKukg" name="getToolbar"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_iWeqEPboEeu2LaOmzBKukg" name="setToolbar"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_kisfcPbnEeu2LaOmzBKukg" name="WindowBuilder">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_OghW0PbpEeu2LaOmzBKukg" name="createWindow" specification="_kol2oPboEeu2LaOmzBKukg">
+            <language>JAVA</language>
+            <body> MainWindow window = new MainWindow();&#xD;
+    Menu menu = new Menu();&#xD;
+    ToolBar toolBar = new ToolBar();&#xD;
+    window.setMenu(menu);&#xD;
+    window.setToolBar(toolBar);&#xD;
+    return window;</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_kol2oPboEeu2LaOmzBKukg" name="createWindow" isStatic="true" method="_OghW0PbpEeu2LaOmzBKukg">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_uZUw4PboEeu2LaOmzBKukg" type="_jubJ4PbnEeu2LaOmzBKukg" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_kvF8sPbnEeu2LaOmzBKukg" name="Main">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_dtMVUPbpEeu2LaOmzBKukg" name="main" specification="_zo83cPboEeu2LaOmzBKukg">
+            <language>JAVA</language>
+            <body> MainWindow object = WindowBuilder.createWindow();</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_zo83cPboEeu2LaOmzBKukg" name="main" method="_dtMVUPbpEeu2LaOmzBKukg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_ccNEAPboEeu2LaOmzBKukg" memberEnd="_ccO5MvboEeu2LaOmzBKukg _ccbGcPboEeu2LaOmzBKukg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ccO5MPboEeu2LaOmzBKukg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ccO5MfboEeu2LaOmzBKukg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_ccbGcPboEeu2LaOmzBKukg" name="mainwindow" type="_jubJ4PbnEeu2LaOmzBKukg" association="_ccNEAPboEeu2LaOmzBKukg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_dHn_kPboEeu2LaOmzBKukg" memberEnd="_dHp0wPboEeu2LaOmzBKukg _dHrC4fboEeu2LaOmzBKukg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dHpNsPboEeu2LaOmzBKukg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dHpNsfboEeu2LaOmzBKukg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_dHrC4fboEeu2LaOmzBKukg" name="mainwindow" type="_jubJ4PbnEeu2LaOmzBKukg" association="_dHn_kPboEeu2LaOmzBKukg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_ouKk4PboEeu2LaOmzBKukg" client="_kisfcPbnEeu2LaOmzBKukg" supplier="_jubJ4PbnEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_xyivcPboEeu2LaOmzBKukg" client="_kisfcPbnEeu2LaOmzBKukg" supplier="_jbowwPbnEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_ymgjAPboEeu2LaOmzBKukg" client="_kisfcPbnEeu2LaOmzBKukg" supplier="_jlLHQPbnEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_1w-T4PboEeu2LaOmzBKukg" client="_kvF8sPbnEeu2LaOmzBKukg" supplier="_kisfcPbnEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_9AX50PboEeu2LaOmzBKukg" client="_kvF8sPbnEeu2LaOmzBKukg" supplier="_jubJ4PbnEeu2LaOmzBKukg"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_AEwl8PbrEeu2LaOmzBKukg" name="StructuralPatterns">
+      <packagedElement xmi:type="uml:Package" xmi:id="_WulRUPbREeu2LaOmzBKukg" name="AdpaterPattern">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_m9fKEPbrEeu2LaOmzBKukg">
+          <body>We use the adapter in real life a lot. For example, we use a memory card adapter to connect &#xD;
+a memory card and a computer since the computer only support one type of memory card and &#xD;
+our card is not compatible with the computer.&#xD;
+&#xD;
+Adapter is a converter between two incompatible entities. Adapter pattern is a structural pattern.&#xD;
+&#xD;
+In Java design pattern, Adapter pattern works as a bridge between two incompatible interfaces.&#xD;
+&#xD;
+By using the adapter pattern we can unify the two incompatible interfaces.</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_hyS2YPbREeu2LaOmzBKukg" name="Player">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_ssw_4PbREeu2LaOmzBKukg" name="play"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_jFj1EPbREeu2LaOmzBKukg" name="AudioPlayer">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_tccJUPbREeu2LaOmzBKukg" name="playAudio"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_k-BLgPbREeu2LaOmzBKukg" name="VideoPlayer">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_uYKKsPbREeu2LaOmzBKukg" name="playVideo"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_wu9qAPbREeu2LaOmzBKukg" name="myAudioPlayer">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_059DwPbREeu2LaOmzBKukg" client="_wu9qAPbREeu2LaOmzBKukg" supplier="_jFj1EPbREeu2LaOmzBKukg" contract="_jFj1EPbREeu2LaOmzBKukg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_rIUwoPbcEeu2LaOmzBKukg" name="playAudio"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_x7jY8PbREeu2LaOmzBKukg" name="myVideoPlayer">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_1ytQsPbREeu2LaOmzBKukg" client="_x7jY8PbREeu2LaOmzBKukg" supplier="_k-BLgPbREeu2LaOmzBKukg" contract="_k-BLgPbREeu2LaOmzBKukg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_rrXMQPbcEeu2LaOmzBKukg" name="playVideo"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_63EicPbREeu2LaOmzBKukg" name="MyPlayer">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_R96lYvbWEeu2LaOmzBKukg" name="audioplayer" type="_jFj1EPbREeu2LaOmzBKukg" association="_R95-UPbWEeu2LaOmzBKukg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_R97McPbWEeu2LaOmzBKukg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R97McfbWEeu2LaOmzBKukg" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TiXasfbWEeu2LaOmzBKukg" name="videoplayer" type="_k-BLgPbREeu2LaOmzBKukg" association="_TiVlgPbWEeu2LaOmzBKukg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TiYBwPbWEeu2LaOmzBKukg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TiYo0PbWEeu2LaOmzBKukg" value="1"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_-70KQPbREeu2LaOmzBKukg" client="_63EicPbREeu2LaOmzBKukg" supplier="_hyS2YPbREeu2LaOmzBKukg" contract="_hyS2YPbREeu2LaOmzBKukg"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_E-RdIPbsEeu2LaOmzBKukg" name="play" specification="_s_1r4PbcEeu2LaOmzBKukg">
+            <language>JAVA</language>
+            <body>if(audioType.equalsIgnoreCase(&quot;avi&quot;)){&#xD;
+         videoplayer.playVideo(fileName);&#xD;
+      }else if(audioType.equalsIgnoreCase(&quot;mp3&quot;)){&#xD;
+         audioplayer.playAudio(fileName);&#xD;
+      }</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_s_1r4PbcEeu2LaOmzBKukg" name="play" method="_E-RdIPbsEeu2LaOmzBKukg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_X-VMgPbSEeu2LaOmzBKukg" name="Main">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Hy2fkPbWEeu2LaOmzBKukg" name="myPlayer" type="_hyS2YPbREeu2LaOmzBKukg" aggregation="composite" association="_HyesIPbWEeu2LaOmzBKukg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Hy3GoPbWEeu2LaOmzBKukg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Hy3tsPbWEeu2LaOmzBKukg" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_j2VpEPhCEeu2LaOmzBKukg" name="myucapp" type="_VvrQYPhCEeu2LaOmzBKukg" aggregation="composite" association="_j2Tz4PhCEeu2LaOmzBKukg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j2WQIPhCEeu2LaOmzBKukg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j2W3MPhCEeu2LaOmzBKukg" value="1"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ReCwgPbsEeu2LaOmzBKukg" name="main" specification="_phOP8PbcEeu2LaOmzBKukg">
+            <language>JAVA</language>
+            <body>myPlayer = new MyPlayer();&#xD;
+myucapp.usePlayer(myPlayer);</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_phOP8PbcEeu2LaOmzBKukg" name="main" method="_ReCwgPbsEeu2LaOmzBKukg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_HyesIPbWEeu2LaOmzBKukg" memberEnd="_Hy2fkPbWEeu2LaOmzBKukg _Hy3tsfbWEeu2LaOmzBKukg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Hyy1MPbWEeu2LaOmzBKukg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HyzcQPbWEeu2LaOmzBKukg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Hy3tsfbWEeu2LaOmzBKukg" name="main" type="_X-VMgPbSEeu2LaOmzBKukg" association="_HyesIPbWEeu2LaOmzBKukg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_R95-UPbWEeu2LaOmzBKukg" memberEnd="_R96lYvbWEeu2LaOmzBKukg _R97McvbWEeu2LaOmzBKukg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R96lYPbWEeu2LaOmzBKukg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_R96lYfbWEeu2LaOmzBKukg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_R97McvbWEeu2LaOmzBKukg" name="myplayer" type="_63EicPbREeu2LaOmzBKukg" association="_R95-UPbWEeu2LaOmzBKukg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_TiVlgPbWEeu2LaOmzBKukg" memberEnd="_TiXasfbWEeu2LaOmzBKukg _TiYo0fbWEeu2LaOmzBKukg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TiWzoPbWEeu2LaOmzBKukg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TiXasPbWEeu2LaOmzBKukg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_TiYo0fbWEeu2LaOmzBKukg" name="myplayer" type="_63EicPbREeu2LaOmzBKukg" association="_TiVlgPbWEeu2LaOmzBKukg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_v5UB0Pg5Eeu2LaOmzBKukg" client="_WulRUPbREeu2LaOmzBKukg" supplier="_63EicPbREeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_O3ysMPg6Eeu2LaOmzBKukg" client="_63EicPbREeu2LaOmzBKukg" supplier="_x7jY8PbREeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_Pt08UPg6Eeu2LaOmzBKukg" client="_63EicPbREeu2LaOmzBKukg" supplier="_wu9qAPbREeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_VvrQYPhCEeu2LaOmzBKukg" name="MyUCApp">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_242QsPhCEeu2LaOmzBKukg" name="usePlayer" specification="_XZnpsPhCEeu2LaOmzBKukg">
+            <language>JAVA</language>
+            <body> player.play(&quot;mp3&quot;, &quot;h.mp3&quot;);&#xD;
+ player.play(&quot;avi&quot;, &quot;me.avi&quot;);</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_XZnpsPhCEeu2LaOmzBKukg" name="usePlayer" method="_242QsPhCEeu2LaOmzBKukg">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_dM9hUPhCEeu2LaOmzBKukg" name="player" type="_hyS2YPbREeu2LaOmzBKukg"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_j2Tz4PhCEeu2LaOmzBKukg" memberEnd="_j2VpEPhCEeu2LaOmzBKukg _j2W3MfhCEeu2LaOmzBKukg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_j2VCAPhCEeu2LaOmzBKukg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_j2VCAfhCEeu2LaOmzBKukg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_j2W3MfhCEeu2LaOmzBKukg" name="main" type="_X-VMgPbSEeu2LaOmzBKukg" association="_j2Tz4PhCEeu2LaOmzBKukg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Usage" xmi:id="__bqmUPhCEeu2LaOmzBKukg" client="_VvrQYPhCEeu2LaOmzBKukg" supplier="_hyS2YPbREeu2LaOmzBKukg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_7zJU4PbsEeu2LaOmzBKukg" name="BridgePattern">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_v6a3EPgjEeu2LaOmzBKukg">
+          <body>Bridge pattern decouples an definition from its implementation. It is a structural pattern.&#xD;
+This pattern involves an interface which acts as a bridge. The bridge makes the concrete &#xD;
+classes independent from interface implementer classes.&#xD;
+Both types of classes can be altered without affecting each other.</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_CFEl8PbtEeu2LaOmzBKukg" name="Printer">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_C39bcPbtEeu2LaOmzBKukg" name="print"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_EkQlMPbtEeu2LaOmzBKukg" name="ColorPrinter">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_I8UKkPbtEeu2LaOmzBKukg" client="_EkQlMPbtEeu2LaOmzBKukg" supplier="_CFEl8PbtEeu2LaOmzBKukg" contract="_CFEl8PbtEeu2LaOmzBKukg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_LEOSQPbtEeu2LaOmzBKukg" name="print"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_FtF1gPbtEeu2LaOmzBKukg" name="BlackPrinter">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_JmYbQPbtEeu2LaOmzBKukg" client="_FtF1gPbtEeu2LaOmzBKukg" supplier="_CFEl8PbtEeu2LaOmzBKukg" contract="_CFEl8PbtEeu2LaOmzBKukg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_LUfi4PbtEeu2LaOmzBKukg" name="print"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_NPpoAPbtEeu2LaOmzBKukg" name="Shape" isAbstract="true">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_SJIfcPbtEeu2LaOmzBKukg" name="printer" type="_CFEl8PbtEeu2LaOmzBKukg" aggregation="shared" association="_SJGqQPbtEeu2LaOmzBKukg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SJJtkPbtEeu2LaOmzBKukg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SJJtkfbtEeu2LaOmzBKukg" value="1"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_Z4FIIPbtEeu2LaOmzBKukg" name="Shape" visibility="protected">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_uvOWIPbtEeu2LaOmzBKukg" type="_CFEl8PbtEeu2LaOmzBKukg"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_2kzyUPbtEeu2LaOmzBKukg" name="draw" isAbstract="true"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_SJGqQPbtEeu2LaOmzBKukg" visibility="protected" memberEnd="_SJIfcPbtEeu2LaOmzBKukg _SJJtkvbtEeu2LaOmzBKukg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SJH4YPbtEeu2LaOmzBKukg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SJH4YfbtEeu2LaOmzBKukg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_SJJtkvbtEeu2LaOmzBKukg" name="shape" type="_NPpoAPbtEeu2LaOmzBKukg" association="_SJGqQPbtEeu2LaOmzBKukg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_9_GZoPbtEeu2LaOmzBKukg" name="Circle">
+          <generalization xmi:type="uml:Generalization" xmi:id="_CalGcPbuEeu2LaOmzBKukg" general="_NPpoAPbtEeu2LaOmzBKukg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_E-zWsPbuEeu2LaOmzBKukg" name="x" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IU9aMPbuEeu2LaOmzBKukg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IVPuEPbuEeu2LaOmzBKukg" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Jdd6YPbuEeu2LaOmzBKukg" name="y" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Jdd6YfbuEeu2LaOmzBKukg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Jdd6YvbuEeu2LaOmzBKukg" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Wkk6kPbuEeu2LaOmzBKukg" name="radius" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Wkk6kfbuEeu2LaOmzBKukg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Wkk6kvbuEeu2LaOmzBKukg" value="1"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_ZsUHkPbuEeu2LaOmzBKukg" name="Circle">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_fzpSMPbuEeu2LaOmzBKukg" name="x">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_hpARUPbuEeu2LaOmzBKukg" name="y">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_jqeZ0PbuEeu2LaOmzBKukg" name="radius">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_n8fBkPbuEeu2LaOmzBKukg" name="draw" type="_CFEl8PbtEeu2LaOmzBKukg"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_rTjrEPbuEeu2LaOmzBKukg" name="draw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_s4-wwPbuEeu2LaOmzBKukg" name="Main">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_bnGJAvg9Eeu2LaOmzBKukg" name="myusecaseapp" type="_I9iM4Pg9Eeu2LaOmzBKukg" aggregation="composite" association="_bm1qUPg9Eeu2LaOmzBKukg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bnGwEPg9Eeu2LaOmzBKukg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bnHXIPg9Eeu2LaOmzBKukg" value="1"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-8b0APg_Eeu2LaOmzBKukg" name="main" specification="_tllYEPbuEeu2LaOmzBKukg">
+            <language>JAVA</language>
+            <body>Shape redCircle = new Circle(100,100, 10, new ColorPrinter());&#xD;
+Shape blackCircle = new Circle(100,100, 10, new BlackPrinter());&#xD;
+&#xD;
+myUCApp.doSomethingWithAShape(redCircle);&#xD;
+myUCApp.doSomethingWithAShape(blackCircle);</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_tllYEPbuEeu2LaOmzBKukg" name="main" isStatic="true" method="_-8b0APg_Eeu2LaOmzBKukg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_2F5zUPbuEeu2LaOmzBKukg" client="_s4-wwPbuEeu2LaOmzBKukg" supplier="_NPpoAPbtEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_2_npkPbuEeu2LaOmzBKukg" client="_s4-wwPbuEeu2LaOmzBKukg" supplier="_9_GZoPbtEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_50haIPbuEeu2LaOmzBKukg" client="_s4-wwPbuEeu2LaOmzBKukg" supplier="_EkQlMPbtEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_6hjfQPbuEeu2LaOmzBKukg" client="_s4-wwPbuEeu2LaOmzBKukg" supplier="_FtF1gPbtEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_Hw_8EPbvEeu2LaOmzBKukg" client="_9_GZoPbtEeu2LaOmzBKukg" supplier="_CFEl8PbtEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_I9iM4Pg9Eeu2LaOmzBKukg" name="MyUseCaseApp">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_U57mEPhAEeu2LaOmzBKukg" name="doSomethingWithAShape" specification="_L6LkMPg9Eeu2LaOmzBKukg">
+            <language>JAVA</language>
+            <body>shape.draw();</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_L6LkMPg9Eeu2LaOmzBKukg" name="doSomethingWithAShape" method="_U57mEPhAEeu2LaOmzBKukg">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_gjNWUPhAEeu2LaOmzBKukg" name="shape" type="_NPpoAPbtEeu2LaOmzBKukg"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_bm1qUPg9Eeu2LaOmzBKukg" memberEnd="_bnGJAvg9Eeu2LaOmzBKukg _bnHXIfg9Eeu2LaOmzBKukg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bnGJAPg9Eeu2LaOmzBKukg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bnGJAfg9Eeu2LaOmzBKukg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_bnHXIfg9Eeu2LaOmzBKukg" name="main" type="_s4-wwPbuEeu2LaOmzBKukg" association="_bm1qUPg9Eeu2LaOmzBKukg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_ldSqsPhAEeu2LaOmzBKukg" client="_I9iM4Pg9Eeu2LaOmzBKukg" supplier="_NPpoAPbtEeu2LaOmzBKukg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_KodIoPkkEeu2LaOmzBKukg" name="FilterPattern">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_6XqroPksEeu2LaOmzBKukg">
+          <body>Filter pattern filters objects using different criteria.&#xD;
+&#xD;
+The criteria can be chained together through logical operations.&#xD;
+&#xD;
+Filter pattern is a structural pattern.</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Class" xmi:id="_V7VY0PkpEeu2LaOmzBKukg" name="Employee">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_XCq0UPkpEeu2LaOmzBKukg" name="name" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_yDbr8PkpEeu2LaOmzBKukg" name="gender" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_yL4dUPkpEeu2LaOmzBKukg" name="retireStatus" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_5RAF4PkpEeu2LaOmzBKukg" name="Employee"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_55NVYPkpEeu2LaOmzBKukg" name="getName"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_6bvasPkpEeu2LaOmzBKukg" name="getGender"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_7IM4EPkpEeu2LaOmzBKukg" name="getRetireStatus"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_-28asPkpEeu2LaOmzBKukg" name="toString"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_CcEHQPkqEeu2LaOmzBKukg" name="Criteria">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_DbiAMPkqEeu2LaOmzBKukg" name="meetCriteria">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Mnv4IPkqEeu2LaOmzBKukg" name="persons" type="_HWrAEPkqEeu2LaOmzBKukg"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_RFl8cPkqEeu2LaOmzBKukg" type="_HWrAEPkqEeu2LaOmzBKukg" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_HWrAEPkqEeu2LaOmzBKukg" name="LIst&lt;Employee>"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_X7Z9sPkqEeu2LaOmzBKukg" name="CriteriaMale">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_sjcYsPkqEeu2LaOmzBKukg" client="_X7Z9sPkqEeu2LaOmzBKukg" supplier="_CcEHQPkqEeu2LaOmzBKukg" contract="_CcEHQPkqEeu2LaOmzBKukg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_h5McgPkqEeu2LaOmzBKukg" name="meetCriteria">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_h5McgfkqEeu2LaOmzBKukg" name="persons" type="_HWrAEPkqEeu2LaOmzBKukg"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_h5McgvkqEeu2LaOmzBKukg" type="_HWrAEPkqEeu2LaOmzBKukg" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_jKZlsPkqEeu2LaOmzBKukg" name="CriteriaFemale">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_tRcHIPkqEeu2LaOmzBKukg" client="_jKZlsPkqEeu2LaOmzBKukg" supplier="_CcEHQPkqEeu2LaOmzBKukg" contract="_CcEHQPkqEeu2LaOmzBKukg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_jKZlsfkqEeu2LaOmzBKukg" name="meetCriteria">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_jKZlsvkqEeu2LaOmzBKukg" name="persons" type="_HWrAEPkqEeu2LaOmzBKukg"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_jKZls_kqEeu2LaOmzBKukg" type="_HWrAEPkqEeu2LaOmzBKukg" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_mKn1cPkqEeu2LaOmzBKukg" name="CriteriaRetirement">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_r26C0PkqEeu2LaOmzBKukg" client="_mKn1cPkqEeu2LaOmzBKukg" supplier="_CcEHQPkqEeu2LaOmzBKukg" contract="_CcEHQPkqEeu2LaOmzBKukg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_mKn1cfkqEeu2LaOmzBKukg" name="meetCriteria">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_mKn1cvkqEeu2LaOmzBKukg" name="persons" type="_HWrAEPkqEeu2LaOmzBKukg"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_mKn1c_kqEeu2LaOmzBKukg" type="_HWrAEPkqEeu2LaOmzBKukg" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_xdjiQPkqEeu2LaOmzBKukg" name="AndCriteria">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_zajacPkqEeu2LaOmzBKukg" name="criteria" visibility="private" type="_CcEHQPkqEeu2LaOmzBKukg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_61kagPkqEeu2LaOmzBKukg" name="otherCriteria" visibility="private" type="_CcEHQPkqEeu2LaOmzBKukg"/>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="__z5VsPkqEeu2LaOmzBKukg" client="_xdjiQPkqEeu2LaOmzBKukg" supplier="_CcEHQPkqEeu2LaOmzBKukg" contract="_CcEHQPkqEeu2LaOmzBKukg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_--A2kPkqEeu2LaOmzBKukg" name="meetCriteria">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_--A2kfkqEeu2LaOmzBKukg" name="persons" type="_HWrAEPkqEeu2LaOmzBKukg"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_--A2kvkqEeu2LaOmzBKukg" type="_HWrAEPkqEeu2LaOmzBKukg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_BH8XgPkrEeu2LaOmzBKukg" name="AndCriteria">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_IWELEPkrEeu2LaOmzBKukg" name="criteria" type="_CcEHQPkqEeu2LaOmzBKukg"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_KiowUPkrEeu2LaOmzBKukg" name="otherCriteria" type="_CcEHQPkqEeu2LaOmzBKukg"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_OlOcAPkrEeu2LaOmzBKukg" name="OrCriteria">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OlOcAfkrEeu2LaOmzBKukg" name="criteria" visibility="private" type="_CcEHQPkqEeu2LaOmzBKukg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OlOcAvkrEeu2LaOmzBKukg" name="otherCriteria" visibility="private" type="_CcEHQPkqEeu2LaOmzBKukg"/>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_OlOcA_krEeu2LaOmzBKukg" client="_OlOcAPkrEeu2LaOmzBKukg" supplier="_CcEHQPkqEeu2LaOmzBKukg" contract="_CcEHQPkqEeu2LaOmzBKukg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_OlOcBPkrEeu2LaOmzBKukg" name="meetCriteria">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_OlOcBfkrEeu2LaOmzBKukg" name="persons" type="_HWrAEPkqEeu2LaOmzBKukg"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_OlOcBvkrEeu2LaOmzBKukg" type="_HWrAEPkqEeu2LaOmzBKukg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_OlOcB_krEeu2LaOmzBKukg" name="AndCriteria">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_OlOcCPkrEeu2LaOmzBKukg" name="criteria" type="_CcEHQPkqEeu2LaOmzBKukg"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_OlOcCfkrEeu2LaOmzBKukg" name="otherCriteria" type="_CcEHQPkqEeu2LaOmzBKukg"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_gu7MUPkrEeu2LaOmzBKukg" client="_CcEHQPkqEeu2LaOmzBKukg" supplier="_V7VY0PkpEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_kudkAPkrEeu2LaOmzBKukg" client="_CcEHQPkqEeu2LaOmzBKukg" supplier="_HWrAEPkqEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_YWiIkPksEeu2LaOmzBKukg" name="Main">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_ZEyVsPksEeu2LaOmzBKukg" name="main" isStatic="true"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_fQyk8PksEeu2LaOmzBKukg" name="printPersons" isStatic="true"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_pnTFwPksEeu2LaOmzBKukg" client="_HWrAEPkqEeu2LaOmzBKukg" supplier="_V7VY0PkpEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_rT1gEPksEeu2LaOmzBKukg" client="_YWiIkPksEeu2LaOmzBKukg" supplier="_HWrAEPkqEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_sKI18PksEeu2LaOmzBKukg" client="_YWiIkPksEeu2LaOmzBKukg" supplier="_V7VY0PkpEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_vTVbgPksEeu2LaOmzBKukg" client="_YWiIkPksEeu2LaOmzBKukg" supplier="_CcEHQPkqEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_v0iEEPksEeu2LaOmzBKukg" client="_YWiIkPksEeu2LaOmzBKukg" supplier="_X7Z9sPkqEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_wMa_oPksEeu2LaOmzBKukg" client="_YWiIkPksEeu2LaOmzBKukg" supplier="_jKZlsPkqEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_wlME8PksEeu2LaOmzBKukg" client="_YWiIkPksEeu2LaOmzBKukg" supplier="_mKn1cPkqEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_xKACMPksEeu2LaOmzBKukg" client="_YWiIkPksEeu2LaOmzBKukg" supplier="_xdjiQPkqEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_ybA-IPksEeu2LaOmzBKukg" client="_YWiIkPksEeu2LaOmzBKukg" supplier="_OlOcAPkrEeu2LaOmzBKukg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_NVAJIPhNEeu2LaOmzBKukg" name="CompositePattern">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_D3KOUPhQEeu2LaOmzBKukg">
+          <body>Composite pattern is structural pattern since it creates a tree structure of group of objects.&#xD;
+&#xD;
+Composite pattern treats a group of objects as a single object.&#xD;
+&#xD;
+Composite pattern uses one class to represent a tree structure.&#xD;
+&#xD;
+In Composite pattern we create a class contains group of its own objects.</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SY9yQPhNEeu2LaOmzBKukg" name="Employee">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_dtYs0PhNEeu2LaOmzBKukg" name="name" visibility="private" type="_yKbYwPhNEeu2LaOmzBKukg" aggregation="composite" association="_25SCoPhPEeu2LaOmzBKukg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xO3IYPhNEeu2LaOmzBKukg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xO9PAPhNEeu2LaOmzBKukg" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_IlURcPhOEeu2LaOmzBKukg" name="title" visibility="private" type="_yKbYwPhNEeu2LaOmzBKukg" aggregation="composite" association="_5cUAEPhPEeu2LaOmzBKukg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_a4g8APhOEeu2LaOmzBKukg" name="subordinates" visibility="private" type="_Y_WQYPhNEeu2LaOmzBKukg" aggregation="composite" association="_tuTg0PhPEeu2LaOmzBKukg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_ikmd8PhOEeu2LaOmzBKukg" name="Employee"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_jQnPYPhOEeu2LaOmzBKukg" name="add">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_t5RQIPhOEeu2LaOmzBKukg" name="employee" type="_SY9yQPhNEeu2LaOmzBKukg"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_vklicPhOEeu2LaOmzBKukg" name="remove">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_vklicfhOEeu2LaOmzBKukg" name="employee" type="_SY9yQPhNEeu2LaOmzBKukg"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_k3WjsPhOEeu2LaOmzBKukg" name="getSubordinates">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_7BRoMPhOEeu2LaOmzBKukg" type="_Y_WQYPhNEeu2LaOmzBKukg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_mpt5MPhOEeu2LaOmzBKukg" name="toString">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="__0WVoPhOEeu2LaOmzBKukg" type="_yKbYwPhNEeu2LaOmzBKukg" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Tjhg4PhNEeu2LaOmzBKukg" name="Main">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MNtfAPhPEeu2LaOmzBKukg" name="main">
+            <language>JAVA</language>
+            <body>Employee CEO = new Employee(&quot;John&quot;,&quot;CEO&quot;);&#xD;
+Employee headSales = new Employee(&quot;Rob&quot;,&quot;Sales&quot;);&#xD;
+Employee headMarketing = new Employee(&quot;Mike&quot;,&quot;Marketing&quot;);&#xD;
+Employee programmer1 = new Employee(&quot;Lili&quot;,&quot;Programmer&quot;);&#xD;
+Employee programmer2 = new Employee(&quot;Bob&quot;,&quot;Programmer&quot;);&#xD;
+Employee tester1 = new Employee(&quot;Jack&quot;,&quot;Tester&quot;);&#xD;
+Employee tester2 = new Employee(&quot;Tom&quot;,&quot;Tester&quot;);&#xD;
+CEO.add(headSales);&#xD;
+CEO.add(headMarketing);&#xD;
+      headSales.add(tester1);&#xD;
+      headSales.add(tester2);&#xD;
+      headMarketing.add(programmer1);&#xD;
+      headMarketing.add(programmer2);&#xD;
+      //print all employees of the organization&#xD;
+      System.out.println(CEO); &#xD;
+      for (Employee headEmployee : CEO.getSubordinates()) {&#xD;
+         System.out.println(headEmployee);&#xD;
+         for (Employee employee : headEmployee.getSubordinates()) {&#xD;
+            System.out.println(employee);&#xD;
+         }&#xD;
+      }    </body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_DvUWYPhPEeu2LaOmzBKukg" name="main" isStatic="true"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Y_WQYPhNEeu2LaOmzBKukg" name="List&lt;Employee>"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_yKbYwPhNEeu2LaOmzBKukg" name="String"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_ln0h4PhPEeu2LaOmzBKukg" client="_Tjhg4PhNEeu2LaOmzBKukg" supplier="_SY9yQPhNEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_tuTg0PhPEeu2LaOmzBKukg" name="A_subordinates_employee" memberEnd="_a4g8APhOEeu2LaOmzBKukg _tubcoPhPEeu2LaOmzBKukg">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_tubcoPhPEeu2LaOmzBKukg" name="employee" type="_SY9yQPhNEeu2LaOmzBKukg" association="_tuTg0PhPEeu2LaOmzBKukg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tucDsPhPEeu2LaOmzBKukg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tucDsfhPEeu2LaOmzBKukg" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_25SCoPhPEeu2LaOmzBKukg" name="A_name_employee" memberEnd="_dtYs0PhNEeu2LaOmzBKukg _25YwUPhPEeu2LaOmzBKukg">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_25YwUPhPEeu2LaOmzBKukg" name="employee" type="_SY9yQPhNEeu2LaOmzBKukg" association="_25SCoPhPEeu2LaOmzBKukg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_25YwUfhPEeu2LaOmzBKukg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_25ZXYPhPEeu2LaOmzBKukg" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_5cUAEPhPEeu2LaOmzBKukg" name="A_title_employee" memberEnd="_IlURcPhOEeu2LaOmzBKukg _5cbU0PhPEeu2LaOmzBKukg">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_5cbU0PhPEeu2LaOmzBKukg" name="employee" type="_SY9yQPhNEeu2LaOmzBKukg" association="_5cUAEPhPEeu2LaOmzBKukg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5cbU0fhPEeu2LaOmzBKukg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5cbU0vhPEeu2LaOmzBKukg" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_DvhR0PjrEeu2LaOmzBKukg" client="_SY9yQPhNEeu2LaOmzBKukg" supplier="_SY9yQPhNEeu2LaOmzBKukg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_MHzO0PhQEeu2LaOmzBKukg" name="DecoratorPattern">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_LLXN4A1bEeyIHMV6DuGURg">
+          <body>Decorator pattern adds new functionality to an existing object without changing its structure.&#xD;
+It is a structural pattern as it acts as a wrapper to existing class.&#xD;
+Decorator pattern creates a decorator class to wrap the original class and provides additional functionality.</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_R7PNEPhQEeu2LaOmzBKukg" name="Printer">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_Y0EtIPhQEeu2LaOmzBKukg" name="print"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_TqrxcPhQEeu2LaOmzBKukg" name="PaperPrinter">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_OGcQUPhREeu2LaOmzBKukg" client="_TqrxcPhQEeu2LaOmzBKukg" supplier="_R7PNEPhQEeu2LaOmzBKukg" contract="_R7PNEPhQEeu2LaOmzBKukg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_aDdRYPhQEeu2LaOmzBKukg" name="print"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_WaBskPhQEeu2LaOmzBKukg" name="PlasticPrinter">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_O9_jYPhREeu2LaOmzBKukg" client="_WaBskPhQEeu2LaOmzBKukg" supplier="_R7PNEPhQEeu2LaOmzBKukg" contract="_R7PNEPhQEeu2LaOmzBKukg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_aVCJkPhQEeu2LaOmzBKukg" name="print"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_d-Zc8PhQEeu2LaOmzBKukg" name="PrinterDecorator" isAbstract="true">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_kXa0gPhQEeu2LaOmzBKukg" name="decoratedPrinter" visibility="private" type="_R7PNEPhQEeu2LaOmzBKukg"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_5gF3YPhQEeu2LaOmzBKukg" name="print_PrinterDecorator" specification="_iVDUIPhQEeu2LaOmzBKukg">
+            <language>JAVA</language>
+            <body>decoratedPrinter.print();</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="__1FqkPhQEeu2LaOmzBKukg" name="PrinterDecorator">
+            <language>JAVA</language>
+            <body>this.decoratedPrinter = printer;</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_q4xosPhQEeu2LaOmzBKukg" name="PrinterDecorator">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_wcUJwPhQEeu2LaOmzBKukg" name="printer" type="_R7PNEPhQEeu2LaOmzBKukg"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_iVDUIPhQEeu2LaOmzBKukg" name="print" method="_5gF3YPhQEeu2LaOmzBKukg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_P00dsPhREeu2LaOmzBKukg" client="_d-Zc8PhQEeu2LaOmzBKukg" supplier="_R7PNEPhQEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_TwC9IPhREeu2LaOmzBKukg" name="Printer3D">
+          <generalization xmi:type="uml:Generalization" xmi:id="_WMFhwPhREeu2LaOmzBKukg" general="_d-Zc8PhQEeu2LaOmzBKukg"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_rdKSsPhREeu2LaOmzBKukg" name="Printer3D">
+            <language>JAVA</language>
+            <body> super(decoratedPrinter);</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_x8DBsPhREeu2LaOmzBKukg" name="print_Printer3D" specification="_jG054PhREeu2LaOmzBKukg">
+            <language>JAVA</language>
+            <body>System.out.println(&quot;3D.&quot;);&#xD;
+decoratedPrinter.print();</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_aI8_8PhREeu2LaOmzBKukg" name="Printer3D">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_glzHkPhREeu2LaOmzBKukg" name="decoratedPrinter" type="_R7PNEPhQEeu2LaOmzBKukg"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_jG054PhREeu2LaOmzBKukg" name="print" method="_x8DBsPhREeu2LaOmzBKukg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_34A0YPhSEeu2LaOmzBKukg" name="Main">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-nKM8PhSEeu2LaOmzBKukg" name="main" specification="_5GA4kPhSEeu2LaOmzBKukg">
+            <language>JAVA</language>
+            <body>Printer plasticPrinter = new PlasticPrinter();&#xD;
+      Printer plastic3DPrinter = new Printer3D(new PlasticPrinter());&#xD;
+      Printer paper3DPrinter = new Printer3D(new PaperPrinter());&#xD;
+      plasticPrinter.print();&#xD;
+      plastic3DPrinter.print();&#xD;
+      paper3DPrinter.print();</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_5GA4kPhSEeu2LaOmzBKukg" name="main" isStatic="true" method="_-nKM8PhSEeu2LaOmzBKukg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_KoxksPhTEeu2LaOmzBKukg" client="_TwC9IPhREeu2LaOmzBKukg" supplier="_R7PNEPhQEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_TKDpQPhTEeu2LaOmzBKukg" client="_34A0YPhSEeu2LaOmzBKukg" supplier="_TwC9IPhREeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_WgLQgPhTEeu2LaOmzBKukg" client="_34A0YPhSEeu2LaOmzBKukg" supplier="_WaBskPhQEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_XRexoPhTEeu2LaOmzBKukg" client="_34A0YPhSEeu2LaOmzBKukg" supplier="_TqrxcPhQEeu2LaOmzBKukg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_KKD9gPhVEeu2LaOmzBKukg" name="FacadePattern">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_sbhwsPhXEeu2LaOmzBKukg">
+          <body>Facade pattern hides the complexities of a system.&#xD;
+&#xD;
+It provides a simple interface to the client and the client uses the interface to interact with the system.&#xD;
+&#xD;
+Facade pattern is a structural pattern.</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UWm0kPhWEeu2LaOmzBKukg" name="ShapeFacade">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_gVdzQPhWEeu2LaOmzBKukg" name="circle" visibility="private" type="_aZ8QAPhWEeu2LaOmzBKukg" aggregation="composite" association="_7aeRsPhWEeu2LaOmzBKukg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_o7gcAPhWEeu2LaOmzBKukg" name="rectangle" visibility="private" type="_aZ8QAPhWEeu2LaOmzBKukg" aggregation="composite" association="_7a0P8_hWEeu2LaOmzBKukg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_rFp_YPhWEeu2LaOmzBKukg" name="square" visibility="private" type="_aZ8QAPhWEeu2LaOmzBKukg" aggregation="composite" association="_7awlk_hWEeu2LaOmzBKukg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_vfUuUPhWEeu2LaOmzBKukg" name="ShapeFacade"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_zwrOwPhWEeu2LaOmzBKukg" name="drawCircle"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_04kq8PhWEeu2LaOmzBKukg" name="drawRectangle"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_2IKqkPhWEeu2LaOmzBKukg" name="drawSquare"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_W4F54PhWEeu2LaOmzBKukg" name="Circle">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_d17OsPhWEeu2LaOmzBKukg" client="_W4F54PhWEeu2LaOmzBKukg" supplier="_aZ8QAPhWEeu2LaOmzBKukg" contract="_aZ8QAPhWEeu2LaOmzBKukg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_gQ61APhXEeu2LaOmzBKukg" name="draw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_XxZgcPhWEeu2LaOmzBKukg" name="Rectangle">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_db0FkPhWEeu2LaOmzBKukg" client="_XxZgcPhWEeu2LaOmzBKukg" supplier="_aZ8QAPhWEeu2LaOmzBKukg" contract="_aZ8QAPhWEeu2LaOmzBKukg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_gj-T4PhXEeu2LaOmzBKukg" name="draw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_YrHWsPhWEeu2LaOmzBKukg" name="Square">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_dIlnkPhWEeu2LaOmzBKukg" client="_YrHWsPhWEeu2LaOmzBKukg" supplier="_aZ8QAPhWEeu2LaOmzBKukg" contract="_aZ8QAPhWEeu2LaOmzBKukg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_g0eOAPhXEeu2LaOmzBKukg" name="draw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_aZ8QAPhWEeu2LaOmzBKukg" name="Shape">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_ZhyDgPhXEeu2LaOmzBKukg" name="draw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_7aeRsPhWEeu2LaOmzBKukg" name="A_circle_shapeFacade" memberEnd="_gVdzQPhWEeu2LaOmzBKukg _7awlkPhWEeu2LaOmzBKukg">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_7awlkPhWEeu2LaOmzBKukg" name="shapeFacade" type="_UWm0kPhWEeu2LaOmzBKukg" association="_7aeRsPhWEeu2LaOmzBKukg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7awlkfhWEeu2LaOmzBKukg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7awlkvhWEeu2LaOmzBKukg" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_7awlk_hWEeu2LaOmzBKukg" name="A_square_shapeFacade" memberEnd="_rFp_YPhWEeu2LaOmzBKukg _7a0P8PhWEeu2LaOmzBKukg">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_7a0P8PhWEeu2LaOmzBKukg" name="shapeFacade" type="_UWm0kPhWEeu2LaOmzBKukg" association="_7awlk_hWEeu2LaOmzBKukg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7a0P8fhWEeu2LaOmzBKukg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7a0P8vhWEeu2LaOmzBKukg" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_7a0P8_hWEeu2LaOmzBKukg" name="A_rectangle_shapeFacade" memberEnd="_o7gcAPhWEeu2LaOmzBKukg _7a5IcPhWEeu2LaOmzBKukg">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_7a5IcPhWEeu2LaOmzBKukg" name="shapeFacade" type="_UWm0kPhWEeu2LaOmzBKukg" association="_7a0P8_hWEeu2LaOmzBKukg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7a5vgPhWEeu2LaOmzBKukg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7a5vgfhWEeu2LaOmzBKukg" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="__Pe0YPhWEeu2LaOmzBKukg" name="Main">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_FhgzIPhXEeu2LaOmzBKukg" name="main" specification="_ABm04PhXEeu2LaOmzBKukg">
+            <language>JAVA</language>
+            <body>ShapeFacade shapeFacade = new ShapeFacade();&#xD;
+    shapeFacade.drawCircle();&#xD;
+    shapeFacade.drawRectangle();&#xD;
+    shapeFacade.drawSquare();</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_ABm04PhXEeu2LaOmzBKukg" name="main" isStatic="true" method="_FhgzIPhXEeu2LaOmzBKukg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_QgWfQPhXEeu2LaOmzBKukg" client="__Pe0YPhWEeu2LaOmzBKukg" supplier="_UWm0kPhWEeu2LaOmzBKukg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_5KdhcPhXEeu2LaOmzBKukg" name="ProxyPattern">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_lkLzgPhZEeu2LaOmzBKukg">
+          <body>In Proxy pattern, a class represents functionality of another class.&#xD;
+Proxy pattern is a structural pattern.&#xD;
+In Proxy pattern, we create object with original interface to expose its functionality to outer world.&#xD;
+---> Helps to decouple the instantation point of a class. The class will be instantiated only if it is called!</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_9Vk3APhXEeu2LaOmzBKukg" name="Printer">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_-D0dEPhXEeu2LaOmzBKukg" name="print"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="__cwl8PhXEeu2LaOmzBKukg" name="ConsolePrinter">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_GOJaMPhYEeu2LaOmzBKukg" name="filename" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_bM0MgPhYEeu2LaOmzBKukg" client="__cwl8PhXEeu2LaOmzBKukg" supplier="_9Vk3APhXEeu2LaOmzBKukg" contract="_9Vk3APhXEeu2LaOmzBKukg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_A4_TYPhYEeu2LaOmzBKukg" name="ConsolePrinter">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_T5ZpQPhYEeu2LaOmzBKukg" name="filename">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_NmmOcPhYEeu2LaOmzBKukg" name="print"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_c06ywPhYEeu2LaOmzBKukg" name="ProxyPrinter">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_fqyMoPhYEeu2LaOmzBKukg" name="consolePrinter" visibility="private" type="__cwl8PhXEeu2LaOmzBKukg" aggregation="composite" association="_9S1aIPhZEeu2LaOmzBKukg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_lVrS4PhYEeu2LaOmzBKukg" name="filename" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_eKBkgPhYEeu2LaOmzBKukg" client="_c06ywPhYEeu2LaOmzBKukg" supplier="_9Vk3APhXEeu2LaOmzBKukg" contract="_9Vk3APhXEeu2LaOmzBKukg"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_COG2wPhZEeu2LaOmzBKukg" name="print" specification="_5hUFwPhYEeu2LaOmzBKukg">
+            <language>JAVA</language>
+            <body>if(consolePrinter == null){&#xD;
+         consolePrinter = new ConsolePrinter(fileName);&#xD;
+      }&#xD;
+      consolePrinter.print();</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_04KJUPhYEeu2LaOmzBKukg" name="ProxyPrinter">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_3VqtkPhYEeu2LaOmzBKukg" name="filename">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_5hUFwPhYEeu2LaOmzBKukg" name="print" method="_COG2wPhZEeu2LaOmzBKukg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_E7S1wPhZEeu2LaOmzBKukg" name="Main">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_H3WXMPhZEeu2LaOmzBKukg" name="main" specification="_Fq5GsPhZEeu2LaOmzBKukg">
+            <language>JAVA</language>
+            <body>Printer image = new ProxyPrinter(&quot;test&quot;);&#xD;
+      image.print();   </body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_Fq5GsPhZEeu2LaOmzBKukg" name="main" method="_H3WXMPhZEeu2LaOmzBKukg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_bCJYIPhZEeu2LaOmzBKukg" client="_E7S1wPhZEeu2LaOmzBKukg" supplier="_c06ywPhYEeu2LaOmzBKukg"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_9S1aIPhZEeu2LaOmzBKukg" name="A_consolePrinter_proxyPrinter" memberEnd="_fqyMoPhYEeu2LaOmzBKukg _9S6SoPhZEeu2LaOmzBKukg">
+          <ownedEnd xmi:type="uml:Property" xmi:id="_9S6SoPhZEeu2LaOmzBKukg" name="proxyPrinter" type="_c06ywPhYEeu2LaOmzBKukg" association="_9S1aIPhZEeu2LaOmzBKukg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9S65sPhZEeu2LaOmzBKukg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9S65sfhZEeu2LaOmzBKukg" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_xRPG0A1dEeyIHMV6DuGURg" client="_E7S1wPhZEeu2LaOmzBKukg" supplier="_9Vk3APhXEeu2LaOmzBKukg"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_DZefAPbrEeu2LaOmzBKukg" name="BehavioralPatterns">
+      <packagedElement xmi:type="uml:Package" xmi:id="_Rd87cPuCEeuOJJd-8KKvVw" name="ChainOfResponsabilityPattern">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_ZYYbYPuCEeuOJJd-8KKvVw">
+          <body>The chain of responsibility pattern creates a list of receiver objects for a request.&#xD;
+&#xD;
+This pattern is behavioral patterns.&#xD;
+&#xD;
+When using chain of responsibility pattern, normally each receiver contains reference to another receiver.&#xD;
+&#xD;
+If one object cannot handle the request then it passes the same to the next receiver and so on.</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Class" xmi:id="_etSDgPuCEeuOJJd-8KKvVw" name="Logger" isAbstract="true">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_p21K0PuCEeuOJJd-8KKvVw" name="nextLogger" type="_etSDgPuCEeuOJJd-8KKvVw" association="_p2rZ0PuCEeuOJJd-8KKvVw">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p3Is0PuCEeuOJJd-8KKvVw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p3OMYPuCEeuOJJd-8KKvVw" value="1"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_YArMIPuDEeuOJJd-8KKvVw" name="logMessage" specification="_5BW0QPuCEeuOJJd-8KKvVw">
+            <language>JAVA</language>
+            <body>log(message);&#xD;
+      if(nextLogger !=null){&#xD;
+         nextLogger.logMessage(message);&#xD;
+      }</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_36vKcPuCEeuOJJd-8KKvVw" name="setNextLogger">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_ABcL0PuDEeuOJJd-8KKvVw" name="nextLogger" type="_etSDgPuCEeuOJJd-8KKvVw"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_5BW0QPuCEeuOJJd-8KKvVw" name="logMessage" method="_YArMIPuDEeuOJJd-8KKvVw">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_EYoOgPuDEeuOJJd-8KKvVw" name="msg">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_e-sHIPuDEeuOJJd-8KKvVw" name="log" isAbstract="true">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_iROO4PuDEeuOJJd-8KKvVw" name="msg">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_gV8qcPuCEeuOJJd-8KKvVw" name="EmailLogger">
+          <generalization xmi:type="uml:Generalization" xmi:id="_G5K4oPuDEeuOJJd-8KKvVw" general="_etSDgPuCEeuOJJd-8KKvVw"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_l-WA4PuDEeuOJJd-8KKvVw" name="log">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_l-WA4fuDEeuOJJd-8KKvVw" name="msg">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_jD8hwPuCEeuOJJd-8KKvVw" name="ConsoeLogger">
+          <generalization xmi:type="uml:Generalization" xmi:id="_HPtwYPuDEeuOJJd-8KKvVw" general="_etSDgPuCEeuOJJd-8KKvVw"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_mTCegPuDEeuOJJd-8KKvVw" name="log">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_mTCegfuDEeuOJJd-8KKvVw" name="msg">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_k3wowPuCEeuOJJd-8KKvVw" name="FileLogger">
+          <generalization xmi:type="uml:Generalization" xmi:id="_HqBGwPuDEeuOJJd-8KKvVw" general="_etSDgPuCEeuOJJd-8KKvVw"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_mmHykPuDEeuOJJd-8KKvVw" name="log">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_mmHykfuDEeuOJJd-8KKvVw" name="msg">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_p2rZ0PuCEeuOJJd-8KKvVw" visibility="protected" memberEnd="_p21K0PuCEeuOJJd-8KKvVw _p3R2wPuCEeuOJJd-8KKvVw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_p2w5YPuCEeuOJJd-8KKvVw" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_p2yHgPuCEeuOJJd-8KKvVw" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_p3R2wPuCEeuOJJd-8KKvVw" name="logger" type="_etSDgPuCEeuOJJd-8KKvVw" association="_p2rZ0PuCEeuOJJd-8KKvVw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_yhmGEPuDEeuOJJd-8KKvVw" name="Main">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_FhXiwPuEEeuOJJd-8KKvVw" name="getChainOfLoggers" specification="_zfXV4PuDEeuOJJd-8KKvVw">
+            <language>JAVA</language>
+            <body>Logger emailLogger = new EMailLogger();&#xD;
+      Logger fileLogger = new FileLogger();&#xD;
+      Logger consoleLogger = new ConsoleLogger();&#xD;
+      emailLogger.setNextLogger(fileLogger);&#xD;
+      fileLogger.setNextLogger(consoleLogger);&#xD;
+      return emailLogger; </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RWEf4PuEEeuOJJd-8KKvVw" name="main" specification="_Ie98UPuEEeuOJJd-8KKvVw">
+            <language>JAVA</language>
+            <body> Logger loggerChain = getChainOfLoggers();&#xD;
+      loggerChain.logMessage(&quot;Null pointer&quot;);&#xD;
+      loggerChain.logMessage(&quot;Array Index Out of Bound&quot;);&#xD;
+      loggerChain.logMessage(&quot;Illegal Parameters&quot;);</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_zfXV4PuDEeuOJJd-8KKvVw" name="getChainOfLoggers" visibility="private" isStatic="true" method="_FhXiwPuEEeuOJJd-8KKvVw">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_61HbcPuDEeuOJJd-8KKvVw" type="_etSDgPuCEeuOJJd-8KKvVw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_Ie98UPuEEeuOJJd-8KKvVw" name="main" isStatic="true" method="_RWEf4PuEEeuOJJd-8KKvVw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_Z-GFoPuEEeuOJJd-8KKvVw" client="_yhmGEPuDEeuOJJd-8KKvVw" supplier="_gV8qcPuCEeuOJJd-8KKvVw"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_aXbLoPuEEeuOJJd-8KKvVw" client="_yhmGEPuDEeuOJJd-8KKvVw" supplier="_jD8hwPuCEeuOJJd-8KKvVw"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_awgaAPuEEeuOJJd-8KKvVw" client="_yhmGEPuDEeuOJJd-8KKvVw" supplier="_k3wowPuCEeuOJJd-8KKvVw"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_bKsboPuEEeuOJJd-8KKvVw" client="_yhmGEPuDEeuOJJd-8KKvVw" supplier="_etSDgPuCEeuOJJd-8KKvVw"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DNMv0PbmEeu2LaOmzBKukg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DNMv0fbmEeu2LaOmzBKukg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/Codegen/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Codegen_PROFILES/Codegen.profile.uml#_fPDsIBa-EearhdjjJ6cVzQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DNMv0vbmEeu2LaOmzBKukg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DNMv0_bmEeu2LaOmzBKukg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/PapyrusJava/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DNWg0PbmEeu2LaOmzBKukg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DNWg0fbmEeu2LaOmzBKukg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UQOZYPhOEeu2LaOmzBKukg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UQPngPhOEeu2LaOmzBKukg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <standard:Create xmi:id="_HaOJ4PbmEeu2LaOmzBKukg" base_BehavioralFeature="_th6vIPblEeu2LaOmzBKukg"/>
+  <standard:Create xmi:id="_m9L9MPbtEeu2LaOmzBKukg" base_BehavioralFeature="_Z4FIIPbtEeu2LaOmzBKukg"/>
+  <standard:Create xmi:id="_bULdQPbuEeu2LaOmzBKukg" base_BehavioralFeature="_ZsUHkPbuEeu2LaOmzBKukg"/>
+  <PapyrusJava:External xmi:id="_cRq8wPhNEeu2LaOmzBKukg" name="java.utils.List" base_Classifier="_Y_WQYPhNEeu2LaOmzBKukg"/>
+  <PapyrusJava:External xmi:id="_2DMaEPhNEeu2LaOmzBKukg" name="java.lang.String" base_Classifier="_yKbYwPhNEeu2LaOmzBKukg"/>
+  <standard:Create xmi:id="_onM5kPhOEeu2LaOmzBKukg" base_BehavioralFeature="_ikmd8PhOEeu2LaOmzBKukg"/>
+  <standard:Create xmi:id="_yK810PhQEeu2LaOmzBKukg" base_BehavioralFeature="_q4xosPhQEeu2LaOmzBKukg"/>
+  <standard:Create xmi:id="_cPvtUPhREeu2LaOmzBKukg" base_BehavioralFeature="_aI8_8PhREeu2LaOmzBKukg"/>
+  <standard:Create xmi:id="_xFv5kPhWEeu2LaOmzBKukg" base_BehavioralFeature="_vfUuUPhWEeu2LaOmzBKukg"/>
+  <standard:Create xmi:id="_Eqw74PhYEeu2LaOmzBKukg" base_BehavioralFeature="_A4_TYPhYEeu2LaOmzBKukg"/>
+  <PapyrusJava:External xmi:id="_TpA7cPkqEeu2LaOmzBKukg" name="java.utils.List" base_Classifier="_HWrAEPkqEeu2LaOmzBKukg"/>
+  <standard:Create xmi:id="_EE20kPkrEeu2LaOmzBKukg" base_BehavioralFeature="_BH8XgPkrEeu2LaOmzBKukg"/>
+  <standard:Create xmi:id="_OlStcPkrEeu2LaOmzBKukg" base_BehavioralFeature="_OlOcB_krEeu2LaOmzBKukg"/>
+</xmi:XMI>

@@ -43,7 +43,9 @@ They are three kind of patterns:
 
 ## 3. Behavioral Patterns
 ### 3.1 Chain of Responsability Pattern
+![Factory Pattern](./resources/diagrams/ChainOfResponsabilityPattern.PNG)
 ### 3.2 Command Pattern
+![Factory Pattern](./resources/diagrams/CommandPattern.PNG)
 ### 3.3 Iterator Pattern
 ### 3.4 Observer Pattern
 ### 3.5 Mediator Pattern

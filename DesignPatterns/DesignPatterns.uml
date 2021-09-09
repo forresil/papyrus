@@ -1091,6 +1091,134 @@ If one object cannot handle the request then it passes the same to the next rece
         <packagedElement xmi:type="uml:Dependency" xmi:id="_awgaAPuEEeuOJJd-8KKvVw" client="_yhmGEPuDEeuOJJd-8KKvVw" supplier="_k3wowPuCEeuOJJd-8KKvVw"/>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_bKsboPuEEeuOJJd-8KKvVw" client="_yhmGEPuDEeuOJJd-8KKvVw" supplier="_etSDgPuCEeuOJJd-8KKvVw"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_KW7PYBFwEeyqzMGamJl1eg" name="CommandPattern">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_TDNqEBFwEeyqzMGamJl1eg">
+          <body>Command pattern is a data driven design pattern It is one of the behavioral pattern.&#xD;
+&#xD;
+A request is wrapped under a object as command and passed to invoker object.&#xD;
+&#xD;
+Invoker object passes the command to the corresponding object and that object executes the command.</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_WYu0YBFwEeyqzMGamJl1eg" name="Command">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_YE8ekBFwEeyqzMGamJl1eg" name="execute">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_eDMlsBFwEeyqzMGamJl1eg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8I6RgBydEduyofBvg4RL2w"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_iGYuUBFwEeyqzMGamJl1eg" name="MouseCursor">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ktpEcBFwEeyqzMGamJl1eg" name="x" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_u5HZ8BFwEeyqzMGamJl1eg" name="y" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CXs5kBFxEeyqzMGamJl1eg" name="move" specification="_0lFeQBFwEeyqzMGamJl1eg">
+            <language>JAVA</language>
+            <body>System.out.println(&quot;Old Position:&quot;+x +&quot;:&quot;+y); &#xD;
+x++;&#xD;
+y++;&#xD;
+System.out.println(&quot;New Position:&quot;+x +&quot;:&quot;+y);</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_L7Ab0BFxEeyqzMGamJl1eg" name="reset" specification="_1adAABFwEeyqzMGamJl1eg">
+            <language>JAVA</language>
+            <body>System.out.println(&quot;reset&quot;);&#xD;
+x = 10;&#xD;
+y = 10;</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_0lFeQBFwEeyqzMGamJl1eg" name="move" method="_CXs5kBFxEeyqzMGamJl1eg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_1adAABFwEeyqzMGamJl1eg" name="reset" method="_L7Ab0BFxEeyqzMGamJl1eg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_QD8AEBFxEeyqzMGamJl1eg" name="MoveCursor">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_WaOzwBFxEeyqzMGamJl1eg" name="abcStock" visibility="private" type="_iGYuUBFwEeyqzMGamJl1eg"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HgmQkBFyEeyqzMGamJl1eg" name="execute" specification="_1D9WIBFxEeyqzMGamJl1eg">
+            <language>JAVA</language>
+            <body>abcStock.move();</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_nQ4AwBFxEeyqzMGamJl1eg" name="MoveCursor">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_wsfmoBFxEeyqzMGamJl1eg" name="abcStock" type="_iGYuUBFwEeyqzMGamJl1eg"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_1D9WIBFxEeyqzMGamJl1eg" name="execute" method="_HgmQkBFyEeyqzMGamJl1eg">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_K9DwYBFyEeyqzMGamJl1eg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8I6RgBydEduyofBvg4RL2w"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Realization" xmi:id="_TSx6oBFxEeyqzMGamJl1eg" client="_QD8AEBFxEeyqzMGamJl1eg" supplier="_WYu0YBFwEeyqzMGamJl1eg"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Ts084BFyEeyqzMGamJl1eg" name="ResetCursor">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_XNAfEBFyEeyqzMGamJl1eg" name="abcStock" visibility="private" type="_iGYuUBFwEeyqzMGamJl1eg"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_dweMEBFyEeyqzMGamJl1eg" name="execute" specification="_c-i_4BFyEeyqzMGamJl1eg">
+            <language>JAVA</language>
+            <body>abcStock.reset();</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_ZIRR4BFyEeyqzMGamJl1eg" name="ResetCursor">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZIRR4RFyEeyqzMGamJl1eg" name="abcStock" type="_iGYuUBFwEeyqzMGamJl1eg"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_c-i_4BFyEeyqzMGamJl1eg" name="execute" method="_dweMEBFyEeyqzMGamJl1eg">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_c-i_4RFyEeyqzMGamJl1eg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8I6RgBydEduyofBvg4RL2w"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Realization" xmi:id="_VFOTMBFyEeyqzMGamJl1eg" client="_Ts084BFyEeyqzMGamJl1eg" supplier="_WYu0YBFwEeyqzMGamJl1eg"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_tOQIsBFyEeyqzMGamJl1eg" name="MouseCommands">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_02EOoBFyEeyqzMGamJl1eg" name="orderList" visibility="private" type="_WYu0YBFwEeyqzMGamJl1eg" aggregation="composite" association="_01xTsBFyEeyqzMGamJl1eg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_02E1sBFyEeyqzMGamJl1eg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_02E1sRFyEeyqzMGamJl1eg" value="*"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iwq6EBFzEeyqzMGamJl1eg" name="placeOrders" specification="_ZJe9YBFzEeyqzMGamJl1eg">
+            <language>JAVA</language>
+            <body>for (Command order : orderList) {&#xD;
+    order.execute();&#xD;
+}&#xD;
+orderList.clear();</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7ZnlwBFzEeyqzMGamJl1eg" name="takeOrder" specification="_XviH4BFzEeyqzMGamJl1eg">
+            <language>JAVA</language>
+            <body>orderList.add(order);</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_XviH4BFzEeyqzMGamJl1eg" name="takeOrder" method="_7ZnlwBFzEeyqzMGamJl1eg">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_XviH4RFzEeyqzMGamJl1eg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8I6RgBydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_wVPc4BF0EeyqzMGamJl1eg" name="order" type="_WYu0YBFwEeyqzMGamJl1eg"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_ZJe9YBFzEeyqzMGamJl1eg" name="placeOrders" method="_iwq6EBFzEeyqzMGamJl1eg">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZJe9YRFzEeyqzMGamJl1eg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8I6RgBydEduyofBvg4RL2w"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_01xTsBFyEeyqzMGamJl1eg" visibility="private" memberEnd="_02EOoBFyEeyqzMGamJl1eg _02FcwBFyEeyqzMGamJl1eg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_01zI4BFyEeyqzMGamJl1eg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_01zv8BFyEeyqzMGamJl1eg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_02FcwBFyEeyqzMGamJl1eg" name="mousecommands" type="_tOQIsBFyEeyqzMGamJl1eg" association="_01xTsBFyEeyqzMGamJl1eg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_G6scQBF0EeyqzMGamJl1eg" name="Main">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_XjzjkBF0EeyqzMGamJl1eg" name="main" specification="_I8bqgBF0EeyqzMGamJl1eg">
+            <language>JAVA</language>
+            <body>MouseCursor cursor = new MouseCursor();&#xD;
+MoveCursor moveCursor = new MoveCursor(cursor);&#xD;
+ResetCursor resetCursor = new ResetCursor(cursor);&#xD;
+&#xD;
+MouseCommands commands= new MouseCommands();&#xD;
+commands.takeOrder(moveCursor);&#xD;
+commands.takeOrder(resetCursor);&#xD;
+commands.placeOrders();&#xD;
+</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_I8bqgBF0EeyqzMGamJl1eg" name="main" isStatic="true" method="_XjzjkBF0EeyqzMGamJl1eg">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_N9JyYBF0EeyqzMGamJl1eg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8I6RgBydEduyofBvg4RL2w"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_cOXOMBF0EeyqzMGamJl1eg" client="_G6scQBF0EeyqzMGamJl1eg" supplier="_iGYuUBFwEeyqzMGamJl1eg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_d-K-8BF0EeyqzMGamJl1eg" client="_G6scQBF0EeyqzMGamJl1eg" supplier="_QD8AEBFxEeyqzMGamJl1eg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_f-i7QBF0EeyqzMGamJl1eg" client="_G6scQBF0EeyqzMGamJl1eg" supplier="_Ts084BFyEeyqzMGamJl1eg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_iCKY0BF0EeyqzMGamJl1eg" client="_G6scQBF0EeyqzMGamJl1eg" supplier="_tOQIsBFyEeyqzMGamJl1eg"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DNMv0PbmEeu2LaOmzBKukg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DNMv0fbmEeu2LaOmzBKukg" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -1130,4 +1258,6 @@ If one object cannot handle the request then it passes the same to the next rece
   <PapyrusJava:External xmi:id="_TpA7cPkqEeu2LaOmzBKukg" name="java.utils.List" base_Classifier="_HWrAEPkqEeu2LaOmzBKukg"/>
   <standard:Create xmi:id="_EE20kPkrEeu2LaOmzBKukg" base_BehavioralFeature="_BH8XgPkrEeu2LaOmzBKukg"/>
   <standard:Create xmi:id="_OlStcPkrEeu2LaOmzBKukg" base_BehavioralFeature="_OlOcB_krEeu2LaOmzBKukg"/>
+  <standard:Create xmi:id="_qf46cBFxEeyqzMGamJl1eg" base_BehavioralFeature="_nQ4AwBFxEeyqzMGamJl1eg"/>
+  <standard:Create xmi:id="_ZIU8QBFyEeyqzMGamJl1eg" base_BehavioralFeature="_ZIRR4BFyEeyqzMGamJl1eg"/>
 </xmi:XMI>

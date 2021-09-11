@@ -47,6 +47,7 @@ They are three kind of patterns:
 ### 3.2 Command Pattern
 ![Factory Pattern](./resources/diagrams/CommandPattern.PNG)
 ### 3.3 Iterator Pattern
+![Factory Pattern](./resources/diagrams/IteratorPattern.PNG)
 ### 3.4 Observer Pattern
 ### 3.5 Mediator Pattern
 ### 3.6 Interpreter Pattern 

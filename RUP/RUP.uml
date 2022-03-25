@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_B8IAwCd-Eey6eZUpkq-9FQ" name="WebEngineering1">
+  <packagedElement xmi:type="uml:Package" xmi:id="_-eFT4Cg-Eey_d-Dl8ceGcA" name="01_Business_Modeling">
+    <packagedElement xmi:type="uml:Package" xmi:id="_HEmqACmNEeyNMYaBuI3dtw" name="ConceptualClasses">
+      <packagedElement xmi:type="uml:Class" xmi:id="_O6_6YCtBEeysptqIOM_d1g" name="TaxationLaw">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_4q5tsCtGEeysptqIOM_d1g" annotatedElement="_O6_6YCtBEeysptqIOM_d1g">
+          <body>Collection of all rules wich goberns the transaction and sales.&#xD;
+</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_PaItcCtBEeysptqIOM_d1g" name="Transaction">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_GgsOQCtGEeysptqIOM_d1g" annotatedElement="_PaItcCtBEeysptqIOM_d1g">
+          <body>Represents the sale transaction. &#xD;
+Is able to store all information about the it. </body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_QrEw4CtBEeysptqIOM_d1g" name="governs ▶" memberEnd="_QrJCUCtBEeysptqIOM_d1g _QrKQcStBEeysptqIOM_d1g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QrHNICtBEeysptqIOM_d1g" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QrH0MCtBEeysptqIOM_d1g" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_QrJCUCtBEeysptqIOM_d1g" name="class2" type="_PaItcCtBEeysptqIOM_d1g" association="_QrEw4CtBEeysptqIOM_d1g">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QrJpYCtBEeysptqIOM_d1g"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QrKQcCtBEeysptqIOM_d1g" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_QrKQcStBEeysptqIOM_d1g" name="class1" type="_O6_6YCtBEeysptqIOM_d1g" association="_QrEw4CtBEeysptqIOM_d1g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bQB9YCtBEeysptqIOM_d1g" name="Product">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_qDcVECtGEeysptqIOM_d1g" annotatedElement="_bQB9YCtBEeysptqIOM_d1g">
+          <body>Is the main object in the transaction.</body>
+        </ownedComment>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_RjCW0CtFEeysptqIOM_d1g" name="price">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_AabvwCtIEeysptqIOM_d1g">
+            <body>The price of the product&#xD;
+</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_b4tuACtBEeysptqIOM_d1g" name="◀ ship " memberEnd="_b4uVEitBEeysptqIOM_d1g _b4vjMCtBEeysptqIOM_d1g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_b4uVECtBEeysptqIOM_d1g" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_b4uVEStBEeysptqIOM_d1g" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_b4vjMCtBEeysptqIOM_d1g" name="class1" type="_O6_6YCtBEeysptqIOM_d1g" association="_b4tuACtBEeysptqIOM_d1g"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_b4uVEitBEeysptqIOM_d1g" name="class4" type="_bQB9YCtBEeysptqIOM_d1g" association="_b4tuACtBEeysptqIOM_d1g">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b4u8ICtBEeysptqIOM_d1g"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b4u8IStBEeysptqIOM_d1g" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ceEd0CtBEeysptqIOM_d1g" name="buy ▼" memberEnd="_ceGTAStBEeysptqIOM_d1g _ceIIMCtBEeysptqIOM_d1g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ceFr8CtBEeysptqIOM_d1g" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ceGTACtBEeysptqIOM_d1g" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ceIIMCtBEeysptqIOM_d1g" name="class2" type="_PaItcCtBEeysptqIOM_d1g" association="_ceEd0CtBEeysptqIOM_d1g"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ceGTAStBEeysptqIOM_d1g" name="class4" type="_bQB9YCtBEeysptqIOM_d1g" association="_ceEd0CtBEeysptqIOM_d1g">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ceG6ECtBEeysptqIOM_d1g"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ceHhICtBEeysptqIOM_d1g" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_-DAa0CtGEeysptqIOM_d1g" name="Booking">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_DGZmwCtIEeysptqIOM_d1g" annotatedElement="_-DAa0CtGEeysptqIOM_d1g">
+          <body>The register where we usually keep stored all transactions.&#xD;
+</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_D1G8UCtHEeysptqIOM_d1g" name="◀ register" memberEnd="_D1IKcStHEeysptqIOM_d1g _D1IxgCtHEeysptqIOM_d1g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_D1HjYCtHEeysptqIOM_d1g" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D1IKcCtHEeysptqIOM_d1g" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_D1IKcStHEeysptqIOM_d1g" name="class7" type="_-DAa0CtGEeysptqIOM_d1g" association="_D1G8UCtHEeysptqIOM_d1g"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_D1IxgCtHEeysptqIOM_d1g" name="transaction" type="_PaItcCtBEeysptqIOM_d1g" association="_D1G8UCtHEeysptqIOM_d1g"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_bd3CICmNEeyNMYaBuI3dtw" name="Context-ScopeDefinition"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_pruSMCmREeyNMYaBuI3dtw" name="DomainModel"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_hqDCICmOEeyNMYaBuI3dtw" name="Business_UseCases_Model">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_axtQUCmZEeyNMYaBuI3dtw">
+        <body>Business Use Case - with a broader scope, usually a enterprise-level description, wich describes how a business is used by its customers and partners.</body>
+      </ownedComment>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_CeDwcCg_Eey_d-Dl8ceGcA" name="02_Requirements">
+    <packagedElement xmi:type="uml:Package" xmi:id="_vRRiQCmNEeyNMYaBuI3dtw" name="Vision">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_a0BWwCmUEeyNMYaBuI3dtw">
+        <body>Summarizes the Business Case for the project. &#xD;
+A short executive  overview document for quickly learning the project's big ideas.&#xD;
+Contains the scope, goals, actors and features.&#xD;
+- Actor-goal-List&#xD;
+- High-Level System Features List&#xD;
+- Domain Rules (Business Rules) -> (with reference to the oficial booklet describing them!)</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Package" xmi:id="_yPiDICmNEeyNMYaBuI3dtw" name="Goals"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_IV01wCmXEeyNMYaBuI3dtw" name="Actors">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_KFTPUCmXEeyNMYaBuI3dtw">
+          <body>An Actor is anything with behaviour, including the SuD itself when it calls upon the services of other systems. &#xD;
+Actors are roles played by people, organizations, software and machines.&#xD;
+There are 3 kinds: &#xD;
+* Primary Actor - has user goals fullfilled. -> find user goals!&#xD;
+* Supporting Actor - provides a service -> clarify external interfaces and protocols!&#xD;
+* Offstage Actor - has an interest in the behaviour of the use case but is not primary or supporting, e.g. gov. tax agency. -> ensure all interests are identified and satisfied.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_tQz8MCnWEeyyY-5-pErpSQ" name="System_Features"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_drGpQCd-Eey6eZUpkq-9FQ" name="System_UseCases_Model">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_V4dt4CjzEeyNMYaBuI3dtw" annotatedElement="_7AQMICa_Eey6eZUpkq-9FQ">
+        <body>SuD - System under Design</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_BqabwCmZEeyNMYaBuI3dtw">
+        <body>System Use Case - Typically describe a use of one software (or hardware plus software) system. </body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_U_KmwCmVEeyNMYaBuI3dtw">
+        <body>A Model of the system's functionality and environment. &#xD;
+Typical Scenarios for using a system.&#xD;
+Primary for functional (behavioural) requirements.&#xD;
+May optionally include a UML use case diagram. This gives a nice &quot;context diagram&quot; of a system and its environment.&#xD;
+Emphasize the user goals and perspective. &#xD;
+</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_8Voc4Cd-Eey6eZUpkq-9FQ" name="User"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_oq27YCd-Eey6eZUpkq-9FQ" name="Write_Down_New_Task" subject="_7AQMICa_Eey6eZUpkq-9FQ _-X7SkCa_Eey6eZUpkq-9FQ _AfCJACbAEey6eZUpkq-9FQ">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_jya80CguEey_d-Dl8ceGcA">
+          <body>The User is able to write down an unlimited number of tasks. &#xD;
+The ToDoApp ensures that that there are no repeated tasks. &#xD;
+</body>
+        </ownedComment>
+        <include xmi:type="uml:Include" xmi:id="_wTDIoCgqEey_d-Dl8ceGcA" addition="_EZso4CeeEey6eZUpkq-9FQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_znhdQCd-Eey6eZUpkq-9FQ" name="Mark_Task_As_Done" subject="_7AQMICa_Eey6eZUpkq-9FQ _5rFBUCdhEey6eZUpkq-9FQ _QpalUCdiEey6eZUpkq-9FQ">
+        <extend xmi:type="uml:Extend" xmi:id="_w24AsCglEey_d-Dl8ceGcA" extendedCase="_3_35ICgkEey_d-Dl8ceGcA" extensionLocation="_w24nwCglEey_d-Dl8ceGcA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_24WU0Cd-Eey6eZUpkq-9FQ" name="Delete_Task" subject="_7AQMICa_Eey6eZUpkq-9FQ _TghVUCdiEey6eZUpkq-9FQ _2Zvm4Cd2Eey6eZUpkq-9FQ _AfCJACbAEey6eZUpkq-9FQ">
+        <extend xmi:type="uml:Extend" xmi:id="_y0ZdUCglEey_d-Dl8ceGcA" extendedCase="_3_35ICgkEey_d-Dl8ceGcA" extensionLocation="_y0arcCglEey_d-Dl8ceGcA"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_jGHmkCglEey_d-Dl8ceGcA" name="ExtensionPoint1"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_5icjkCd-Eey6eZUpkq-9FQ" name="Set_Task_Priority" subject="_7AQMICa_Eey6eZUpkq-9FQ _AfCJACbAEey6eZUpkq-9FQ _Ay3jYCdiEey6eZUpkq-9FQ">
+        <extend xmi:type="uml:Extend" xmi:id="_zvUNcCglEey_d-Dl8ceGcA" extendedCase="_3_35ICgkEey_d-Dl8ceGcA" extensionLocation="_zvVbkCglEey_d-Dl8ceGcA"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_FSipECglEey_d-Dl8ceGcA" name="ExtensionPoint1"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_EZso4CeeEey6eZUpkq-9FQ" name="Filter_Tasks" subject="_7AQMICa_Eey6eZUpkq-9FQ">
+        <include xmi:type="uml:Include" xmi:id="_zk4s0CgqEey_d-Dl8ceGcA" addition="_QL9UkCgjEey_d-Dl8ceGcA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_Qut_MCgqEey_d-Dl8ceGcA" name="Filter_Task_By_Name" subject="_7AQMICa_Eey6eZUpkq-9FQ">
+        <generalization xmi:type="uml:Generalization" xmi:id="_WOid4CgqEey_d-Dl8ceGcA" general="_EZso4CeeEey6eZUpkq-9FQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_YONPkCgqEey_d-Dl8ceGcA" name="Filter_Task_By_Status" subject="_7AQMICa_Eey6eZUpkq-9FQ">
+        <generalization xmi:type="uml:Generalization" xmi:id="_auxu4CgqEey_d-Dl8ceGcA" general="_EZso4CeeEey6eZUpkq-9FQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_QL9UkCgjEey_d-Dl8ceGcA" name="Display_List_Of_Tasks" subject="_7AQMICa_Eey6eZUpkq-9FQ"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_3_35ICgkEey_d-Dl8ceGcA" name="Change_Task" subject="_7AQMICa_Eey6eZUpkq-9FQ">
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_w24nwCglEey_d-Dl8ceGcA" name="        MarkAsDone"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_y0arcCglEey_d-Dl8ceGcA" name="        Delete"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_zvVbkCglEey_d-Dl8ceGcA" name="        SetPriority"/>
+        <include xmi:type="uml:Include" xmi:id="_J1cvYCgsEey_d-Dl8ceGcA" addition="_QL9UkCgjEey_d-Dl8ceGcA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_lM7lQCgpEey_d-Dl8ceGcA" memberEnd="_lM8zYCgpEey_d-Dl8ceGcA _lM8zYSgpEey_d-Dl8ceGcA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lM8MUCgpEey_d-Dl8ceGcA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lM8MUSgpEey_d-Dl8ceGcA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_lM8zYCgpEey_d-Dl8ceGcA" name="user" type="_8Voc4Cd-Eey6eZUpkq-9FQ" association="_lM7lQCgpEey_d-Dl8ceGcA"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_lM8zYSgpEey_d-Dl8ceGcA" name="change_task" type="_3_35ICgkEey_d-Dl8ceGcA" association="_lM7lQCgpEey_d-Dl8ceGcA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="__ilDUCgpEey_d-Dl8ceGcA" memberEnd="__ilqYigpEey_d-Dl8ceGcA __ilqYygpEey_d-Dl8ceGcA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__ilqYCgpEey_d-Dl8ceGcA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__ilqYSgpEey_d-Dl8ceGcA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="__ilqYigpEey_d-Dl8ceGcA" name="user" type="_8Voc4Cd-Eey6eZUpkq-9FQ" association="__ilDUCgpEey_d-Dl8ceGcA"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="__ilqYygpEey_d-Dl8ceGcA" name="filter_tasks" type="_EZso4CeeEey6eZUpkq-9FQ" association="__ilDUCgpEey_d-Dl8ceGcA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_NRiRMCgrEey_d-Dl8ceGcA" memberEnd="_NRjfUSgrEey_d-Dl8ceGcA _NRjfUigrEey_d-Dl8ceGcA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NRi4QCgrEey_d-Dl8ceGcA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NRjfUCgrEey_d-Dl8ceGcA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_NRjfUSgrEey_d-Dl8ceGcA" name="user" type="_8Voc4Cd-Eey6eZUpkq-9FQ" association="_NRiRMCgrEey_d-Dl8ceGcA"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_NRjfUigrEey_d-Dl8ceGcA" name="write_down_new_task" type="_oq27YCd-Eey6eZUpkq-9FQ" association="_NRiRMCgrEey_d-Dl8ceGcA"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_zOV0wCmNEeyNMYaBuI3dtw" name="Problems"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_1ox24CmNEeyNMYaBuI3dtw" name="Glossary">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_mX_wQCmUEeyNMYaBuI3dtw">
+        <body>Defines noteworthy terms with their definition, attributes and their validation.&#xD;
+Plays the role of a Data Dictionary with records requirements related to data, such as validation rules, acceptable values, etc.&#xD;
+</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_4MFEoCmOEeyNMYaBuI3dtw" name="Supplementary_Scpecification_SS">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_0LofQCmUEeyNMYaBuI3dtw">
+        <body>Artifact for mainly non-functional requirements and quality attributes. &#xD;
+The place to record functional features not expressed (or expressible)  as use cases.&#xD;
+For Example: a report generation. &#xD;
+Captures and identifies other kinds of requirement, such as reports, documentation, packaging, suportability, licensing, etc. &#xD;
+- Includes Features (features list), Quality Attributes</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_67_1QCmTEeyNMYaBuI3dtw" name="Business_Domain_Rules">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_E5WPMCmUEeyNMYaBuI3dtw">
+        <body>Application Specific Domain (Business) Rules&#xD;
+Requirements or Polices that transcend one Software Project.&#xD;
+Long-living and spanning rules or policies. &#xD;
+They are usually more enduring and applicable than for one software project. &#xD;
+Placing them in a central Business Rules artifact (shared by analysts of the company) makes for better reuse of the analysis effort.</body>
+      </ownedComment>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_EZPDsCg_Eey_d-Dl8ceGcA" name="03_Design">
+    <packagedElement xmi:type="uml:Package" xmi:id="_4-DmECmMEeyNMYaBuI3dtw" name="DomainLayer">
+      <packagedElement xmi:type="uml:Package" xmi:id="_VVd1oCmPEeyNMYaBuI3dtw" name="SoftwareClasses"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_0bUfgCa_Eey6eZUpkq-9FQ" name="CoolToDo-App_DesignModel">
+      <packagedElement xmi:type="uml:Component" xmi:id="_7AQMICa_Eey6eZUpkq-9FQ" name="CoolToDoApp" useCase="_24WU0Cd-Eey6eZUpkq-9FQ _znhdQCd-Eey6eZUpkq-9FQ _oq27YCd-Eey6eZUpkq-9FQ _5icjkCd-Eey6eZUpkq-9FQ _EZso4CeeEey6eZUpkq-9FQ _QL9UkCgjEey_d-Dl8ceGcA _3_35ICgkEey_d-Dl8ceGcA _Qut_MCgqEey_d-Dl8ceGcA _YONPkCgqEey_d-Dl8ceGcA">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_6Z_pECeeEey6eZUpkq-9FQ" name="Constraint to create new tasks" constrainedElement="_oq27YCd-Eey6eZUpkq-9FQ">
+          <specification xmi:type="uml:LiteralString" xmi:id="_Sy9bMCejEeykwKawhLPdig" value="True if task not exist"/>
+        </ownedRule>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="__-HXkCdfEey6eZUpkq-9FQ" name="components">
+        <packagedElement xmi:type="uml:Component" xmi:id="_8CE1gCa_Eey6eZUpkq-9FQ" name="Header"/>
+        <packagedElement xmi:type="uml:Component" xmi:id="_-X7SkCa_Eey6eZUpkq-9FQ" name="SearchInsertWidget" useCase="_oq27YCd-Eey6eZUpkq-9FQ">
+          <nameExpression xmi:type="uml:StringExpression" xmi:id="_1rhfsCdaEey6eZUpkq-9FQ" name="&lt;App />"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_WwSSoCbCEey6eZUpkq-9FQ" name="textEntryField" type="_AkxSsCbCEey6eZUpkq-9FQ"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_50tesCbCEey6eZUpkq-9FQ" name="props" type="_nMpNwCd6Eey6eZUpkq-9FQ" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_qpYhwCd3Eey6eZUpkq-9FQ" name="searchOrInsertItem" type="_F0qGcCdbEey6eZUpkq-9FQ"/>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_FPYooCd7Eey6eZUpkq-9FQ" name="searchOrInsert">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_FPZ2wCd7Eey6eZUpkq-9FQ" role="_50tesCbCEey6eZUpkq-9FQ"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_FPZ2wSd7Eey6eZUpkq-9FQ" role="_qpYhwCd3Eey6eZUpkq-9FQ"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_F5MaoCd7Eey6eZUpkq-9FQ" name="controlText">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_F5OP0Cd7Eey6eZUpkq-9FQ" role="_qpYhwCd3Eey6eZUpkq-9FQ"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_F5O24Cd7Eey6eZUpkq-9FQ" partWithPort="_WwSSoCbCEey6eZUpkq-9FQ" role="_CZCQMCbDEey6eZUpkq-9FQ"/>
+          </ownedConnector>
+          <packagedElement xmi:type="uml:Artifact" xmi:id="_Yj-9gCbFEey6eZUpkq-9FQ" name="searchbar_style.css" fileName="searchbar.css"/>
+          <packagedElement xmi:type="uml:FunctionBehavior" xmi:id="_F0qGcCdbEey6eZUpkq-9FQ" name="()=>{return...}" specification="_eq8KICbEEey6eZUpkq-9FQ">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_j-BGsCdbEey6eZUpkq-9FQ" name="props" type="_nMpNwCd6Eey6eZUpkq-9FQ"/>
+            <language>Natural language</language>
+            <body>Return the text in the input field</body>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_nMpNwCd6Eey6eZUpkq-9FQ" name="ISearchBar"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Component" xmi:id="_AfCJACbAEey6eZUpkq-9FQ" name="TaskList" useCase="_24WU0Cd-Eey6eZUpkq-9FQ _oq27YCd-Eey6eZUpkq-9FQ _5icjkCd-Eey6eZUpkq-9FQ">
+          <packagedElement xmi:type="uml:Component" xmi:id="_Ay3jYCdiEey6eZUpkq-9FQ" name="ImportanceIcon" useCase="_5icjkCd-Eey6eZUpkq-9FQ"/>
+          <packagedElement xmi:type="uml:Component" xmi:id="_QpalUCdiEey6eZUpkq-9FQ" name="TaskTextLabel" useCase="_znhdQCd-Eey6eZUpkq-9FQ"/>
+          <packagedElement xmi:type="uml:Component" xmi:id="_2Zvm4Cd2Eey6eZUpkq-9FQ" name="TaskLine" useCase="_24WU0Cd-Eey6eZUpkq-9FQ"/>
+          <packagedElement xmi:type="uml:Component" xmi:id="_iISKoCttEeysptqIOM_d1g" name="Task">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_iISKoSttEeysptqIOM_d1g" name="taskDoneStatus">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_iISKoittEeysptqIOM_d1g" name="taskPriority">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iISKoyttEeysptqIOM_d1g"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iISKpCttEeysptqIOM_d1g" value="3"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_iISKpSttEeysptqIOM_d1g"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_iISKpittEeysptqIOM_d1g" name="taskText">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_iISKpyttEeysptqIOM_d1g" name="taskDeleteButton"/>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_iISKqCttEeysptqIOM_d1g" name="Task">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_iISKqSttEeysptqIOM_d1g" name="props" type="_iISKsittEeysptqIOM_d1g"/>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_iISKqittEeysptqIOM_d1g" name="setTaskDoneStatus" visibility="private"/>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_iISKqyttEeysptqIOM_d1g" name="setTaskPriority" visibility="private"/>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_iISKrCttEeysptqIOM_d1g" name="setTaskText" visibility="private"/>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_iISKrSttEeysptqIOM_d1g" name="deleteTask" visibility="private"/>
+            <nestedClassifier xmi:type="uml:Artifact" xmi:id="_iISKrittEeysptqIOM_d1g" name="Task.ts">
+              <elementImport xmi:type="uml:ElementImport" xmi:id="_iISKryttEeysptqIOM_d1g" alias="useState"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Artifact" xmi:id="_iISKsCttEeysptqIOM_d1g" name="Task.css"/>
+            <packagedElement xmi:type="uml:Package" xmi:id="_iISKsSttEeysptqIOM_d1g" name="Task"/>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_iISKsittEeysptqIOM_d1g" name="TaskProps"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Component" xmi:id="_5rFBUCdhEey6eZUpkq-9FQ" name="CheckBox" useCase="_znhdQCd-Eey6eZUpkq-9FQ"/>
+        <packagedElement xmi:type="uml:Component" xmi:id="_TghVUCdiEey6eZUpkq-9FQ" name="Button" useCase="_24WU0Cd-Eey6eZUpkq-9FQ"/>
+        <packagedElement xmi:type="uml:Component" xmi:id="_AkxSsCbCEey6eZUpkq-9FQ" name="InputTextField">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_CZCQMCbDEey6eZUpkq-9FQ" name="Props" type="_F-vLkCbDEey6eZUpkq-9FQ" aggregation="composite"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_F-vLkCbDEey6eZUpkq-9FQ" name="PropsInputTextField">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_LlbuUCbDEey6eZUpkq-9FQ" name="text">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_eq8KICbEEey6eZUpkq-9FQ" name="getText" method="_F0qGcCdbEey6eZUpkq-9FQ"/>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_ifKCoCbEEey6eZUpkq-9FQ" name="setText"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_DqA04CtuEeysptqIOM_d1g" name="node_modules">
+        <packagedElement xmi:type="uml:Package" xmi:id="_qf9nQCttEeysptqIOM_d1g" name="react">
+          <packagedElement xmi:type="uml:Component" xmi:id="_qf9nQSttEeysptqIOM_d1g" name="React"/>
+          <packagedElement xmi:type="uml:Component" xmi:id="_qf9nQittEeysptqIOM_d1g" name="useState"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_MheToCmTEeyNMYaBuI3dtw" name="DataModel"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_UTPVECm6EeyyY-5-pErpSQ" name="SoftwareArchitectureDocument"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_GFkCoCg_Eey_d-Dl8ceGcA" name="04_Implementation">
+    <packagedElement xmi:type="uml:Package" xmi:id="_aStLsCmPEeyNMYaBuI3dtw" name="Implementation_Classes"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_7qiLsCmSEeyNMYaBuI3dtw" name="ContinuousIntegration"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_DCLusCmTEeyNMYaBuI3dtw" name="TestDrivenDevelopment"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_IBF7MCg_Eey_d-Dl8ceGcA" name="05_Test"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_JgobUCg_Eey_d-Dl8ceGcA" name="06_Deployment"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_LOjVsCg_Eey_d-Dl8ceGcA" name="07_Configuration_&amp;_CM"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_PNnMQCg_Eey_d-Dl8ceGcA" name="08_Project_Management">
+    <packagedElement xmi:type="uml:Package" xmi:id="_XHEOwCmSEeyNMYaBuI3dtw" name="PhasePlan"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_aM-PwCmSEeyNMYaBuI3dtw" name="SoftwareDevelopmentPlan"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_fRhHsCmSEeyNMYaBuI3dtw" name="IterationPlan"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_FgiV8CnfEeyyY-5-pErpSQ" name="RiskList"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_RwHlQCg_Eey_d-Dl8ceGcA" name="09_Environment">
+    <packagedElement xmi:type="uml:Package" xmi:id="_9qGhoCmQEeyNMYaBuI3dtw" name="DevelopmentCase">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_EJYSMCmREeyNMYaBuI3dtw">
+        <body>The choice of practices and UP artifacts for a project is written in a short document called &quot;Development Case&quot;</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_fZ1ysCmREeyNMYaBuI3dtw" name="CodingStandards"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_mxsZICnVEeyyY-5-pErpSQ" name="Tools"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_n8yTQCnVEeyyY-5-pErpSQ" name="Tools_Guidelines"/>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_aC8agCekEeykwKawhLPdig">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_aC8agSekEeykwKawhLPdig" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+    </eAnnotations>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_aC8agiekEeykwKawhLPdig" source="duplicatedProfile"/>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+</uml:Model>

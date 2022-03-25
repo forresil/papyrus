@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:texteditormodel="http://www.eclipse.org/Papyrus/TextEditor/0.10.0/texteditormodel" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:texteditormodel="http://www.eclipse.org/Papyrus/TextEditor/0.10.0/texteditormodel" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <notation:Diagram xmi:id="_UhpC0KqAEeqi_8RUyIFHAA" type="PapyrusUMLClassDiagram" name="PapyrusJavaTestClassDiagram" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_YqRsIKqAEeqi_8RUyIFHAA" type="Package_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_YqThUKqAEeqi_8RUyIFHAA" type="Package_NameLabel"/>
@@ -190,6 +190,5 @@
     </edges>
   </notation:Diagram>
   <texteditormodel:TextEditorModel xmi:id="__SCp0KqFEeqi_8RUyIFHAA" type="CDTEditorInPapyrus" name="CDT PapyrusJavaTest" generatorID="Standard C++">
-    <editedObject xmi:type="uml:Class" href="PapyrusJavaTest.uml#_Za87IKqAEeqi_8RUyIFHAA"/>
-  </texteditormodel:TextEditorModel>
+    <editedObject xmi:type="uml:Class" href="PapyrusJavaTest.uml#_Za87IKqAEeqi_8RUyIFHAA"/></texteditormodel:TextEditorModel>
 </xmi:XMI>

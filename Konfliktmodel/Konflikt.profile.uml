@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_eAB3oBV7Eeyi3b71t7iQ5g" name="Konflikt" metaclassReference="_eALooBV7Eeyi3b71t7iQ5g">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eAejkRV7Eeyi3b71t7iQ5g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_IRpJgBWEEeyi3b71t7iQ5g" name="Konflikt" nsURI="http:///schemas/Konflikt/_IRn7YBWEEeyi3b71t7iQ5g/2" nsPrefix="Konflikt">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IRsz4BWEEeyi3b71t7iQ5g" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IRsz4RWEEeyi3b71t7iQ5g" key="Version" value="0.0.3"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IRsz4hWEEeyi3b71t7iQ5g" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IRsz4xWEEeyi3b71t7iQ5g" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IRsz5BWEEeyi3b71t7iQ5g" key="Date" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IRsz5RWEEeyi3b71t7iQ5g" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_IRpJgRWEEeyi3b71t7iQ5g" name="Problem">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IRpJghWEEeyi3b71t7iQ5g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_eAB3oRV7Eeyi3b71t7iQ5g"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_IRpJgxWEEeyi3b71t7iQ5g" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_IRpJhRWEEeyi3b71t7iQ5g" name="KonfliktHypothese">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IRpJhhWEEeyi3b71t7iQ5g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_-Axv8BV-Eeyi3b71t7iQ5g">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IRpJhxWEEeyi3b71t7iQ5g" key="originalName" value="Konflikt-Hypothese"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_IRpJiBWEEeyi3b71t7iQ5g" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_IRpJihWEEeyi3b71t7iQ5g" name="Erscheinungsform">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IRpJixWEEeyi3b71t7iQ5g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_IRh0wBWEEeyi3b71t7iQ5g"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_IRpJjBWEEeyi3b71t7iQ5g" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="__gYhhBV-Eeyi3b71t7iQ5g" name="Konflikt" nsURI="http:///schemas/Konflikt/__gYhgxV-Eeyi3b71t7iQ5g/1" nsPrefix="Konflikt">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__gYhkBV-Eeyi3b71t7iQ5g" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__gYhkRV-Eeyi3b71t7iQ5g" key="Version" value="0.0.2"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__gYhkhV-Eeyi3b71t7iQ5g" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__gYhkxV-Eeyi3b71t7iQ5g" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__gYhlBV-Eeyi3b71t7iQ5g" key="Date" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__gYhlRV-Eeyi3b71t7iQ5g" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="__gYhhRV-Eeyi3b71t7iQ5g" name="Problem">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__gYhhhV-Eeyi3b71t7iQ5g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_eAB3oRV7Eeyi3b71t7iQ5g"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="__gYhhxV-Eeyi3b71t7iQ5g" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="__gYhiRV-Eeyi3b71t7iQ5g" name="KonfliktHypothese">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__gYhihV-Eeyi3b71t7iQ5g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_-Axv8BV-Eeyi3b71t7iQ5g">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__gYhixV-Eeyi3b71t7iQ5g" key="originalName" value="Konflikt-Hypothese"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="__gYhjBV-Eeyi3b71t7iQ5g" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_eAejkhV7Eeyi3b71t7iQ5g" name="Konflikt" nsURI="http:///schemas/Konflikt/_eAejkBV7Eeyi3b71t7iQ5g/0" nsPrefix="Konflikt">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eAejmBV7Eeyi3b71t7iQ5g" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eAejmRV7Eeyi3b71t7iQ5g" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eAejmhV7Eeyi3b71t7iQ5g" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eAejmxV7Eeyi3b71t7iQ5g" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eAejnBV7Eeyi3b71t7iQ5g" key="Date" value="14.09.21, 18:47"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eAejnRV7Eeyi3b71t7iQ5g" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_eAejkxV7Eeyi3b71t7iQ5g" name="Problem">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eAejlBV7Eeyi3b71t7iQ5g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_eAB3oRV7Eeyi3b71t7iQ5g"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_eAejlRV7Eeyi3b71t7iQ5g" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_eALooBV7Eeyi3b71t7iQ5g">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_eAB3oRV7Eeyi3b71t7iQ5g" name="Problem">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_eALooxV7Eeyi3b71t7iQ5g" name="base_Class" association="_eALooRV7Eeyi3b71t7iQ5g">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_eALooRV7Eeyi3b71t7iQ5g" name="Class_Problem" memberEnd="_eALoohV7Eeyi3b71t7iQ5g _eALooxV7Eeyi3b71t7iQ5g">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_eALoohV7Eeyi3b71t7iQ5g" name="extension_Problem" type="_eAB3oRV7Eeyi3b71t7iQ5g" aggregation="composite" association="_eALooRV7Eeyi3b71t7iQ5g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_-Axv8BV-Eeyi3b71t7iQ5g" name="Konflikt-Hypothese">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="__gYhghV-Eeyi3b71t7iQ5g" name="base_Class" association="__gYhgBV-Eeyi3b71t7iQ5g">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="__gYhgBV-Eeyi3b71t7iQ5g" name="Class_Konflikt-Hypothese" memberEnd="__gYhgRV-Eeyi3b71t7iQ5g __gYhghV-Eeyi3b71t7iQ5g">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="__gYhgRV-Eeyi3b71t7iQ5g" name="extension_Konflikt-Hypothese" type="_-Axv8BV-Eeyi3b71t7iQ5g" aggregation="composite" association="__gYhgBV-Eeyi3b71t7iQ5g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_IRh0wBWEEeyi3b71t7iQ5g" name="Erscheinungsform">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_IRmtQRWEEeyi3b71t7iQ5g" name="base_Class" association="_IRmGMBWEEeyi3b71t7iQ5g">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_IRmGMBWEEeyi3b71t7iQ5g" name="Class_Erscheinungsform" memberEnd="_IRmtQBWEEeyi3b71t7iQ5g _IRmtQRWEEeyi3b71t7iQ5g">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_IRmtQBWEEeyi3b71t7iQ5g" name="extension_Erscheinungsform" type="_IRh0wBWEEeyi3b71t7iQ5g" aggregation="composite" association="_IRmGMBWEEeyi3b71t7iQ5g"/>
+  </packagedElement>
+</uml:Profile>

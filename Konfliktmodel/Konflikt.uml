@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Konflikt="http:///schemas/Konflikt/_IRn7YBWEEeyi3b71t7iQ5g/2" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/Konflikt/_IRn7YBWEEeyi3b71t7iQ5g/2 Konflikt.profile.uml#_IRpJgBWEEeyi3b71t7iQ5g">
+  <uml:Model xmi:id="_qsgo0BSgEeyqzMGamJl1eg" name="Konfliktaspekte">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_qwg_EBSgEeyqzMGamJl1eg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_NCmtMBV7Eeyi3b71t7iQ5g" name="Konflikt">
+      <packagedElement xmi:type="uml:Class" xmi:id="_RE6FABV7Eeyi3b71t7iQ5g" name="Wertschätzung"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Sd-wwBV7Eeyi3b71t7iQ5g" name="Vertrauen"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_T0qP0BV7Eeyi3b71t7iQ5g" name="Kommunikation"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_soeuwBV7Eeyi3b71t7iQ5g" name="Gefühl nicht ernst genommen zu werden"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_vpj6IBV7Eeyi3b71t7iQ5g" name="Fehlende Möglichkeit sich in Meetings einzubringen"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_0YOBoBV7Eeyi3b71t7iQ5g" name="Vorgehensweisen werden mehrmals hinterfragt"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_6i3mABV7Eeyi3b71t7iQ5g" name="Gefühl persönlich angegriefen zu werden"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_BrRMEBV8Eeyi3b71t7iQ5g" name="Besteht Misstrauen"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_KKIOwBV8Eeyi3b71t7iQ5g" name="Fehlende Offenheit"/>
+      <packagedElement xmi:type="uml:Manifestation" xmi:id="_g0mbkBV8Eeyi3b71t7iQ5g" client="_soeuwBV7Eeyi3b71t7iQ5g" supplier="_RE6FABV7Eeyi3b71t7iQ5g" utilizedElement="_RE6FABV7Eeyi3b71t7iQ5g"/>
+      <packagedElement xmi:type="uml:Manifestation" xmi:id="_qDDvMBV8Eeyi3b71t7iQ5g" client="_vpj6IBV7Eeyi3b71t7iQ5g" supplier="_Sd-wwBV7Eeyi3b71t7iQ5g" utilizedElement="_Sd-wwBV7Eeyi3b71t7iQ5g"/>
+      <packagedElement xmi:type="uml:Manifestation" xmi:id="_vIdiwBV8Eeyi3b71t7iQ5g" client="_0YOBoBV7Eeyi3b71t7iQ5g" supplier="_Sd-wwBV7Eeyi3b71t7iQ5g" utilizedElement="_Sd-wwBV7Eeyi3b71t7iQ5g"/>
+      <packagedElement xmi:type="uml:Manifestation" xmi:id="_xOBhEBV8Eeyi3b71t7iQ5g" client="_0YOBoBV7Eeyi3b71t7iQ5g" supplier="_RE6FABV7Eeyi3b71t7iQ5g" utilizedElement="_RE6FABV7Eeyi3b71t7iQ5g"/>
+      <packagedElement xmi:type="uml:Manifestation" xmi:id="_3SvckBV8Eeyi3b71t7iQ5g" client="_6i3mABV7Eeyi3b71t7iQ5g" supplier="_Sd-wwBV7Eeyi3b71t7iQ5g" utilizedElement="_Sd-wwBV7Eeyi3b71t7iQ5g"/>
+      <packagedElement xmi:type="uml:Manifestation" xmi:id="_9WB0sBV8Eeyi3b71t7iQ5g" client="_BrRMEBV8Eeyi3b71t7iQ5g" supplier="_Sd-wwBV7Eeyi3b71t7iQ5g" utilizedElement="_Sd-wwBV7Eeyi3b71t7iQ5g"/>
+      <packagedElement xmi:type="uml:Manifestation" xmi:id="_AluD0BV9Eeyi3b71t7iQ5g" client="_KKIOwBV8Eeyi3b71t7iQ5g" supplier="_Sd-wwBV7Eeyi3b71t7iQ5g" utilizedElement="_Sd-wwBV7Eeyi3b71t7iQ5g"/>
+      <packagedElement xmi:type="uml:Manifestation" xmi:id="_CX2v0BV9Eeyi3b71t7iQ5g" client="_KKIOwBV8Eeyi3b71t7iQ5g" supplier="_RE6FABV7Eeyi3b71t7iQ5g" utilizedElement="_RE6FABV7Eeyi3b71t7iQ5g"/>
+      <packagedElement xmi:type="uml:Manifestation" xmi:id="_UsCcYBV-Eeyi3b71t7iQ5g" client="_vpj6IBV7Eeyi3b71t7iQ5g" supplier="_RE6FABV7Eeyi3b71t7iQ5g" utilizedElement="_RE6FABV7Eeyi3b71t7iQ5g"/>
+      <packagedElement xmi:type="uml:Manifestation" xmi:id="_YRrGUBV-Eeyi3b71t7iQ5g" client="_vpj6IBV7Eeyi3b71t7iQ5g" supplier="_T0qP0BV7Eeyi3b71t7iQ5g" utilizedElement="_T0qP0BV7Eeyi3b71t7iQ5g"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ePvnQBV-Eeyi3b71t7iQ5g" name="Divergierende Aufgaben- und Rollenverständnis"/>
+      <packagedElement xmi:type="uml:Manifestation" xmi:id="_iI8tcBV-Eeyi3b71t7iQ5g" client="_ePvnQBV-Eeyi3b71t7iQ5g" supplier="_T0qP0BV7Eeyi3b71t7iQ5g" utilizedElement="_T0qP0BV7Eeyi3b71t7iQ5g"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_yen7YBV-Eeyi3b71t7iQ5g" name="Nicht beachten der Grundregeln der Kommunikation führt zu Dissonanzen und  Missverständnisse"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_kw9cEBV_Eeyi3b71t7iQ5g" name="Eigenmächtiger Entscheid Arbeiten nicht auszuführen (Arbeitsverweigerung)"/>
+      <packagedElement xmi:type="uml:Manifestation" xmi:id="_qx2AcBV_Eeyi3b71t7iQ5g" client="_NCmtMBV7Eeyi3b71t7iQ5g" supplier="_T0qP0BV7Eeyi3b71t7iQ5g" utilizedElement="_T0qP0BV7Eeyi3b71t7iQ5g"/>
+      <packagedElement xmi:type="uml:Manifestation" xmi:id="_vCEfgBV_Eeyi3b71t7iQ5g" client="_6i3mABV7Eeyi3b71t7iQ5g" supplier="_T0qP0BV7Eeyi3b71t7iQ5g" utilizedElement="_T0qP0BV7Eeyi3b71t7iQ5g"/>
+      <packagedElement xmi:type="uml:Manifestation" xmi:id="_Qzn5ABWBEeyi3b71t7iQ5g" client="_NCmtMBV7Eeyi3b71t7iQ5g" supplier="_yen7YBV-Eeyi3b71t7iQ5g" utilizedElement="_yen7YBV-Eeyi3b71t7iQ5g"/>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_eAntgBV7Eeyi3b71t7iQ5g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eAntgRV7Eeyi3b71t7iQ5g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="Konflikt.profile.uml#_IRpJgBWEEeyi3b71t7iQ5g"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="Konflikt.profile.uml#_eAB3oBV7Eeyi3b71t7iQ5g"/>
+      </profileApplication>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_fjNcUBSkEeyqzMGamJl1eg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fjXNUBSkEeyqzMGamJl1eg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/ocl/2015/OCLforUML/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://OCL_PROFILES/OCLforUML.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <Konflikt:Problem xmi:id="_eAxegBV7Eeyi3b71t7iQ5g" base_Class="_RE6FABV7Eeyi3b71t7iQ5g"/>
+  <Konflikt:Problem xmi:id="_gkFv0BV7Eeyi3b71t7iQ5g" base_Class="_Sd-wwBV7Eeyi3b71t7iQ5g"/>
+  <Konflikt:Problem xmi:id="_hnvlMBV7Eeyi3b71t7iQ5g" base_Class="_T0qP0BV7Eeyi3b71t7iQ5g"/>
+  <Konflikt:KonfliktHypothese xmi:id="__ghrchV-Eeyi3b71t7iQ5g" base_Class="_yen7YBV-Eeyi3b71t7iQ5g"/>
+  <Konflikt:Erscheinungsform xmi:id="_IR5oMBWEEeyi3b71t7iQ5g" base_Class="_vpj6IBV7Eeyi3b71t7iQ5g"/>
+  <Konflikt:Erscheinungsform xmi:id="_Ll0QABWEEeyi3b71t7iQ5g" base_Class="_0YOBoBV7Eeyi3b71t7iQ5g"/>
+  <Konflikt:Erscheinungsform xmi:id="_M9xhcBWEEeyi3b71t7iQ5g" base_Class="_6i3mABV7Eeyi3b71t7iQ5g"/>
+  <Konflikt:Erscheinungsform xmi:id="_ONtfUBWEEeyi3b71t7iQ5g" base_Class="_BrRMEBV8Eeyi3b71t7iQ5g"/>
+  <Konflikt:Erscheinungsform xmi:id="_QA-zwBWEEeyi3b71t7iQ5g" base_Class="_KKIOwBV8Eeyi3b71t7iQ5g"/>
+  <Konflikt:Erscheinungsform xmi:id="_R5DvsBWEEeyi3b71t7iQ5g" base_Class="_ePvnQBV-Eeyi3b71t7iQ5g"/>
+  <Konflikt:Erscheinungsform xmi:id="_TqZKcBWEEeyi3b71t7iQ5g" base_Class="_kw9cEBV_Eeyi3b71t7iQ5g"/>
+  <Konflikt:Erscheinungsform xmi:id="_V7ts0BWEEeyi3b71t7iQ5g" base_Class="_soeuwBV7Eeyi3b71t7iQ5g"/>
+</xmi:XMI>

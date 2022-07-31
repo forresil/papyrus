@@ -1,0 +1,26 @@
+x	Class {
+	fontName:"Segoe UI";
+	description:"Problem";
+	fillColor:#EDC97A;
+	transparency:0;
+	gradient:#FFFFFF vertical;
+	lineColor:#000000
+}
+
+[appliedStereotypes~="Problem"]{
+    bold:true;
+    fillColor:#EDC97A;
+    description:"Problem";
+}
+
+[appliedStereotypes~="Erscheinungsform"]{
+    bold:true;
+    fillColor:yellow;
+    description:"Problem";
+}
+
+[appliedStereotypes~="Konflikt-Hypothese"]{
+    bold:true;
+    fillColor:violet;
+    description:"Problem";
+}

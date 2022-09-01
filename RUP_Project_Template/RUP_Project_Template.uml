@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_44TXAAzTEe2ukuAGC6b7Yw" name="&lt;ProjectName>">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_48iWwAzTEe2ukuAGC6b7Yw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_49FwYAzTEe2ukuAGC6b7Yw">
+    <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_cKtQQA16Ee2ukuAGC6b7Yw" name="01_Business_Modeling">
+    <packagedElement xmi:type="uml:Package" xmi:id="_u1oeUA16Ee2ukuAGC6b7Yw" name="ConceptualClasses"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_w2e7wA16Ee2ukuAGC6b7Yw" name="Context-ScopeDefinition"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_zElyEA16Ee2ukuAGC6b7Yw" name="DomainModel"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_1Cm98A16Ee2ukuAGC6b7Yw" name="Business_UseCases_Model"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_erWoEA16Ee2ukuAGC6b7Yw" name="02_Requirements">
+    <packagedElement xmi:type="uml:Package" xmi:id="_3hPjkA16Ee2ukuAGC6b7Yw" name="Vision"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_4yaQgA16Ee2ukuAGC6b7Yw" name="System_UseCases">
+      <packagedElement xmi:type="uml:Package" xmi:id="_W00QMA2nEe2ukuAGC6b7Yw" name="UseCases"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_YfTcEA2nEe2ukuAGC6b7Yw" name="Model"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_69YTQA16Ee2ukuAGC6b7Yw" name="Problems"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_81AjQA16Ee2ukuAGC6b7Yw" name="Glossary"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_905S8A16Ee2ukuAGC6b7Yw" name="Supplementary_Specification_SS">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_cVs08A2eEe2ukuAGC6b7Yw" annotatedElement="_905S8A16Ee2ukuAGC6b7Yw">
+        <body>SS Definition&#xD;
+The Supplementary Specifications capture the system requirements that are not readily captured in the use cases of the use-case model. Such requirements include:&#xD;
+* Legal and regulatory requirements, and application standards&#xD;
+* Quality attributes of the system to be built, including usability, reliability, performance, and supportability requirements&#xD;
+* Other requirements such as operating systems and environments, compatibility requirements, and design constraints</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_cGOZEA2fEe2ukuAGC6b7Yw">
+        <body>Contents&#xD;
+&#xD;
+1.       Introduction         &#xD;
+1.1     Purpose     &#xD;
+1.2     Scope     &#xD;
+1.3     Definitions, Acronyms and Abbreviations     &#xD;
+1.4     References     &#xD;
+1.5     Overview     &#xD;
+&#xD;
+2.       Functionality     &#xD;
+2.1     &lt;Functional Requirement One>    &#xD;
+ &#xD;
+3.       Usability&#xD;
+3.1     &lt;Usability Requirement One>     &#xD;
+&#xD;
+4.       Reliability&#xD;
+4.1     &lt;Reliability Requirement One>     &#xD;
+&#xD;
+5.       Performance       &#xD;
+5.1     &lt;Performance Requirement One>     &#xD;
+&#xD;
+6.       Supportability    &#xD;
+6.1     &lt;Supportability Requirement One>     &#xD;
+&#xD;
+7.       Design Constraints   &#xD;
+7.1     &lt;Design Constraint One>     &#xD;
+&#xD;
+8.       Online User Documentation and Help System Requirements&#xD;
+&#xD;
+9.       Purchased Components &#xD;
+&#xD;
+10.       Interfaces               &#xD;
+10.1     User Interfaces     &#xD;
+10.2     Hardware Interfaces     &#xD;
+10.3     Software Interfaces     &#xD;
+10.4     Communications Interfaces     &#xD;
+&#xD;
+11.            Licensing Requirements               &#xD;
+&#xD;
+12.            Legal, Copyright and Other Notices               &#xD;
+&#xD;
+13.            Applicable Standards               </body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_oGftAA2fEe2ukuAGC6b7Yw">
+        <body>Supplementary Specification&#xD;
+&#xD;
+1.                  Introduction&#xD;
+[The introduction of the Supplementary Specification should provide an overview of the entire document. It should include the purpose, scope, definitions, acronyms, abbreviations, references, and overview of this Supplementary Specification.&#xD;
+&#xD;
+The Supplementary Specification captures the system requirements that are not readily captured in the use cases of the use-case model. Such requirements include:&#xD;
+&#xD;
+·         Legal and regulatory requirements, including application standards.&#xD;
+&#xD;
+·         Quality attributes of the system to be built, including usability, reliability, performance, and supportability requirements.&#xD;
+&#xD;
+·         Other requirements such as operating systems and environments, compatibility requirements, and design constraints.]&#xD;
+&#xD;
+1.1               Purpose&#xD;
+[Specify the purpose of this Supplementary Specification.]&#xD;
+&#xD;
+1.2               Scope&#xD;
+[A brief description of the scope of this Supplementary Specification; what Project(s) it is associated with, and anything else that is affected or influenced by this document.]&#xD;
+&#xD;
+1.3               Definitions, Acronyms and Abbreviations&#xD;
+[This subsection should provide the definitions of all terms, acronyms, and abbreviations required to properly interpret the Supplementary Specification.  This information may be provided by reference to the project Glossary.]&#xD;
+&#xD;
+1.4               References&#xD;
+[This subsection should provide a complete list of all documents referenced elsewhere in the Supplementary Specification.  Each document should be identified by title, report number (if applicable), date, and publishing organization.  Specify the sources from which the references can be obtained. This information may be provided by reference to an appendix or to another document.]&#xD;
+&#xD;
+1.5               Overview&#xD;
+[This subsection should describe what the rest of the Supplementary Specification contains and explain how the document is organized.]&#xD;
+&#xD;
+2.                  Functionality&#xD;
+[This section describes the functional requirements of the system for those requirements which are expressed in the natural language style. For many applications, this may constitute the bulk of the SRS Package and thought should be given to the organization of this section. This section is typically organized by feature, but alternative organization methods, for example organization by user or organization by subsystem, may also be appropriate.  Functional requirements may include feature sets, capabilities, and security.&#xD;
+&#xD;
+Where application development tools, such as requirements tools, modeling tools, etc., are employed to capture the functionality, this section document will refer to the availability of that data, indicating the location and name of the tool used to capture the data.]&#xD;
+&#xD;
+2.1               &lt;Functional Requirement One>&#xD;
+[The requirement description.]&#xD;
+&#xD;
+3.                  Usability&#xD;
+[This section should include all of those requirements that affect usability. Examples follow:&#xD;
+&#xD;
+·         specify the required training time for a normal users and power users to become productive at particular operations&#xD;
+&#xD;
+·         specify measurable task times for typical tasks, or&#xD;
+&#xD;
+·         specify requirements to conform to common usability standards, for example, IBM’s CUA standards or Microsoft’s GUI stamdards]&#xD;
+&#xD;
+3.1               &lt;Usability Requirement One>&#xD;
+The requirement description.&#xD;
+&#xD;
+4.                  Reliability&#xD;
+[Requirements for reliability of the system should be specified here. Suggestions are as follows:&#xD;
+&#xD;
+·         Availability – specify percentage of time available ( xx.xx%), hours of use, maintenance access, degraded mode operations, etc.&#xD;
+&#xD;
+·         Mean Time Between Failures (MTBF) – this is usually specified in hours but it could also be specified in terms of days, months or years.&#xD;
+&#xD;
+·         Mean Time To Repair (MTTR) – how long is the system allowed to be out of operation after it has failed?&#xD;
+&#xD;
+·          Accuracy – specify precision (resolution) and accuracy (by some known standard) that is required in the systems output.&#xD;
+&#xD;
+·         Maximum bugs or defect rate – usually expressed in terms of bugs/KLOC (thousands of lines of code), or bugs/function-point.&#xD;
+&#xD;
+·         Bugs or defect rate – categorized in terms of minor, significant, and critical bugs: the requirement(s) must define what is meant by a “critical” bug (e.g., complete loss of data or complete inability to use certain parts of the functionality of the system).]&#xD;
+&#xD;
+4.1               &lt;Reliability Requirement One>&#xD;
+[The requirement description.]&#xD;
+&#xD;
+5.                  Performance&#xD;
+[The performance characteristics of the system should be outlined in this section. Include specific response times. Where applicable, reference related Use Cases by name.&#xD;
+&#xD;
+·         Response time for a transaction(average, maximum)&#xD;
+&#xD;
+·         Throughput (e.g., transactions per second)&#xD;
+&#xD;
+·         Capacity (e.g., the number of customers or transactions the system can accommodate)&#xD;
+&#xD;
+·         Degradation modes (what is the acceptable mode of operation when the system has been degraded in some manner)&#xD;
+&#xD;
+·         Resource utilization: memory, disk, communications, etc.]&#xD;
+&#xD;
+5.1               &lt;Performance Requirement One>&#xD;
+[The requirement description.]&#xD;
+&#xD;
+6.                  Supportability&#xD;
+[This section indicates any requirements that will enhance the supportability or maintainability of the system being built, including coding standards, naming conventions, class libraries, maintenance access, maintenance utilities.]&#xD;
+&#xD;
+6.1               &lt;Supportability Requirement One>&#xD;
+[The requirement description.]&#xD;
+&#xD;
+7.                  Design Constraints&#xD;
+[This section should indicate any design constraints on the system being built. Design constraints represent design decisions that have been mandated and must be adhered to.  Examples include software languages, software process requirements, prescribed use of developmental tools, architectural and design constraints, purchased components, class libraries, etc.]&#xD;
+&#xD;
+7.1               &lt;Design Constraint One>&#xD;
+[The requirement description.]&#xD;
+&#xD;
+8.                  Online User Documentation and Help System Requirements&#xD;
+[Describes the requirements, if any, for on-line user documentation, help systems, help about notices, etc.]&#xD;
+&#xD;
+9.                  Purchased Components&#xD;
+[This section describes any purchased components to be used with the system, any applicable licensing or usage restrictions, and any associated compatibility/interoperability or interface standards.]&#xD;
+&#xD;
+10.             Interfaces&#xD;
+[This section defines the interfaces that must be supported by the application. It should contain adequate specificity, protocols, ports and logical addresses, etc., so that the software can be developed and verified against the interface requirements.]&#xD;
+&#xD;
+10.1            User Interfaces&#xD;
+[Describe the user interfaces that are to be implemented by the software.]&#xD;
+&#xD;
+10.2            Hardware Interfaces&#xD;
+[This section defines any hardware interfaces that are to be supported by the software, including logical structure, physical addresses, expected behavior, etc. ]&#xD;
+&#xD;
+10.3            Software Interfaces&#xD;
+[This section describes software interfaces to other components of the software system. These may be purchased components, components reused from another application or components being developed for subsystems outside of the scope of this SRS, but with which this software application must interact.]&#xD;
+&#xD;
+10.4            Communications Interfaces&#xD;
+[Describe any communications interfaces to other systems or devices such as local area networks, remote serial devices, etc.]&#xD;
+&#xD;
+11.             Licensing Requirements&#xD;
+[Defines any licensing enforcement requirements or other usage restriction requirements which are to be exhibited by the software.]&#xD;
+&#xD;
+12.             Legal, Copyright and Other Notices&#xD;
+[This section describes any necessary legal disclaimers, warranties, copyright notices, patent notice, wordmark, trademark or logo compliance issues for the software.]&#xD;
+&#xD;
+13.             Applicable Standards&#xD;
+[This section describes by reference any applicable standards and the specific sections of any such standards that apply to the system being described. For example, this could include legal, quality and regulatory standards, industry standards for usability, interoperability, internationalization, operating system compliance, etc.]&#xD;
+&#xD;
+ </body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ARyzMA17Ee2ukuAGC6b7Yw" name="Business_Domain_Rules"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_gF4FUA16Ee2ukuAGC6b7Yw" name="03_Analysis_&amp;_Design">
+    <packagedElement xmi:type="uml:Package" xmi:id="_Dc-VwA17Ee2ukuAGC6b7Yw" name="DomainLayer"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_kPTYAA2qEe2ukuAGC6b7Yw" name="AnalysisModel">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_ocgYQA2qEe2ukuAGC6b7Yw" annotatedElement="_kPTYAA2qEe2ukuAGC6b7Yw">
+        <body>Definition&#xD;
+&#xD;
+An object model describing the realization of use cases, and which serves as an abstraction of the Artifact: Design Model. &#xD;
+The Analysis Model contains the results of use case analysis, instances of the Artifact: Analysis Class. The Analysis Model is an optional artifact (see Tailoring).&#xD;
+The analysis model is optional.</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_x0R_8A2qEe2ukuAGC6b7Yw">
+        <body>Representation&#xD;
+&#xD;
+Model, stereotyped as «analysis model».</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_E1AfsA17Ee2ukuAGC6b7Yw" name="DesignModel">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_Nbs50A2pEe2ukuAGC6b7Yw" annotatedElement="_E1AfsA17Ee2ukuAGC6b7Yw">
+        <body>Definition&#xD;
+&#xD;
+The design model is an object model describing the realization of use cases, and serves as an abstraction of the implementation model and its source code. The design model is used as essential input to activities in implementation and test.</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_R7XjEA2pEe2ukuAGC6b7Yw">
+        <body>Representation&#xD;
+&#xD;
+Model, stereotyped as «design model».</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_HgtQ8A17Ee2ukuAGC6b7Yw" name="DataModel">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_91n80A2oEe2ukuAGC6b7Yw" annotatedElement="_HgtQ8A17Ee2ukuAGC6b7Yw">
+        <body>Definition&#xD;
+&#xD;
+The data model is a subset of the implementation model which describes the logical and physical representation of persistent data in the system. It also includes any behavior defined in the database, such as stored procedures, triggers, constraints, and so forth.</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_EREWQA2pEe2ukuAGC6b7Yw">
+        <body>Representation&#xD;
+&#xD;
+	A top-level Package stereotyped as «data model», containing a set of Components which represent the physical storage of persistent data in the system.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_2jb54A2uEe2ukuAGC6b7Yw" name="Architecture">
+      <packagedElement xmi:type="uml:Package" xmi:id="_IpAxcA2qEe2ukuAGC6b7Yw" name="Reference_Architecture">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_M5P3kA2qEe2ukuAGC6b7Yw" annotatedElement="_IpAxcA2qEe2ukuAGC6b7Yw">
+          <body>Definition&#xD;
+&#xD;
+A Reference Architecture is, in essence, a predefined architectural pattern, or set of patterns, possibly partially or completely instantiated, designed and proven for use in particular business and technical contexts, together with supporting artifacts to enable their use. Often, these artifacts are harvested from previous projects.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_5awFQA2uEe2ukuAGC6b7Yw" name="Capsule_Architecture">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_O6cAUA23Ee2ukuAGC6b7Yw" annotatedElement="_5awFQA2uEe2ukuAGC6b7Yw">
+          <body>Capsule - Definition&#xD;
+&#xD;
+A capsule is a specific design pattern which represents an encapsulated thread of control in the system.&#xD;
+Capsules represent a specific pattern of class structure and composition which has proven useful in modeling and designing systems which have a high degree of concurrency. &#xD;
+Using a capsule as a short-hand notation for a specific, proven design pattern makes design easier and less error-prone.&#xD;
+A capsule may have ports, and may &quot;contain&quot; passive classes and/or sub-capsules. It may also have a state machine which completely describes the behavior of the capsule</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_WtwysA23Ee2ukuAGC6b7Yw">
+          <body>Capsule Representation&#xD;
+&#xD;
+A capsule is represented as a Class, stereotyped «capsule»</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_rctuAA23Ee2ukuAGC6b7Yw" annotatedElement="_5awFQA2uEe2ukuAGC6b7Yw">
+          <body>Capsule Properties&#xD;
+&#xD;
+A capsule encapsulates a thread of control. &#xD;
+A capsule is an abstraction of an independent thread of control in the system; it is the primary unit of concurrency in the system. &#xD;
+Additional isolation of threads of control may be done through the use of operating system process and threads, by mapping capsules to specific operating system processes and threads. &#xD;
+Messages to the capsule arrive via a port, and are processed sequentially; if the capsule instance is busy, messages are queued. &#xD;
+Capsules enforce run-to-completion semantics, so that when an event is received, it is completely processed regardless of the number or priority of other events arriving.&#xD;
+&#xD;
+A capsule interacts with its surroundings through ports. &#xD;
+A port is a signal-based boundary object; it mediates the interaction of the capsule with the outside world. &#xD;
+A port implements a specific interface and may be dependent on a specific interface. &#xD;
+A capsule cannot have operations or public parts other than ports, which are its exclusive means of interaction with the external world.&#xD;
+&#xD;
+Each port plays a particular role in a collaboration. &#xD;
+The collaboration describes how the capsule interacts with other objects. &#xD;
+To capture the complex semantics of these interactions, ports are associated with a protocol that defines the valid flow of information (signals) between connected ports of capsules. &#xD;
+The protocol captures the contractual obligations that exist between capsules. &#xD;
+By forcing capsules to communicate solely through ports, it is possible to fully de-couple the internal implementations of the capsule from the environment surrounding the capsule. &#xD;
+This makes capsules highly reusable.&#xD;
+&#xD;
+A simple capsule's functionality is realized directly the capsule's state machine. &#xD;
+More complex capsules combine the state machine with an internal network of collaborating sub-capsules joined by connectors. &#xD;
+These sub-capsules are capsules in their own right, and can themselves be decomposed into sub-capsules. &#xD;
+This type of decomposition can be carried to whatever depth is necessary, allowing modeling of arbitrarily complex structures with just this basic set of structural modeling constructs. &#xD;
+The state machine (which is optional for composite capsules), the sub-capsules, and their connections network represent parts of the implementation of the capsule and are hidden from external observers.&#xD;
+&#xD;
+A capsule may be a composite element. &#xD;
+Capsules may be composed of other capsules and passive classes. &#xD;
+Capsules and passive classes are joined together by connectors or links in a collaboration; this collaboration defines the 'structure' of the capsule, and so is termed a 'specification collaboration'. &#xD;
+A capsule may have a state machine that can send and receive signals via the end ports of the capsule and that has control over certain elements of the internal structure. &#xD;
+Hence, this state machine may be regarded as implementing reflective behavior, that is, behavior that controls the operation of the capsule itself.</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_eo6O4A24Ee2ukuAGC6b7Yw">
+          <body>Collaborations&#xD;
+&#xD;
+A capsule’s complete internal structure is represented by a specification collaboration. &#xD;
+This collaboration includes a specification of all of its ports, sub-capsules, and connectors. Like ports, the sub-capsules and connectors are strongly owned by the capsule and cannot exist independently of the capsule. &#xD;
+They are created when the capsule is created and destroyed when their capsule is destroyed.&#xD;
+&#xD;
+Some sub-capsules in the structure may not be created at the same time as their containing capsule. Instead, they may be created subsequently, when and if necessary, by the state machine of the capsule. &#xD;
+The state machine can also destroy such capsules at any time. This follows the UML rules on composition.&#xD;
+&#xD;
+The structure of a capsule may contain so-called plug-in roles. &#xD;
+These are, in effect, placeholders for sub-capsules that are filled in dynamically. This is necessary because it is not always known in advance which specific objects will play those roles at run time. Once this information is available, &#xD;
+the appropriate capsule instance (which is owned by some other composite capsule) can be &quot;plugged&quot; into such a slot and the connectors joining its ports to other sub-capsules in the collaboration are automatically established. &#xD;
+When the dynamic relationship is no longer required, the capsule is &quot;removed&quot; from the plug-in slot, and the connectors to it are taken down.&#xD;
+&#xD;
+Dynamically created sub-capsules and plug-ins allow the modeling of dynamically changing structures while ensuring that all valid communication and containment relationships between capsules are specified explicitly. &#xD;
+This is key in ensuring architectural integrity in a complex real-time system.&#xD;
+&#xD;
+Ports may also be depicted in specification collaboration diagrams. In these diagrams, objects are represented by the appropriate classifier roles, that is, sub-capsules by capsule roles and ports by port roles. &#xD;
+To reduce visual clutter, port roles are generally shown in iconified form, represented by small black or white squares. &#xD;
+Public ports are represented by port role icons that straddle the boundary of the corresponding capsule roles as shown in the previous figure. &#xD;
+This shorthand notation allows them to be connected both from inside and outside the capsule without unnecessary crossing of lines and also identifies them clearly as boundary objects.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_KrM3AA17Ee2ukuAGC6b7Yw" name="SoftwareArchitectureDocument">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_PgE0EA2jEe2ukuAGC6b7Yw" annotatedElement="_KrM3AA17Ee2ukuAGC6b7Yw">
+          <body>Definition &#xD;
+The Software Architecture Document provides a comprehensive architectural overview of the system, using a number of different architectural views to depict different aspects of the system.</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_JE0A0A2jEe2ukuAGC6b7Yw">
+          <body>Contents&#xD;
+&#xD;
+1.       Introduction         &#xD;
+1.1     Purpose     &#xD;
+1.2     Scope     &#xD;
+1.3     Definitions, Acronyms and Abbreviations     &#xD;
+1.4     References     &#xD;
+1.5     Overview     &#xD;
+2.       Architectural Representation&#xD;
+&#xD;
+3.       Architectural Goals and Constraints   &#xD;
+&#xD;
+4.       Use-Case View&#xD;
+4.1     Use-Case Realizations     &#xD;
+ &#xD;
+5.       Logical View&#xD;
+5.1     Overview     &#xD;
+5.2     Architecturally Significant Design Packages     &#xD;
+6.       Process View&#xD;
+&#xD;
+7.       Deployment View&#xD;
+&#xD;
+8.       Implementation View&#xD;
+8.1     Overview     &#xD;
+8.2     Layers     &#xD;
+9.       Data View (optional)       &#xD;
+&#xD;
+10.     Size and Performance               &#xD;
+&#xD;
+11.      Quality            </body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_FitzEA2jEe2ukuAGC6b7Yw">
+          <body>Software Architecture Document&#xD;
+&#xD;
+1.                  Introduction&#xD;
+[The introduction of the Software Architecture Document should provide an overview of the entire Software Architecture Document. It should include the purpose, scope, definitions, acronyms, abbreviations, references, and overview of the Software Architecture Document.]&#xD;
+&#xD;
+1.1               Purpose&#xD;
+This document provides a comprehensive architectural overview of the system, using a number of different architectural views to depict different aspects of the system.  It is intended to capture and convey the significant architectural decisions which have been made on the system.&#xD;
+&#xD;
+[This section defines the purpose of the Software Architecture Document, in the overall project documentation, and briefly describes the structure of the document. The specific audiences for the document should be identified, with an indication of how they are expected to use the document.]&#xD;
+&#xD;
+1.2               Scope&#xD;
+[A brief description of what the Software Architecture Document applies to; what is affected or influenced by this document.]&#xD;
+&#xD;
+1.3               Definitions, Acronyms and Abbreviations&#xD;
+[This subsection should provide the definitions of all terms, acronyms, and abbreviations required to properly interpret the Software Architecture Document.  This information may be provided by reference to the project Glossary.]&#xD;
+&#xD;
+1.4               References&#xD;
+[This subsection should provide a complete list of all documents referenced elsewhere in the Software Architecture Document.  Each document should be identified by title, report number (if applicable), date, and publishing organization.  Specify the sources from which the references can be obtained. This information may be provided by reference to an appendix or to another document.]&#xD;
+&#xD;
+1.5               Overview&#xD;
+[This subsection should describe what the rest of the Software Architecture Document contains and explain how the Software Architecture Document is organized.]&#xD;
+&#xD;
+2.                  Architectural Representation&#xD;
+[This section describes what software architecture is for the current system, and how it is represented. Of the Use-Case, Logical, Process, Deployment, and Implementation Views, it enumerates the views that are necessary, and for each view, explains what types of model elements it contains.]&#xD;
+&#xD;
+3.                  Architectural Goals and Constraints&#xD;
+[This section describes the software requirements and objectives that have some significant impact on the architecture, for example, safety, security, privacy, use of an off-the-shelf product, portability, distribution, and reuse. It also captures the special constraints that may apply: design and implementation strategy, development tools, team structure, schedule, legacy code, and so on.]&#xD;
+&#xD;
+4.                  Use-Case View&#xD;
+[This section lists use cases or scenarios from the use-case model if they represent some significant, central functionality of the final system, or if they have a large architectural coverage - they exercise many architectural elements, or if they stress or illustrate a specific, delicate point of the architecture.]&#xD;
+&#xD;
+4.1               Use-Case Realizations&#xD;
+[This section illustrates how the software actually works by giving a few selected use-case (or scenario) realizations, and explains how the various design model elements contribute to their functionality.]&#xD;
+&#xD;
+5.                  Logical View&#xD;
+[This section describes the architecturally significant parts of the design model, such as its decomposition into subsystems and packages. And for each significant package, its decomposition into classes and class utilities. You should introduce architecturally significant classes and describe their responsibilities, as well as a few very important relationships, operations, and attributes.]&#xD;
+&#xD;
+5.1               Overview&#xD;
+[This subsection describes the overall decomposition of the design model in terms of its package hierarchy and layers.]&#xD;
+&#xD;
+5.2               Architecturally Significant Design Packages&#xD;
+[For each significant package, include a subsection with its name, its brief description, and a diagram with all significant classes and packages contained within the package.&#xD;
+&#xD;
+For each significant class in the package, include its name, brief description, and, optionally a description of some of its major responsibilities, operations and attributes.]&#xD;
+&#xD;
+6.                  Process View&#xD;
+[This section describes the system's decomposition into lightweight processes (single threads of control) and heavyweight processes (groupings of lightweight processes). Organize the section by groups of processes that communicate or interact. Describe the main modes of communication between processes, such as message passing, interrupts, and rendezvous.]&#xD;
+&#xD;
+7.                  Deployment View&#xD;
+[This section describes one or more physical network (hardware) configurations on which the software is deployed and run. It is a view of the Deployment Model. At a minimum for each configuration it should indicate the physical nodes (computers, CPUs) that execute the software, and their interconnections (bus, LAN, point-to-point, and so on.) Also include a mapping of the processes of the Process View onto the physical nodes.]&#xD;
+&#xD;
+8.                  Implementation View&#xD;
+[This section describes the overall structure of the implementation model, the decomposition of the software into layers and subsystems in the implementation model, and any architecturally significant components.]&#xD;
+&#xD;
+8.1               Overview&#xD;
+[This subsection names and defines the various layers and their contents, the rules that govern the inclusion to a given layer, and the boundaries between layers. Include a component diagram that shows the relations between layers. ]&#xD;
+&#xD;
+8.2               Layers&#xD;
+[For each layer, include a subsection with its name, an enumeration of the subsystems located in the layer, and a component diagram.]&#xD;
+&#xD;
+9.                  Data View (optional)&#xD;
+[A description of the persistent data storage perspective of the system. This section is optional if there is little or no persistent data, or the translation between the Design Model and the Data Model is trivial.]&#xD;
+&#xD;
+10.             Size and Performance&#xD;
+[A description of the major dimensioning characteristics of the software that impact the architecture, as well as the target performance constraints.]&#xD;
+&#xD;
+11.             Quality&#xD;
+[A description of how the software architecture contributes to all capabilities (other than functionality) of the system: extensibility, reliability, portability, and so on. If these characteristics have special significance, for example safety, security or privacy implications, they should be clearly delineated.]</body>
+        </ownedComment>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_h9twsA16Ee2ukuAGC6b7Yw" name="04_Implementation">
+    <packagedElement xmi:type="uml:Package" xmi:id="_Pn0iAA17Ee2ukuAGC6b7Yw" name="Implementation_Classes"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Ratb8A17Ee2ukuAGC6b7Yw" name="ContinousIntegration"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_TWU0EA17Ee2ukuAGC6b7Yw" name="TestDrivenDevelopment"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_kPVOAA16Ee2ukuAGC6b7Yw" name="05_Test"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ktDEwA16Ee2ukuAGC6b7Yw" name="06_Deployment"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_kytA0A16Ee2ukuAGC6b7Yw" name="07_Configuration&amp;CM"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_k9mCMA16Ee2ukuAGC6b7Yw" name="08_Project_Management">
+    <packagedElement xmi:type="uml:Package" xmi:id="_YZ_iQA17Ee2ukuAGC6b7Yw" name="PhasePlan"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Z-T0sA17Ee2ukuAGC6b7Yw" name="SoftwareDevelopmentPlan"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_bnk4kA17Ee2ukuAGC6b7Yw" name="IterationPlan"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_cnnZQA17Ee2ukuAGC6b7Yw" name="RiskList"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_lDbkcA16Ee2ukuAGC6b7Yw" name="09_Environment">
+    <packagedElement xmi:type="uml:Package" xmi:id="_ebRIMA17Ee2ukuAGC6b7Yw" name="DevelopmentCases"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_g63-MA17Ee2ukuAGC6b7Yw" name="CodingStandards"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_iXcC0A17Ee2ukuAGC6b7Yw" name="Tools"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_jFjGAA17Ee2ukuAGC6b7Yw" name="Tools_Guidelines"/>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_45fp0AzTEe2ukuAGC6b7Yw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_45lJYAzTEe2ukuAGC6b7Yw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+  </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_48X-sAzTEe2ukuAGC6b7Yw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_48YlwAzTEe2ukuAGC6b7Yw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+  </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_48ZM0AzTEe2ukuAGC6b7Yw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_48ZM0QzTEe2ukuAGC6b7Yw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+  </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_48ZM0gzTEe2ukuAGC6b7Yw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_48ZM0wzTEe2ukuAGC6b7Yw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+  </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_48Zz4AzTEe2ukuAGC6b7Yw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_48bpEAzTEe2ukuAGC6b7Yw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+  </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_48cQIAzTEe2ukuAGC6b7Yw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_48cQIQzTEe2ukuAGC6b7Yw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+  </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_48cQIgzTEe2ukuAGC6b7Yw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_48cQIwzTEe2ukuAGC6b7Yw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+  </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_48cQJAzTEe2ukuAGC6b7Yw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_48c3MAzTEe2ukuAGC6b7Yw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+  </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_48deQAzTEe2ukuAGC6b7Yw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_48deQQzTEe2ukuAGC6b7Yw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+  </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_48fTcAzTEe2ukuAGC6b7Yw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_48fTcQzTEe2ukuAGC6b7Yw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+</uml:Model>

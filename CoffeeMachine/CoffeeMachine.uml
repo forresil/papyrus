@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:MWPProfile="http:///schemas/MWPProfile/_rkDJQNisEe6N_aISTl-5xw/23" xmlns:MWPProfile.Properties="http:///MWPProfile/Properties.ecore" xmlns:MWPProfile.Requirements="http:///MWPProfile/Requirements.ecore" xmlns:MWPProfile.Stakeholders="http:///MWPProfile/Stakeholders.ecore" xmlns:ModelElements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http:///schemas/MWPProfile/_rkDJQNisEe6N_aISTl-5xw/23 ../MWPProfile/MWPProfile.profile.uml#_rkDwUNisEe6N_aISTl-5xw http:///MWPProfile/Properties.ecore ../MWPProfile/MWPProfile.profile.uml#_rkDwktisEe6N_aISTl-5xw http:///MWPProfile/Requirements.ecore ../MWPProfile/MWPProfile.profile.uml#_rkDwVdisEe6N_aISTl-5xw http:///MWPProfile/Stakeholders.ecore ../MWPProfile/MWPProfile.profile.uml#_rkDwgdisEe6N_aISTl-5xw http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
+  <uml:Model xmi:id="_cJ7fAH0kEfCv3ulPI1gDUQ" name="CoffeeMachine">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_cPSgIH0kEfCv3ulPI1gDUQ">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_cPhwsH0kEfCv3ulPI1gDUQ">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_cR8LgH0kEfCv3ulPI1gDUQ">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/QUDV.uml#QUDV"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_iZX7cH0yEfCj-ZZimWDeQw" name="CoffeeMachine">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_jRlX4H7JEfCoCoy0TyBuMg" name="Brewing Time" visibility="public" type="_pMp9QH7LEfCoCoy0TyBuMg">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_NKjZ4H7KEfCoCoy0TyBuMg">
+          <body>The time taken to complete the brewing process.</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_wswZAH7IEfCoCoy0TyBuMg" name="Temperature Control Accuracy" visibility="public" type="_510AgH7OEfCoCoy0TyBuMg">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_VztBAH7KEfCoCoy0TyBuMg">
+          <body>Precission in maintaining the desired brewing temperature.</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_xNKXYH7IEfCoCoy0TyBuMg" name="Water Flow Rate" visibility="public" type="_qtaMEH7QEfCoCoy0TyBuMg">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_tKNNYH7KEfCoCoy0TyBuMg">
+          <body>The rate at which water flows through the coffee machine during brewing. </body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_xTTboH7IEfCoCoy0TyBuMg" name="Energy Consumption" visibility="public" type="_vf5DoH7QEfCoCoy0TyBuMg">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_xY3mMH7KEfCoCoy0TyBuMg">
+          <body>The amount of energy consumed during the brewing process. </body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_xZBpIH7IEfCoCoy0TyBuMg" name="User Interface Responsiveness" visibility="public" type="_urXMMH7MEfCoCoy0TyBuMg">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_2qlXcH7KEfCoCoy0TyBuMg">
+          <body>Time toake for the system to respond to user inputs. </body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_xfdBQH7IEfCoCoy0TyBuMg" name="Maintenance Interval" visibility="public" type="_uJOIcH7MEfCoCoy0TyBuMg">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_60kroH7KEfCoCoy0TyBuMg">
+          <body>Time between required maintenance tasks. </body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_x7A74H7IEfCoCoy0TyBuMg" name="Reliability" visibility="public" type="_z-Cp8H7QEfCoCoy0TyBuMg">
+        <ownedComment xmi:type="uml:Comment" xmi:id="__vP14H7KEfCoCoy0TyBuMg">
+          <body>The system's ability to operate consistently without failures. </body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_yHB-oH7IEfCoCoy0TyBuMg" name="Unit Weight" visibility="public" type="_jBIc4H7QEfCoCoy0TyBuMg">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_Cx8K0H7LEfCoCoy0TyBuMg">
+          <body>The weight of the coffee machine. </body>
+        </ownedComment>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_4glNsH0zEfCj-ZZimWDeQw" name="Stakeholder">
+      <packagedElement xmi:type="uml:Actor" xmi:id="_IFr6UH00EfCj-ZZimWDeQw" name="User">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_eARiUH00EfCj-ZZimWDeQw">
+          <body>Individual that interact with and uses the coffee machine. </body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_uhte4H01EfCj-ZZimWDeQw" name="Producer">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_uhte4X01EfCj-ZZimWDeQw">
+          <body>Individual that interact with and uses the coffee machine. </body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_xxo-kH01EfCj-ZZimWDeQw" name="Product Designer">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_xxo-kX01EfCj-ZZimWDeQw">
+          <body>Individual that interact with and uses the coffee machine. </body>
+        </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_teaZYH02EfCj-ZZimWDeQw" general="_uhte4H01EfCj-ZZimWDeQw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_01uaoH01EfCj-ZZimWDeQw" name="Product Engineer">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_01uaoX01EfCj-ZZimWDeQw">
+          <body>Individual that interact with and uses the coffee machine. </body>
+        </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_uDeOQH02EfCj-ZZimWDeQw" general="_uhte4H01EfCj-ZZimWDeQw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_091NwH01EfCj-ZZimWDeQw" name="Marketing">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_091NwX01EfCj-ZZimWDeQw">
+          <body>Individual that interact with and uses the coffee machine. </body>
+        </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_ud9x4H02EfCj-ZZimWDeQw" general="_uhte4H01EfCj-ZZimWDeQw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_3wwBUH01EfCj-ZZimWDeQw" name="Quality Assurance">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_3wwBUX01EfCj-ZZimWDeQw">
+          <body>Individual that interact with and uses the coffee machine. </body>
+        </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_vdYAcH02EfCj-ZZimWDeQw" general="_uhte4H01EfCj-ZZimWDeQw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_6RNy8H01EfCj-ZZimWDeQw" name="Customer Support">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_6RNy8X01EfCj-ZZimWDeQw">
+          <body>Individual that interact with and uses the coffee machine. </body>
+        </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_u8W-EH02EfCj-ZZimWDeQw" general="_uhte4H01EfCj-ZZimWDeQw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_77Zc0H01EfCj-ZZimWDeQw" name="Distributor">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_77Zc0X01EfCj-ZZimWDeQw">
+          <body>Individual that interact with and uses the coffee machine. </body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_-aOPsH01EfCj-ZZimWDeQw" name="Regulatory Authorities">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_-aOPsX01EfCj-ZZimWDeQw">
+          <body>Individual that interact with and uses the coffee machine. </body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_AlGL0H02EfCj-ZZimWDeQw" name="Environmental Organizations">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_AlGL0X02EfCj-ZZimWDeQw">
+          <body>Individual that interact with and uses the coffee machine. </body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_DQolAH02EfCj-ZZimWDeQw" name="Suppliers">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_DQolAX02EfCj-ZZimWDeQw">
+          <body>Individual that interact with and uses the coffee machine. </body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_ElxzAH02EfCj-ZZimWDeQw" name="Competitors">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_ElxzAX02EfCj-ZZimWDeQw">
+          <body>Individual that interact with and uses the coffee machine. </body>
+        </ownedComment>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_o1F9gH05EfCa_eyoPrBLNw" name="Requirements">
+      <packagedElement xmi:type="uml:Package" xmi:id="_qYcmoH05EfCa_eyoPrBLNw" name="Stakeholder Requirements">
+        <packagedElement xmi:type="uml:Class" xmi:id="_m9HSwH06EfCa_eyoPrBLNw" name="Usability"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_W_cDMH08EfCa_eyoPrBLNw" name="Cost effective"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_BmWwUH09EfCa_eyoPrBLNw" name="Appealing Desing"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Br4wkH09EfCa_eyoPrBLNw" name="Well Engineered"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Bxlv8H09EfCa_eyoPrBLNw" name="Marketable"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_B382oH09EfCa_eyoPrBLNw" name="Design for Test"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_B-EFsH09EfCa_eyoPrBLNw" name="User Manual"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CDbG0H09EfCa_eyoPrBLNw" name="Facilitate Sales"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CI748H09EfCa_eyoPrBLNw" name="Regulatory Standards"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_COKXMH09EfCa_eyoPrBLNw" name="Eco-Friendly"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CTpUIH09EfCa_eyoPrBLNw" name="Industry Standards"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CZA8UH09EfCa_eyoPrBLNw" name="Preserve Rights"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CeqRUH09EfCa_eyoPrBLNw" name="Rapid Heating"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Cki24H09EfCa_eyoPrBLNw" name="Compact Size"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CpwuEH09EfCa_eyoPrBLNw" name="Reliable"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_klou0H7LEfCoCoy0TyBuMg" name="Value Types">
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_0LaJ0H7LEfCoCoy0TyBuMg" name="Time">
+        <classifier xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind"/>
+        <slot xmi:type="uml:Slot" xmi:id="_0L5SAH7LEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.definitionURI"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_0L5SAX7LEfCoCoy0TyBuMg" name="definitionURI"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_0L55EH7LEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.description"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_0L55EX7LEfCoCoy0TyBuMg" name="description"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_0L55En7LEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.symbol"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_0L6gIH7LEfCoCoy0TyBuMg" name="symbol"/>
+        </slot>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_ClexQH7NEfCoCoy0TyBuMg" name="day">
+        <classifier xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit"/>
+        <slot xmi:type="uml:Slot" xmi:id="_ClhNgH7NEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.definitionURI"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_ClhNgX7NEfCoCoy0TyBuMg" name="definitionURI"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_ClhNgn7NEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.description"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_Clh0kH7NEfCoCoy0TyBuMg" name="description"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_Clh0kX7NEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.quantityKind"/>
+          <value xmi:type="uml:InstanceValue" xmi:id="_Clh0kn7NEfCoCoy0TyBuMg" name="quantityKind">
+            <type xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind"/>
+          </value>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_Clh0k37NEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.symbol"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_Clh0lH7NEfCoCoy0TyBuMg" name="symbol" value="d"/>
+        </slot>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_KCMacH7NEfCoCoy0TyBuMg" name="hour">
+        <classifier xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit"/>
+        <slot xmi:type="uml:Slot" xmi:id="_KCMacX7NEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.definitionURI"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_KCMacn7NEfCoCoy0TyBuMg" name="definitionURI"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_KCMac37NEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.description"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_KCMadH7NEfCoCoy0TyBuMg" name="description"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_KCMadX7NEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.quantityKind"/>
+          <value xmi:type="uml:InstanceValue" xmi:id="_KCMadn7NEfCoCoy0TyBuMg" name="quantityKind">
+            <type xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind"/>
+          </value>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_KCMad37NEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.symbol"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_KCMaeH7NEfCoCoy0TyBuMg" name="symbol" value="h"/>
+        </slot>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="__kwnsH7LEfCoCoy0TyBuMg" name="second">
+        <classifier xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit"/>
+        <slot xmi:type="uml:Slot" xmi:id="__k0SEH7LEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.definitionURI"/>
+          <value xmi:type="uml:LiteralString" xmi:id="__k0SEX7LEfCoCoy0TyBuMg" name="definitionURI"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="__k0SEn7LEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.description"/>
+          <value xmi:type="uml:LiteralString" xmi:id="__k0SE37LEfCoCoy0TyBuMg" name="description"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="__k05IH7LEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.quantityKind"/>
+          <value xmi:type="uml:InstanceValue" xmi:id="__k05IX7LEfCoCoy0TyBuMg" name="quantityKind">
+            <type xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind"/>
+          </value>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="__k1gMH7LEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.symbol"/>
+          <value xmi:type="uml:LiteralString" xmi:id="__k1gMX7LEfCoCoy0TyBuMg" name="symbol" value="s"/>
+        </slot>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_KQA0AH7NEfCoCoy0TyBuMg" name="millisecond">
+        <classifier xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit"/>
+        <slot xmi:type="uml:Slot" xmi:id="_KQA0AX7NEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.definitionURI"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_KQA0An7NEfCoCoy0TyBuMg" name="definitionURI"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_KQA0A37NEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.description"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_KQA0BH7NEfCoCoy0TyBuMg" name="description"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_KQA0BX7NEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.quantityKind"/>
+          <value xmi:type="uml:InstanceValue" xmi:id="_KQA0Bn7NEfCoCoy0TyBuMg" name="quantityKind">
+            <type xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind"/>
+          </value>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_KQA0B37NEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.symbol"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_KQA0CH7NEfCoCoy0TyBuMg" name="symbol" value="ms"/>
+        </slot>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_uJOIcH7MEfCoCoy0TyBuMg" name="Time[day]">
+        <generalization xmi:type="uml:Generalization" xmi:id="_VM_pgH7OEfCoCoy0TyBuMg">
+          <general xmi:type="uml:DataType" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Integer"/>
+        </generalization>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_uimRwH7MEfCoCoy0TyBuMg" name="Time[hour]">
+        <generalization xmi:type="uml:Generalization" xmi:id="_VtpfgH7OEfCoCoy0TyBuMg">
+          <general xmi:type="uml:DataType" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Integer"/>
+        </generalization>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_pMp9QH7LEfCoCoy0TyBuMg" name="Time[second]">
+        <generalization xmi:type="uml:Generalization" xmi:id="_UvenEH7OEfCoCoy0TyBuMg">
+          <general xmi:type="uml:DataType" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Integer"/>
+        </generalization>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_urXMMH7MEfCoCoy0TyBuMg" name="Time[millisecond]">
+        <generalization xmi:type="uml:Generalization" xmi:id="_WZZLMH7OEfCoCoy0TyBuMg">
+          <general xmi:type="uml:DataType" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Integer"/>
+        </generalization>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_CFO5AH7PEfCoCoy0TyBuMg" name="Temperature">
+        <classifier xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind"/>
+        <slot xmi:type="uml:Slot" xmi:id="_CFR8UH7PEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.definitionURI"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_CFR8UX7PEfCoCoy0TyBuMg" name="definitionURI"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_CFTKcH7PEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.description"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_CFTKcX7PEfCoCoy0TyBuMg" name="description"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_CFTKcn7PEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.symbol"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_CFTKc37PEfCoCoy0TyBuMg" name="symbol" value="T°"/>
+        </slot>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_DwA_0H7PEfCoCoy0TyBuMg" name="degree celcius">
+        <classifier xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit"/>
+        <slot xmi:type="uml:Slot" xmi:id="_DwC1AH7PEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.definitionURI"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_DwC1AX7PEfCoCoy0TyBuMg" name="definitionURI"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_DwC1An7PEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.description"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_DwC1A37PEfCoCoy0TyBuMg" name="description"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_DwC1BH7PEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.quantityKind"/>
+          <value xmi:type="uml:InstanceValue" xmi:id="_DwEDIH7PEfCoCoy0TyBuMg" name="quantityKind">
+            <type xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind"/>
+          </value>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_DwEDIX7PEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.symbol"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_DwEDIn7PEfCoCoy0TyBuMg" name="symbol" value="°C"/>
+        </slot>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_510AgH7OEfCoCoy0TyBuMg" name="Temperature[celcius]">
+        <generalization xmi:type="uml:Generalization" xmi:id="_mmWFgH7PEfCoCoy0TyBuMg">
+          <general xmi:type="uml:DataType" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Real"/>
+        </generalization>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="__ZmHQH7QEfCoCoy0TyBuMg" name="Mass">
+        <classifier xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind"/>
+        <slot xmi:type="uml:Slot" xmi:id="__ZpKkH7QEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.definitionURI"/>
+          <value xmi:type="uml:LiteralString" xmi:id="__ZpKkX7QEfCoCoy0TyBuMg" name="definitionURI"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="__ZpKkn7QEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.description"/>
+          <value xmi:type="uml:LiteralString" xmi:id="__ZpKk37QEfCoCoy0TyBuMg" name="description"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="__ZpKlH7QEfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.symbol"/>
+          <value xmi:type="uml:LiteralString" xmi:id="__ZpxoH7QEfCoCoy0TyBuMg" name="symbol"/>
+        </slot>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_EEw14H7REfCoCoy0TyBuMg" name="kilogram">
+        <classifier xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit"/>
+        <slot xmi:type="uml:Slot" xmi:id="_EEz5MH7REfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.definitionURI"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_EEz5MX7REfCoCoy0TyBuMg" name="definitionURI"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_EEz5Mn7REfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.description"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_EEz5M37REfCoCoy0TyBuMg" name="description"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_EEz5NH7REfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.quantityKind"/>
+          <value xmi:type="uml:InstanceValue" xmi:id="_EEz5NX7REfCoCoy0TyBuMg" name="quantityKind">
+            <type xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind"/>
+          </value>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_EEz5Nn7REfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.symbol"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_EEz5N37REfCoCoy0TyBuMg" name="symbol" value="kg"/>
+        </slot>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_jBIc4H7QEfCoCoy0TyBuMg" name="Mass[kilogram]">
+        <generalization xmi:type="uml:Generalization" xmi:id="_81JioH7SEfCoCoy0TyBuMg">
+          <general xmi:type="uml:DataType" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Real"/>
+        </generalization>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_RrfxUH7REfCoCoy0TyBuMg" name="Length">
+        <classifier xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind"/>
+        <slot xmi:type="uml:Slot" xmi:id="_RriNkH7REfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.definitionURI"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_RriNkX7REfCoCoy0TyBuMg" name="definitionURI"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_RriNkn7REfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.description"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_RriNk37REfCoCoy0TyBuMg" name="description"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_RriNlH7REfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.symbol"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_RriNlX7REfCoCoy0TyBuMg" name="symbol"/>
+        </slot>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_UbiQAH7REfCoCoy0TyBuMg" name="centimeter">
+        <classifier xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit"/>
+        <slot xmi:type="uml:Slot" xmi:id="_UbksQH7REfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.definitionURI"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_UbksQX7REfCoCoy0TyBuMg" name="definitionURI"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_UbksQn7REfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.description"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_UbksQ37REfCoCoy0TyBuMg" name="description"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_UbksRH7REfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.quantityKind"/>
+          <value xmi:type="uml:InstanceValue" xmi:id="_UbksRX7REfCoCoy0TyBuMg" name="quantityKind">
+            <type xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind"/>
+          </value>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_UbksRn7REfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.symbol"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_UbksR37REfCoCoy0TyBuMg" name="symbol"/>
+        </slot>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mWZvkH7QEfCoCoy0TyBuMg" name="Length[centimeter]">
+        <generalization xmi:type="uml:Generalization" xmi:id="_96OUUH7SEfCoCoy0TyBuMg">
+          <general xmi:type="uml:DataType" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Real"/>
+        </generalization>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_fuoU4H7REfCoCoy0TyBuMg" name="Volume over time">
+        <classifier xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind"/>
+        <slot xmi:type="uml:Slot" xmi:id="_fuqxIH7REfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.definitionURI"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_fuqxIX7REfCoCoy0TyBuMg" name="definitionURI"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_fuqxIn7REfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.description"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_fuqxI37REfCoCoy0TyBuMg" name="description"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_fuqxJH7REfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.symbol"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_fuqxJX7REfCoCoy0TyBuMg" name="symbol" value="Q'"/>
+        </slot>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_n4jCUH7REfCoCoy0TyBuMg" name="liter per minute">
+        <classifier xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit"/>
+        <slot xmi:type="uml:Slot" xmi:id="_n4mFoH7REfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.definitionURI"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_n4mFoX7REfCoCoy0TyBuMg" name="definitionURI"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_n4mFon7REfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.description"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_n4mssH7REfCoCoy0TyBuMg" name="description"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_n4mssX7REfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.quantityKind"/>
+          <value xmi:type="uml:InstanceValue" xmi:id="_n4mssn7REfCoCoy0TyBuMg" name="quantityKind">
+            <type xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind"/>
+          </value>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_n4mss37REfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.symbol"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_n4mstH7REfCoCoy0TyBuMg" name="symbol" value="l/min"/>
+        </slot>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_qtaMEH7QEfCoCoy0TyBuMg" name="Flow Rate[l/min]">
+        <generalization xmi:type="uml:Generalization" xmi:id="_7jrTsH7SEfCoCoy0TyBuMg">
+          <general xmi:type="uml:DataType" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Real"/>
+        </generalization>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_1EKvEH7REfCoCoy0TyBuMg" name="Power over time">
+        <classifier xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind"/>
+        <slot xmi:type="uml:Slot" xmi:id="_1EL9MH7REfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.definitionURI"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_1EMkQH7REfCoCoy0TyBuMg" name="definitionURI"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_1EMkQX7REfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.description"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_1EMkQn7REfCoCoy0TyBuMg" name="description"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_1EMkQ37REfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind_ownedAttribute.symbol"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_1EMkRH7REfCoCoy0TyBuMg" name="symbol"/>
+        </slot>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_3n2z0H7REfCoCoy0TyBuMg" name="kilowatt hour">
+        <classifier xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit"/>
+        <slot xmi:type="uml:Slot" xmi:id="_3n4pAH7REfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.definitionURI"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_3n4pAX7REfCoCoy0TyBuMg" name="definitionURI"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_3n4pAn7REfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.description"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_3n4pA37REfCoCoy0TyBuMg" name="description"/>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_3n4pBH7REfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.quantityKind"/>
+          <value xmi:type="uml:InstanceValue" xmi:id="_3n4pBX7REfCoCoy0TyBuMg" name="quantityKind">
+            <type xmi:type="uml:Class" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_QuantityKind"/>
+          </value>
+        </slot>
+        <slot xmi:type="uml:Slot" xmi:id="_3n4pBn7REfCoCoy0TyBuMg">
+          <definingFeature xmi:type="uml:Property" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_UnitAndQuantityKind.class_packagedElement_Unit_ownedAttribute.symbol"/>
+          <value xmi:type="uml:LiteralString" xmi:id="_3n4pB37REfCoCoy0TyBuMg" name="symbol" value="kWh"/>
+        </slot>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_vf5DoH7QEfCoCoy0TyBuMg" name="Power Compsumption[kWh]">
+        <generalization xmi:type="uml:Generalization" xmi:id="_8IaYcH7SEfCoCoy0TyBuMg">
+          <general xmi:type="uml:DataType" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Real"/>
+        </generalization>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_z-Cp8H7QEfCoCoy0TyBuMg" name="MTB[h]">
+        <generalization xmi:type="uml:Generalization" xmi:id="_6kmcUH7SEfCoCoy0TyBuMg">
+          <general xmi:type="uml:DataType" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries.package_packagedElement_PrimitiveValueTypes.dataType_packagedElement_Integer"/>
+        </generalization>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_cMtGMH0kEfCv3ulPI1gDUQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cM3eQH0kEfCv3ulPI1gDUQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_cO2bQH0kEfCv3ulPI1gDUQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cO3CUH0kEfCv3ulPI1gDUQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_cPNAkH0kEfCv3ulPI1gDUQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cPNnoH0kEfCv3ulPI1gDUQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_cPOOsH0kEfCv3ulPI1gDUQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cPOOsX0kEfCv3ulPI1gDUQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_cPOOsn0kEfCv3ulPI1gDUQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cPO1wH0kEfCv3ulPI1gDUQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_cPO1wX0kEfCv3ulPI1gDUQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cPPc0H0kEfCv3ulPI1gDUQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_cPPc0X0kEfCv3ulPI1gDUQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cPQD4H0kEfCv3ulPI1gDUQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_cPQD4X0kEfCv3ulPI1gDUQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cPQD4n0kEfCv3ulPI1gDUQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_cPRSAH0kEfCv3ulPI1gDUQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cPRSAX0kEfCv3ulPI1gDUQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_cPRSAn0kEfCv3ulPI1gDUQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cPR5EH0kEfCv3ulPI1gDUQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_TZGaMH0yEfCj-ZZimWDeQw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TZrpAH0yEfCj-ZZimWDeQw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="../MWPProfile/MWPProfile.profile.uml#_rkDwUNisEe6N_aISTl-5xw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="../MWPProfile/MWPProfile.profile.uml#_I-C_sJBMEe6yzuvYELj6Eg"/>
+    </profileApplication>
+  </uml:Model>
+  <Blocks:Block xmi:id="_iZxkEH0yEfCj-ZZimWDeQw" base_Class="_iZX7cH0yEfCj-ZZimWDeQw"/>
+  <MWPProfile:SystemOfInterest xmi:id="_qLkFYH0yEfCj-ZZimWDeQw" base_Class="_iZX7cH0yEfCj-ZZimWDeQw"/>
+  <ModelElements:Stakeholder xmi:id="_IF2SYH00EfCj-ZZimWDeQw" base_Classifier="_IFr6UH00EfCj-ZZimWDeQw"/>
+  <MWPProfile.Stakeholders:ExtendedStakeholder xmi:id="_Njql8H00EfCj-ZZimWDeQw" relevance="HIGH" interests="Get brewed a good coffee very easy and fast. " base_Actor="_IFr6UH00EfCj-ZZimWDeQw"/>
+  <ModelElements:Stakeholder xmi:id="_uhy-cH01EfCj-ZZimWDeQw" base_Classifier="_uhte4H01EfCj-ZZimWDeQw"/>
+  <MWPProfile.Stakeholders:ExtendedStakeholder xmi:id="_uh2BwH01EfCj-ZZimWDeQw" relevance="HIGH" interests="Get brewed a good coffee very easy and fast. " base_Actor="_uhte4H01EfCj-ZZimWDeQw"/>
+  <ModelElements:Stakeholder xmi:id="_xxqMsH01EfCj-ZZimWDeQw" base_Classifier="_xxo-kH01EfCj-ZZimWDeQw"/>
+  <MWPProfile.Stakeholders:ExtendedStakeholder xmi:id="_xxueIH01EfCj-ZZimWDeQw" relevance="MID" interests="Get brewed a good coffee very easy and fast. " base_Actor="_xxo-kH01EfCj-ZZimWDeQw"/>
+  <ModelElements:Stakeholder xmi:id="_01vowH01EfCj-ZZimWDeQw" base_Classifier="_01uaoH01EfCj-ZZimWDeQw"/>
+  <MWPProfile.Stakeholders:ExtendedStakeholder xmi:id="_01ysEH01EfCj-ZZimWDeQw" relevance="MID" interests="Get brewed a good coffee very easy and fast. " base_Actor="_01uaoH01EfCj-ZZimWDeQw"/>
+  <ModelElements:Stakeholder xmi:id="_091Nwn01EfCj-ZZimWDeQw" base_Classifier="_091NwH01EfCj-ZZimWDeQw"/>
+  <MWPProfile.Stakeholders:ExtendedStakeholder xmi:id="_0944IH01EfCj-ZZimWDeQw" interests="Get brewed a good coffee very easy and fast. " base_Actor="_091NwH01EfCj-ZZimWDeQw"/>
+  <ModelElements:Stakeholder xmi:id="_3wxPcH01EfCj-ZZimWDeQw" base_Classifier="_3wwBUH01EfCj-ZZimWDeQw"/>
+  <MWPProfile.Stakeholders:ExtendedStakeholder xmi:id="_3wzEoH01EfCj-ZZimWDeQw" interests="Get brewed a good coffee very easy and fast. " base_Actor="_3wwBUH01EfCj-ZZimWDeQw"/>
+  <ModelElements:Stakeholder xmi:id="_6RNy8n01EfCj-ZZimWDeQw" base_Classifier="_6RNy8H01EfCj-ZZimWDeQw"/>
+  <MWPProfile.Stakeholders:ExtendedStakeholder xmi:id="_6RQPMH01EfCj-ZZimWDeQw" relevance="MID" interests="Get brewed a good coffee very easy and fast. " base_Actor="_6RNy8H01EfCj-ZZimWDeQw"/>
+  <ModelElements:Stakeholder xmi:id="_77bSAH01EfCj-ZZimWDeQw" base_Classifier="_77Zc0H01EfCj-ZZimWDeQw"/>
+  <MWPProfile.Stakeholders:ExtendedStakeholder xmi:id="_77eVUH01EfCj-ZZimWDeQw" relevance="HIGH" interests="Get brewed a good coffee very easy and fast. " base_Actor="_77Zc0H01EfCj-ZZimWDeQw"/>
+  <ModelElements:Stakeholder xmi:id="_-aO2wH01EfCj-ZZimWDeQw" base_Classifier="_-aOPsH01EfCj-ZZimWDeQw"/>
+  <MWPProfile.Stakeholders:ExtendedStakeholder xmi:id="_-aRTAH01EfCj-ZZimWDeQw" relevance="HIGH" interests="Get brewed a good coffee very easy and fast. " base_Actor="_-aOPsH01EfCj-ZZimWDeQw"/>
+  <ModelElements:Stakeholder xmi:id="_AlGy4H02EfCj-ZZimWDeQw" base_Classifier="_AlGL0H02EfCj-ZZimWDeQw"/>
+  <MWPProfile.Stakeholders:ExtendedStakeholder xmi:id="_AlJ2MH02EfCj-ZZimWDeQw" interests="Get brewed a good coffee very easy and fast. " base_Actor="_AlGL0H02EfCj-ZZimWDeQw"/>
+  <ModelElements:Stakeholder xmi:id="_DQpMEH02EfCj-ZZimWDeQw" base_Classifier="_DQolAH02EfCj-ZZimWDeQw"/>
+  <MWPProfile.Stakeholders:ExtendedStakeholder xmi:id="_DQsPYH02EfCj-ZZimWDeQw" relevance="MID" interests="Get brewed a good coffee very easy and fast. " base_Actor="_DQolAH02EfCj-ZZimWDeQw"/>
+  <ModelElements:Stakeholder xmi:id="_ElyaEH02EfCj-ZZimWDeQw" base_Classifier="_ElxzAH02EfCj-ZZimWDeQw"/>
+  <MWPProfile.Stakeholders:ExtendedStakeholder xmi:id="_ElzoMH02EfCj-ZZimWDeQw" interests="Get brewed a good coffee very easy and fast. " base_Actor="_ElxzAH02EfCj-ZZimWDeQw"/>
+  <Requirements:Requirement xmi:id="_m9TgAH06EfCa_eyoPrBLNw" base_NamedElement="_m9HSwH06EfCa_eyoPrBLNw" id="SH-REQ-001" text="The coffee machine must provide a user-friendly interface with intuitive controls for selecting brewing options." base_Class="_m9HSwH06EfCa_eyoPrBLNw"/>
+  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_4l4gQH06EfCa_eyoPrBLNw" status="CONFIRMED" verificationMethod="DEMONSTRATION" rationale="A user friendly interface enhace the overall user experience" source="Marketing survey and gropu questionaires. " base_Class="_m9HSwH06EfCa_eyoPrBLNw" stakeholder="_IF2SYH00EfCj-ZZimWDeQw"/>
+  <Requirements:Requirement xmi:id="_W_ftkH08EfCa_eyoPrBLNw" base_NamedElement="_W_cDMH08EfCa_eyoPrBLNw" id="SH-REQ-002" base_Class="_W_cDMH08EfCa_eyoPrBLNw"/>
+  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_0R3bcH08EfCa_eyoPrBLNw" verificationMethod="ANALYSIS" base_Class="_W_cDMH08EfCa_eyoPrBLNw" stakeholder="_uhy-cH01EfCj-ZZimWDeQw"/>
+  <Requirements:Requirement xmi:id="_BmXXYH09EfCa_eyoPrBLNw" base_NamedElement="_BmWwUH09EfCa_eyoPrBLNw" id="SH-REQ-002" base_Class="_BmWwUH09EfCa_eyoPrBLNw"/>
+  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_BmZMkH09EfCa_eyoPrBLNw" verificationMethod="ANALYSIS" base_Class="_BmWwUH09EfCa_eyoPrBLNw" stakeholder="_xxqMsH01EfCj-ZZimWDeQw"/>
+  <Requirements:Requirement xmi:id="_Br5XoH09EfCa_eyoPrBLNw" base_NamedElement="_Br4wkH09EfCa_eyoPrBLNw" id="SH-REQ-002" base_Class="_Br4wkH09EfCa_eyoPrBLNw"/>
+  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_Br8a8H09EfCa_eyoPrBLNw" verificationMethod="ANALYSIS" base_Class="_Br4wkH09EfCa_eyoPrBLNw" stakeholder="_01vowH01EfCj-ZZimWDeQw"/>
+  <Requirements:Requirement xmi:id="_Bxm-EH09EfCa_eyoPrBLNw" base_NamedElement="_Bxlv8H09EfCa_eyoPrBLNw" id="SH-REQ-002" base_Class="_Bxlv8H09EfCa_eyoPrBLNw"/>
+  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_Bxr2kH09EfCa_eyoPrBLNw" verificationMethod="ANALYSIS" base_Class="_Bxlv8H09EfCa_eyoPrBLNw" stakeholder="_091Nwn01EfCj-ZZimWDeQw"/>
+  <Requirements:Requirement xmi:id="_B3-EwH09EfCa_eyoPrBLNw" base_NamedElement="_B382oH09EfCa_eyoPrBLNw" id="SH-REQ-002" base_Class="_B382oH09EfCa_eyoPrBLNw"/>
+  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_B4AhAH09EfCa_eyoPrBLNw" verificationMethod="DEMONSTRATION" base_Class="_B382oH09EfCa_eyoPrBLNw" stakeholder="_3wxPcH01EfCj-ZZimWDeQw"/>
+  <Requirements:Requirement xmi:id="_B-EswH09EfCa_eyoPrBLNw" base_NamedElement="_B-EFsH09EfCa_eyoPrBLNw" id="SH-REQ-002" text=" The coffee machine must have a comprehensive user manual." base_Class="_B-EFsH09EfCa_eyoPrBLNw"/>
+  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_B-HwEH09EfCa_eyoPrBLNw" base_Class="_B-EFsH09EfCa_eyoPrBLNw" stakeholder="_6RNy8n01EfCj-ZZimWDeQw"/>
+  <Requirements:Requirement xmi:id="_CDbt4H09EfCa_eyoPrBLNw" base_NamedElement="_CDbG0H09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine design should prioritize cost-effectiveness in manufacturing without compromising on quality and performance." base_Class="_CDbG0H09EfCa_eyoPrBLNw"/>
+  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_CDeKIH09EfCa_eyoPrBLNw" verificationMethod="ANALYSIS" base_Class="_CDbG0H09EfCa_eyoPrBLNw" stakeholder="_77bSAH01EfCj-ZZimWDeQw"/>
+  <Requirements:Requirement xmi:id="_CI9HEH09EfCa_eyoPrBLNw" base_NamedElement="_CI748H09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine design should prioritize cost-effectiveness in manufacturing without compromising on quality and performance." base_Class="_CI748H09EfCa_eyoPrBLNw"/>
+  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_CI_jUH09EfCa_eyoPrBLNw" base_Class="_CI748H09EfCa_eyoPrBLNw" stakeholder="_-aO2wH01EfCj-ZZimWDeQw"/>
+  <Requirements:Requirement xmi:id="_COK-QH09EfCa_eyoPrBLNw" base_NamedElement="_COKXMH09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine design should prioritize cost-effectiveness in manufacturing without compromising on quality and performance." base_Class="_COKXMH09EfCa_eyoPrBLNw"/>
+  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_CONagH09EfCa_eyoPrBLNw" base_Class="_COKXMH09EfCa_eyoPrBLNw" stakeholder="_AlGy4H02EfCj-ZZimWDeQw"/>
+  <Requirements:Requirement xmi:id="_CTp7MH09EfCa_eyoPrBLNw" base_NamedElement="_CTpUIH09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine design should prioritize cost-effectiveness in manufacturing without compromising on quality and performance." base_Class="_CTpUIH09EfCa_eyoPrBLNw"/>
+  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_CTs-gH09EfCa_eyoPrBLNw" base_Class="_CTpUIH09EfCa_eyoPrBLNw" stakeholder="_DQpMEH02EfCj-ZZimWDeQw"/>
+  <Requirements:Requirement xmi:id="_CZBjYH09EfCa_eyoPrBLNw" base_NamedElement="_CZA8UH09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine design should prioritize cost-effectiveness in manufacturing without compromising on quality and performance." base_Class="_CZA8UH09EfCa_eyoPrBLNw"/>
+  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_CZGb4H09EfCa_eyoPrBLNw" verificationMethod="ANALYSIS" base_Class="_CZA8UH09EfCa_eyoPrBLNw" stakeholder="_ElyaEH02EfCj-ZZimWDeQw"/>
+  <Requirements:Requirement xmi:id="_Ceq4YH09EfCa_eyoPrBLNw" base_NamedElement="_CeqRUH09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine design should prioritize cost-effectiveness in manufacturing without compromising on quality and performance." base_Class="_CeqRUH09EfCa_eyoPrBLNw"/>
+  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_Cet7sH09EfCa_eyoPrBLNw" verificationMethod="DEMONSTRATION" base_Class="_CeqRUH09EfCa_eyoPrBLNw" stakeholder="_IF2SYH00EfCj-ZZimWDeQw"/>
+  <Requirements:Requirement xmi:id="_Ckjd8H09EfCa_eyoPrBLNw" base_NamedElement="_Cki24H09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine design should prioritize cost-effectiveness in manufacturing without compromising on quality and performance." base_Class="_Cki24H09EfCa_eyoPrBLNw"/>
+  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_CkmhQH09EfCa_eyoPrBLNw" verificationMethod="DEMONSTRATION" base_Class="_Cki24H09EfCa_eyoPrBLNw" stakeholder="_IF2SYH00EfCj-ZZimWDeQw"/>
+  <Requirements:Requirement xmi:id="_CpxVIH09EfCa_eyoPrBLNw" base_NamedElement="_CpwuEH09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine design should prioritize cost-effectiveness in manufacturing without compromising on quality and performance." base_Class="_CpwuEH09EfCa_eyoPrBLNw"/>
+  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_Cp2NoH09EfCa_eyoPrBLNw" verificationMethod="TEST" base_Class="_CpwuEH09EfCa_eyoPrBLNw" stakeholder="_IF2SYH00EfCj-ZZimWDeQw"/>
+  <MWPProfile.Properties:MeasureOfEffectiveness xmi:id="_ThrwgH7JEfCoCoy0TyBuMg" base_Property="_xfdBQH7IEfCoCoy0TyBuMg"/>
+  <MWPProfile.Properties:MeasureOfEffectiveness xmi:id="_Wl5IYH7JEfCoCoy0TyBuMg" base_Property="_xZBpIH7IEfCoCoy0TyBuMg"/>
+  <MWPProfile.Properties:MeasureOfEffectiveness xmi:id="_YaDNoH7JEfCoCoy0TyBuMg" base_Property="_xTTboH7IEfCoCoy0TyBuMg"/>
+  <MWPProfile.Properties:MeasureOfEffectiveness xmi:id="_adfFAH7JEfCoCoy0TyBuMg" base_Property="_xNKXYH7IEfCoCoy0TyBuMg"/>
+  <MWPProfile.Properties:MeasureOfEffectiveness xmi:id="_cKzicH7JEfCoCoy0TyBuMg" base_Property="_wswZAH7IEfCoCoy0TyBuMg"/>
+  <MWPProfile.Properties:MeasureOfEffectiveness xmi:id="_d2GmoH7JEfCoCoy0TyBuMg" base_Property="_x7A74H7IEfCoCoy0TyBuMg"/>
+  <MWPProfile.Properties:MeasureOfEffectiveness xmi:id="_fcgjwH7JEfCoCoy0TyBuMg" base_Property="_yHB-oH7IEfCoCoy0TyBuMg"/>
+  <MWPProfile.Properties:MeasureOfEffectiveness xmi:id="_jRlX4X7JEfCoCoy0TyBuMg" base_Property="_jRlX4H7JEfCoCoy0TyBuMg"/>
+  <Blocks:ValueType xmi:id="_pMsZgH7LEfCoCoy0TyBuMg" base_DataType="_pMp9QH7LEfCoCoy0TyBuMg" quantityKind="_0LaJ0H7LEfCoCoy0TyBuMg" unit="__kwnsH7LEfCoCoy0TyBuMg"/>
+  <Blocks:ValueType xmi:id="_uJOvgH7MEfCoCoy0TyBuMg" base_DataType="_uJOIcH7MEfCoCoy0TyBuMg" quantityKind="_0LaJ0H7LEfCoCoy0TyBuMg" unit="_ClexQH7NEfCoCoy0TyBuMg"/>
+  <Blocks:ValueType xmi:id="_uim40H7MEfCoCoy0TyBuMg" base_DataType="_uimRwH7MEfCoCoy0TyBuMg" quantityKind="_0LaJ0H7LEfCoCoy0TyBuMg" unit="_KCMacH7NEfCoCoy0TyBuMg"/>
+  <Blocks:ValueType xmi:id="_urXzQH7MEfCoCoy0TyBuMg" base_DataType="_urXMMH7MEfCoCoy0TyBuMg" quantityKind="_0LaJ0H7LEfCoCoy0TyBuMg" unit="_KQA0AH7NEfCoCoy0TyBuMg"/>
+  <Blocks:ValueType xmi:id="_510AgX7OEfCoCoy0TyBuMg" base_DataType="_510AgH7OEfCoCoy0TyBuMg" quantityKind="_CFO5AH7PEfCoCoy0TyBuMg" unit="_DwA_0H7PEfCoCoy0TyBuMg"/>
+  <Blocks:ValueType xmi:id="_jBOjgH7QEfCoCoy0TyBuMg" base_DataType="_jBIc4H7QEfCoCoy0TyBuMg" quantityKind="__ZmHQH7QEfCoCoy0TyBuMg" unit="_EEw14H7REfCoCoy0TyBuMg"/>
+  <Blocks:ValueType xmi:id="_mWcL0H7QEfCoCoy0TyBuMg" base_DataType="_mWZvkH7QEfCoCoy0TyBuMg" quantityKind="_RrfxUH7REfCoCoy0TyBuMg" unit="_UbiQAH7REfCoCoy0TyBuMg"/>
+  <Blocks:ValueType xmi:id="_qtazIH7QEfCoCoy0TyBuMg" base_DataType="_qtaMEH7QEfCoCoy0TyBuMg" quantityKind="_fuoU4H7REfCoCoy0TyBuMg" unit="_n4jCUH7REfCoCoy0TyBuMg"/>
+  <Blocks:ValueType xmi:id="_vf5qsH7QEfCoCoy0TyBuMg" base_DataType="_vf5DoH7QEfCoCoy0TyBuMg" quantityKind="_1EKvEH7REfCoCoy0TyBuMg" unit="_3n2z0H7REfCoCoy0TyBuMg"/>
+  <Blocks:ValueType xmi:id="_z-DRAH7QEfCoCoy0TyBuMg" base_DataType="_z-Cp8H7QEfCoCoy0TyBuMg" quantityKind="_0LaJ0H7LEfCoCoy0TyBuMg" unit="_KCMacH7NEfCoCoy0TyBuMg"/>
+</xmi:XMI>

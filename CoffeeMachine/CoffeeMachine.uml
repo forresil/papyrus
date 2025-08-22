@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:MWPProfile="http:///schemas/MWPProfile/_rkDJQNisEe6N_aISTl-5xw/23" xmlns:MWPProfile.Properties="http:///MWPProfile/Properties.ecore" xmlns:MWPProfile.Requirements="http:///MWPProfile/Requirements.ecore" xmlns:MWPProfile.Stakeholders="http:///MWPProfile/Stakeholders.ecore" xmlns:ModelElements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http:///schemas/MWPProfile/_rkDJQNisEe6N_aISTl-5xw/23 ../MWPProfile/MWPProfile.profile.uml#_rkDwUNisEe6N_aISTl-5xw http:///MWPProfile/Properties.ecore ../MWPProfile/MWPProfile.profile.uml#_rkDwktisEe6N_aISTl-5xw http:///MWPProfile/Requirements.ecore ../MWPProfile/MWPProfile.profile.uml#_rkDwVdisEe6N_aISTl-5xw http:///MWPProfile/Stakeholders.ecore ../MWPProfile/MWPProfile.profile.uml#_rkDwgdisEe6N_aISTl-5xw http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:MWPProfile="http:///schemas/MWPProfile/_rkDJQNisEe6N_aISTl-5xw/23" xmlns:MWPProfile.Properties="http:///MWPProfile/Properties.ecore" xmlns:MWPProfile.Requirements="http:///MWPProfile/Requirements.ecore" xmlns:MWPProfile.Stakeholders="http:///MWPProfile/Stakeholders.ecore" xmlns:ModelElements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements" xmlns:PortsAndFlows="http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http:///schemas/MWPProfile/_rkDJQNisEe6N_aISTl-5xw/23 ../MWPProfile/MWPProfile.profile.uml#_rkDwUNisEe6N_aISTl-5xw http:///MWPProfile/Properties.ecore ../MWPProfile/MWPProfile.profile.uml#_rkDwktisEe6N_aISTl-5xw http:///MWPProfile/Requirements.ecore ../MWPProfile/MWPProfile.profile.uml#_rkDwVdisEe6N_aISTl-5xw http:///MWPProfile/Stakeholders.ecore ../MWPProfile/MWPProfile.profile.uml#_rkDwgdisEe6N_aISTl-5xw http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
   <uml:Model xmi:id="_cJ7fAH0kEfCv3ulPI1gDUQ" name="CoffeeMachine">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_cPSgIH0kEfCv3ulPI1gDUQ">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -469,6 +469,64 @@
         </generalization>
       </packagedElement>
     </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_oQj3QH9hEfCclKKcu35E4w" name="Trace19" client="_xZBpIH7IEfCoCoy0TyBuMg" supplier="_m9HSwH06EfCa_eyoPrBLNw"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_ueSk0H9hEfCclKKcu35E4w" name="Trace20" client="_wswZAH7IEfCoCoy0TyBuMg" supplier="_Br4wkH09EfCa_eyoPrBLNw"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_vHf54H9hEfCclKKcu35E4w" name="Trace21" client="_xNKXYH7IEfCoCoy0TyBuMg" supplier="_Br4wkH09EfCa_eyoPrBLNw"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_v2bccH9hEfCclKKcu35E4w" name="Trace22" client="_xTTboH7IEfCoCoy0TyBuMg" supplier="_COKXMH09EfCa_eyoPrBLNw"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_w-LusH9hEfCclKKcu35E4w" name="Trace23" client="_jRlX4H7JEfCoCoy0TyBuMg" supplier="_CeqRUH09EfCa_eyoPrBLNw"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_x8E6UH9hEfCclKKcu35E4w" name="Trace24" client="_yHB-oH7IEfCoCoy0TyBuMg" supplier="_Cki24H09EfCa_eyoPrBLNw"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_yx7kQH9hEfCclKKcu35E4w" name="Trace25" client="_x7A74H7IEfCoCoy0TyBuMg" supplier="_CpwuEH09EfCa_eyoPrBLNw"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_zJcsYH9hEfCclKKcu35E4w" name="Trace26" client="_xfdBQH7IEfCoCoy0TyBuMg" supplier="_CpwuEH09EfCa_eyoPrBLNw"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_4wXmsH9jEfCclKKcu35E4w" name="Context">
+      <packagedElement xmi:type="uml:Package" xmi:id="_elTA8H9jEfCclKKcu35E4w" name="Operational Context">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_1yQPwH9jEfCclKKcu35E4w">
+          <body>Note that a system can have different contexts based on the lifecycle or operating phase that it is currently in, e.g., the operational context, the maintenance context, or the decommissioning context. &#xD;
+Since we are only looking at the operational context this folder may only be called &quot;Context&quot;.</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Class" xmi:id="_MwMyMH9kEfCclKKcu35E4w" name="Coffe Machine Operational Context">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_NI5woH9lEfCclKKcu35E4w" name="power network" type="_TYtXQH9kEfCclKKcu35E4w" aggregation="composite" association="_NIvYkH9lEfCclKKcu35E4w"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Nuz6En9lEfCclKKcu35E4w" name="water network" type="_TqrRAH9kEfCclKKcu35E4w" aggregation="composite" association="_NuzTAH9lEfCclKKcu35E4w"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OQkjUn9lEfCclKKcu35E4w" name="coffeemachine" type="_iZX7cH0yEfCj-ZZimWDeQw" aggregation="composite" association="_OQj8QH9lEfCclKKcu35E4w"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_SZncUn9lEfCclKKcu35E4w" name="user" type="_IFr6UH00EfCj-ZZimWDeQw" aggregation="composite" association="_SZm1QH9lEfCclKKcu35E4w"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_TYtXQH9kEfCclKKcu35E4w" name="Power Network"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_TqrRAH9kEfCclKKcu35E4w" name="Water Network"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_NIvYkH9lEfCclKKcu35E4w" memberEnd="_NI5woH9lEfCclKKcu35E4w _NI6Xsn9lEfCclKKcu35E4w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NI5JkH9lEfCclKKcu35E4w" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NI5JkX9lEfCclKKcu35E4w" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_NI6Xsn9lEfCclKKcu35E4w" name="coffe machine operational context" type="_MwMyMH9kEfCclKKcu35E4w" association="_NIvYkH9lEfCclKKcu35E4w"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_NuzTAH9lEfCclKKcu35E4w" memberEnd="_Nuz6En9lEfCclKKcu35E4w _Nu0hIn9lEfCclKKcu35E4w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Nuz6EH9lEfCclKKcu35E4w" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Nuz6EX9lEfCclKKcu35E4w" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Nu0hIn9lEfCclKKcu35E4w" name="coffe machine operational context" type="_MwMyMH9kEfCclKKcu35E4w" association="_NuzTAH9lEfCclKKcu35E4w"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_OQj8QH9lEfCclKKcu35E4w" memberEnd="_OQkjUn9lEfCclKKcu35E4w _OQlKYn9lEfCclKKcu35E4w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OQkjUH9lEfCclKKcu35E4w" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OQkjUX9lEfCclKKcu35E4w" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_OQlKYn9lEfCclKKcu35E4w" name="coffe machine operational context" type="_MwMyMH9kEfCclKKcu35E4w" association="_OQj8QH9lEfCclKKcu35E4w"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_SZm1QH9lEfCclKKcu35E4w" memberEnd="_SZncUn9lEfCclKKcu35E4w _SZoDYn9lEfCclKKcu35E4w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SZncUH9lEfCclKKcu35E4w" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SZncUX9lEfCclKKcu35E4w" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_SZoDYn9lEfCclKKcu35E4w" name="coffe machine operational context" type="_MwMyMH9kEfCclKKcu35E4w" association="_SZm1QH9lEfCclKKcu35E4w"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:InformationFlow" xmi:id="_I30OkH9oEfCclKKcu35E4w" name="Power Network" conveyed="_uNWhoH9oEfCclKKcu35E4w" informationSource="_NI5woH9lEfCclKKcu35E4w" informationTarget="_OQkjUn9lEfCclKKcu35E4w"/>
+        <packagedElement xmi:type="uml:InformationFlow" xmi:id="_ST8KwH9oEfCclKKcu35E4w" name="Water Network" conveyed="_wbqzUH9oEfCclKKcu35E4w" informationSource="_Nuz6En9lEfCclKKcu35E4w" informationTarget="_OQkjUn9lEfCclKKcu35E4w"/>
+        <packagedElement xmi:type="uml:InformationFlow" xmi:id="_UC7cIH9oEfCclKKcu35E4w" name="User to Coffee Machine" conveyed="_wod5MH9oEfCclKKcu35E4w _wuawMH9oEfCclKKcu35E4w" informationSource="_SZncUn9lEfCclKKcu35E4w" informationTarget="_OQkjUn9lEfCclKKcu35E4w"/>
+        <packagedElement xmi:type="uml:InformationFlow" xmi:id="_U44MsH9oEfCclKKcu35E4w" name="Coffee Machine to User" conveyed="_w0EFMH9oEfCclKKcu35E4w _w4X9cH9oEfCclKKcu35E4w" informationSource="_OQkjUn9lEfCclKKcu35E4w" informationTarget="_SZncUn9lEfCclKKcu35E4w"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_uNWhoH9oEfCclKKcu35E4w" name="Power"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_wbqzUH9oEfCclKKcu35E4w" name="Water"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_wod5MH9oEfCclKKcu35E4w" name="Coffee Pad"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_wuawMH9oEfCclKKcu35E4w" name="User Request"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_w0EFMH9oEfCclKKcu35E4w" name="Coffee"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_w4X9cH9oEfCclKKcu35E4w" name="Status Information"/>
+      </packagedElement>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_cMtGMH0kEfCv3ulPI1gDUQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cM3eQH0kEfCv3ulPI1gDUQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
@@ -568,7 +626,7 @@
   <MWPProfile.Requirements:StakeholderRequirement xmi:id="_0R3bcH08EfCa_eyoPrBLNw" verificationMethod="ANALYSIS" base_Class="_W_cDMH08EfCa_eyoPrBLNw" stakeholder="_uhy-cH01EfCj-ZZimWDeQw"/>
   <Requirements:Requirement xmi:id="_BmXXYH09EfCa_eyoPrBLNw" base_NamedElement="_BmWwUH09EfCa_eyoPrBLNw" id="SH-REQ-002" base_Class="_BmWwUH09EfCa_eyoPrBLNw"/>
   <MWPProfile.Requirements:StakeholderRequirement xmi:id="_BmZMkH09EfCa_eyoPrBLNw" verificationMethod="ANALYSIS" base_Class="_BmWwUH09EfCa_eyoPrBLNw" stakeholder="_xxqMsH01EfCj-ZZimWDeQw"/>
-  <Requirements:Requirement xmi:id="_Br5XoH09EfCa_eyoPrBLNw" base_NamedElement="_Br4wkH09EfCa_eyoPrBLNw" id="SH-REQ-002" base_Class="_Br4wkH09EfCa_eyoPrBLNw"/>
+  <Requirements:Requirement xmi:id="_Br5XoH09EfCa_eyoPrBLNw" base_NamedElement="_Br4wkH09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine must meet technical specifications, including precise temperature control during the brewing process. " base_Class="_Br4wkH09EfCa_eyoPrBLNw"/>
   <MWPProfile.Requirements:StakeholderRequirement xmi:id="_Br8a8H09EfCa_eyoPrBLNw" verificationMethod="ANALYSIS" base_Class="_Br4wkH09EfCa_eyoPrBLNw" stakeholder="_01vowH01EfCj-ZZimWDeQw"/>
   <Requirements:Requirement xmi:id="_Bxm-EH09EfCa_eyoPrBLNw" base_NamedElement="_Bxlv8H09EfCa_eyoPrBLNw" id="SH-REQ-002" base_Class="_Bxlv8H09EfCa_eyoPrBLNw"/>
   <MWPProfile.Requirements:StakeholderRequirement xmi:id="_Bxr2kH09EfCa_eyoPrBLNw" verificationMethod="ANALYSIS" base_Class="_Bxlv8H09EfCa_eyoPrBLNw" stakeholder="_091Nwn01EfCj-ZZimWDeQw"/>
@@ -580,17 +638,17 @@
   <MWPProfile.Requirements:StakeholderRequirement xmi:id="_CDeKIH09EfCa_eyoPrBLNw" verificationMethod="ANALYSIS" base_Class="_CDbG0H09EfCa_eyoPrBLNw" stakeholder="_77bSAH01EfCj-ZZimWDeQw"/>
   <Requirements:Requirement xmi:id="_CI9HEH09EfCa_eyoPrBLNw" base_NamedElement="_CI748H09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine design should prioritize cost-effectiveness in manufacturing without compromising on quality and performance." base_Class="_CI748H09EfCa_eyoPrBLNw"/>
   <MWPProfile.Requirements:StakeholderRequirement xmi:id="_CI_jUH09EfCa_eyoPrBLNw" base_Class="_CI748H09EfCa_eyoPrBLNw" stakeholder="_-aO2wH01EfCj-ZZimWDeQw"/>
-  <Requirements:Requirement xmi:id="_COK-QH09EfCa_eyoPrBLNw" base_NamedElement="_COKXMH09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine design should prioritize cost-effectiveness in manufacturing without compromising on quality and performance." base_Class="_COKXMH09EfCa_eyoPrBLNw"/>
+  <Requirements:Requirement xmi:id="_COK-QH09EfCa_eyoPrBLNw" base_NamedElement="_COKXMH09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine should consider eco-friendly practices, such as using recyclable materials and minimizing environmental impact. " base_Class="_COKXMH09EfCa_eyoPrBLNw"/>
   <MWPProfile.Requirements:StakeholderRequirement xmi:id="_CONagH09EfCa_eyoPrBLNw" base_Class="_COKXMH09EfCa_eyoPrBLNw" stakeholder="_AlGy4H02EfCj-ZZimWDeQw"/>
   <Requirements:Requirement xmi:id="_CTp7MH09EfCa_eyoPrBLNw" base_NamedElement="_CTpUIH09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine design should prioritize cost-effectiveness in manufacturing without compromising on quality and performance." base_Class="_CTpUIH09EfCa_eyoPrBLNw"/>
   <MWPProfile.Requirements:StakeholderRequirement xmi:id="_CTs-gH09EfCa_eyoPrBLNw" base_Class="_CTpUIH09EfCa_eyoPrBLNw" stakeholder="_DQpMEH02EfCj-ZZimWDeQw"/>
   <Requirements:Requirement xmi:id="_CZBjYH09EfCa_eyoPrBLNw" base_NamedElement="_CZA8UH09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine design should prioritize cost-effectiveness in manufacturing without compromising on quality and performance." base_Class="_CZA8UH09EfCa_eyoPrBLNw"/>
   <MWPProfile.Requirements:StakeholderRequirement xmi:id="_CZGb4H09EfCa_eyoPrBLNw" verificationMethod="ANALYSIS" base_Class="_CZA8UH09EfCa_eyoPrBLNw" stakeholder="_ElyaEH02EfCj-ZZimWDeQw"/>
-  <Requirements:Requirement xmi:id="_Ceq4YH09EfCa_eyoPrBLNw" base_NamedElement="_CeqRUH09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine design should prioritize cost-effectiveness in manufacturing without compromising on quality and performance." base_Class="_CeqRUH09EfCa_eyoPrBLNw"/>
+  <Requirements:Requirement xmi:id="_Ceq4YH09EfCa_eyoPrBLNw" base_NamedElement="_CeqRUH09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine should minimize the time between turning on the machine and brewing the first cup, providing users with a quick and convenient coffee preparation experience. " base_Class="_CeqRUH09EfCa_eyoPrBLNw"/>
   <MWPProfile.Requirements:StakeholderRequirement xmi:id="_Cet7sH09EfCa_eyoPrBLNw" verificationMethod="DEMONSTRATION" base_Class="_CeqRUH09EfCa_eyoPrBLNw" stakeholder="_IF2SYH00EfCj-ZZimWDeQw"/>
-  <Requirements:Requirement xmi:id="_Ckjd8H09EfCa_eyoPrBLNw" base_NamedElement="_Cki24H09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine design should prioritize cost-effectiveness in manufacturing without compromising on quality and performance." base_Class="_Cki24H09EfCa_eyoPrBLNw"/>
+  <Requirements:Requirement xmi:id="_Ckjd8H09EfCa_eyoPrBLNw" base_NamedElement="_Cki24H09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine shall be easily moveable by a single adult person. " base_Class="_Cki24H09EfCa_eyoPrBLNw"/>
   <MWPProfile.Requirements:StakeholderRequirement xmi:id="_CkmhQH09EfCa_eyoPrBLNw" verificationMethod="DEMONSTRATION" base_Class="_Cki24H09EfCa_eyoPrBLNw" stakeholder="_IF2SYH00EfCj-ZZimWDeQw"/>
-  <Requirements:Requirement xmi:id="_CpxVIH09EfCa_eyoPrBLNw" base_NamedElement="_CpwuEH09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine design should prioritize cost-effectiveness in manufacturing without compromising on quality and performance." base_Class="_CpwuEH09EfCa_eyoPrBLNw"/>
+  <Requirements:Requirement xmi:id="_CpxVIH09EfCa_eyoPrBLNw" base_NamedElement="_CpwuEH09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine shall be reliable and long-lived. " base_Class="_CpwuEH09EfCa_eyoPrBLNw"/>
   <MWPProfile.Requirements:StakeholderRequirement xmi:id="_Cp2NoH09EfCa_eyoPrBLNw" verificationMethod="TEST" base_Class="_CpwuEH09EfCa_eyoPrBLNw" stakeholder="_IF2SYH00EfCj-ZZimWDeQw"/>
   <MWPProfile.Properties:MeasureOfEffectiveness xmi:id="_ThrwgH7JEfCoCoy0TyBuMg" base_Property="_xfdBQH7IEfCoCoy0TyBuMg"/>
   <MWPProfile.Properties:MeasureOfEffectiveness xmi:id="_Wl5IYH7JEfCoCoy0TyBuMg" base_Property="_xZBpIH7IEfCoCoy0TyBuMg"/>
@@ -610,4 +668,25 @@
   <Blocks:ValueType xmi:id="_qtazIH7QEfCoCoy0TyBuMg" base_DataType="_qtaMEH7QEfCoCoy0TyBuMg" quantityKind="_fuoU4H7REfCoCoy0TyBuMg" unit="_n4jCUH7REfCoCoy0TyBuMg"/>
   <Blocks:ValueType xmi:id="_vf5qsH7QEfCoCoy0TyBuMg" base_DataType="_vf5DoH7QEfCoCoy0TyBuMg" quantityKind="_1EKvEH7REfCoCoy0TyBuMg" unit="_3n2z0H7REfCoCoy0TyBuMg"/>
   <Blocks:ValueType xmi:id="_z-DRAH7QEfCoCoy0TyBuMg" base_DataType="_z-Cp8H7QEfCoCoy0TyBuMg" quantityKind="_0LaJ0H7LEfCoCoy0TyBuMg" unit="_KCMacH7NEfCoCoy0TyBuMg"/>
+  <Requirements:Trace xmi:id="_oQsaIH9hEfCclKKcu35E4w" base_DirectedRelationship="_oQj3QH9hEfCclKKcu35E4w" base_Abstraction="_oQj3QH9hEfCclKKcu35E4w"/>
+  <Requirements:Trace xmi:id="_ueYEYH9hEfCclKKcu35E4w" base_DirectedRelationship="_ueSk0H9hEfCclKKcu35E4w" base_Abstraction="_ueSk0H9hEfCclKKcu35E4w"/>
+  <Requirements:Trace xmi:id="_vHkyYH9hEfCclKKcu35E4w" base_DirectedRelationship="_vHf54H9hEfCclKKcu35E4w" base_Abstraction="_vHf54H9hEfCclKKcu35E4w"/>
+  <Requirements:Trace xmi:id="_v2g8AH9hEfCclKKcu35E4w" base_DirectedRelationship="_v2bccH9hEfCclKKcu35E4w" base_Abstraction="_v2bccH9hEfCclKKcu35E4w"/>
+  <Requirements:Trace xmi:id="_w-OyAH9hEfCclKKcu35E4w" base_DirectedRelationship="_w-LusH9hEfCclKKcu35E4w" base_Abstraction="_w-LusH9hEfCclKKcu35E4w"/>
+  <Requirements:Trace xmi:id="_x8GvgH9hEfCclKKcu35E4w" base_DirectedRelationship="_x8E6UH9hEfCclKKcu35E4w" base_Abstraction="_x8E6UH9hEfCclKKcu35E4w"/>
+  <Requirements:Trace xmi:id="_yx-nkH9hEfCclKKcu35E4w" base_DirectedRelationship="_yx7kQH9hEfCclKKcu35E4w" base_Abstraction="_yx7kQH9hEfCclKKcu35E4w"/>
+  <Requirements:Trace xmi:id="_zJfvsH9hEfCclKKcu35E4w" base_DirectedRelationship="_zJcsYH9hEfCclKKcu35E4w" base_Abstraction="_zJcsYH9hEfCclKKcu35E4w"/>
+  <Blocks:Block xmi:id="_MwOnYH9kEfCclKKcu35E4w" base_Class="_MwMyMH9kEfCclKKcu35E4w"/>
+  <Blocks:Block xmi:id="_TYvMcH9kEfCclKKcu35E4w" base_Class="_TYtXQH9kEfCclKKcu35E4w"/>
+  <Blocks:Block xmi:id="_TquUUH9kEfCclKKcu35E4w" base_Class="_TqrRAH9kEfCclKKcu35E4w"/>
+  <PortsAndFlows:ItemFlow xmi:id="_I33R4H9oEfCclKKcu35E4w" base_InformationFlow="_I30OkH9oEfCclKKcu35E4w"/>
+  <PortsAndFlows:ItemFlow xmi:id="_ST9_8H9oEfCclKKcu35E4w" base_InformationFlow="_ST8KwH9oEfCclKKcu35E4w"/>
+  <PortsAndFlows:ItemFlow xmi:id="_UC94YH9oEfCclKKcu35E4w" base_InformationFlow="_UC7cIH9oEfCclKKcu35E4w"/>
+  <PortsAndFlows:ItemFlow xmi:id="_U45a0H9oEfCclKKcu35E4w" base_InformationFlow="_U44MsH9oEfCclKKcu35E4w"/>
+  <Blocks:ValueType xmi:id="_uNazEH9oEfCclKKcu35E4w" base_DataType="_uNWhoH9oEfCclKKcu35E4w"/>
+  <Blocks:ValueType xmi:id="_wbraYH9oEfCclKKcu35E4w" base_DataType="_wbqzUH9oEfCclKKcu35E4w"/>
+  <Blocks:ValueType xmi:id="_woegQH9oEfCclKKcu35E4w" base_DataType="_wod5MH9oEfCclKKcu35E4w"/>
+  <Blocks:ValueType xmi:id="_wubXQH9oEfCclKKcu35E4w" base_DataType="_wuawMH9oEfCclKKcu35E4w"/>
+  <Blocks:ValueType xmi:id="_w0EsQH9oEfCclKKcu35E4w" base_DataType="_w0EFMH9oEfCclKKcu35E4w"/>
+  <Blocks:ValueType xmi:id="_w4ZLkH9oEfCclKKcu35E4w" base_DataType="_w4X9cH9oEfCclKKcu35E4w"/>
 </xmi:XMI>

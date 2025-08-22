@@ -10,7 +10,11 @@
     <packageImport xmi:type="uml:PackageImport" xmi:id="_cR8LgH0kEfCv3ulPI1gDUQ">
       <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/QUDV.uml#QUDV"/>
     </packageImport>
-    <packagedElement xmi:type="uml:Class" xmi:id="_iZX7cH0yEfCj-ZZimWDeQw" name="CoffeeMachine">
+    <packagedElement xmi:type="uml:Class" xmi:id="_iZX7cH0yEfCj-ZZimWDeQw" name="CoffeeMachine" useCase="_4jWIQH9sEfCclKKcu35E4w _OoQJ4H9tEfCclKKcu35E4w _R4KbcH9tEfCclKKcu35E4w">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_uMGq0H9wEfCclKKcu35E4w">
+        <body>The system of interest itself is also part of its context. &#xD;
+</body>
+      </ownedComment>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_jRlX4H7JEfCoCoy0TyBuMg" name="Brewing Time" visibility="public" type="_pMp9QH7LEfCoCoy0TyBuMg">
         <ownedComment xmi:type="uml:Comment" xmi:id="_NKjZ4H7KEfCoCoy0TyBuMg">
           <body>The time taken to complete the brewing process.</body>
@@ -55,7 +59,8 @@
     <packagedElement xmi:type="uml:Package" xmi:id="_4glNsH0zEfCj-ZZimWDeQw" name="Stakeholder">
       <packagedElement xmi:type="uml:Actor" xmi:id="_IFr6UH00EfCj-ZZimWDeQw" name="User">
         <ownedComment xmi:type="uml:Comment" xmi:id="_eARiUH00EfCj-ZZimWDeQw">
-          <body>Individual that interact with and uses the coffee machine. </body>
+          <body>Individual that interact with and uses the coffee machine. &#xD;
+The user of the coffee machine. </body>
         </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:Actor" xmi:id="_uhte4H01EfCj-ZZimWDeQw" name="Producer">
@@ -121,21 +126,81 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_o1F9gH05EfCa_eyoPrBLNw" name="Requirements">
       <packagedElement xmi:type="uml:Package" xmi:id="_qYcmoH05EfCa_eyoPrBLNw" name="Stakeholder Requirements">
-        <packagedElement xmi:type="uml:Class" xmi:id="_m9HSwH06EfCa_eyoPrBLNw" name="Usability"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_W_cDMH08EfCa_eyoPrBLNw" name="Cost effective"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_BmWwUH09EfCa_eyoPrBLNw" name="Appealing Desing"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_Br4wkH09EfCa_eyoPrBLNw" name="Well Engineered"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_Bxlv8H09EfCa_eyoPrBLNw" name="Marketable"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_B382oH09EfCa_eyoPrBLNw" name="Design for Test"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_B-EFsH09EfCa_eyoPrBLNw" name="User Manual"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_CDbG0H09EfCa_eyoPrBLNw" name="Facilitate Sales"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_CI748H09EfCa_eyoPrBLNw" name="Regulatory Standards"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_COKXMH09EfCa_eyoPrBLNw" name="Eco-Friendly"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_CTpUIH09EfCa_eyoPrBLNw" name="Industry Standards"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_CZA8UH09EfCa_eyoPrBLNw" name="Preserve Rights"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_CeqRUH09EfCa_eyoPrBLNw" name="Rapid Heating"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_Cki24H09EfCa_eyoPrBLNw" name="Compact Size"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_CpwuEH09EfCa_eyoPrBLNw" name="Reliable"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_m9HSwH06EfCa_eyoPrBLNw" name="Usability">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_fHMrwH9xEfCclKKcu35E4w">
+            <body>Verification Method: Conduct user testing sessions with representative users to evaluate the ease of use and intuitiveness of the interface. </body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_W_cDMH08EfCa_eyoPrBLNw" name="Cost effective">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_uWan8H9xEfCclKKcu35E4w">
+            <body>Verification Method: Perform a cost-benefit analysis, comparing manufacturing costs with the desired quality and performance metrics. </body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_BmWwUH09EfCa_eyoPrBLNw" name="Appealing Desing">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_A_kUYH9yEfCclKKcu35E4w">
+            <body>Verification Method: Assess design prototypes through user feedback and ergonomic evaluations to ensure visual appeal and usability. </body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Br4wkH09EfCa_eyoPrBLNw" name="Well Engineered">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_MCz_YH9yEfCclKKcu35E4w">
+            <body>Verification Method: Use testing equipment to measure and verify temperature control accuracy during multiple brewing cycles. </body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Bxlv8H09EfCa_eyoPrBLNw" name="Marketable">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_YFXLQH9yEfCclKKcu35E4w">
+            <body>Verification Method: Conduct Market surveys and analyze competitor products to identify differentiating features. </body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_B382oH09EfCa_eyoPrBLNw" name="Design for Test">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_kduPEH9yEfCclKKcu35E4w">
+            <body>Verification Method: Implement comprehensive testing protocols, including functionality, stress, and regression testing, and address identified defects. </body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_B-EFsH09EfCa_eyoPrBLNw" name="User Manual">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_uMy8cH9yEfCclKKcu35E4w">
+            <body>Verification Method: Verify the completeness and clarity of the user manual through user feedback. </body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CDbG0H09EfCa_eyoPrBLNw" name="Facilitate Sales">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_BGUAIH9zEfCclKKcu35E4w">
+            <body>Verification Method: Conduct market surveys and feedback sessions with retailers to assess the effectiveness of packaging and marketing materilas in driving sales. </body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CI748H09EfCa_eyoPrBLNw" name="Regulatory Standards">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_N2ypAH9zEfCclKKcu35E4w">
+            <body>Verification Method: Perform certification testing with recognized testing laboratories to ensure compliance with relevant standards and regulations. </body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_COKXMH09EfCa_eyoPrBLNw" name="Eco-Friendly">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_XUItMH9zEfCclKKcu35E4w">
+            <body>Verification Method: Conduct a life cycle analysis to assess teh environmental impact of the coffee machine, including material selection and energy consumption. </body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CTpUIH09EfCa_eyoPrBLNw" name="Industry Standards">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_omT_oH9zEfCclKKcu35E4w">
+            <body>Verifcation Method: Analyze the system design to check and confirm compliance with relevant industry standards. </body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CZA8UH09EfCa_eyoPrBLNw" name="Preserve Rights">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_MElPEH90EfCclKKcu35E4w">
+            <body>Verification Method: Perform IP analysis and assess the coffee machine design against it. </body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CeqRUH09EfCa_eyoPrBLNw" name="Rapid Heating">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_XEDNUH90EfCclKKcu35E4w">
+            <body>Verification Method: Testing the coffee machine to ensure it meets the specified time requirements and effectively minimizes the waiting time for the user. </body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Cki24H09EfCa_eyoPrBLNw" name="Compact Size">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_c0fh8H90EfCclKKcu35E4w">
+            <body>Verification Method: Conduct user testing sessions with representative users. </body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CpwuEH09EfCa_eyoPrBLNw" name="Reliable">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_gSxmsH90EfCclKKcu35E4w">
+            <body>Verification Method: Extensive stress testing. </body>
+          </ownedComment>
+        </packagedElement>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_klou0H7LEfCoCoy0TyBuMg" name="Value Types">
@@ -489,8 +554,16 @@ Since we are only looking at the operational context this folder may only be cal
           <ownedAttribute xmi:type="uml:Property" xmi:id="_OQkjUn9lEfCclKKcu35E4w" name="coffeemachine" type="_iZX7cH0yEfCj-ZZimWDeQw" aggregation="composite" association="_OQj8QH9lEfCclKKcu35E4w"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_SZncUn9lEfCclKKcu35E4w" name="user" type="_IFr6UH00EfCj-ZZimWDeQw" aggregation="composite" association="_SZm1QH9lEfCclKKcu35E4w"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_TYtXQH9kEfCclKKcu35E4w" name="Power Network"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_TqrRAH9kEfCclKKcu35E4w" name="Water Network"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_TYtXQH9kEfCclKKcu35E4w" name="Power Network">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_8nZsMH9vEfCclKKcu35E4w">
+            <body>The electrical power source that provides energy to the coffee machine. </body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_TqrRAH9kEfCclKKcu35E4w" name="Water Network">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Aju-4H9wEfCclKKcu35E4w">
+            <body>The water source suppliying water for the coffee brewing process. </body>
+          </ownedComment>
+        </packagedElement>
         <packagedElement xmi:type="uml:Association" xmi:id="_NIvYkH9lEfCclKKcu35E4w" memberEnd="_NI5woH9lEfCclKKcu35E4w _NI6Xsn9lEfCclKKcu35E4w">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NI5JkH9lEfCclKKcu35E4w" source="org.eclipse.papyrus">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NI5JkX9lEfCclKKcu35E4w" key="nature" value="UML_Nature"/>
@@ -526,6 +599,43 @@ Since we are only looking at the operational context this folder may only be cal
         <packagedElement xmi:type="uml:DataType" xmi:id="_w0EFMH9oEfCclKKcu35E4w" name="Coffee"/>
         <packagedElement xmi:type="uml:DataType" xmi:id="_w4X9cH9oEfCclKKcu35E4w" name="Status Information"/>
       </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_j-nf8H9sEfCclKKcu35E4w" name="Use Cases">
+      <packagedElement xmi:type="uml:Association" xmi:id="_LScrsH9tEfCclKKcu35E4w" memberEnd="_LSdSwn9tEfCclKKcu35E4w _LSd50H9tEfCclKKcu35E4w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LSdSwH9tEfCclKKcu35E4w" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LSdSwX9tEfCclKKcu35E4w" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_LSdSwn9tEfCclKKcu35E4w" name="user" type="_IFr6UH00EfCj-ZZimWDeQw" association="_LScrsH9tEfCclKKcu35E4w"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_LSd50H9tEfCclKKcu35E4w" name="make coffee" type="_4jWIQH9sEfCclKKcu35E4w" association="_LScrsH9tEfCclKKcu35E4w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_VUgmgH9tEfCclKKcu35E4w" memberEnd="_VUhNkn9tEfCclKKcu35E4w _VUhNk39tEfCclKKcu35E4w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VUhNkH9tEfCclKKcu35E4w" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VUhNkX9tEfCclKKcu35E4w" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_VUhNkn9tEfCclKKcu35E4w" name="user" type="_IFr6UH00EfCj-ZZimWDeQw" association="_VUgmgH9tEfCclKKcu35E4w"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_VUhNk39tEfCclKKcu35E4w" name="clean and descale coffee machine" type="_OoQJ4H9tEfCclKKcu35E4w" association="_VUgmgH9tEfCclKKcu35E4w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_4jWIQH9sEfCclKKcu35E4w" name="Make Coffee" subject="_iZX7cH0yEfCj-ZZimWDeQw">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_ocJT0H9vEfCclKKcu35E4w">
+          <body>The user initiates the brewing process for a standard cup of coffee using prefabricated coffee pads. </body>
+        </ownedComment>
+        <include xmi:type="uml:Include" xmi:id="_bfBA8H9tEfCclKKcu35E4w" addition="_R4KbcH9tEfCclKKcu35E4w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_OoQJ4H9tEfCclKKcu35E4w" name="Clean and Descale Coffee Machine" subject="_iZX7cH0yEfCj-ZZimWDeQw">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_s-T3cH9vEfCclKKcu35E4w">
+          <body>The user inintiates a cleaning and descaling cycle of the coffee machine ot ensure its proper functioning.</body>
+        </ownedComment>
+        <include xmi:type="uml:Include" xmi:id="_ebmG0H9tEfCclKKcu35E4w" addition="_R4KbcH9tEfCclKKcu35E4w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_R4KbcH9tEfCclKKcu35E4w" name="Power Coffee Machine ON/OFF" subject="_iZX7cH0yEfCj-ZZimWDeQw">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_vaGkcH9vEfCclKKcu35E4w">
+          <body>The user powers the coffee machine on or off. </body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_JSqv0H9uEfCclKKcu35E4w" name="Trace6" client="_4jWIQH9sEfCclKKcu35E4w" supplier="_CeqRUH09EfCa_eyoPrBLNw"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_KS6E0H9uEfCclKKcu35E4w" name="Trace7" client="_4jWIQH9sEfCclKKcu35E4w" supplier="_m9HSwH06EfCa_eyoPrBLNw"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_O-S14H9uEfCclKKcu35E4w" name="Trace8" client="_OoQJ4H9tEfCclKKcu35E4w" supplier="_m9HSwH06EfCa_eyoPrBLNw"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_Py5ioH9uEfCclKKcu35E4w" name="Trace9" client="_R4KbcH9tEfCclKKcu35E4w" supplier="_CpwuEH09EfCa_eyoPrBLNw"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_cMtGMH0kEfCv3ulPI1gDUQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cM3eQH0kEfCv3ulPI1gDUQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -621,34 +731,34 @@ Since we are only looking at the operational context this folder may only be cal
   <ModelElements:Stakeholder xmi:id="_ElyaEH02EfCj-ZZimWDeQw" base_Classifier="_ElxzAH02EfCj-ZZimWDeQw"/>
   <MWPProfile.Stakeholders:ExtendedStakeholder xmi:id="_ElzoMH02EfCj-ZZimWDeQw" interests="Get brewed a good coffee very easy and fast. " base_Actor="_ElxzAH02EfCj-ZZimWDeQw"/>
   <Requirements:Requirement xmi:id="_m9TgAH06EfCa_eyoPrBLNw" base_NamedElement="_m9HSwH06EfCa_eyoPrBLNw" id="SH-REQ-001" text="The coffee machine must provide a user-friendly interface with intuitive controls for selecting brewing options." base_Class="_m9HSwH06EfCa_eyoPrBLNw"/>
-  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_4l4gQH06EfCa_eyoPrBLNw" status="CONFIRMED" verificationMethod="DEMONSTRATION" rationale="A user friendly interface enhace the overall user experience" source="Marketing survey and gropu questionaires. " base_Class="_m9HSwH06EfCa_eyoPrBLNw" stakeholder="_IF2SYH00EfCj-ZZimWDeQw"/>
-  <Requirements:Requirement xmi:id="_W_ftkH08EfCa_eyoPrBLNw" base_NamedElement="_W_cDMH08EfCa_eyoPrBLNw" id="SH-REQ-002" base_Class="_W_cDMH08EfCa_eyoPrBLNw"/>
+  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_4l4gQH06EfCa_eyoPrBLNw" status="CONFIRMED" verificationMethod="TEST" rationale="A user friendly interface enhace the overall user experience" source="Marketing survey and gropu questionaires. " base_Class="_m9HSwH06EfCa_eyoPrBLNw" stakeholder="_IF2SYH00EfCj-ZZimWDeQw"/>
+  <Requirements:Requirement xmi:id="_W_ftkH08EfCa_eyoPrBLNw" base_NamedElement="_W_cDMH08EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine design should prioritize cost-effectiveness in manufacturing without compromising on quality and performance. " base_Class="_W_cDMH08EfCa_eyoPrBLNw"/>
   <MWPProfile.Requirements:StakeholderRequirement xmi:id="_0R3bcH08EfCa_eyoPrBLNw" verificationMethod="ANALYSIS" base_Class="_W_cDMH08EfCa_eyoPrBLNw" stakeholder="_uhy-cH01EfCj-ZZimWDeQw"/>
-  <Requirements:Requirement xmi:id="_BmXXYH09EfCa_eyoPrBLNw" base_NamedElement="_BmWwUH09EfCa_eyoPrBLNw" id="SH-REQ-002" base_Class="_BmWwUH09EfCa_eyoPrBLNw"/>
-  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_BmZMkH09EfCa_eyoPrBLNw" verificationMethod="ANALYSIS" base_Class="_BmWwUH09EfCa_eyoPrBLNw" stakeholder="_xxqMsH01EfCj-ZZimWDeQw"/>
-  <Requirements:Requirement xmi:id="_Br5XoH09EfCa_eyoPrBLNw" base_NamedElement="_Br4wkH09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine must meet technical specifications, including precise temperature control during the brewing process. " base_Class="_Br4wkH09EfCa_eyoPrBLNw"/>
-  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_Br8a8H09EfCa_eyoPrBLNw" verificationMethod="ANALYSIS" base_Class="_Br4wkH09EfCa_eyoPrBLNw" stakeholder="_01vowH01EfCj-ZZimWDeQw"/>
-  <Requirements:Requirement xmi:id="_Bxm-EH09EfCa_eyoPrBLNw" base_NamedElement="_Bxlv8H09EfCa_eyoPrBLNw" id="SH-REQ-002" base_Class="_Bxlv8H09EfCa_eyoPrBLNw"/>
-  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_Bxr2kH09EfCa_eyoPrBLNw" verificationMethod="ANALYSIS" base_Class="_Bxlv8H09EfCa_eyoPrBLNw" stakeholder="_091Nwn01EfCj-ZZimWDeQw"/>
-  <Requirements:Requirement xmi:id="_B3-EwH09EfCa_eyoPrBLNw" base_NamedElement="_B382oH09EfCa_eyoPrBLNw" id="SH-REQ-002" base_Class="_B382oH09EfCa_eyoPrBLNw"/>
-  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_B4AhAH09EfCa_eyoPrBLNw" verificationMethod="DEMONSTRATION" base_Class="_B382oH09EfCa_eyoPrBLNw" stakeholder="_3wxPcH01EfCj-ZZimWDeQw"/>
-  <Requirements:Requirement xmi:id="_B-EswH09EfCa_eyoPrBLNw" base_NamedElement="_B-EFsH09EfCa_eyoPrBLNw" id="SH-REQ-002" text=" The coffee machine must have a comprehensive user manual." base_Class="_B-EFsH09EfCa_eyoPrBLNw"/>
-  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_B-HwEH09EfCa_eyoPrBLNw" base_Class="_B-EFsH09EfCa_eyoPrBLNw" stakeholder="_6RNy8n01EfCj-ZZimWDeQw"/>
-  <Requirements:Requirement xmi:id="_CDbt4H09EfCa_eyoPrBLNw" base_NamedElement="_CDbG0H09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine design should prioritize cost-effectiveness in manufacturing without compromising on quality and performance." base_Class="_CDbG0H09EfCa_eyoPrBLNw"/>
-  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_CDeKIH09EfCa_eyoPrBLNw" verificationMethod="ANALYSIS" base_Class="_CDbG0H09EfCa_eyoPrBLNw" stakeholder="_77bSAH01EfCj-ZZimWDeQw"/>
-  <Requirements:Requirement xmi:id="_CI9HEH09EfCa_eyoPrBLNw" base_NamedElement="_CI748H09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine design should prioritize cost-effectiveness in manufacturing without compromising on quality and performance." base_Class="_CI748H09EfCa_eyoPrBLNw"/>
-  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_CI_jUH09EfCa_eyoPrBLNw" base_Class="_CI748H09EfCa_eyoPrBLNw" stakeholder="_-aO2wH01EfCj-ZZimWDeQw"/>
-  <Requirements:Requirement xmi:id="_COK-QH09EfCa_eyoPrBLNw" base_NamedElement="_COKXMH09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine should consider eco-friendly practices, such as using recyclable materials and minimizing environmental impact. " base_Class="_COKXMH09EfCa_eyoPrBLNw"/>
-  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_CONagH09EfCa_eyoPrBLNw" base_Class="_COKXMH09EfCa_eyoPrBLNw" stakeholder="_AlGy4H02EfCj-ZZimWDeQw"/>
-  <Requirements:Requirement xmi:id="_CTp7MH09EfCa_eyoPrBLNw" base_NamedElement="_CTpUIH09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine design should prioritize cost-effectiveness in manufacturing without compromising on quality and performance." base_Class="_CTpUIH09EfCa_eyoPrBLNw"/>
-  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_CTs-gH09EfCa_eyoPrBLNw" base_Class="_CTpUIH09EfCa_eyoPrBLNw" stakeholder="_DQpMEH02EfCj-ZZimWDeQw"/>
-  <Requirements:Requirement xmi:id="_CZBjYH09EfCa_eyoPrBLNw" base_NamedElement="_CZA8UH09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine design should prioritize cost-effectiveness in manufacturing without compromising on quality and performance." base_Class="_CZA8UH09EfCa_eyoPrBLNw"/>
+  <Requirements:Requirement xmi:id="_BmXXYH09EfCa_eyoPrBLNw" base_NamedElement="_BmWwUH09EfCa_eyoPrBLNw" id="SH-REQ-003" text="The coffe machine design must incorporate a visually appealing and ergonomic layout, enhancing user experience. " base_Class="_BmWwUH09EfCa_eyoPrBLNw"/>
+  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_BmZMkH09EfCa_eyoPrBLNw" verificationMethod="DEMONSTRATION" base_Class="_BmWwUH09EfCa_eyoPrBLNw" stakeholder="_xxqMsH01EfCj-ZZimWDeQw"/>
+  <Requirements:Requirement xmi:id="_Br5XoH09EfCa_eyoPrBLNw" base_NamedElement="_Br4wkH09EfCa_eyoPrBLNw" id="SH-REQ-004" text="The coffee machine must meet technical specifications, including precise temperature control during the brewing process. " base_Class="_Br4wkH09EfCa_eyoPrBLNw"/>
+  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_Br8a8H09EfCa_eyoPrBLNw" verificationMethod="TEST" base_Class="_Br4wkH09EfCa_eyoPrBLNw" stakeholder="_01vowH01EfCj-ZZimWDeQw"/>
+  <Requirements:Requirement xmi:id="_Bxm-EH09EfCa_eyoPrBLNw" base_NamedElement="_Bxlv8H09EfCa_eyoPrBLNw" id="SH-REQ-005" text="The coffee machine must be easy to position in the market. " base_Class="_Bxlv8H09EfCa_eyoPrBLNw"/>
+  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_Bxr2kH09EfCa_eyoPrBLNw" verificationMethod="DEMONSTRATION" base_Class="_Bxlv8H09EfCa_eyoPrBLNw" stakeholder="_091Nwn01EfCj-ZZimWDeQw"/>
+  <Requirements:Requirement xmi:id="_B3-EwH09EfCa_eyoPrBLNw" base_NamedElement="_B382oH09EfCa_eyoPrBLNw" id="SH-REQ-006" text="The coffee machine must be easy to test. " base_Class="_B382oH09EfCa_eyoPrBLNw"/>
+  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_B4AhAH09EfCa_eyoPrBLNw" verificationMethod="TEST" base_Class="_B382oH09EfCa_eyoPrBLNw" stakeholder="_3wxPcH01EfCj-ZZimWDeQw"/>
+  <Requirements:Requirement xmi:id="_B-EswH09EfCa_eyoPrBLNw" base_NamedElement="_B-EFsH09EfCa_eyoPrBLNw" id="SH-REQ-007" text=" The coffee machine must have a comprehensive user manual." base_Class="_B-EFsH09EfCa_eyoPrBLNw"/>
+  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_B-HwEH09EfCa_eyoPrBLNw" verificationMethod="DEMONSTRATION" base_Class="_B-EFsH09EfCa_eyoPrBLNw" stakeholder="_6RNy8n01EfCj-ZZimWDeQw"/>
+  <Requirements:Requirement xmi:id="_CDbt4H09EfCa_eyoPrBLNw" base_NamedElement="_CDbG0H09EfCa_eyoPrBLNw" id="SH-REQ-008" text="The coffee machine packaging should be attractive, and marketing materials should highlight key features to facilitate sales. " base_Class="_CDbG0H09EfCa_eyoPrBLNw"/>
+  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_CDeKIH09EfCa_eyoPrBLNw" verificationMethod="DEMONSTRATION" base_Class="_CDbG0H09EfCa_eyoPrBLNw" stakeholder="_77bSAH01EfCj-ZZimWDeQw"/>
+  <Requirements:Requirement xmi:id="_CI9HEH09EfCa_eyoPrBLNw" base_NamedElement="_CI748H09EfCa_eyoPrBLNw" id="SH-REQ-09" text="The coffee machine must comply with safety, environmenta, and quality standards set by regulatory authorities. " base_Class="_CI748H09EfCa_eyoPrBLNw"/>
+  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_CI_jUH09EfCa_eyoPrBLNw" verificationMethod="TEST" base_Class="_CI748H09EfCa_eyoPrBLNw" stakeholder="_-aO2wH01EfCj-ZZimWDeQw"/>
+  <Requirements:Requirement xmi:id="_COK-QH09EfCa_eyoPrBLNw" base_NamedElement="_COKXMH09EfCa_eyoPrBLNw" id="SH-REQ-010" text="The coffee machine should consider eco-friendly practices, such as using recyclable materials and minimizing environmental impact. " base_Class="_COKXMH09EfCa_eyoPrBLNw"/>
+  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_CONagH09EfCa_eyoPrBLNw" verificationMethod="ANALYSIS" base_Class="_COKXMH09EfCa_eyoPrBLNw" stakeholder="_AlGy4H02EfCj-ZZimWDeQw"/>
+  <Requirements:Requirement xmi:id="_CTp7MH09EfCa_eyoPrBLNw" base_NamedElement="_CTpUIH09EfCa_eyoPrBLNw" id="SH-REQ-011" text="The system design and components shall comply with industry-standard specifications and regulations, ensuring compatibility with commonly used materials and technologies in the market. " base_Class="_CTpUIH09EfCa_eyoPrBLNw"/>
+  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_CTs-gH09EfCa_eyoPrBLNw" verificationMethod="ANALYSIS" base_Class="_CTpUIH09EfCa_eyoPrBLNw" stakeholder="_DQpMEH02EfCj-ZZimWDeQw"/>
+  <Requirements:Requirement xmi:id="_CZBjYH09EfCa_eyoPrBLNw" base_NamedElement="_CZA8UH09EfCa_eyoPrBLNw" id="SH-REQ-012" text="The coffee machine must not violate the copyrights or infringe on the patents of the competitor and their products. " base_Class="_CZA8UH09EfCa_eyoPrBLNw"/>
   <MWPProfile.Requirements:StakeholderRequirement xmi:id="_CZGb4H09EfCa_eyoPrBLNw" verificationMethod="ANALYSIS" base_Class="_CZA8UH09EfCa_eyoPrBLNw" stakeholder="_ElyaEH02EfCj-ZZimWDeQw"/>
-  <Requirements:Requirement xmi:id="_Ceq4YH09EfCa_eyoPrBLNw" base_NamedElement="_CeqRUH09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine should minimize the time between turning on the machine and brewing the first cup, providing users with a quick and convenient coffee preparation experience. " base_Class="_CeqRUH09EfCa_eyoPrBLNw"/>
-  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_Cet7sH09EfCa_eyoPrBLNw" verificationMethod="DEMONSTRATION" base_Class="_CeqRUH09EfCa_eyoPrBLNw" stakeholder="_IF2SYH00EfCj-ZZimWDeQw"/>
-  <Requirements:Requirement xmi:id="_Ckjd8H09EfCa_eyoPrBLNw" base_NamedElement="_Cki24H09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine shall be easily moveable by a single adult person. " base_Class="_Cki24H09EfCa_eyoPrBLNw"/>
-  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_CkmhQH09EfCa_eyoPrBLNw" verificationMethod="DEMONSTRATION" base_Class="_Cki24H09EfCa_eyoPrBLNw" stakeholder="_IF2SYH00EfCj-ZZimWDeQw"/>
-  <Requirements:Requirement xmi:id="_CpxVIH09EfCa_eyoPrBLNw" base_NamedElement="_CpwuEH09EfCa_eyoPrBLNw" id="SH-REQ-002" text="The coffee machine shall be reliable and long-lived. " base_Class="_CpwuEH09EfCa_eyoPrBLNw"/>
+  <Requirements:Requirement xmi:id="_Ceq4YH09EfCa_eyoPrBLNw" base_NamedElement="_CeqRUH09EfCa_eyoPrBLNw" id="SH-REQ-013" text="The coffee machine should minimize the time between turning on the machine and brewing the first cup, providing users with a quick and convenient coffee preparation experience. " base_Class="_CeqRUH09EfCa_eyoPrBLNw"/>
+  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_Cet7sH09EfCa_eyoPrBLNw" verificationMethod="TEST" base_Class="_CeqRUH09EfCa_eyoPrBLNw" stakeholder="_IF2SYH00EfCj-ZZimWDeQw"/>
+  <Requirements:Requirement xmi:id="_Ckjd8H09EfCa_eyoPrBLNw" base_NamedElement="_Cki24H09EfCa_eyoPrBLNw" id="SH-REQ-014" text="The coffee machine shall be easily moveable by a single adult person. " base_Class="_Cki24H09EfCa_eyoPrBLNw"/>
+  <MWPProfile.Requirements:StakeholderRequirement xmi:id="_CkmhQH09EfCa_eyoPrBLNw" verificationMethod="TEST" base_Class="_Cki24H09EfCa_eyoPrBLNw" stakeholder="_IF2SYH00EfCj-ZZimWDeQw"/>
+  <Requirements:Requirement xmi:id="_CpxVIH09EfCa_eyoPrBLNw" base_NamedElement="_CpwuEH09EfCa_eyoPrBLNw" id="SH-REQ-015" text="The coffee machine shall be reliable and long-lived. " base_Class="_CpwuEH09EfCa_eyoPrBLNw"/>
   <MWPProfile.Requirements:StakeholderRequirement xmi:id="_Cp2NoH09EfCa_eyoPrBLNw" verificationMethod="TEST" base_Class="_CpwuEH09EfCa_eyoPrBLNw" stakeholder="_IF2SYH00EfCj-ZZimWDeQw"/>
   <MWPProfile.Properties:MeasureOfEffectiveness xmi:id="_ThrwgH7JEfCoCoy0TyBuMg" base_Property="_xfdBQH7IEfCoCoy0TyBuMg"/>
   <MWPProfile.Properties:MeasureOfEffectiveness xmi:id="_Wl5IYH7JEfCoCoy0TyBuMg" base_Property="_xZBpIH7IEfCoCoy0TyBuMg"/>
@@ -689,4 +799,8 @@ Since we are only looking at the operational context this folder may only be cal
   <Blocks:ValueType xmi:id="_wubXQH9oEfCclKKcu35E4w" base_DataType="_wuawMH9oEfCclKKcu35E4w"/>
   <Blocks:ValueType xmi:id="_w0EsQH9oEfCclKKcu35E4w" base_DataType="_w0EFMH9oEfCclKKcu35E4w"/>
   <Blocks:ValueType xmi:id="_w4ZLkH9oEfCclKKcu35E4w" base_DataType="_w4X9cH9oEfCclKKcu35E4w"/>
+  <Requirements:Trace xmi:id="_JStMEH9uEfCclKKcu35E4w" base_DirectedRelationship="_JSqv0H9uEfCclKKcu35E4w" base_Abstraction="_JSqv0H9uEfCclKKcu35E4w"/>
+  <Requirements:Trace xmi:id="_KS8hEH9uEfCclKKcu35E4w" base_DirectedRelationship="_KS6E0H9uEfCclKKcu35E4w" base_Abstraction="_KS6E0H9uEfCclKKcu35E4w"/>
+  <Requirements:Trace xmi:id="_O-VSIH9uEfCclKKcu35E4w" base_DirectedRelationship="_O-S14H9uEfCclKKcu35E4w" base_Abstraction="_O-S14H9uEfCclKKcu35E4w"/>
+  <Requirements:Trace xmi:id="_Py7X0H9uEfCclKKcu35E4w" base_DirectedRelationship="_Py5ioH9uEfCclKKcu35E4w" base_Abstraction="_Py5ioH9uEfCclKKcu35E4w"/>
 </xmi:XMI>

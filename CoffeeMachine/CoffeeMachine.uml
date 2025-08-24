@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:MWPProfile="http:///schemas/MWPProfile/_rkDJQNisEe6N_aISTl-5xw/23" xmlns:MWPProfile.Requirements="http:///MWPProfile/Requirements.ecore" xmlns:MWPProfile.Stakeholders="http:///MWPProfile/Stakeholders.ecore" xmlns:ModelElements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements" xmlns:PortsAndFlows="http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:SFPProfile="http:///schemas/SFPProfile/_ZQRbsIDREfC3W4L239mBEw/39" xmlns:SFPProfile.Properties="http:///SFPProfile/Properties.ecore" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http:///schemas/MWPProfile/_rkDJQNisEe6N_aISTl-5xw/23 ../MWPProfile/MWPProfile.profile.uml#_rkDwUNisEe6N_aISTl-5xw http:///MWPProfile/Requirements.ecore ../MWPProfile/MWPProfile.profile.uml#_rkDwVdisEe6N_aISTl-5xw http:///MWPProfile/Stakeholders.ecore ../MWPProfile/MWPProfile.profile.uml#_rkDwgdisEe6N_aISTl-5xw http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements http:///schemas/SFPProfile/_ZQRbsIDREfC3W4L239mBEw/39 ../SFPProfile/SFPProfile.profile.uml#_ZQRbsYDREfC3W4L239mBEw http:///SFPProfile/Properties.ecore ../SFPProfile/SFPProfile.profile.uml#_ZQRb9IDREfC3W4L239mBEw">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Allocations="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Allocations" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:MWPProfile="http:///schemas/MWPProfile/_rkDJQNisEe6N_aISTl-5xw/23" xmlns:MWPProfile.Requirements="http:///MWPProfile/Requirements.ecore" xmlns:MWPProfile.Stakeholders="http:///MWPProfile/Stakeholders.ecore" xmlns:ModelElements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements" xmlns:PortsAndFlows="http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:SFPProfile="http:///schemas/SFPProfile/_ZQRbsIDREfC3W4L239mBEw/39" xmlns:SFPProfile.Properties="http:///SFPProfile/Properties.ecore" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Allocations http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http:///schemas/MWPProfile/_rkDJQNisEe6N_aISTl-5xw/23 ../MWPProfile/MWPProfile.profile.uml#_rkDwUNisEe6N_aISTl-5xw http:///MWPProfile/Requirements.ecore ../MWPProfile/MWPProfile.profile.uml#_rkDwVdisEe6N_aISTl-5xw http:///MWPProfile/Stakeholders.ecore ../MWPProfile/MWPProfile.profile.uml#_rkDwgdisEe6N_aISTl-5xw http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements http:///schemas/SFPProfile/_ZQRbsIDREfC3W4L239mBEw/39 ../SFPProfile/SFPProfile.profile.uml#_ZQRbsYDREfC3W4L239mBEw http:///SFPProfile/Properties.ecore ../SFPProfile/SFPProfile.profile.uml#_ZQRb9IDREfC3W4L239mBEw">
   <uml:Model xmi:id="_cJ7fAH0kEfCv3ulPI1gDUQ" name="CoffeeMachine">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_cPSgIH0kEfCv3ulPI1gDUQ">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -55,6 +55,27 @@
           <body>The weight of the coffee machine. </body>
         </ownedComment>
       </ownedAttribute>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_7cONAIDkEfC25NqsFRg4_A" name="Produce coffee">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_7cONAYDkEfC25NqsFRg4_A" name="water"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_7cONAoDkEfC25NqsFRg4_A" name="coffee pad"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_7cONA4DkEfC25NqsFRg4_A" name="coffee" direction="out"/>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_alrYUIDlEfC25NqsFRg4_A" name="Store water">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_alrYUYDlEfC25NqsFRg4_A" name="water"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_alrYUoDlEfC25NqsFRg4_A" name="water" direction="out"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_alrYU4DlEfC25NqsFRg4_A" name="water level" direction="out"/>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_xNO0AIDlEfC25NqsFRg4_A" name="Receive coffe pad">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_xNO0AYDlEfC25NqsFRg4_A" name="coffee pad"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_xNO0AoDlEfC25NqsFRg4_A" name="coffee pad" direction="out"/>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="__FYPkIDlEfC25NqsFRg4_A" name="Check water level">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="__FYPkYDlEfC25NqsFRg4_A" name="water level"/>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_Y0nN4IDmEfC25NqsFRg4_A" name="Heat water">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_Y0nN4YDmEfC25NqsFRg4_A" name="cold water"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_Y0nN4oDmEfC25NqsFRg4_A" name="hot water" direction="out"/>
+      </ownedBehavior>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_4glNsH0zEfCj-ZZimWDeQw" name="Stakeholder">
       <packagedElement xmi:type="uml:Actor" xmi:id="_IFr6UH00EfCj-ZZimWDeQw" name="User">
@@ -62,6 +83,15 @@
           <body>Individual that interact with and uses the coffee machine. &#xD;
 The user of the coffee machine. </body>
         </ownedComment>
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_Eh_UIIDkEfC25NqsFRg4_A" name="Insert coffee pad">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_Eh_UIYDkEfC25NqsFRg4_A" name="coffee pad" direction="out"/>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_mTWq8IDmEfC25NqsFRg4_A" name="Take coffee">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_mTWq8YDmEfC25NqsFRg4_A" name="coffee"/>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_tjROQIDmEfC25NqsFRg4_A" name="Refill water">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_tjROQYDmEfC25NqsFRg4_A" name="water" direction="out"/>
+        </ownedBehavior>
       </packagedElement>
       <packagedElement xmi:type="uml:Actor" xmi:id="_uhte4H01EfCj-ZZimWDeQw" name="Producer">
         <ownedComment xmi:type="uml:Comment" xmi:id="_uhte4X01EfCj-ZZimWDeQw">
@@ -617,10 +647,200 @@ Since we are only looking at the operational context this folder may only be cal
         <ownedEnd xmi:type="uml:Property" xmi:id="_VUhNkn9tEfCclKKcu35E4w" name="user" type="_IFr6UH00EfCj-ZZimWDeQw" association="_VUgmgH9tEfCclKKcu35E4w"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_VUhNk39tEfCclKKcu35E4w" name="clean and descale coffee machine" type="_OoQJ4H9tEfCclKKcu35E4w" association="_VUgmgH9tEfCclKKcu35E4w"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_4jWIQH9sEfCclKKcu35E4w" name="Make Coffee" subject="_iZX7cH0yEfCj-ZZimWDeQw">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_4jWIQH9sEfCclKKcu35E4w" name="Make Coffee" classifierBehavior="_uuONMIDgEfC25NqsFRg4_A" subject="_iZX7cH0yEfCj-ZZimWDeQw">
         <ownedComment xmi:type="uml:Comment" xmi:id="_ocJT0H9vEfCclKKcu35E4w">
-          <body>The user initiates the brewing process for a standard cup of coffee using prefabricated coffee pads. </body>
+          <body>The user initiates the brewing process for a standard cup of coffee using prefabricated coffee pads. &#xD;
+&#xD;
+&#xD;
+Use Case: Make Coffee&#xD;
+&#xD;
+Preconditions:&#xD;
+The coffee machine is powered on.&#xD;
+The coffee pad compartment is empty.&#xD;
+&#xD;
+Inputs:&#xD;
+The user selects the standard cup size for brewing.&#xD;
+&#xD;
+Flow of Events:&#xD;
+User initiates brewing process:&#xD;
+The user places a new prefabricated coffee pad in the designated compartment.&#xD;
+The user navigates the coffee machine interface and selects the standard cup size.&#xD;
+The user initiates the brewing process.&#xD;
+&#xD;
+Coffee machine processing:&#xD;
+The coffee machine reads the user’s selection and activates the brewing mechanism.&#xD;
+The machine extracts coffee from the pad and dispenses it into the cup.&#xD;
+&#xD;
+Completion of brewing:&#xD;
+Once the brewing process is complete, the coffee machine signals the user, typically with a sound or visual notification.&#xD;
+The user can retrieve the brewed coffee.&#xD;
+&#xD;
+Postconditions:&#xD;
+The standard cup of coffee is brewed and ready for consumption.&#xD;
+The used coffee pad is stored in the designated compartment for disposal.&#xD;
+The coffee machine returns to a standby or ready state, awaiting the next user interaction.&#xD;
+&#xD;
+Alternative Scenario - Insufficient Water:&#xD;
+&#xD;
+Preconditions:&#xD;
+The coffee machine is powered on.&#xD;
+The water reservoir is empty or contains an insufficient amount of water.&#xD;
+&#xD;
+Inputs:&#xD;
+User’s attempt to brew coffee.&#xD;
+&#xD;
+Flow of Events:&#xD;
+The user attempts to brew coffee without refilling the water reservoir.&#xD;
+The coffee machine detects insufficient water and displays an alert on the interface.&#xD;
+The user is prompted to refill the water reservoir.&#xD;
+If the user refills the water reservoir, then the use case can begin anew.</body>
         </ownedComment>
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_uuONMIDgEfC25NqsFRg4_A" name="Make Coffee" node="_YStXgIDiEfC25NqsFRg4_A _bPcOYIDiEfC25NqsFRg4_A _bpFdcIDiEfC25NqsFRg4_A _b7gqMIDiEfC25NqsFRg4_A _eLTikIDiEfC25NqsFRg4_A _ee7CIIDiEfC25NqsFRg4_A _esGigIDiEfC25NqsFRg4_A _e63-UIDiEfC25NqsFRg4_A _fJbXsIDiEfC25NqsFRg4_A _fYOBoIDiEfC25NqsFRg4_A _fkkbkIDiEfC25NqsFRg4_A _fx_MgIDiEfC25NqsFRg4_A __T-MkIDiEfC25NqsFRg4_A _AFmd0IDjEfC25NqsFRg4_A _BZH7MIDjEfC25NqsFRg4_A _CPwoQIDjEfC25NqsFRg4_A" group="_lrUz4IDhEfC25NqsFRg4_A _yA-h8IDhEfC25NqsFRg4_A">
+          <edge xmi:type="uml:ControlFlow" xmi:id="_4taygIDmEfC25NqsFRg4_A" inPartition="_lrUz4IDhEfC25NqsFRg4_A" target="_BZH7MIDjEfC25NqsFRg4_A" source="__T-MkIDiEfC25NqsFRg4_A"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_8T9bYIDmEfC25NqsFRg4_A" inPartition="_lrUz4IDhEfC25NqsFRg4_A" target="_YStXgIDiEfC25NqsFRg4_A" source="_BZH7MIDjEfC25NqsFRg4_A"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_92lEsIDmEfC25NqsFRg4_A" inPartition="_lrUz4IDhEfC25NqsFRg4_A" target="_bPcOYIDiEfC25NqsFRg4_A" source="_YStXgIDiEfC25NqsFRg4_A"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="__5k3MIDmEfC25NqsFRg4_A" target="_esGigIDiEfC25NqsFRg4_A" source="_bPcOYIDiEfC25NqsFRg4_A"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_BpNBwIDnEfC25NqsFRg4_A" inPartition="_yA-h8IDhEfC25NqsFRg4_A" target="_CPwoQIDjEfC25NqsFRg4_A" source="_esGigIDiEfC25NqsFRg4_A"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_C6Py4IDnEfC25NqsFRg4_A" inPartition="_yA-h8IDhEfC25NqsFRg4_A" target="_e63-UIDiEfC25NqsFRg4_A" source="_CPwoQIDjEfC25NqsFRg4_A">
+            <guard xmi:type="uml:OpaqueExpression" xmi:id="_EOxOcIDqEfC25NqsFRg4_A">
+              <language>Natural language</language>
+              <body>else</body>
+            </guard>
+          </edge>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_HLp9sIDnEfC25NqsFRg4_A" inPartition="_yA-h8IDhEfC25NqsFRg4_A" target="_fJbXsIDiEfC25NqsFRg4_A" source="_CPwoQIDjEfC25NqsFRg4_A">
+            <guard xmi:type="uml:OpaqueExpression" xmi:id="_8oeLcIDpEfC25NqsFRg4_A">
+              <language>Natural language</language>
+              <body>Sufficient water</body>
+            </guard>
+          </edge>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_ISCW8IDnEfC25NqsFRg4_A" inPartition="_yA-h8IDhEfC25NqsFRg4_A" target="_fYOBoIDiEfC25NqsFRg4_A" source="_fJbXsIDiEfC25NqsFRg4_A"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_JB7i0IDnEfC25NqsFRg4_A" inPartition="_yA-h8IDhEfC25NqsFRg4_A" target="_fkkbkIDiEfC25NqsFRg4_A" source="_fYOBoIDiEfC25NqsFRg4_A"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_K2hs8IDnEfC25NqsFRg4_A" inPartition="_yA-h8IDhEfC25NqsFRg4_A" target="_fx_MgIDiEfC25NqsFRg4_A" source="_fkkbkIDiEfC25NqsFRg4_A"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_MTrncIDnEfC25NqsFRg4_A" target="_b7gqMIDiEfC25NqsFRg4_A" source="_fx_MgIDiEfC25NqsFRg4_A"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_NpeVsIDnEfC25NqsFRg4_A" inPartition="_lrUz4IDhEfC25NqsFRg4_A" target="_AFmd0IDjEfC25NqsFRg4_A" source="_b7gqMIDiEfC25NqsFRg4_A"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_QdU9YIDnEfC25NqsFRg4_A" target="_bpFdcIDiEfC25NqsFRg4_A" source="_e63-UIDiEfC25NqsFRg4_A"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_RnYVsIDnEfC25NqsFRg4_A" inPartition="_lrUz4IDhEfC25NqsFRg4_A" target="_BZH7MIDjEfC25NqsFRg4_A" source="_bpFdcIDiEfC25NqsFRg4_A"/>
+          <edge xmi:type="uml:ObjectFlow" xmi:id="_a1Ur8IDnEfC25NqsFRg4_A" target="_xNVhsIDlEfC25NqsFRg4_A" source="_EiH3AIDkEfC25NqsFRg4_A">
+            <guard xmi:type="uml:LiteralBoolean" xmi:id="_a1jVcIDnEfC25NqsFRg4_A" value="true"/>
+            <weight xmi:type="uml:LiteralInteger" xmi:id="_a1jVcYDnEfC25NqsFRg4_A" value="1"/>
+          </edge>
+          <edge xmi:type="uml:ObjectFlow" xmi:id="_gfVBYIDnEfC25NqsFRg4_A" target="_alwQ0IDlEfC25NqsFRg4_A" source="_tjbmUIDmEfC25NqsFRg4_A">
+            <guard xmi:type="uml:LiteralBoolean" xmi:id="_gfjD0IDnEfC25NqsFRg4_A" value="true"/>
+            <weight xmi:type="uml:LiteralInteger" xmi:id="_gfjq4IDnEfC25NqsFRg4_A" value="1"/>
+          </edge>
+          <edge xmi:type="uml:ObjectFlow" xmi:id="_hNCb8IDnEfC25NqsFRg4_A" target="__FdIEIDlEfC25NqsFRg4_A" source="_alyGA4DlEfC25NqsFRg4_A">
+            <guard xmi:type="uml:LiteralBoolean" xmi:id="_hNkncIDnEfC25NqsFRg4_A" value="true"/>
+            <weight xmi:type="uml:LiteralInteger" xmi:id="_hNkncYDnEfC25NqsFRg4_A" value="1"/>
+          </edge>
+          <edge xmi:type="uml:ObjectFlow" xmi:id="_igRlcIDnEfC25NqsFRg4_A" target="_Y0xl8IDmEfC25NqsFRg4_A" source="_alyGAIDlEfC25NqsFRg4_A">
+            <guard xmi:type="uml:LiteralBoolean" xmi:id="_igg2AIDnEfC25NqsFRg4_A" value="true"/>
+            <weight xmi:type="uml:LiteralInteger" xmi:id="_igg2AYDnEfC25NqsFRg4_A" value="1"/>
+          </edge>
+          <edge xmi:type="uml:ObjectFlow" xmi:id="_jVmq8IDnEfC25NqsFRg4_A" target="_7cSecIDkEfC25NqsFRg4_A" source="_Y0xl84DmEfC25NqsFRg4_A">
+            <guard xmi:type="uml:LiteralBoolean" xmi:id="_jV93UIDnEfC25NqsFRg4_A" value="true"/>
+            <weight xmi:type="uml:LiteralInteger" xmi:id="_jV93UYDnEfC25NqsFRg4_A" value="1"/>
+          </edge>
+          <edge xmi:type="uml:ObjectFlow" xmi:id="_kfS24IDnEfC25NqsFRg4_A" target="_mTaVUIDmEfC25NqsFRg4_A" source="_7cWI0IDkEfC25NqsFRg4_A">
+            <guard xmi:type="uml:LiteralBoolean" xmi:id="_kfiugIDnEfC25NqsFRg4_A" value="true"/>
+            <weight xmi:type="uml:LiteralInteger" xmi:id="_kfiugYDnEfC25NqsFRg4_A" value="1"/>
+          </edge>
+          <edge xmi:type="uml:ObjectFlow" xmi:id="_lTMZAIDnEfC25NqsFRg4_A" target="_7cSec4DkEfC25NqsFRg4_A" source="_xNXW4IDlEfC25NqsFRg4_A">
+            <guard xmi:type="uml:LiteralBoolean" xmi:id="_lTf7AIDnEfC25NqsFRg4_A" value="true"/>
+            <weight xmi:type="uml:LiteralInteger" xmi:id="_lTf7AYDnEfC25NqsFRg4_A" value="1"/>
+          </edge>
+          <group xmi:type="uml:ActivityPartition" xmi:id="_lrUz4IDhEfC25NqsFRg4_A" name="User" node="_YStXgIDiEfC25NqsFRg4_A _bPcOYIDiEfC25NqsFRg4_A _bpFdcIDiEfC25NqsFRg4_A _b7gqMIDiEfC25NqsFRg4_A __T-MkIDiEfC25NqsFRg4_A _AFmd0IDjEfC25NqsFRg4_A _BZH7MIDjEfC25NqsFRg4_A" represents="_IFr6UH00EfCj-ZZimWDeQw" edge="_4taygIDmEfC25NqsFRg4_A _8T9bYIDmEfC25NqsFRg4_A _92lEsIDmEfC25NqsFRg4_A _NpeVsIDnEfC25NqsFRg4_A _RnYVsIDnEfC25NqsFRg4_A"/>
+          <group xmi:type="uml:ActivityPartition" xmi:id="_yA-h8IDhEfC25NqsFRg4_A" name="Coffee Machine" node="_eLTikIDiEfC25NqsFRg4_A _ee7CIIDiEfC25NqsFRg4_A _esGigIDiEfC25NqsFRg4_A _e63-UIDiEfC25NqsFRg4_A _fJbXsIDiEfC25NqsFRg4_A _fYOBoIDiEfC25NqsFRg4_A _fkkbkIDiEfC25NqsFRg4_A _fx_MgIDiEfC25NqsFRg4_A _CPwoQIDjEfC25NqsFRg4_A" represents="_iZX7cH0yEfCj-ZZimWDeQw" edge="_BpNBwIDnEfC25NqsFRg4_A _C6Py4IDnEfC25NqsFRg4_A _HLp9sIDnEfC25NqsFRg4_A _ISCW8IDnEfC25NqsFRg4_A _JB7i0IDnEfC25NqsFRg4_A _K2hs8IDnEfC25NqsFRg4_A"/>
+          <node xmi:type="uml:CallBehaviorAction" xmi:id="_YStXgIDiEfC25NqsFRg4_A" name="Insert Coffee Pad" incoming="_8T9bYIDmEfC25NqsFRg4_A" outgoing="_92lEsIDmEfC25NqsFRg4_A" inPartition="_lrUz4IDhEfC25NqsFRg4_A" behavior="_Eh_UIIDkEfC25NqsFRg4_A">
+            <result xmi:type="uml:OutputPin" xmi:id="_EiH3AIDkEfC25NqsFRg4_A" name="coffee pad" outgoing="_a1Ur8IDnEfC25NqsFRg4_A">
+              <upperBound xmi:type="uml:LiteralInteger" xmi:id="_EiMvgIDkEfC25NqsFRg4_A" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EiH3AYDkEfC25NqsFRg4_A" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EiH3AoDkEfC25NqsFRg4_A" value="1"/>
+            </result>
+          </node>
+          <node xmi:type="uml:CallBehaviorAction" xmi:id="_bPcOYIDiEfC25NqsFRg4_A" name="Request Coffee" incoming="_92lEsIDmEfC25NqsFRg4_A" outgoing="__5k3MIDmEfC25NqsFRg4_A" inPartition="_lrUz4IDhEfC25NqsFRg4_A"/>
+          <node xmi:type="uml:CallBehaviorAction" xmi:id="_bpFdcIDiEfC25NqsFRg4_A" name="Refill Water" incoming="_QdU9YIDnEfC25NqsFRg4_A" outgoing="_RnYVsIDnEfC25NqsFRg4_A" inPartition="_lrUz4IDhEfC25NqsFRg4_A" behavior="_tjROQIDmEfC25NqsFRg4_A">
+            <result xmi:type="uml:OutputPin" xmi:id="_tjbmUIDmEfC25NqsFRg4_A" name="water" outgoing="_gfVBYIDnEfC25NqsFRg4_A">
+              <upperBound xmi:type="uml:LiteralInteger" xmi:id="_tjbmU4DmEfC25NqsFRg4_A" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tjbmUYDmEfC25NqsFRg4_A" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tjbmUoDmEfC25NqsFRg4_A" value="1"/>
+            </result>
+          </node>
+          <node xmi:type="uml:CallBehaviorAction" xmi:id="_b7gqMIDiEfC25NqsFRg4_A" name="Take coffee" incoming="_MTrncIDnEfC25NqsFRg4_A" outgoing="_NpeVsIDnEfC25NqsFRg4_A" inPartition="_lrUz4IDhEfC25NqsFRg4_A" behavior="_mTWq8IDmEfC25NqsFRg4_A">
+            <argument xmi:type="uml:InputPin" xmi:id="_mTaVUIDmEfC25NqsFRg4_A" name="coffee" incoming="_kfS24IDnEfC25NqsFRg4_A">
+              <upperBound xmi:type="uml:LiteralInteger" xmi:id="_mTcKgIDmEfC25NqsFRg4_A" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mTaVUYDmEfC25NqsFRg4_A" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mTaVUoDmEfC25NqsFRg4_A" value="1"/>
+            </argument>
+          </node>
+          <node xmi:type="uml:CallBehaviorAction" xmi:id="_eLTikIDiEfC25NqsFRg4_A" name="Store water" inPartition="_yA-h8IDhEfC25NqsFRg4_A" behavior="_alrYUIDlEfC25NqsFRg4_A">
+            <argument xmi:type="uml:InputPin" xmi:id="_alwQ0IDlEfC25NqsFRg4_A" name="water" incoming="_gfVBYIDnEfC25NqsFRg4_A">
+              <upperBound xmi:type="uml:LiteralInteger" xmi:id="_al1wYIDlEfC25NqsFRg4_A" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_alwQ0YDlEfC25NqsFRg4_A" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_alwQ0oDlEfC25NqsFRg4_A" value="1"/>
+            </argument>
+            <result xmi:type="uml:OutputPin" xmi:id="_alyGAIDlEfC25NqsFRg4_A" name="water" outgoing="_igRlcIDnEfC25NqsFRg4_A">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_alyGAYDlEfC25NqsFRg4_A" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_alyGAoDlEfC25NqsFRg4_A" value="1"/>
+            </result>
+            <result xmi:type="uml:OutputPin" xmi:id="_alyGA4DlEfC25NqsFRg4_A" name="water level" outgoing="_hNCb8IDnEfC25NqsFRg4_A">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_alyGBIDlEfC25NqsFRg4_A" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_alyGBYDlEfC25NqsFRg4_A" value="1"/>
+            </result>
+          </node>
+          <node xmi:type="uml:CallBehaviorAction" xmi:id="_ee7CIIDiEfC25NqsFRg4_A" name="Receive cofee pad" inPartition="_yA-h8IDhEfC25NqsFRg4_A" behavior="_xNO0AIDlEfC25NqsFRg4_A">
+            <argument xmi:type="uml:InputPin" xmi:id="_xNVhsIDlEfC25NqsFRg4_A" name="coffee pad" incoming="_a1Ur8IDnEfC25NqsFRg4_A">
+              <upperBound xmi:type="uml:LiteralInteger" xmi:id="_xNYlAIDlEfC25NqsFRg4_A" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xNVhsYDlEfC25NqsFRg4_A" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xNVhsoDlEfC25NqsFRg4_A" value="1"/>
+            </argument>
+            <result xmi:type="uml:OutputPin" xmi:id="_xNXW4IDlEfC25NqsFRg4_A" name="coffee pad" outgoing="_lTMZAIDnEfC25NqsFRg4_A">
+              <upperBound xmi:type="uml:LiteralInteger" xmi:id="_xNYlAYDlEfC25NqsFRg4_A" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xNXW4YDlEfC25NqsFRg4_A" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xNXW4oDlEfC25NqsFRg4_A" value="1"/>
+            </result>
+          </node>
+          <node xmi:type="uml:CallBehaviorAction" xmi:id="_esGigIDiEfC25NqsFRg4_A" name="Check water level" incoming="__5k3MIDmEfC25NqsFRg4_A" outgoing="_BpNBwIDnEfC25NqsFRg4_A" inPartition="_yA-h8IDhEfC25NqsFRg4_A" behavior="__FYPkIDlEfC25NqsFRg4_A">
+            <argument xmi:type="uml:InputPin" xmi:id="__FdIEIDlEfC25NqsFRg4_A" name="water level" incoming="_hNCb8IDnEfC25NqsFRg4_A">
+              <upperBound xmi:type="uml:LiteralInteger" xmi:id="__FgycIDlEfC25NqsFRg4_A" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__FdIEYDlEfC25NqsFRg4_A" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__FdIEoDlEfC25NqsFRg4_A" value="1"/>
+            </argument>
+          </node>
+          <node xmi:type="uml:CallBehaviorAction" xmi:id="_e63-UIDiEfC25NqsFRg4_A" name="Inform user about low level water" incoming="_C6Py4IDnEfC25NqsFRg4_A" outgoing="_QdU9YIDnEfC25NqsFRg4_A" inPartition="_yA-h8IDhEfC25NqsFRg4_A"/>
+          <node xmi:type="uml:CallBehaviorAction" xmi:id="_fJbXsIDiEfC25NqsFRg4_A" name="Seal coffee pad" incoming="_HLp9sIDnEfC25NqsFRg4_A" outgoing="_ISCW8IDnEfC25NqsFRg4_A" inPartition="_yA-h8IDhEfC25NqsFRg4_A"/>
+          <node xmi:type="uml:CallBehaviorAction" xmi:id="_fYOBoIDiEfC25NqsFRg4_A" name="Heat water" incoming="_ISCW8IDnEfC25NqsFRg4_A" outgoing="_JB7i0IDnEfC25NqsFRg4_A" inPartition="_yA-h8IDhEfC25NqsFRg4_A" behavior="_Y0nN4IDmEfC25NqsFRg4_A">
+            <argument xmi:type="uml:InputPin" xmi:id="_Y0xl8IDmEfC25NqsFRg4_A" name="cold water" incoming="_igRlcIDnEfC25NqsFRg4_A">
+              <upperBound xmi:type="uml:LiteralInteger" xmi:id="_Y0xl9oDmEfC25NqsFRg4_A" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y0xl8YDmEfC25NqsFRg4_A" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y0xl8oDmEfC25NqsFRg4_A" value="1"/>
+            </argument>
+            <result xmi:type="uml:OutputPin" xmi:id="_Y0xl84DmEfC25NqsFRg4_A" name="hot water" outgoing="_jVmq8IDnEfC25NqsFRg4_A">
+              <upperBound xmi:type="uml:LiteralInteger" xmi:id="_Y0xl94DmEfC25NqsFRg4_A" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y0xl9IDmEfC25NqsFRg4_A" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y0xl9YDmEfC25NqsFRg4_A" value="1"/>
+            </result>
+          </node>
+          <node xmi:type="uml:CallBehaviorAction" xmi:id="_fkkbkIDiEfC25NqsFRg4_A" name="Produce coffee" incoming="_JB7i0IDnEfC25NqsFRg4_A" outgoing="_K2hs8IDnEfC25NqsFRg4_A" inPartition="_yA-h8IDhEfC25NqsFRg4_A" behavior="_7cONAIDkEfC25NqsFRg4_A">
+            <argument xmi:type="uml:InputPin" xmi:id="_7cSecIDkEfC25NqsFRg4_A" name="water" incoming="_jVmq8IDnEfC25NqsFRg4_A">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7cSecYDkEfC25NqsFRg4_A" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7cSecoDkEfC25NqsFRg4_A" value="1"/>
+            </argument>
+            <argument xmi:type="uml:InputPin" xmi:id="_7cSec4DkEfC25NqsFRg4_A" name="coffee pad" incoming="_lTMZAIDnEfC25NqsFRg4_A">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7cSedIDkEfC25NqsFRg4_A" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7cSedYDkEfC25NqsFRg4_A" value="1"/>
+            </argument>
+            <result xmi:type="uml:OutputPin" xmi:id="_7cWI0IDkEfC25NqsFRg4_A" name="coffee" outgoing="_kfS24IDnEfC25NqsFRg4_A">
+              <upperBound xmi:type="uml:LiteralInteger" xmi:id="_7cX-AIDkEfC25NqsFRg4_A" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7cWI0YDkEfC25NqsFRg4_A" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7cWI0oDkEfC25NqsFRg4_A" value="1"/>
+            </result>
+          </node>
+          <node xmi:type="uml:CallBehaviorAction" xmi:id="_fx_MgIDiEfC25NqsFRg4_A" name="Inform user about process completion" incoming="_K2hs8IDnEfC25NqsFRg4_A" outgoing="_MTrncIDnEfC25NqsFRg4_A" inPartition="_yA-h8IDhEfC25NqsFRg4_A"/>
+          <node xmi:type="uml:InitialNode" xmi:id="__T-MkIDiEfC25NqsFRg4_A" name="Start" outgoing="_4taygIDmEfC25NqsFRg4_A" inPartition="_lrUz4IDhEfC25NqsFRg4_A"/>
+          <node xmi:type="uml:ActivityFinalNode" xmi:id="_AFmd0IDjEfC25NqsFRg4_A" name="End" incoming="_NpeVsIDnEfC25NqsFRg4_A" inPartition="_lrUz4IDhEfC25NqsFRg4_A"/>
+          <node xmi:type="uml:MergeNode" xmi:id="_BZH7MIDjEfC25NqsFRg4_A" incoming="_4taygIDmEfC25NqsFRg4_A _RnYVsIDnEfC25NqsFRg4_A" outgoing="_8T9bYIDmEfC25NqsFRg4_A" inPartition="_lrUz4IDhEfC25NqsFRg4_A"/>
+          <node xmi:type="uml:DecisionNode" xmi:id="_CPwoQIDjEfC25NqsFRg4_A" name="Sufficient water?" incoming="_BpNBwIDnEfC25NqsFRg4_A" outgoing="_C6Py4IDnEfC25NqsFRg4_A _HLp9sIDnEfC25NqsFRg4_A" inPartition="_yA-h8IDhEfC25NqsFRg4_A"/>
+        </ownedBehavior>
         <include xmi:type="uml:Include" xmi:id="_bfBA8H9tEfCclKKcu35E4w" addition="_R4KbcH9tEfCclKKcu35E4w"/>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_OoQJ4H9tEfCclKKcu35E4w" name="Clean and Descale Coffee Machine" subject="_iZX7cH0yEfCj-ZZimWDeQw">
@@ -842,4 +1062,6 @@ Since we are only looking at the operational context this folder may only be cal
   <SFPProfile.Properties:MeasureOfEffectiveness xmi:id="_TNhkMIDTEfC25NqsFRg4_A" base_Property="_xfdBQH7IEfCoCoy0TyBuMg"/>
   <SFPProfile.Properties:MeasureOfEffectiveness xmi:id="_VPh4MIDTEfC25NqsFRg4_A" base_Property="_x7A74H7IEfCoCoy0TyBuMg"/>
   <SFPProfile.Properties:MeasureOfEffectiveness xmi:id="_XEzXwIDTEfC25NqsFRg4_A" base_Property="_yHB-oH7IEfCoCoy0TyBuMg"/>
+  <Allocations:AllocateActivityPartition xmi:id="_lrYeQIDhEfC25NqsFRg4_A" base_ActivityPartition="_lrUz4IDhEfC25NqsFRg4_A"/>
+  <Allocations:AllocateActivityPartition xmi:id="_yBBlQIDhEfC25NqsFRg4_A" base_ActivityPartition="_yA-h8IDhEfC25NqsFRg4_A"/>
 </xmi:XMI>

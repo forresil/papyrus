@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:MWPProfile="http:///schemas/MWPProfile/_rkDJQNisEe6N_aISTl-5xw/23" xmlns:MWPProfile.Properties="http:///MWPProfile/Properties.ecore" xmlns:MWPProfile.Requirements="http:///MWPProfile/Requirements.ecore" xmlns:MWPProfile.Stakeholders="http:///MWPProfile/Stakeholders.ecore" xmlns:ModelElements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements" xmlns:PortsAndFlows="http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http:///schemas/MWPProfile/_rkDJQNisEe6N_aISTl-5xw/23 ../MWPProfile/MWPProfile.profile.uml#_rkDwUNisEe6N_aISTl-5xw http:///MWPProfile/Properties.ecore ../MWPProfile/MWPProfile.profile.uml#_rkDwktisEe6N_aISTl-5xw http:///MWPProfile/Requirements.ecore ../MWPProfile/MWPProfile.profile.uml#_rkDwVdisEe6N_aISTl-5xw http:///MWPProfile/Stakeholders.ecore ../MWPProfile/MWPProfile.profile.uml#_rkDwgdisEe6N_aISTl-5xw http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:MWPProfile="http:///schemas/MWPProfile/_rkDJQNisEe6N_aISTl-5xw/23" xmlns:MWPProfile.Requirements="http:///MWPProfile/Requirements.ecore" xmlns:MWPProfile.Stakeholders="http:///MWPProfile/Stakeholders.ecore" xmlns:ModelElements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements" xmlns:PortsAndFlows="http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:SFPProfile="http:///schemas/SFPProfile/_ZQRbsIDREfC3W4L239mBEw/39" xmlns:SFPProfile.Properties="http:///SFPProfile/Properties.ecore" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http:///schemas/MWPProfile/_rkDJQNisEe6N_aISTl-5xw/23 ../MWPProfile/MWPProfile.profile.uml#_rkDwUNisEe6N_aISTl-5xw http:///MWPProfile/Requirements.ecore ../MWPProfile/MWPProfile.profile.uml#_rkDwVdisEe6N_aISTl-5xw http:///MWPProfile/Stakeholders.ecore ../MWPProfile/MWPProfile.profile.uml#_rkDwgdisEe6N_aISTl-5xw http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements http:///schemas/SFPProfile/_ZQRbsIDREfC3W4L239mBEw/39 ../SFPProfile/SFPProfile.profile.uml#_ZQRbsYDREfC3W4L239mBEw http:///SFPProfile/Properties.ecore ../SFPProfile/SFPProfile.profile.uml#_ZQRb9IDREfC3W4L239mBEw">
   <uml:Model xmi:id="_cJ7fAH0kEfCv3ulPI1gDUQ" name="CoffeeMachine">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_cPSgIH0kEfCv3ulPI1gDUQ">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -125,6 +125,16 @@ The user of the coffee machine. </body>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_o1F9gH05EfCa_eyoPrBLNw" name="Requirements">
+      <packagedElement xmi:type="uml:Package" xmi:id="_kAbQAIArEfCclKKcu35E4w" name="Objectives">
+        <packagedElement xmi:type="uml:Class" xmi:id="_WnmikIDMEfCnGunjg5m5ag" name=" Minimize brewing time"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_JhBfIIDSEfC25NqsFRg4_A" name="Optimize brewing temperature"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Jk7uwIDSEfC25NqsFRg4_A" name="Optimize Flow Rate"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Jq5z4IDSEfC25NqsFRg4_A" name="Minimize Energy Compsumption"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_JvYrQIDSEfC25NqsFRg4_A" name="Ensure responsivenes"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_JzAnAIDSEfC25NqsFRg4_A" name="Reduce maintenance"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_J2jqQIDSEfC25NqsFRg4_A" name="Improve reliability"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_J6XMMIDSEfC25NqsFRg4_A" name="Reduce Weight"/>
+      </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_qYcmoH05EfCa_eyoPrBLNw" name="Stakeholder Requirements">
         <packagedElement xmi:type="uml:Class" xmi:id="_m9HSwH06EfCa_eyoPrBLNw" name="Usability">
           <ownedComment xmi:type="uml:Comment" xmi:id="_fHMrwH9xEfCclKKcu35E4w">
@@ -534,14 +544,6 @@ The user of the coffee machine. </body>
         </generalization>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Abstraction" xmi:id="_oQj3QH9hEfCclKKcu35E4w" name="Trace19" client="_xZBpIH7IEfCoCoy0TyBuMg" supplier="_m9HSwH06EfCa_eyoPrBLNw"/>
-    <packagedElement xmi:type="uml:Abstraction" xmi:id="_ueSk0H9hEfCclKKcu35E4w" name="Trace20" client="_wswZAH7IEfCoCoy0TyBuMg" supplier="_Br4wkH09EfCa_eyoPrBLNw"/>
-    <packagedElement xmi:type="uml:Abstraction" xmi:id="_vHf54H9hEfCclKKcu35E4w" name="Trace21" client="_xNKXYH7IEfCoCoy0TyBuMg" supplier="_Br4wkH09EfCa_eyoPrBLNw"/>
-    <packagedElement xmi:type="uml:Abstraction" xmi:id="_v2bccH9hEfCclKKcu35E4w" name="Trace22" client="_xTTboH7IEfCoCoy0TyBuMg" supplier="_COKXMH09EfCa_eyoPrBLNw"/>
-    <packagedElement xmi:type="uml:Abstraction" xmi:id="_w-LusH9hEfCclKKcu35E4w" name="Trace23" client="_jRlX4H7JEfCoCoy0TyBuMg" supplier="_CeqRUH09EfCa_eyoPrBLNw"/>
-    <packagedElement xmi:type="uml:Abstraction" xmi:id="_x8E6UH9hEfCclKKcu35E4w" name="Trace24" client="_yHB-oH7IEfCoCoy0TyBuMg" supplier="_Cki24H09EfCa_eyoPrBLNw"/>
-    <packagedElement xmi:type="uml:Abstraction" xmi:id="_yx7kQH9hEfCclKKcu35E4w" name="Trace25" client="_x7A74H7IEfCoCoy0TyBuMg" supplier="_CpwuEH09EfCa_eyoPrBLNw"/>
-    <packagedElement xmi:type="uml:Abstraction" xmi:id="_zJcsYH9hEfCclKKcu35E4w" name="Trace26" client="_xfdBQH7IEfCoCoy0TyBuMg" supplier="_CpwuEH09EfCa_eyoPrBLNw"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_4wXmsH9jEfCclKKcu35E4w" name="Context">
       <packagedElement xmi:type="uml:Package" xmi:id="_elTA8H9jEfCclKKcu35E4w" name="Operational Context">
         <ownedComment xmi:type="uml:Comment" xmi:id="_1yQPwH9jEfCclKKcu35E4w">
@@ -637,6 +639,14 @@ Since we are only looking at the operational context this folder may only be cal
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_O-S14H9uEfCclKKcu35E4w" name="Trace8" client="_OoQJ4H9tEfCclKKcu35E4w" supplier="_m9HSwH06EfCa_eyoPrBLNw"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_Py5ioH9uEfCclKKcu35E4w" name="Trace9" client="_R4KbcH9tEfCclKKcu35E4w" supplier="_CpwuEH09EfCa_eyoPrBLNw"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_oQj3QH9hEfCclKKcu35E4w" name="Trace19" client="_xZBpIH7IEfCoCoy0TyBuMg" supplier="_m9HSwH06EfCa_eyoPrBLNw"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_ueSk0H9hEfCclKKcu35E4w" name="Trace20" client="_wswZAH7IEfCoCoy0TyBuMg" supplier="_Br4wkH09EfCa_eyoPrBLNw"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_vHf54H9hEfCclKKcu35E4w" name="Trace21" client="_xNKXYH7IEfCoCoy0TyBuMg" supplier="_Br4wkH09EfCa_eyoPrBLNw"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_v2bccH9hEfCclKKcu35E4w" name="Trace22" client="_xTTboH7IEfCoCoy0TyBuMg" supplier="_COKXMH09EfCa_eyoPrBLNw"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_w-LusH9hEfCclKKcu35E4w" name="Trace23" client="_jRlX4H7JEfCoCoy0TyBuMg" supplier="_CeqRUH09EfCa_eyoPrBLNw"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_x8E6UH9hEfCclKKcu35E4w" name="Trace24" client="_yHB-oH7IEfCoCoy0TyBuMg" supplier="_Cki24H09EfCa_eyoPrBLNw"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_yx7kQH9hEfCclKKcu35E4w" name="Trace25" client="_x7A74H7IEfCoCoy0TyBuMg" supplier="_CpwuEH09EfCa_eyoPrBLNw"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_zJcsYH9hEfCclKKcu35E4w" name="Trace26" client="_xfdBQH7IEfCoCoy0TyBuMg" supplier="_CpwuEH09EfCa_eyoPrBLNw"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_cMtGMH0kEfCv3ulPI1gDUQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cM3eQH0kEfCv3ulPI1gDUQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
@@ -703,6 +713,19 @@ Since we are only looking at the operational context this folder may only be cal
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="../MWPProfile/MWPProfile.profile.uml#_I-C_sJBMEe6yzuvYELj6Eg"/>
     </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="__L5tIIDLEfCnGunjg5m5ag">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_m26QgIDREfC25NqsFRg4_A" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m26QgYDREfC25NqsFRg4_A" key="Version" value="0.0.40"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m26QgoDREfC25NqsFRg4_A" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m26Qg4DREfC25NqsFRg4_A" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m26QhIDREfC25NqsFRg4_A" key="Date" value="2025-08-24"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m26QhYDREfC25NqsFRg4_A" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__L6UMIDLEfCnGunjg5m5ag" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="../SFPProfile/SFPProfile.profile.uml#_ZQRbsYDREfC3W4L239mBEw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="../SFPProfile/SFPProfile.profile.uml#_I-C_sJBMEe6yzuvYELj6Eg"/>
+    </profileApplication>
   </uml:Model>
   <Blocks:Block xmi:id="_iZxkEH0yEfCj-ZZimWDeQw" base_Class="_iZX7cH0yEfCj-ZZimWDeQw"/>
   <MWPProfile:SystemOfInterest xmi:id="_qLkFYH0yEfCj-ZZimWDeQw" base_Class="_iZX7cH0yEfCj-ZZimWDeQw"/>
@@ -760,14 +783,6 @@ Since we are only looking at the operational context this folder may only be cal
   <MWPProfile.Requirements:StakeholderRequirement xmi:id="_CkmhQH09EfCa_eyoPrBLNw" verificationMethod="TEST" base_Class="_Cki24H09EfCa_eyoPrBLNw" stakeholder="_IF2SYH00EfCj-ZZimWDeQw"/>
   <Requirements:Requirement xmi:id="_CpxVIH09EfCa_eyoPrBLNw" base_NamedElement="_CpwuEH09EfCa_eyoPrBLNw" id="SH-REQ-015" text="The coffee machine shall be reliable and long-lived. " base_Class="_CpwuEH09EfCa_eyoPrBLNw"/>
   <MWPProfile.Requirements:StakeholderRequirement xmi:id="_Cp2NoH09EfCa_eyoPrBLNw" verificationMethod="TEST" base_Class="_CpwuEH09EfCa_eyoPrBLNw" stakeholder="_IF2SYH00EfCj-ZZimWDeQw"/>
-  <MWPProfile.Properties:MeasureOfEffectiveness xmi:id="_ThrwgH7JEfCoCoy0TyBuMg" base_Property="_xfdBQH7IEfCoCoy0TyBuMg"/>
-  <MWPProfile.Properties:MeasureOfEffectiveness xmi:id="_Wl5IYH7JEfCoCoy0TyBuMg" base_Property="_xZBpIH7IEfCoCoy0TyBuMg"/>
-  <MWPProfile.Properties:MeasureOfEffectiveness xmi:id="_YaDNoH7JEfCoCoy0TyBuMg" base_Property="_xTTboH7IEfCoCoy0TyBuMg"/>
-  <MWPProfile.Properties:MeasureOfEffectiveness xmi:id="_adfFAH7JEfCoCoy0TyBuMg" base_Property="_xNKXYH7IEfCoCoy0TyBuMg"/>
-  <MWPProfile.Properties:MeasureOfEffectiveness xmi:id="_cKzicH7JEfCoCoy0TyBuMg" base_Property="_wswZAH7IEfCoCoy0TyBuMg"/>
-  <MWPProfile.Properties:MeasureOfEffectiveness xmi:id="_d2GmoH7JEfCoCoy0TyBuMg" base_Property="_x7A74H7IEfCoCoy0TyBuMg"/>
-  <MWPProfile.Properties:MeasureOfEffectiveness xmi:id="_fcgjwH7JEfCoCoy0TyBuMg" base_Property="_yHB-oH7IEfCoCoy0TyBuMg"/>
-  <MWPProfile.Properties:MeasureOfEffectiveness xmi:id="_jRlX4X7JEfCoCoy0TyBuMg" base_Property="_jRlX4H7JEfCoCoy0TyBuMg"/>
   <Blocks:ValueType xmi:id="_pMsZgH7LEfCoCoy0TyBuMg" base_DataType="_pMp9QH7LEfCoCoy0TyBuMg" quantityKind="_0LaJ0H7LEfCoCoy0TyBuMg" unit="__kwnsH7LEfCoCoy0TyBuMg"/>
   <Blocks:ValueType xmi:id="_uJOvgH7MEfCoCoy0TyBuMg" base_DataType="_uJOIcH7MEfCoCoy0TyBuMg" quantityKind="_0LaJ0H7LEfCoCoy0TyBuMg" unit="_ClexQH7NEfCoCoy0TyBuMg"/>
   <Blocks:ValueType xmi:id="_uim40H7MEfCoCoy0TyBuMg" base_DataType="_uimRwH7MEfCoCoy0TyBuMg" quantityKind="_0LaJ0H7LEfCoCoy0TyBuMg" unit="_KCMacH7NEfCoCoy0TyBuMg"/>
@@ -803,4 +818,28 @@ Since we are only looking at the operational context this folder may only be cal
   <Requirements:Trace xmi:id="_KS8hEH9uEfCclKKcu35E4w" base_DirectedRelationship="_KS6E0H9uEfCclKKcu35E4w" base_Abstraction="_KS6E0H9uEfCclKKcu35E4w"/>
   <Requirements:Trace xmi:id="_O-VSIH9uEfCclKKcu35E4w" base_DirectedRelationship="_O-S14H9uEfCclKKcu35E4w" base_Abstraction="_O-S14H9uEfCclKKcu35E4w"/>
   <Requirements:Trace xmi:id="_Py7X0H9uEfCclKKcu35E4w" base_DirectedRelationship="_Py5ioH9uEfCclKKcu35E4w" base_Abstraction="_Py5ioH9uEfCclKKcu35E4w"/>
+  <Requirements:Requirement xmi:id="_WnqM8IDMEfCnGunjg5m5ag" base_NamedElement="_WnmikIDMEfCnGunjg5m5ag" id="OBJ000" text=" Minimize brewing time for user convenience." base_Class="_WnmikIDMEfCnGunjg5m5ag"/>
+  <SFPProfile:Objective xmi:id="_rRBrYIDREfC25NqsFRg4_A" base_Class="_WnmikIDMEfCnGunjg5m5ag" moe="_3z-OkIDREfC25NqsFRg4_A"/>
+  <SFPProfile.Properties:MeasureOfEffectiveness xmi:id="_3z-OkIDREfC25NqsFRg4_A" base_Property="_jRlX4H7JEfCoCoy0TyBuMg"/>
+  <Requirements:Requirement xmi:id="_JhCtQIDSEfC25NqsFRg4_A" base_NamedElement="_JhBfIIDSEfC25NqsFRg4_A" id="OBJ001" text=" Ensure consistent and optimal brewing temperature." base_Class="_JhBfIIDSEfC25NqsFRg4_A"/>
+  <SFPProfile:Objective xmi:id="_JhGXoIDSEfC25NqsFRg4_A" base_Class="_JhBfIIDSEfC25NqsFRg4_A" moe="_KDtgAIDTEfC25NqsFRg4_A"/>
+  <Requirements:Requirement xmi:id="_Jk8V0IDSEfC25NqsFRg4_A" base_NamedElement="_Jk7uwIDSEfC25NqsFRg4_A" id="OBJ002" text=" Optimize flow rate for efficient extraction." base_Class="_Jk7uwIDSEfC25NqsFRg4_A"/>
+  <SFPProfile:Objective xmi:id="_Jk_ZIIDSEfC25NqsFRg4_A" base_Class="_Jk7uwIDSEfC25NqsFRg4_A" moe="_MGaXkIDTEfC25NqsFRg4_A"/>
+  <Requirements:Requirement xmi:id="_Jq7pEIDSEfC25NqsFRg4_A" base_NamedElement="_Jq5z4IDSEfC25NqsFRg4_A" id="OBJ003" text=" Minimize energy consumption for sustainability." base_Class="_Jq5z4IDSEfC25NqsFRg4_A"/>
+  <SFPProfile:Objective xmi:id="_Jq_6gIDSEfC25NqsFRg4_A" base_Class="_Jq5z4IDSEfC25NqsFRg4_A" moe="_OwvP0IDTEfC25NqsFRg4_A"/>
+  <Requirements:Requirement xmi:id="_JvZ5YIDSEfC25NqsFRg4_A" base_NamedElement="_JvYrQIDSEfC25NqsFRg4_A" id="OBJ004" text=" Ensure quick and responsive user interactions." base_Class="_JvYrQIDSEfC25NqsFRg4_A"/>
+  <SFPProfile:Objective xmi:id="_Jvex4IDSEfC25NqsFRg4_A" base_Class="_JvYrQIDSEfC25NqsFRg4_A" moe="_QwYMUIDTEfC25NqsFRg4_A"/>
+  <Requirements:Requirement xmi:id="_JzB1IIDSEfC25NqsFRg4_A" base_NamedElement="_JzAnAIDSEfC25NqsFRg4_A" id="OBJ005" text=" Increase the time between maintenance cycles for user convenience." base_Class="_JzAnAIDSEfC25NqsFRg4_A"/>
+  <SFPProfile:Objective xmi:id="_JzE4cIDSEfC25NqsFRg4_A" base_Class="_JzAnAIDSEfC25NqsFRg4_A" moe="_TNhkMIDTEfC25NqsFRg4_A"/>
+  <Requirements:Requirement xmi:id="_J2k4YIDSEfC25NqsFRg4_A" base_NamedElement="_J2jqQIDSEfC25NqsFRg4_A" id="OBJ006" text="Maximize system reliability for user satisfaction." base_Class="_J2jqQIDSEfC25NqsFRg4_A"/>
+  <SFPProfile:Objective xmi:id="_J2oiwIDSEfC25NqsFRg4_A" base_Class="_J2jqQIDSEfC25NqsFRg4_A" moe="_VPh4MIDTEfC25NqsFRg4_A"/>
+  <Requirements:Requirement xmi:id="_J6YaUIDSEfC25NqsFRg4_A" base_NamedElement="_J6XMMIDSEfC25NqsFRg4_A" id="OBJ007" text=" Minimize weight to make the coffee machine easier to move." base_Class="_J6XMMIDSEfC25NqsFRg4_A"/>
+  <SFPProfile:Objective xmi:id="_J6cEsIDSEfC25NqsFRg4_A" base_Class="_J6XMMIDSEfC25NqsFRg4_A" moe="_XEzXwIDTEfC25NqsFRg4_A"/>
+  <SFPProfile.Properties:MeasureOfEffectiveness xmi:id="_KDtgAIDTEfC25NqsFRg4_A" base_Property="_wswZAH7IEfCoCoy0TyBuMg"/>
+  <SFPProfile.Properties:MeasureOfEffectiveness xmi:id="_MGaXkIDTEfC25NqsFRg4_A" base_Property="_xNKXYH7IEfCoCoy0TyBuMg"/>
+  <SFPProfile.Properties:MeasureOfEffectiveness xmi:id="_OwvP0IDTEfC25NqsFRg4_A" base_Property="_xTTboH7IEfCoCoy0TyBuMg"/>
+  <SFPProfile.Properties:MeasureOfEffectiveness xmi:id="_QwYMUIDTEfC25NqsFRg4_A" base_Property="_xZBpIH7IEfCoCoy0TyBuMg"/>
+  <SFPProfile.Properties:MeasureOfEffectiveness xmi:id="_TNhkMIDTEfC25NqsFRg4_A" base_Property="_xfdBQH7IEfCoCoy0TyBuMg"/>
+  <SFPProfile.Properties:MeasureOfEffectiveness xmi:id="_VPh4MIDTEfC25NqsFRg4_A" base_Property="_x7A74H7IEfCoCoy0TyBuMg"/>
+  <SFPProfile.Properties:MeasureOfEffectiveness xmi:id="_XEzXwIDTEfC25NqsFRg4_A" base_Property="_yHB-oH7IEfCoCoy0TyBuMg"/>
 </xmi:XMI>
